@@ -18,6 +18,9 @@ jobs:
         with:
           dotnet-version: 8.x
 
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v2          
+
       - name: Checkout Stride (note the LFS)
         uses: actions/checkout@v4
         with:
@@ -26,11 +29,12 @@ jobs:
       #   path: stride
           lfs: true
 
-      - name: Restore Stride dependencies
-        run: dotnet restore ${{ env.PROJECT_PATH_CORE }}
+      #- name: Restore Stride dependencies
+      #  run: dotnet restore ${{ env.PROJECT_PATH_CORE }}
 
       - name: Build Stride.sln
-        run: dotnet build ${{ env.PROJECT_PATH_CORE }} --no-restore
+        run: msbuild build/Stride.build -t:Build
+      #  run: dotnet build ${{ env.PROJECT_PATH_CORE }} --no-restore
 
       # - name: Deploy
       #   uses: peaceiris/actions-gh-pages@v3.9.2
