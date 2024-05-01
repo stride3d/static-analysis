@@ -1,2 +1,3 @@
-# static-analysis
+# Static Analysis
+
 Stride static analysis projects
