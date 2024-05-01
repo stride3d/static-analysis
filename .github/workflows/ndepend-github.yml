@@ -23,7 +23,7 @@ jobs:
         with:
           repository: stride3d/stride
           token: ${{ secrets.GITHUB_TOKEN }}
-          path: stride
+      #   path: stride
           lfs: true
 
       - name: Restore Stride dependencies
