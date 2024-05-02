@@ -36,6 +36,13 @@ jobs:
         run: msbuild build/Stride.build -t:Build
       #  run: dotnet build ${{ env.PROJECT_PATH_CORE }} --no-restore
 
+      - name: NDepend
+        uses: ndepend/ndepend-action@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
+          license: ${{ secrets.NDependLicense }}
+          solution: build/Stride.sln      
+
       # - name: Deploy
       #   uses: peaceiris/actions-gh-pages@v3.9.2
       #   with:
