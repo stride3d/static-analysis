@@ -43,9 +43,9 @@ jobs:
           license: ${{ secrets.NDependLicense }}
           solution: build/Stride.sln      
 
-      # - name: Deploy
-      #   uses: peaceiris/actions-gh-pages@v3.9.2
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     publish_dir: stride-docs/_site
-      #     publish_branch: gh-pages
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4.0.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _temp/NDependOut
+          publish_branch: gh-pages
