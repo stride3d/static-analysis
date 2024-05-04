@@ -1,9 +1,10 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build NDepend Analysis for GitHub Pages
+name: Build Stride NDepend Analysis for GitHub Pages
 
 env:
   PROJECT_PATH_CORE: build/Stride.sln
+  DEPLOY_DIR: ..\..\_temp\GitHubPages
 
 on:
   workflow_dispatch:
@@ -18,23 +19,42 @@ jobs:
         with:
           dotnet-version: 8.x
 
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v2
+
       - name: Checkout Stride (note the LFS)
         uses: actions/checkout@v4
         with:
           repository: stride3d/stride
           token: ${{ secrets.GITHUB_TOKEN }}
-          path: stride
+      #   path: stride
           lfs: true
 
-      - name: Restore Stride dependencies
-        run: dotnet restore ${{ env.PROJECT_PATH_CORE }}
+      #- name: Restore Stride dependencies
+      #  run: dotnet restore ${{ env.PROJECT_PATH_CORE }}
 
       - name: Build Stride.sln
-        run: dotnet build ${{ env.PROJECT_PATH_CORE }} --no-restore
+        run: msbuild build/Stride.build -t:Build
+      #  run: dotnet build ${{ env.PROJECT_PATH_CORE }} --no-restore
 
-      # - name: Deploy
-      #   uses: peaceiris/actions-gh-pages@v3.9.2
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     publish_dir: stride-docs/_site
-      #     publish_branch: gh-pages
+      - name: NDepend
+        uses: ndepend/ndepend-action@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          license: ${{ secrets.NDependLicense }}
+          solution: ${{ env.PROJECT_PATH_CORE }}
+
+      - name: Prepare deployment files for GitHub Pages
+        shell: powershell
+        run: |
+          New-Item -ItemType Directory -Force -Path ${{ env.DEPLOY_DIR }}
+          Copy-Item -Path ..\..\_temp\NDependOut\NDependReport.html -Destination ${{ env.DEPLOY_DIR }}\
+          Copy-Item -Path ..\..\_temp\NDependOut\NDependReportFiles -Destination ${{ env.DEPLOY_DIR }}\ -Recurse
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4.0.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ${{ env.DEPLOY_DIR }}
+          destination_dir: stride/ndepend
+          publish_branch: gh-pages
