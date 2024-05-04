@@ -4,6 +4,7 @@ name: Build NDepend Analysis for GitHub Pages
 
 env:
   PROJECT_PATH_CORE: build/Stride.sln
+  DEPLOY_DIR: ..\..\_temp\GitHubPages
 
 on:
   workflow_dispatch:
@@ -41,11 +42,19 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
           license: ${{ secrets.NDependLicense }}
-          solution: build/Stride.sln      
+          solution: ${{ env.PROJECT_PATH_CORE }}
 
-      - name: Deploy
+      - name: Prepare deployment files for GitHub Pages
+        shell: powershell
+        run: |
+          New-Item -ItemType Directory -Force -Path ${{ env.DEPLOY_DIR }}
+          Copy-Item -Path ..\..\_temp\NDependOut\NDependReport.html -Destination ${{ env.DEPLOY_DIR }}\
+          Copy-Item -Path ..\..\_temp\NDependOut\NDependReportFiles -Destination ${{ env.DEPLOY_DIR }}\ -Recurse
+
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4.0.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ../../_temp/NDependOut
+          publish_dir: ${{ env.DEPLOY_DIR }}
+          destination_dir: stride/ndepend
           publish_branch: gh-pages
