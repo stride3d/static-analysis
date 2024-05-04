@@ -17,3 +17,11 @@ Welcome to the Stride Static Analysis repository! Here, we provide detailed stat
 ## Contributing
 
 If you're interested in contributing to the Stride project or have suggestions for improving these analyses, please feel free to open an [issue](https://github.com/stride3d/stride/issues) or submit a [pull request](https://github.com/stride3d/stride/pulls). We appreciate all contributions that help make Stride even better!
+
+Many thanks also to:
+
+* NDepend for [Open Source license](https://www.ndepend.com/)
+
+## Acknowledgements
+
+🌟 A special thank you to [NDepend](https://www.ndepend.com/) for their generous support of the Stride project. They have provided us with a free license for their [NDepend GitHub Action](https://www.ndepend.com/docs/ndepend-github-action).
