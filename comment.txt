@@ -1,0 +1,26 @@
+**NDepend Analysis**
+Quality Gates  ![Failed](https://www.ndepend.com/Res/16x16Icons/StatusQGFail.png) Failed because at least one Quality Gate failed 
+
+| Name      | Status | Trend | Baseline Value | Baseline Status| Currrent Value |
+|-----------|--------| ----- |----------------|----------------|----------------|
+|Percentage Coverage|![Pass](https://www.ndepend.com/Res/16x16Icons/StatusQGPass.png)Pass|![NoChange](https://www.ndepend.com/Res/16x16Icons/TrendIconGrayConstant.png)|N/A %|![Pass](https://www.ndepend.com/Res/16x16Icons/StatusQGPass.png)Pass|N/A %|
+|Percentage Coverage on New Code|![Pass](https://www.ndepend.com/Res/16x16Icons/StatusQGPass.png)Pass|![NoChange](https://www.ndepend.com/Res/16x16Icons/TrendIconGrayConstant.png)|N/A %|![Pass](https://www.ndepend.com/Res/16x16Icons/StatusQGPass.png)Pass|N/A %|
+|Percentage Coverage on Refactored Code|![Pass](https://www.ndepend.com/Res/16x16Icons/StatusQGPass.png)Pass|![NoChange](https://www.ndepend.com/Res/16x16Icons/TrendIconGrayConstant.png)|N/A %|![Pass](https://www.ndepend.com/Res/16x16Icons/StatusQGPass.png)Pass|N/A %|
+|Blocker Issues|![Pass](https://www.ndepend.com/Res/16x16Icons/StatusQGPass.png)Pass|![NoChange](https://www.ndepend.com/Res/16x16Icons/TrendIconGrayConstant.png)|0 issues|![Pass](https://www.ndepend.com/Res/16x16Icons/StatusQGPass.png)Pass|0 issues|
+|Critical Issues|![Failed](https://www.ndepend.com/Res/16x16Icons/StatusQGFail.png)Failed|![NoChange](https://www.ndepend.com/Res/16x16Icons/TrendIconGrayConstant.png)|24 issues|![Failed](https://www.ndepend.com/Res/16x16Icons/StatusQGFail.png)Failed|24 issues|
+|New Blocker / Critical / High Issues|![Pass](https://www.ndepend.com/Res/16x16Icons/StatusQGPass.png)Pass|![NoTrend](https://www.ndepend.com/Res/16x16Icons/TrendIconNone.png)|  |  |0 issues|
+|Critical Rules Violated|![Failed](https://www.ndepend.com/Res/16x16Icons/StatusQGFail.png)Failed|![NoChange](https://www.ndepend.com/Res/16x16Icons/TrendIconGrayConstant.png)|10 rules|![Failed](https://www.ndepend.com/Res/16x16Icons/StatusQGFail.png)Failed|10 rules|
+|Percentage Debt|![Pass](https://www.ndepend.com/Res/16x16Icons/StatusQGPass.png)Pass|![NoChange](https://www.ndepend.com/Res/16x16Icons/TrendIconGrayConstant.png)|9.94 %|![Pass](https://www.ndepend.com/Res/16x16Icons/StatusQGPass.png)Pass|9.94 %|
+|New Debt since Baseline|![Pass](https://www.ndepend.com/Res/16x16Icons/StatusQGPass.png)Pass|![NoTrend](https://www.ndepend.com/Res/16x16Icons/TrendIconNone.png)|  |  |0 man-days|
+|Debt Rating per Namespace|![Failed](https://www.ndepend.com/Res/16x16Icons/StatusQGFail.png)Failed|![NoChange](https://www.ndepend.com/Res/16x16Icons/TrendIconGrayConstant.png)|111 namespaces|![Failed](https://www.ndepend.com/Res/16x16Icons/StatusQGFail.png)Failed|111 namespaces|
+|New Annual Interest since Baseline|![Pass](https://www.ndepend.com/Res/16x16Icons/StatusQGPass.png)Pass|![NoTrend](https://www.ndepend.com/Res/16x16Icons/TrendIconNone.png)|  |  |0 man-days|
+
+Issues:
+| Severity  | Count  | Added Issues | Fixed Issues   |
+|-----------|--------| ------------ |----------------|
+|All Issues|28352|+0|-0|
+|![Blocker](https://www.ndepend.com/Res/16x16Icons/Severity_Blocker.png) Blocker|0|+0|-0|
+|![Critical](https://www.ndepend.com/Res/16x16Icons/Severity_Critical.png) Critical|24|+0|-0|
+|![High](https://www.ndepend.com/Res/16x16Icons/Severity_High.png) High|5092|+0|-0|
+|![Medium](https://www.ndepend.com/Res/16x16Icons/Severity_Medium.png) Medium|19492|+0|-0|
+|![Low](https://www.ndepend.com/Res/16x16Icons/Severity_Low.png) Low|3744|+0|-0|
