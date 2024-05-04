@@ -1,6 +1,6 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build NDepend Analysis for GitHub Pages
+name: Build Stride NDepend Analysis for GitHub Pages
 
 env:
   PROJECT_PATH_CORE: build/Stride.sln
