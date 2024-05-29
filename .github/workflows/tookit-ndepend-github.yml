@@ -27,7 +27,7 @@ jobs:
           lfs: true
 
       - name: Restore Stride dependencies
-        run: dotnet restore ${{ env.PROJECT_PATH_CORE }}
+        run: dotnet restore ${{ env.PROJECT_PATH_CORE }} --runtime win-x64
 
       - name: Build Stride.CommunityToolkit.sln
         run: dotnet build ${{ env.PROJECT_PATH_CORE }} --no-restore
