@@ -43,6 +43,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           license: ${{ secrets.NDependLicense }}
           solution: ${{ env.PROJECT_PATH_CORE }}
+          baseline: recent
 
       - name: Prepare deployment files for GitHub Pages
         shell: powershell
