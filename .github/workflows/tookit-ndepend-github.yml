@@ -38,6 +38,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           license: ${{ secrets.NDependLicense }}
           customconfig: Stride.CommunityToolkit.ndproj
+          baseline: recent
 
       - name: Prepare deployment files for GitHub Pages
         shell: powershell
