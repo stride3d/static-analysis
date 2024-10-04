@@ -33,6 +33,18 @@ jobs:
       #- name: Restore Stride dependencies
       #  run: dotnet restore ${{ env.PROJECT_PATH_CORE }}
 
+      - name: Create .sarif Folder
+        run: |
+          mkdir build\.sarif
+
+      - name: Create Directory.Build.props
+        run: |
+          echo ^<Project^> > Directory.Build.props
+          echo ^<PropertyGroup^> >> Directory.Build.props
+          echo ^<ErrorLog^>$\(SolutionDir\)\.sarif\$\(MSBuildProjectName\).json^</ErrorLog^> >> Directory.Build.props
+          echo ^</PropertyGroup^> >> Directory.Build.props
+          echo ^</Project^> >> Directory.Build.props
+
       - name: Build Stride.sln
         run: msbuild build/Stride.build -t:Build
       #  run: dotnet build ${{ env.PROJECT_PATH_CORE }} --no-restore
