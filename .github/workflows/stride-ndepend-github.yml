@@ -41,7 +41,7 @@ jobs:
         run: |
           echo ^<Project^> > Directory.Build.props
           echo ^<PropertyGroup^> >> Directory.Build.props
-          echo ^<ErrorLog^>$\(SolutionDir\)\.sarif\$\(MSBuildProjectName\).json^</ErrorLog^> >> Directory.Build.props
+          echo ^<ErrorLog^>$$\(SolutionDir\)\.sarif\$$\(MSBuildProjectName\).json^</ErrorLog^> >> Directory.Build.props
           echo ^</PropertyGroup^> >> Directory.Build.props
           echo ^</Project^> >> Directory.Build.props
 
