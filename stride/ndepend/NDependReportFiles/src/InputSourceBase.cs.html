@@ -1,0 +1,14 @@
+<meta charset="UTF-8">
+<html>
+  <head>
+    <link rel="stylesheet" href="src.css"/>
+	 <script src="src.js"></script>
+    <script src="CommonIssuesData.js"></script>
+    <script>
+var issues='{"fileName":"InputSourceBase.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Input/InputSourceBase.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Input/InputSourceBase.cs","projectName":"Stride.Input","line":"67","statement":"9","debt":"14min","cov":"N/A","issues":[{"line":"12","ruleId":"ND2013","debt":"10min","severity":"1","expl":"The <i>class InputSourceBase\'s name</i> starts with the parent namespace name <i>Input</i>. This results in redundant naming without any improvement in readability."},{"line":"37","ruleId":"CA1816","debt":"1min  0s","severity":"2","expl":"Change InputSourceBase.Dispose() to call GC.SuppressFinalize(object). This will prevent derived types that introduce a finalizer from needing to re-implement \'IDisposable\' to call it."},{"line":"37","ruleId":"CA1063","debt":"1min  0s","severity":"2","expl":"Ensure that \'InputSourceBase.Dispose\' is declared as public and sealed"},{"line":"12","ruleId":"CA1063","debt":"1min  0s","severity":"2","expl":"Provide an overridable implementation of Dispose(bool) on \'InputSourceBase\' or mark the type as sealed. A call to Dispose(false) should only clean up native resources. A call to Dispose(true) should clean up both managed and native resources."},{"line":"37","ruleId":"CA1063","debt":"1min  0s","severity":"2","expl":"Modify \'InputSourceBase.Dispose\' so that it calls Dispose(true), then calls GC.SuppressFinalize on the current object instance (\'this\' or \'Me\' in Visual Basic), and then returns"}]}';
+ </script>
+</head>
+<body>
+    <span id="source" fid="52"  style="display:none">H4sIAAAAAAAEAM1V247aMBB9R+IfpqiqgoSSh74tLFILtELtttXCfoCJB/BuYke2A6WIf+/YCUlgL93tPrR5ANuZOT5z5pIogpHKdlqs1haCuAvht8kcPqlccmaFksAkJwtptVjkVmkDwdrazFxEEVdWol1WpqHSqwjewfG9IR+O73lIVl2PMxOJiAlzZnMuFMHqLKzxttttaAoL4w3CWIW3WbfdiiIYC1NQQA50IWqwa4Sr6RzIAaXBEGaI/vDrdDT5NpuEKYelSBCE9MeZVrcYW9BKWVgqDanS7iUt04J/u9Vu5UbIFcx2xmLar7Y+kpD4up8kIRiyN33nIFmKJmMxHq2mMsttu7Vvt4CeiLgPTJ6mTO+G9dFHZhDihBnjqQjnA0blOkbTA5FmCaYorYFYpSkpljFNG7X0kQwMRRprXF52pv62mXfsREMCsqiXjo3T+w4xM2A1i++cr8YVqYiaJOS4Idno3VqrfLVuQl6XVmNv4kAdVMPgRupzk0as0WmwWb6gBAFbGEfDljE3WHslLqAZSOG5h+Ipdg2suYuH0jIWPg101+BzLnivxChIDWFchriHFdo+HOASJG6f6R10fXLPbq6i2CjBKQhhBUvELwy86xWTbIVlMsvNgzAboW3OkgLlJqPuwaBbW+3r5aFePo3yg+Xm1SDXSLl7NcosZvJxjHrzQGccj+sKM8CSpKrWRgFvhf1D1W7XIl7Dmm0QJHX8AlHS5GhA7NCesYnu03koQppFmXpU7gKNxEwVXd2g3wOuJMJiR02ATLvB4rrZlgUJvKrIU7CykMOR8/KF+VI9P3Bu/F0FE7DK7xJSoqlheVHVz0/p4s9pKrEU3AS87BTQneG8umYQ+fdNMbWyNDtJ+7LemjkLmg1YQjyusFhCUAlDnycmpPmCu6DwC6e82z11cI+bdls/BaZyQ53Lv2eo/eyf/Iwxc4vgbcfTOErl62zKYV8BHyinGhnfNcqxc9rnzayR9jWp3jGuv0jiqKiok0QutUr/i1SefxNensw3/yqbW2b8gHhWNoscNHj1701I+jv8BpEPg9BWCQ==$787$</span>
+  </body>
+</html>
