@@ -42,33 +42,45 @@ jobs:
         run: |
           Add-Content -Path Directory.Build.props -Value "<Project>"
           Add-Content -Path Directory.Build.props -Value "  <PropertyGroup>"
-          Add-Content -Path Directory.Build.props -Value "    <ErrorLog>$(SolutionDir)\.sarif\$(MSBuildProjectName).json</ErrorLog>"
+          Add-Content -Path Directory.Build.props -Value "    <ErrorLog>$$(SolutionDir)\.sarif\$$(MSBuildProjectName).json</ErrorLog>"
           Add-Content -Path Directory.Build.props -Value "  </PropertyGroup>"
           Add-Content -Path Directory.Build.props -Value "</Project>"
 
-      - name: Build Stride.sln
-        run: msbuild build/Stride.build -t:Build
-      #  run: dotnet build ${{ env.PROJECT_PATH_CORE }} --no-restore
-
-      - name: NDepend
-        uses: ndepend/ndepend-action@v1
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          license: ${{ secrets.NDependLicense }}
-          solution: ${{ env.PROJECT_PATH_CORE }}
-          baseline: recent
-
-      - name: Prepare deployment files for GitHub Pages
+      - name: List folder content in the working directory
         shell: powershell
-        run: |
-          New-Item -ItemType Directory -Force -Path ${{ env.DEPLOY_DIR }}
-          Copy-Item -Path ..\..\_temp\NDependOut\NDependReport.html -Destination ${{ env.DEPLOY_DIR }}\
-          Copy-Item -Path ..\..\_temp\NDependOut\NDependReportFiles -Destination ${{ env.DEPLOY_DIR }}\ -Recurse
+        run: Get-ChildItem
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4.0.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ${{ env.DEPLOY_DIR }}
-          destination_dir: stride/ndepend
-          publish_branch: gh-pages
+      - name: List folder content in the build directory
+        shell: powershell
+        run: Get-ChildItem -Path build
+
+      - name: Display Directory.Build.props content
+        shell: powershell
+        run: Get-Content -Path Directory.Build.props
+
+      # - name: Build Stride.sln
+      #   run: msbuild build/Stride.build -t:Build
+      # #  run: dotnet build ${{ env.PROJECT_PATH_CORE }} --no-restore
+
+      # - name: NDepend
+      #   uses: ndepend/ndepend-action@v1
+      #   with:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     license: ${{ secrets.NDependLicense }}
+      #     solution: ${{ env.PROJECT_PATH_CORE }}
+      #     baseline: recent
+
+      # - name: Prepare deployment files for GitHub Pages
+      #   shell: powershell
+      #   run: |
+      #     New-Item -ItemType Directory -Force -Path ${{ env.DEPLOY_DIR }}
+      #     Copy-Item -Path ..\..\_temp\NDependOut\NDependReport.html -Destination ${{ env.DEPLOY_DIR }}\
+      #     Copy-Item -Path ..\..\_temp\NDependOut\NDependReportFiles -Destination ${{ env.DEPLOY_DIR }}\ -Recurse
+
+      # - name: Deploy to GitHub Pages
+      #   uses: peaceiris/actions-gh-pages@v4.0.0
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ${{ env.DEPLOY_DIR }}
+      #     destination_dir: stride/ndepend
+      #     publish_branch: gh-pages
