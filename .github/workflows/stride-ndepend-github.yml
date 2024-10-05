@@ -41,12 +41,12 @@ jobs:
         shell: powershell
         run: |
           $content = @"
-           <Project>
-             <PropertyGroup>
-               <ErrorLog>$(SolutionDir)\.sarif\$(MSBuildProjectName).json</ErrorLog>
-             </PropertyGroup>
-           </Project>
-           "@
+<Project>
+  <PropertyGroup>
+    <ErrorLog>$(SolutionDir)\.sarif\$(MSBuildProjectName).json</ErrorLog>
+  </PropertyGroup>
+</Project>
+"@
           $content | Out-File -FilePath build/Directory.Build.props -Encoding utf8
 
       - name: Build Stride.sln
