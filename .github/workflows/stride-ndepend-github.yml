@@ -42,7 +42,7 @@ jobs:
         run: |
           Add-Content -Path Directory.Build.props -Value "<Project>"
           Add-Content -Path Directory.Build.props -Value "  <PropertyGroup>"
-          Add-Content -Path Directory.Build.props -Value "    <ErrorLog>\$(SolutionDir)\.sarif\\$(MSBuildProjectName).json</ErrorLog>"
+          Add-Content -Path Directory.Build.props -Value "    <ErrorLog>${{ '$' }}(SolutionDir)\.sarif\${{ '$' }}(MSBuildProjectName).json</ErrorLog>"
           Add-Content -Path Directory.Build.props -Value "  </PropertyGroup>"
           Add-Content -Path Directory.Build.props -Value "</Project>"
 
