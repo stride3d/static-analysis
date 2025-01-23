@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"StatementNodeCouple.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Shaders.Parser/Analysis/StatementNodeCouple.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Shaders.Parser/Analysis/StatementNodeCouple.cs","projectName":"Stride.Shaders.Parser","line":"24","statement":"4","debt":"15min","cov":"N/A","issues":[{"line":"10","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class StatementNodeCouple</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"15","ruleId":"ND1701","debt":"10min","severity":"1","expl":"The <i>constructor of StatementNodeCouple</i> is not invoked within the context of analyzed code and may be a candidate for removal."},{"line":"12","ruleId":"ND1805","debt":"2min  0s","severity":"1","expl":"The <i>field Statement</i> is used outside its parent type by the <i>3 methods UpdateMain0(), ExpandForEachStatements(…) and Serialize(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose read-write accesses can be better controlled at debug-time."},{"line":"13","ruleId":"ND1805","debt":"2min  0s","severity":"1","expl":"The <i>field Node</i> is used outside its parent type by the <i>3 methods UpdateMain0(), ExpandForEachStatements(…) and Serialize(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose read-write accesses can be better controlled at debug-time."},{"line":"17","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>constructor of StatementNodeCouple</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>StatementNodeCouple.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1WbW/bNhD+HiD/4WBsgw04khM3yJC0BYIkBQKsQQFnn4oWoKVzxJYSNR5lxw0C7Nfsh+2X9CFlW03iDBv28mmGLZPi3fF57jkdddebacNXquTecW/ileeSK39lcz6zTW04yaQ37Dk2yus5v1O+gF2SpJuvwEdne6pSZilans5t4zKWlKsbXXE68U7nnEwKlbOT5J1ywi49XVs/i0BNxZrGrxGcH6fqv9q6dvYTZ36Toy1RYGWwBZYPXmAs61C4EeY5T8Nw/7DUFaaZnWN2lZ5irEUalt7x+7t1hP1RSHhj+DIPVuf7B6NxRIFZ9ksXbYRgRONRgCg8Z6f9Mrhjyre1Cb6WMqNECEghntDM2ZJ8wfRSv25XtpB+merXpKqctCctVFlPdTM1OjNLmmvRU+SFLj1lqqIpU6ncZ85JSQgqrAznIULSux92lA4fUToa7W+jtD9qE7SdzvUKuK3Euybz1pGdPctgBV1XcxvwLbQvkK9AHgE83/rgHEvlC5YzOEfSpVoGVirQy3WO2DTDRo5LO1fmIauDR6x+HB1uY3UQhfoDnVbEZppN3vFZs2gE+GzjBWUHTYRq5bBMflkzTZdrPcdUsi9sLvRzHWC/Vboa9QdDuritQeWNdRcqKzbRpf/7r78NIuUJICmjv3C8FcWjU2rRSGEb/IWMVMRVpmpp0AqACFvqEskOwfDY2QpV5pU2rf8ZRAJeh3x+1tVNqCU41ChDOEdmMakzFWXEKupHEZ60mp1f0qKwwlhX+d4C+cLuGR5kQQmvqm7K3iN6kNJZY0IBegCYNjd7Xpf8UKfxv6FTKLf/JfqnJDp6ItHRX+h5o7/RJHJGJ3SbDta2urg4bXx47iGSoI209EL3A7Oljf0RCQHjcorOmDdM3j4Vn0NqH+2h0X8cOs8jHVqrYI9WJata2eIyRO51VgTdkO2IIvONMrSGqA3SQpJBKQpp0Zn2SPeH+4/ff/cx/NIUu9ZLp28KT/1sQMnVxTW9sU2Vt3USau4sCKeRBOuE+oX3tRynaW59xX62MU2su0npB1qvSzwex3kCq1XtAg7kgAZNri3Cujrp4i0Wi0RaC4kGSWaTT/Vgdwcgz7W0EJA6bIgchSfp7eU1wYErwUE0YY43f7o8u7iaXCRlTuGFhla9fnV2k7M4C0IjL60LixiWLf7dnd2dRkLWVyc7APLJlnubI/9U/EnwqvBCILXKmLa+EyTrN4vdnbvdHcLn/bnyKqYVgn1o762FpWfP49ZuFSJ82hLtTLvRyROjECZeIuLnInSb9Qd0HMuvXzXGDClcB3RH93/SvQO1eQcatiAqXAZdjG/4hE/n96rzPHloE8O8ioG+Wblvh/jDNxT3VwwD2I7SCg==$1024$';
+</script>
 </head>
-<body>
-    <span id="source" fid="47"  style="display:none">H4sIAAAAAAAEAI2QwWrDMAyG74G8g06jgeEcdmvZobQdFLYyyG5jBzdWG5fEDpZCKaXvPsVZl41tMBEUIX36/dt5DgvfnoLdVwyTMgO1Wb3Ag++c0Wy9A+2MEI6D3XbsA8GkYm5pmufGs0PefaLKh30ON3Cdk+wYvDNKqCzqFLa2pWgW3BnrRTa0atQ7Ho+KBoIioEqvDm2WJnkOS0uDBTQgB2IArhCe1i8gC+gIFRSIsfm4Xqw2xUo1Bna2RrAuttvgD1gyBO8Zdj5A40M/lLIZ/KdJmnRk3V4M9taVGMTZLz1VVFoskJoTz/otpxukVpd4pa7Asw6EQc2drk9kKU3OaQISr0vNOj6rLvlt6FnHGASEstZEoqQZG3S88QYXvmtrHLgPiT7abivXH9Gxmv2AepmYouO/FMbDJhlM5eEsTVxX17fQ5wzOcPnn+miKrtXtYMJJykaNL/fpY9y7Hzdn35kocx+FvkwuQyk/+d4BYKG6ZtkC$137$</span>
-  </body>
 </html>

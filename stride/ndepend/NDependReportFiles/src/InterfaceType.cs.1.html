@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"InterfaceType.cs","relativePath":"../../../../static-analysis/static-analysis/sources/shaders/Stride.Core.Shaders/Ast/Glsl/InterfaceType.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/shaders/Stride.Core.Shaders/Ast/Glsl/InterfaceType.cs","projectName":"Stride.Core.Shaders","line":"20","statement":"0","debt":"42min","cov":"N/A","issues":[{"line":"3","ruleId":"ND1305","debt":"5min","severity":"0","expl":"The <i>namespace Stride.Core.Shaders.Ast.Glsl</i> contains only the <i>4 types InterfaceType, LayoutKeyValue, LayoutQualifier and ParameterQualifier</i>. To prevent an excessive number of <i>using</i> clauses in client code, refrain from segregating classes into numerous small namespaces."},{"line":"8","ruleId":"ND1400","debt":"20min","severity":"1","expl":"The <i>class InterfaceType</i> should not use the <i>2 types ShaderVisitor and ShaderVisitor`1</i> because its parent <i>namespace Stride.Core.Shaders.Ast.Glsl</i> is at lower level than the <i>namespace Stride.Core.Shaders.Visitor</i> that contains the elements used. This situation prevents <b>clean layered architecture</b> because both namespaces use each other."},{"line":"8","ruleId":"ND2012","debt":"10min","severity":"2","expl":"A type with the same name as the <i>class InterfaceType</i> is defined in the <i>namespace Stride.Core.Shaders.Ast.Hlsl</i>. This leads to confusion and also naming collision."},{"line":"3","ruleId":"ND2105","debt":"7min","severity":"2","expl":"The <i>namespace Stride.Core.Shaders.Ast.Glsl</i> declarations are present in source files spread across multiple directories. <i>class InterfaceType</i> is declared in source files out of <i>D:/a/static-analysis/static-analysis/sources/shaders/Stride.Core.Shaders/Ast/Glsl</i>."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>InterfaceType.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEALVWYWsjNxD9HvB/GExbEkh3bSdHi5sGQpK2oddwJea+lB6Vd8e2Dq201UjxmZD/3qfdtR1f3LsctMbB0mpm3sx7o9k89Gfa8K2quD/u39jAfqYKnqxqzgrpH/c9GxX0Pb9RYQGLLMs3Xwk4Kb5VVpmVaHm+d9EXjN+FKtlLfhe8Ljm7dJ6zu+7ZhYT8ZyMm3wOtpuJMDGvoq3Gu/nfM2rv3XISOjz3esDHapsPRAOuEzxXbgAdpX/I0LU9HlbbYFu4eu9v8AmstEln64z8e1hFOEr/R8E2ZjK6GJ4NXTQrYFX9vg71qYwnfs9dh1SHxh9pgOVkwnelzi4SlRim0J+cMFWep4rNcn1PhbFDaCjlrVhRa/1MK4EBoh5Jjeq1WLoZfefVWmbjZ/x6V0TPNnpQt6Y3yAIfb5nGCyWjiqPbI2QaYEX+ALIJGIhurKVzdLOFG0XbepmVUFGSgLZY6eRWuBKTnmUe6NPOuIuG55zkkt/PkIK1DcCkoexeFpFLG0IYOyfqPxxvCv/+I8NPBYB/ho8EzxofPGG/gd/lq6pCFi6Yk6wKhnjW/o47fVpG3WnRwLX07T/4aNjGmXCQySAehWvlExpdprIVUIOOWINqgCoM8IEJ4SbN0qTRx4BW2DZPc2TTtLqm4EiIvAAX7CE2cXQsudDYFQQxIo1bsuSTli4UOuFrRg6fptsapC4snejWksSoWhOfsPyXfaDAc7ZNv+Fy+0Va+i0YJWmrApoIE0A0+KVkT9G/aotaSZ0imTG36IjaTLL90snR0gZcSUC4RO8MFAG+pEZQRlxJpetsZo9PJTv0fzYvRcP+8+O5T5X/5vCgZdPhGX3SV5ySypJYEBe24pfQKQRvgQKGOwjuwV0UTdG2YSu0hu/Mal/Gz5Caolt2d0Bg63cD4z98CjTD9xz8f33391bv0l+d06eqV1/NFoMPiiLLb6wn95KIt2yZPYl3iTng9jahL6HARQi3jPC9dsBxmG9PM+XlO39D6XJo8TsoMVkft7ddGow2gQiy1Q1hfZ9t4y+Uyk9ZCGoOscNn7+qh3gCSvtLQpgC8A4qanhvztZkJwYCuc0R23A+j1zeX17d11VpUNn+vm7V525B2G1QzzqAJBOMSyavPvHbysUXoHD70DwidHYmcSq0r51fn20YVNY7oVvLl/2RPzfNe+jlMUkOZe0MrQnnahcUomFiFtWqcO/on/jsfh0fb8ielj7+Azfoli3MfEwv4Q6ZP+W6AfG6MfdoJ3P/imxvoHSR2U5GsJ$951$';
+</script>
 </head>
-<body>
-    <span id="source" fid="184"  style="display:none">H4sIAAAAAAAEAIWQTWrDMBCF9wbfYVYl3kiL7tIfKGlaAm02zgUUaRwr2JKQxoRQeveO7KRJoFBhkDzzvTdPkhIWPhyj3bUEM12BWC838OYHZxRZ70A5w4SjaLcD+Zhg1hKFNJfSeHJIzS8qfNxJuINzP7HG4L0RTFWjT207q9mzpsFYz7YxiIvf4XAQaSLSCAjtxT5UZSElvNo0RUADPBAjUIvwudoAC9AlFFAjjsWP1WK5rpeiN9DYDsG6sRyi36MmiN4TND5C72Nu8rGf8peFUz2moDRyxBxecEQUdat4YBIvicR7l7qy+CoL4CU52GMa+l7F4/Ol9OLYljA22YiOAcUVLm/5MGz5AhBUJKs60J1KCVZn9YbFMM9hBk35ZxKdxl/pbxSz6tK/Qr/L4h9dfmK3g/wKf1vkteYuPI3Qw435aePvB3NeDohVAg==$178$</span>
-  </body>
 </html>

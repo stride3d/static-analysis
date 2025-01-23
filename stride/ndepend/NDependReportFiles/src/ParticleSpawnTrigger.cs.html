@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"ParticleSpawnTrigger.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Particles/Spawners/ParticleSpawnTrigger.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Particles/Spawners/ParticleSpawnTrigger.cs","projectName":"Stride.Particles","line":"44","statement":"0","debt":"17min","cov":"N/A","issues":[{"line":"41","ruleId":"ND1906","debt":"9min","severity":"2","expl":"The <i>instance field FieldAccessor</i> is assigned from the <i>10 methods PrepareFromPool(…), HasTriggered(…), PrepareFromPool(…), HasTriggered(…), PrepareFromPool(…), HasTriggered(…), PrepareFromPool(…), HasTriggered(…), PrepareFromPool(…) and HasTriggered(…)</i>. Do reduce the number of methods that assign it. By now there is no clear and predictable pattern for how this state changes at runtime."},{"line":"9","ruleId":"ND2003","debt":"5min","severity":"1","expl":"The <i>abstract base class ParticleSpawnTrigger\'s name</i> should be suffixed with <i>Base</i>."},{"line":"9","ruleId":"ND2102","debt":"3min  0s","severity":"0","expl":"The source file <i>ParticleSpawnTrigger.cs</i> should contain only one type declaration instead of <i>2 types ParticleSpawnTrigger and ParticleSpawnTrigger`1</i>."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>ParticleSpawnTrigger.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAM1W624jNRT+X6nvcBQB20plJmkXULvZSN1tKypBqbb9h1jhzJzJeJmxZ21Ps1FViafhwXgSPtuTtLkUShGIKIl8OT7nO9+52Le9QlZ8IWruHfUuhXEyq/iqEVN1beRkwibJbG+vZ7gSTt7wpXAlBJMkXXytw072pVCimllp1+e6NRnblNVEKk6vnJE5J3NTNg3G2Nj0cetibHXVurn1k6NU/BdmG6M/cOY6clY1QKCCZuy8fImxt881K4eFPuY5j/1w8E0tFaaZvsHsIj3GWFrb4vzRj7cLDQPPcVvxee6lTgaH/a8DAMyyj/faDqMyyzdspJthZR9T/tRUGF6XTEM5kgpQVMZUSK5yOvP/xxmosNoMUzkiaUlYKyeKcyqMrsnFg4M+1exKnVu6NNwIw2fYvdS62vn919929+hbYTt+OO+W/meCJFS+Luu9TuhEExZaEOP9VW09ZkO6WPjsSuE6Yki6hN7MSOmpFzbsOVOaEHZhgo0GqmTmxLhiaoRzbBQV2lAZTkA6pANlpVATBt+OTKucrDnp3e0twn64HPX9fv9gU9S/Wov6YC3qKBFnROZoLCzsVnCENmX2CziCfA6JYEvdIkPGTLYtCvkJ+TCVrvTq3kBLoO3P4A76+5vgHgAuUd8uQ+4vQ47lSb75eHuPFOFDmJlWTkCzVtUMfwjjrGHKGb4alL5G1JD5LHIfVKjcDwKbWQgx3LTx86Dz+qe7959/9t7/0pTe6maG/dLRTrZLycXpNZ3pVuXRrNf1FuCMHLdOG0s7pXONPUrTXDvFrliIJtpMUvqC5vs2tJSDPIFUzN0rWUk4SleuzaWGWtMk9/qm02lio4QNAkmmkw/N7vYWQJ5IGyEgjDAIJ32ef39+TTjAynJCVxyT/7vzt6cXV6dJnccAgFW/3PU7Mlq7kM219qmvMKwj/u2t7S2fPrYRCN5qR0zmPXV763Z7i/BJgWto27oWZjZ6uAQgmeHi9cYrp5eOaKKROcoGXHA3l4Hq6Ne0lFmJsosniWs01BB/iM8LP+C3HR4w8As/tNoBDb0DPQRNO30IL12G3LRjUEiLEnu8uqJ85/wjBMyXu/5lY59Gj+h6tEVBFp547/qKpnSzqiEUiToU9uteg2bYGw3TsPZAcNWLGy3ztSY6d8pPyGvafeVj/gR3zsB3o630rwS6ERVuuD1fulNLslgJ41RY33ZDxvuOWbeIp4zBrsVESSQ3P8f1EMu5D71RjO19psTEQbuOdQLOQXNru2zBgpNqss5csGPYtUjIUb/w/khHpbDqhbvPuL0V90n7q2MqLe/NDVdWo5xwcQhvfMlb37T8QqdumM7tPR7AotK4V5Zuu7nrtMzEk4P4A4rO1zQ5TSLPAyLDH1sZKirmKbZCs4jcovj87ffsYJ3G84tYdfq8lUjaqvn7SwsAOX80z2+kca2oYpof5/m7Tk+0E15FdsFXh4KWMO3SLd09gzjDNZrXRu4Wz61/mb1g56/4izifyOC7IPwPSVwMgjtSlf5xkOss/duNdng9oqPNV/s0PNiusQ0tbebWejKuOYdrju9fAMtvZKheWng1P0gLL/D1T4M/AIwsCdY9DQ==$1192$';
+</script>
 </head>
-<body>
-    <span id="source" fid="41"  style="display:none">H4sIAAAAAAAEAL1VUU/bMBB+r9T/cOrDRiWUTNoblEqItRrSxhDtH3DjS2OW2JnPaYTQ/vvOdlLaUgRj0hAPrX333fd9d+emKVyZ+sGqdeHgJBtDcjNbwtw0WgqnjAahJUdoZ9WqccYSnBTO1XSWptI4jS7fhibGrlP4AP09cY7EzzLhqHHAWahSZYy5cI1UhmFtnTzhtW2bUIygEJBkJrmvx8NBmsIXRZECSuCCaMEVCN+vl8AJqAkTWCCGw2/XV7ObxSypJOSqRFA6HNfW3GPmwBrjIDcWKmP9JX+sIv/hYDjQokKqRYZM0tNPboV1KiuRkkUtWo2WhoPH4QD4L2VeE2qqStiH6e4RE8ks5hejPjmkLtnkNdpROoW12aDVFHixXKmC1VFXW6isgLrLBKwUkb9VHB4R2ALPnzo+7MBP3K3aEZ1bUzEB1I5L7tBL9ynXzYotBLFigwX7k5WCCI4xj/Gd+BcM6I9vLbIEJG4BlpJAZBkS+flZYe6N99IPkNLjUBMGEhX4zlyMamPK0XSShrOdwEMVG6NkTyIYwXknvSj/BTzS+Nz3/A1y5ux3bYj7tEHYiLJBOgUqTEug8oM2toKgQhcmniOgarifKja7EmuteLjxPdJDL3sNo2ns7dOkxMERrtsT9pxtbqibFj5wSq+fOxfqWHQND+T0U+71KAeFIP3RPU3c6YF8MCzHtorwtC9ckuF1kioTvvieWjDRpA5ukvb1Xm5gXhrh4KugZU9h2z7Yd+LNTfzBS+d3GpwBIWVgZPFXo8JGxTnlq/BYRG95+ZzrB/8dzZrF/G2vOjxfJZp2WJ5Hqikl74gniPLFOd8o6xpRxjG/lPKuw4l15gFs61fHAvY4jeERfr/DOIsVP15Hvct5z/6He6HOa/5Fnm908C4E/6OJ2w9BjtK8H8pJk6V//dBOllM4O3rDsnkVYMnXjNJk7tmbzD9zjn/m2JI+Pwi57N5fD713cN4nwlYF//8B0Z3DwRcI$738$</span>
-  </body>
 </html>

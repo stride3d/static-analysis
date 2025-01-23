@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"Module.cs","relativePath":"../../../../static-analysis/static-analysis/sources/core/Stride.Core.Design/Module.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/core/Stride.Core.Design/Module.cs","projectName":"Stride.Core.Design","line":"38","statement":"14","debt":"33min","cov":"N/A","issues":[{"line":"14","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class Module</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"14","ruleId":"ND1206","debt":"2min  0s","severity":"0","expl":"The <i>class Module</i> doesn\'t contain any instance field. Since it solely performs processing without managing any state, should it be refactored into a <i>static class</i>?"},{"line":"14","ruleId":"ND1207","debt":"2min  0s","severity":"1","expl":"The <i>class Module</i> is not instantiated in the context of the analyzed code. Should it be declared as a <i>static class</i> or is it a potential candidate for removal?"},{"line":"14","ruleId":"ND1700","debt":"15min","severity":"2","expl":"The <i>class Module</i> is not used within the context of analyzed code and may be a candidate for removal."},{"line":"17","ruleId":"ND1701","debt":"13min","severity":"2","expl":"The <i>method Initialize()</i> is not invoked within the context of analyzed code and may be a candidate for removal."},{"line":"17","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>method Initialize()</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>Module.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAL1Xa2/bNhT9HiD/4cLYIwY82YmzpUi7DkGSYQaWYIuzfSlagJaubbYSqZKUHTfIf98hJb9iJxUaY4YDS7qHPPdx7qVy3xjKlK9Fxo3TxpVOipSj2DZaDcOpcHLCfwk3himK2ouvdbDEPwkl0pmVdvNeFyZm24614XbfGZlwdI7r6IKtHKn2Ko0YWJ0Wbk5zcdoWO90/N/ojx64KcBMMSCqVt3Vf4dpTccbK4cHhMR4kPPDX3W4mPTbWE9xdt89wLa0t2DZO393PtwgrDLh7iUddHB51usEH3MWfl7t1sBlRt+MdtDxhI93ML8ct3+WpX6spToW1lMA4YUtDozNyY6Y38m1pKaN805ZvSaiEpCNpSWlHeTFIZZzOaCKtHCAR1HMUC0UDpkyYT5yQsH4fyyLlxO8QNR5az0Xxy7YojkIUj4PoLIO4fcLdRLNVP8InrZzAHkLNSCqkXsVMQ8lpElFf+hsEBXkwYsnZDLXJLKGgqL2VakRT6ca6cAhKiZF/4DcKFWyRhSUNWUHUhocidig6HiinSYTog6rKNHu3fvtKDk7q5+Dw6zmoalWG7SR89r6FCvu08J0jPQy3QfZfYI41pEv91cASxsamLOjWoEgbTwW0oFw79lSpF0MiE3AScorsZHoi0ufjP+l0tsV/+HPZFyvBH9UOvrDw3BdxM/C1oIO+MzHzEYvtzq8L+GTD+cOtzndrOJ8xRJZQT0mfOvmFD5rrBZzoT/9TGK+2a/CJabLZiM+EsiokIMsREowDNBi8Q59CRkrEofkwVRDFTIe5A+lZy9kAXZoUTOgv/yzHdsqRm+Ue6rvzEQc6kQ3yE+YPnWtlMZpNhfJ4JNRS5fPmkhZNxzIeI6Gf2JZexK6AuOcuyhR5IBtrOODzIGPpkN/3Dx++/+6D/2u3wZrPjByNHR3ETYquL2/pd10olEVqFeoFv3BmIAnaWDoYO5fb03Y70U6xGy6gkTajNv1Ac7sN50w3iYBqhn36cAfCoL4rEqmxrcmj5X7T6TSyJcIGQBTr6GPe3N+DkxfSli4gdSBEjrzKrnq3hAWsrB8KzOHhn73zy+v+ZZQl5I/1+USpDkEyGor1csswC2H0E7X0f39vf68IQ7U/szgBcURmuVaoINqW09cL68oBeoUjm/362G613/AwBSu232ruQ6heheJJxC20g/xD0Sj7kuMPkQ7p16dcibx5DbvY4tGi9e2jNehrnxCFlwabC5xDK8v29+739wifuRhpdbyVpgrhP+/K58ueM++XxrLNqBraEy3Xm3MJXNnQfyCKK8iebGF83YUre2XRhrg2PIJsGO22vvSswtwEu5lFNxXwwHeqHh6U/jajObC1WAJJZFqdY2SNtJFsA8TZZsjVKodPLN6uYiNztE10liRnrlKwndOc61SbZosUT2mtEAvoGnJhbjY93zexdevTdXfBd1yf7/iFfF67tdjWRP7tXEe1yY52wFavcAG5A7Z6ZQvIF7Jhahl5V4uuhL6Q7+9C+JGFcVuLcwl/Ie+/7F++62mmwu6EsZ5uKuxOGOtpp8K+kLH3j0lxxGLE4z+lWryrC54gfygv8YOvf0n6D6jUCwogEA==$1192$';
+</script>
 </head>
-<body>
-    <span id="source" fid="4"  style="display:none">H4sIAAAAAAAEAK2VTYvbMBBA74H8hzmVGBYZNnvq0kPIpjTQLDTe9lJ6UKxxoq0tmZG8aVr63zv+iB2XDZhNTEiE5808WZrIYQhzmx9Ib3ceJnEA4nHxBB9tYZT02hqQRjFhPOlN4S05mOy8z937MFTWG/RJiwpL2xDewTHuOEfhVAmmgqpOpFMdc83IF0pbLku56Ort93vhasJVgIiteM6D8SgM4UG7egqogIVI4HcIq+UTcAIahwIixOrm5+V88RgtRKYg0SmCNtXtnOwzxh7IWg+JJcgslUEeZvX8x6PxqHDabCE6OI+ZmNsstwaNX1mF6X0brR6Mo4RiJbl2mR+7V+NrTFK2cvlXwxGSlqn+Lc8ST4ccef1fkDxS5/gk0wQ+nJuKKMM9ti3xX1K/vOih9+WCGJmhy2WMp2nj0Z/xCPjShjkjU4hT6RzwOhUp1qGGKK/v9f2l0b56WqQfXTAvNryF4Hw5c3ixWkEHToIOPClYXtwUK/kTwRVU7rv0/KUd8DQw26QH4DHhltsGCVU/ddYw6ypOB7FuwInn5bDJpJ5vII7gTZvCLZFZM5cet5Y0ugrxLqjW6tRRLuwDuph0zn8bMVNq5psOdkfN3KaWghswuIfeRrRoj2zDQVD63mSbDtdNr+G7G+67u9BX9u4gW6/J3+66HSy7vYJt2MZV5BVsw7atIi+08alF+tcgXY1e6PtSyPLI4uN2kLPDL/R+47eApWE907BXMQ7rm4a9inFY7zTshcblV0r5FctHvIlxkPc04Yz8bz3kH/78A7yv0bQhCQ==$586$</span>
-  </body>
 </html>

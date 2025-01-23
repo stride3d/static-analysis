@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"GaussianBlurKeys.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Images/GaussianBlur/GaussianBlurKeys.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Images/GaussianBlur/GaussianBlurKeys.cs","projectName":"Stride.Rendering","line":"18","statement":"2","debt":"21min","cov":"N/A","issues":[{"line":"13","ruleId":"ND1802","debt":"0min  30s","severity":"1","expl":"In the context of analyzed code, the <i>field Count</i> can be declared as <i>internal</i>. Doing so <b>improves encapsulation</b> by constraining this field\'s accessibility to the smallest possible scope."},{"line":"15","ruleId":"ND1802","debt":"0min  30s","severity":"1","expl":"In the context of analyzed code, the <i>field VerticalBlur</i> can be declared as <i>internal</i>. Doing so <b>improves encapsulation</b> by constraining this field\'s accessibility to the smallest possible scope."},{"line":"13","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field Count</i> is typed with the <i>class PermutationParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"15","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field VerticalBlur</i> is typed with the <i>class PermutationParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>GaussianBlurKeys.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1WbWvjRhD+bvB/GEybJpCTkguFq+MztEmumF59oTb9UnqwksbWHtKubmcVxw357312ZcdOLm1pKRyFGhl2d96eeWZGq7vBQlc8VTUPhoPvVSuilfmuat0PvJYkl8HxwHGlvL7ha+VLKCVJ+vCIhyR/oYyq1qLl071tXc6Ssllqw+nMO11w8hObgp02y3S3mtRqCcV9BOnzcFQmtmr9Fs7lMFWfBUfj7AfO/Ya6py6hUCEUJKevsA6AuGbjcfAS+4KzuDyttcE2tzfYTdNvsdYiLctg+Mvdg4ezUIW24kkRtC5PX528jACwyz/uvJ3AGdHZSUAnfAMcfh3MseXbpsJyYsiXTLk1nm892QVFin7jAmcFH0fpSI8XmquCLmxr/CjVY8qVoYyp4LxSDspKgpaGFwf7oJLQpUXaJJZG2VjXYOeGhdjkqpE2NJA1ozQbU7YO4cU7pU0w8KUWivG+ElI5qiQ60xWgk7cRj9Sqqlg8NTbIKpzktuFkcH+8o+jrz0PRz+zQaKoKrfEfYeppM33zPFOnJ11rPs/SvCOhmzN62i7A6dcNsl9pX24JAyEidM2ubn1M8lo5zA6IwUwdVP58frD059Hel8oHJ0ETWQxJe6E4QrIluLaFRlgQ7Mkhrq45oXlgKChUrIpAykYSeFy0gpgoZkGlDkMay0lwiRiRxYRQewB9l4W5fvHOacwrIlw7uwRS0LEM6I67gsLM5NylLhE16h1zbRwv2IXi56XVQcc6Km1VhCJ2uFWsTUzoz9v4XyvOJ436f43+Vo1+vX//5Rfvwz9N0enN2ull6ekwP6JkejWnN2j+IlIW4V/g9eF01nrrhA5L7xsZpmlhvWG/eFBNrFumdEBbucRL5KxIoHUU/cyQNYihmW8LbeHWNcnO32q1SqTTkKiQ5Db50Bz1ewB5qaWDgCTbSGZI/MfJnGDARlCLGXdsvJ1cXE1nV0ldUPgaIG02JMUbjpy1PhJUWxeEWNYd/n6v30PNwNlsLbjgkrfafDwPpwZtI40Cs09vxqS7Yvu9u36P8EuBdSRtXSu3Hu+OwkVLrQA83oMjAdIcNXv96BtlkI4jS/tnV4tFwCzF4nbPf/o4wPZ9TJsZ6fr+6T3f6W5ghl/TZuBua+TQwNZU6z+alxGijLu3Ir2mfYkkU17tWUXNw6NI3D+MlVlbjR9N+V/FjBYxaAh33+/hCf39O+lZXs0SCg==$907$';
+</script>
 </head>
-<body>
-    <span id="source" fid="427"  style="display:none">H4sIAAAAAAAEAJ1RvW4bMQzeD7h3IDIU9iIN3dLEQ1K3MJIaQS/oLp94toKTdCUluIei715KbhJnClBBg0B+f6S0hts4zeT2hwSLfglqu36ELzEHa5KLAUywggiJ3C6nSAyLQ0oTX2ptYwqYhheoirTX8AGe+ywcix+tEtSy6nRudL1odilbF0WWJvWqdzweFZ8QXAGqj+ppWraN1vDZ8SkCWhBDJEgHhG+bRxACBkYFHWIt3m9u19turbyFwY0ILtTyRPEJ+wQUY4IhEvhIpSlPf8rfNm2T2YU9dDMn9OrehZ+fSjUYjzyZHiV6GUp9x5JBoGrjzR65bX63DcjRkvWKs/eG5tVr6Q5nhswSfjdLX5L2hMP1xVeTmZ0JN2OmC72qWzqvrYehZGY7/DrT128NXEhIwYzASQbpoR8N8xuZYn/C/otZzpR3srtnEqGxMYwzPCD5nOpGHgzJ4CIu/CtxWcmX5ZDgGs47rLZ4PGNV5GJZF/efXrsYxxX8QBK0GcsE73lWRjUtdn/aRu5fl58I2twC$107$</span>
-  </body>
 </html>

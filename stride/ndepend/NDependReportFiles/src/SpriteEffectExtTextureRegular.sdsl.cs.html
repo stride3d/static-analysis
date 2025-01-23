@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"SpriteEffectExtTextureRegular.sdsl.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Graphics/Shaders/SpriteEffectExtTextureRegular.sdsl.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Graphics/Shaders/SpriteEffectExtTextureRegular.sdsl.cs","projectName":"Stride.Graphics","line":"26","statement":"3","debt":"30min","cov":"N/A","issues":[{"line":"21","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field TextureRegular</i> is typed with the <i>class ObjectParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"22","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field Sampler</i> is typed with the <i>class ObjectParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"23","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field MipLevel</i> is typed with the <i>class ValueParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>SpriteEffectExtTextureRegular.sdsl.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1VbWvbMBD+Hsh/uIWtbJDYfYHBkiywtaWUrW1oSr+MFRTrHGtTJE+S05jS/76T5bhrUroy6D41JET39tybdHfTSYXEUzbHTr8zyY1weJimmLjDpbvApSsMnuOskMxEllsZJbbT7RiUzIkFjpnLyCyK4uZrHUmSHlNMllbYTVoXJkEbo5oJhfHEGcExOjIsz0Ri40nGOBr6f2IkbGq1LNwqkoN+zP53CLnRP0hlVcL7aCSX5IQEu+/p7EPBOSpHjD2iOU6r4/ZcKCITvSDqNP5EZ2FtgbbT/3bTIOz40hcSj7nXOtj5sL1b+Scq+XWHtlOjWVwgpVB6FpG4zCUdLzKEoRiFokAqUHK4n9swFiMQFlyZI4dr4TJwwSiRzFo4m/p8x8xQxg7NFyy3pBtcbM3coDJ1GXPefl44NpXYB+EsVJlbSJiCKcJcc0GuOZCmKZQTc4zgIhNBQSLj4PRKAolWaWGFVsAUh0wo6g8xOQJBkg8hKcsIjpWPMUTXOzOCykwexkbPKFIqycxH1/U6QpGZSjCkb6uomcEqzdxgisaQZZJp4XW0gUxLTgB13D6rOqGoc9u9a9DuczVowua5xJfO/HNn9p6rMyci/0rK8m+tuWSywJfO1J35fnv15vWV/8UxDFnhdG+GCg2J+ajdIuaBBqUdIBeOXFCSfk1BSaPbokxfeZ1KLxTA53XNLDQgMC0hjGII85watRQK9r3mUdDSJgoQurGjsjc+ukBPjlni+cylrPGiS2ELJieu4EJHY5b8ZDOEaGHFskLz5TbYs2wRakPN14moYqKlkS6Dz2G8kXS7Rf2iek1KSzti0JDB6742uM47R99VYqwLVttnnV+vtoewoxPaoDj3N/tO/rmg7Wfg4zpuFAQDH7SiG21zRk1fj6rdumm3gD55MZX0YOp3kzPjBJMQ3sWjW5aeiQ0QNdImmqF7r5UsH5h9wxpstLbfKJ8/1Wx0itfBurF4+27wLw7rMT3x13y0GtqPuLun/xSfG1NkmErN3KgZQw85q4xqxcbJbbtFX/8CfwNm2BrXAgo=$785$';
+</script>
 </head>
-<body>
-    <span id="source" fid="12"  style="display:none">H4sIAAAAAAAEAJ2Sz07jQAzG75HyDubGSpA8QLs98EccdmERQdzdxGkHpjPR2FMSrfbdcZoQ0XaFEFEu883n32dbk+cwxyj+fEWOAgpVizTJc7jy4LwAVUZA1oahNpag8zEw2fqk9+x8j/1d6SuCV2SYILDsoJBgVC/WWFGAW9MaB5e982Zw+ZANCD/Vgaa9Z5xBYwlZNceC1o687MlwRFtIrIzP7rF8wRVBtmXT7mjoKgh0zrglbZwAmX1pdj1lXNXtkDnPj4ZOk8jGraDoWGgzm45D6qUPdKg9kNPJVDi8uAnYrE3Jh/qwiiO5Z2e3qN1uUD6WXcS61tX9PORmw8Wsb9rhhrjBko66SpO/aQL6NXFpTQm6RaVDg0EMWiitrgaKJhiha8WVct3KI7USAz3QKloMv6jjATGSjmmBsPLOdvBn+ayIewzaj1BfOh9hC9in6jwfbZzd0etQPVWc/ph9J7DAjb6ZUKhTU8fTJ3F7/q9kPqGNtBdZW4+y0Nfd/KYt2f+F7YpG4xTyL030fwN/cXIofgM=$105$</span>
-  </body>
 </html>

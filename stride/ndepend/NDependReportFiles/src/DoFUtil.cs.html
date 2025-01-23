@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"DoFUtil.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Images/DepthOfField/DoFUtil.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Images/DepthOfField/DoFUtil.cs","projectName":"Stride.Rendering","line":"35","statement":"8","debt":"6min","cov":"N/A","issues":[{"line":"14","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class DoFUtil</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"14","ruleId":"ND1206","debt":"3min  0s","severity":"0","expl":"The <i>class DoFUtil</i> doesn\'t contain any instance field. Since it solely performs processing without managing any state, should it be refactored into a <i>static class</i>?"},{"line":"14","ruleId":"ND1207","debt":"2min  0s","severity":"1","expl":"The <i>class DoFUtil</i> is not instantiated in the context of the analyzed code. Should it be declared as a <i>static class</i> or is it a potential candidate for removal?"},{"line":"21","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>method GetUniformWeightBlurArray(…)</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>DoFUtil.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAL1V224bNxB9N+B/GAi9WI29a9ltGtiKi8SXwEDqFpWCPhgOQO3OWoy55IbkSlENA/2afli/pIdcKZLWctqnGja8JIczZ86cGd53Cqn4SpTcOeqcmYt3Xqokc53djmUlvJzwr8KPcZYk6edf53GS7Qkt1MxJ93htapuxS1nfSs3pwFuZc/Ib65yt1Lfp8uuyFLcwPOPKj38pLiSrPF1DIUbOqNovUJwdpeL/DF9Z84EzP+en7QkGChFwcvgDvgMOLll7bLzAOudR+HxeSo1VZiZYXKWv8C2dq9l1jq7vFw563wfKa8WXebA66x3sH8b4WGUfl8724YzocD+AczwBDD8L17HkT5UKdw1lSjhHAeOEHRXWlOTHTH150pzMU+yn8oSEzkl6ko608VTVIyUzNaOJdHKkOKFLT5nQNGIqhb3jnIQLjhwLxXnwkHQedr+UxvNNaRzGNNpZ7C+zGD6FNzfs9LcAZbQXcCL0jKQG9TpjKkIFExrIsEBW0A4jmYptYWzpCOWEMBxKR1Ppx6b2yEqL27ARHMUK7pLDiYq0IG3Lhci8sUhdam9IxPSj5BqiA6yf/oWEHzeRcLCRhN5/IGFerSZvLwE6gItFDrzwJ0+miMvYFH/gODNQLg1WM8sZnm1T0o1ZkbEhFKwFVcZzCKWCHHKZIyaBVNBTmolQawQc9FoEvNhMwBNifiyDklGsnN6wf6dlKOXvLG/H/rWq7StrxWzn7z//6i6YWU0LdxtJx8MR6g28kA2S0iKLWoDKQcbMxD4AEc5xOYJo8poJ5Q57FdxpT35WBdMgllYMCIMtmI79QKdGO8wJO7cK9n4MYPMsHl/ZpelYZmNo8Y5dgyLzNaheQJQKzJDLDAAEZmQmPfru5uH911+9D39piqjVzAZWaCfrUnJ1PqQLU2sUShod2xy4MMBAgrGOdsbeV+4oTXPjNfvis2li7G1K39Di3MWhd5gnsOpGPwPAgcxo4OtcGri1VbL0N51OE9dYuGiQZCb5UHW3twDyTLoGAqirwxSNIv35cki4wNoFiTLHzbeXp+dXg/OkzCk8UQt9zycyWYMGCAIs0Zo4DKpo8G9v1bHDBzOHcXy8vkxOjVK4D0OXvGENzWVtk7dSf2zvDdFTj/bGlkWOjWQo3J3D8faWxkvhKoHx034skuax2d66394i/KSgo+/qEmN1drLcGpiSqUajU1HriBOSVTwRQYAmUpCH52rPFHtx3BEXBRJKVrym624XUqO1QdKczcE8AWixfYpEPaSJh0CEfovTEwWMvUjT2IwklAE3RgOgtA3Fiyk0QqMm1AqVbo7VR7eJkgKRL/Fo1nhOT67qcgStBG+iWnnRIBmkRjuY96rOOe9uApH00+iyHceyr612J2HGPJmVw+2F4fJ+M1NoPi8LZYS/vvnCeEIFKKbSXfpYYb6BREPjUSS9luu60UTYsDun4yUd0HeNX9qj3vFj23oVDux7BaVLB60LizQsu1oFa83T+WaMcdO2N5F5PEOw3T/Gv34DBp/PnnXXjVvZhp8mzrW8wfU1oK04D+vLphrz2yumczP8w2+Yif8AZWhKwNsK$1179$';
+</script>
 </head>
-<body>
-    <span id="source" fid="421"  style="display:none">H4sIAAAAAAAEAHVSTW8aMRC9I/EfRjlU0Cjepr0VEqklH0JKORSiHqIczHoWnHrtrT0ORVX/e2e9UNhNskJid/zemzfPk2UwcdXW69WaYJAPQcyuF3DjolWStLMgrWKEJa+XkZwPMFgTVeFzlilHFqn4DxXOrzJ4B/vzwByFn5Rg1DDpzLXROWvOKSrtWNZX4qC32WxEaBAhAUTuxFM17PeyDK50aCygAm6IHmiN8G26ACagDShgjpiKd9PJ9Wx+LUoFhTYI2qZy5d0T5gTeOYLCeSidrw/5tWz893sxaLuC+TYQlqP2p5g4Y5jPwCBu0aLXeRdyp+2vbm2Bv+lFbe1RKi6IhQw/Ax/3e1aWGCqZI6dT5ya+Yz1mDZqWcoWh3/vT7wE/GccxDrEspd9eHkpzVyJE0gaKaJNP8GjwWVoCcikChRWtz1xxVmg0CrAoeCBxpJq1ZbUl9FYayI0MAa7czT3rN2c7M28Y2pcnPChh4NsH6b3cwkbTmi9Q16nDBtPaSeM4G2fZoPZNxOCK5HhpohfQaZW93mtcSS9LqIO8OMl5LenkchbLJe9KrSarAIV3ZdLlleHRYKBtbqJCNXzNhBhnSbLbxyNFb8PlgoXenCowew888Ku45H2FQLxxORTGSXp4hFuk+4b8I3G/8tRfamH2R5BGGR40jpJvLMHCEV+Sbc3aBj1LX1d3cVzAR3jf6MIZnI9eYuOxHcafF5AdBDqE/RgeQzQ12uJmV0w9Hrt4l5In0Iz9MOK/cWOGX09Ph21wZ9r6afo86Eemt4x2+vxtfza3sWMfQXcw/uPfP6RXlqcQBQ==$604$</span>
-  </body>
 </html>

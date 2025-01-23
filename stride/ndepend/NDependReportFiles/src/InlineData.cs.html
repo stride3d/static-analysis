@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"InlineData.cs","relativePath":"../../../../static-analysis/static-analysis/sources/editor/Stride.Core.Assets.Editor/Quantum/NodePresenters/Keys/InlineData.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/editor/Stride.Core.Assets.Editor/Quantum/NodePresenters/Keys/InlineData.cs","projectName":"Stride.Core.Assets.Editor","line":"13","statement":"2","debt":"21min","cov":"N/A","issues":[{"line":"7","ruleId":"ND1804","debt":"0min  30s","severity":"1","expl":"The constant <i>field InlineMember</i> is publicly exposed to other assemblies. This situation can lead to binary compatibility problems because when the constant value gets changed, clients of the library may need to be recompiled to use the updated value."},{"line":"8","ruleId":"ND1804","debt":"0min  30s","severity":"1","expl":"The constant <i>field InlinedProperty</i> is publicly exposed to other assemblies. This situation can lead to binary compatibility problems because when the constant value gets changed, clients of the library may need to be recompiled to use the updated value."},{"line":"9","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field InlineMemberKey</i> is typed with the <i>class PropertyKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"10","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field InlinedPropertyKey</i> is typed with the <i>class PropertyKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>InlineData.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1WbWsjNxD+bvB/GEwbYvBp7ctB75xr4EhSCO35ctjfSg+00tirQytt9RJ3CfnvHWnXjpNc2oPS9kNrbJA0j2aeeUbS+Ha0VhoXvMbRfHRltDJ4wQNnwo8mI4eaB3WD1zxUZGas2H99IIt4wQ3XrVf+6dxGJ9AXKFWwrlgGpySyc+uQvfMeg2eXneVj5CbEulhYidcOPZqAzhc/YuuLx3x46a2OYcfnYl7wf4dI4+xnFKGX7VmfhEz7CDI7oXGihjX5pYWXNJdY5uGsVoamwt7QbFG8o7HyPqIfzX++3Xn4LtUjarySCXQxez19lYnQTPx672xKvgBOpomlxxt0KrQpPk3xt0bTcFUhCGuIjAnwVp2tFWoJXYbvsS7RvS3UGSgPTSy1EroF2mk9SggWbKjQAacsazKiZ7CqCOpViKS7NSC4AY08g0tluGspWt2QsVSayABpV2qsPZQoePQI2woNhENWN1xHhA0JCaLiZoNyAoKiGVqw64zVqnTJd81bMNhxKxEcpmB0ovNC8p7AsZGkvOz8stHdZK/q639CVXntbIMutP8hYd88EvbN9OWXhJ1Nu7P/vKikZXel4elBpbu5kzS0DfHYqlBlYrRLaBITdtIT9EiH09XRJpzmPaHiIW2sY+Ak2xwUaZBvqM9SU861lYqCSiCkiyaoGvuqHNaitySR19GnSnEjoVJGUj0FPSZALilGLhIj/onchzK9Hy8+uKQ9RSCaG8drEmOT2E0SRuWiCewS95k1d53wjcM1Okc7RWVVwlgHldWSHPS8U1Z9Qg8qM5v+vaWRB5L/X52vq84vd5++/eZT+hUFnNumdWpTBTgWY2CLyxX8YKOR3TOQ6J9bQy2njNRiPBxXITR+XhTSBoNhvYcy6zYFHMHO7nObOpGMUOPsZ0lZkzCwDFEqS25dw+79bbdb5juEzwAmLPvcjIcDInmhfEeBkoxZzJT4+6sVPSACjadaLLFT46er88vF8pLVEtJ/DVCmFyn3UHDWhixQTf2TjDSsO/7DgaEG6xtOCj7bY1nft9nDvs1S3x4ObocDoE/34EJ/Wruzd9/TO0wPPYDnxCHlSWU7fHfge0jM7Pr4cHV8+jUe9tfjsZO94Qt+euKODrU11DcOr1hprT57/Cwm57h9intAeJLv5Z5AkmL8F4IfXvw/ib+H/hGFu+GAvulS/A67FhF3pQo=$896$';
+</script>
 </head>
-<body>
-    <span id="source" fid="210"  style="display:none">H4sIAAAAAAAEAKWQ20rDQBCG7wN5h7mSBmRz4Z0nEK1Q1KLUF9hmp+1KsrPsTChBfHcnaa31gAqGvQgz3/7zzZYlXFLskl+uBEZVAWY6foRraoOz4imADU6JIMnPW6HEMFqJRD4uS0cSUBY71FBalnAAb33WOw6PnFGqGHJmvvaVZs6kdZ40NkXznrderw1vCB4AU5F5ikWelSVced4ooAMdiAlkhXA3eQS9gIHRwAxxKN5OLsfT2dg0Dha+RvBhKMdET1gJJCKBBSVoKPVN/W02/nkWbIMcbYWq2MsbVURzwYzCZuy8PoB5aG2QtjFTcnifkDEIJjY32HGePecZ6BfbuWoBiwZXUNWWGSah9gGvrNgNs0X38GFx6PcMyy1+h81cdz2D3owWo/1qcfKXBHefKGKS7nPIrvFNzlY8oXUU6g7eUF3ydE5Un3/Q02ofjuuv3AfhQ5Auvgv0T1H8Y7jba/wyf4f+pPCSZ3peAYvcsMoRAw==$139$</span>
-  </body>
 </html>

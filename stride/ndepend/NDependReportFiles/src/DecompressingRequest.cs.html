@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"DecompressingRequest.cs","relativePath":"../../../../static-analysis/static-analysis/sources/tools/Stride.TextureConverter/Backend/Requests/DecompressingRequest.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/tools/Stride.TextureConverter/Backend/Requests/DecompressingRequest.cs","projectName":"Stride.TextureConverter","line":"34","statement":"7","debt":"1min  30s","cov":"N/A","issues":[{"line":"11","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class DecompressingRequest</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"18","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>getter of DecompressedFormat</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."},{"line":"25","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>constructor of DecompressingRequest</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>DecompressingRequest.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAOVWbW8iNxD+jsR/GKG2AindhUubQ4RQJUeSQ2rRCeinqhcZ7wC+7Np7Hi+ERvz3jneXAAk5pVLVL10R4p0ZP/PMi8c81mYqxqFIsNap9VGaJLVIpPR8hF8zJBdIqp3ULMbCqSV+Em7BhkEQPn3IsUb+KLSI16To5bvJrEQKnTExhWNnVYTBBB9cZvGD0Uu0Dm14JeQ96igsvVL4OhcxJRNnbsul3wnFf08iteYLSlcm7hVAtouV9ganP/Hak8IEtWPBe36PcOqXrURpgNOmh5VmyZJheMlrRcT+ap0/HrcorZYvRRbjIPJW/da75mnOhd/k1x1icw+RkLkot/bb+RUf0tjvNSBjQQQRK5dIMLMmAbdA6KpeoTkWezdUPRA6AuVAEWjjIM2msZLxGpaK1DTGAAYOpNAwRUiEvccIBHlUQhFj5BGC2uZkF1P7WUzt5vt/EFNzF9OkYD9Hx6kHM9uLAKMbYxNR8Fc+ao7RPlErYsiV08yBxUQoTaC0kNLHz2FxOGuTB068iTCZcshRhuBMLksZTjtw69Sbcsae+1CaWXE75gkAbhHijrGllbd3CyaWoFuYY1tOYLVQcsEpvedq5Syky0QMW4oq5oQAScMEfEKUVO4g0e9+/pcTLTkGZzPpzLNsP+uX/1W+/9x8/v67z/4vDNlrurZqvnBQlw0IhtcTuDGZjng2GZ2fI+bFo4OTYCxBfeFcSp0wjIzT6GZPpoGx8xB+gK2e8nFzGgVs1chxxkyH6wFjl0XKMKxNgx3earUKqLCg3CCQJviSNqoVJtlXVFDg1LFDzpEfA78NJsAbUBOf6DFiLvx18OF6OL4Okgj8rcEFy8XlLARreB7MuBsSY71ylp85z79aqVYy3xdQTspbK1LOL517jeYhSqmQCK/M0WA7kKuVx2oF+AmZeJeyhCfMurcTlXa+SaKndgQBrgBkTqwZtW/bV+3L9h5SeAi1bQR4fRJCBwblsthTEvNP0d5gmLwPZ8tq4ns1/3oEHlL8bZFZ6X19cODrHDaw8RnaIh8Jeyv2h7JIuD+MvizR3vgDbiQRPAMKXyKV1D+pB4yLkXlkihb8z7nuask3GpB/eSvPgVZOiVj9hb4wGlecbb4YNVe/5N0lbjdpcXZx9AdJDcJeUZg3xJPLeVaIBHyXXfClOh7Np7XeQEdKevKqcKp0ypNIJWKOfmDx/UWj26tC0A1zhG/BpruEeWyPlYvKkgQvIcpMH4uwPuVfKVAwPTmoxZ4buNjXBEOjsbFD3+vGvKFnUN/bGwzoY39UbzQOrfxzpNqHjkats9vW2VXr7LJ1dncTG+HOD1EwJnwjbhEi/HLooDyed78PWXCXW3S+YbHnflMs+R9//Az+GyqCVZbeCg==$1030$';
+</script>
 </head>
-<body>
-    <span id="source" fid="73"  style="display:none">H4sIAAAAAAAEAI2TbW/aMBDH3yPxHU68mECaHKFJCBXo1JaHIW1oAva6MskBrhLbs53SruK79xyHkqyoqhUF5+78u//dmSiCO6WfjdjtHbTjDrDFZA1TlcuEO6EkcJlQhHRGbHKnjIX23jltr6IoUU6i276FMmV2EXyBk9/SmQS/JYyiOgVnJVIRE3Pl8kQowhrNzrzD4cBsiLBFAIsVe9CdZiOKYCxskIAJUEI04PYIv+ZroAMoLTJYIRbGn/O7yWI1YVkCW5EiCFmYtVEPGDswSjnYKgOZMt5J2yzobzaajdwKuSOBXjqbGa73IrYD75E8Q6t5jCfvGp9cbpCa84jGoWFL/JujdbbZeGk2gFZEwoc2zzJunq/PpjIOnIIEY5Vpg9YCBxeApIk8y/6sf9u/6VdIUR1FYWgkTyFOOZ0fv6GoglOKK5iX23CmFOaXzjfUOlAk3pdzUrV+1gjF6wV26OhtkFTJqp/Vcg3gCEffoRP5Qtkn85oGERoOaluM5dwBmixdJM7+A0XvSaX03+IJ02mgjSuY0lToH9DcxSN3CNZ/fFbnXAoneCr+oR+MxAN12zouafql7qGl6xYb3I5alzrfgug6DOYT9RR2zQ3PwN+yUUvY1XK3aV3PZSJiL16EpELq3IHI+I72pEyCXc5ug2EYFYSPsPrcMM/2rMJUjoS9R5SdvlRhe6NUCkHp19osKmlgVPWwhZLYOdMrt7G40FtoV86yuf0xXrY7nXqUXxemXU+07PZm3d5tt3fT7d1PU8XdoE7B1OInuaFE+F5PUP497/8syHBfRFx9EFFJfwxb+qHnFWU1D1WABQ==$610$</span>
-  </body>
 </html>

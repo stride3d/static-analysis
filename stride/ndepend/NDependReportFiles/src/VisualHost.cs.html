@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"VisualHost.cs","relativePath":"../../../../static-analysis/static-analysis/sources/presentation/Stride.Core.Presentation.Wpf/Drawing/VisualHost.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/presentation/Stride.Core.Presentation.Wpf/Drawing/VisualHost.cs","projectName":"Stride.Core.Presentation.Wpf","line":"44","statement":"9","debt":"24min","cov":"N/A","issues":[{"line":"12","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class VisualHost</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"16","ruleId":"ND1701","debt":"10min","severity":"1","expl":"The <i>constructor of VisualHost</i> is not invoked within the context of analyzed code and may be a candidate for removal."},{"line":"31","ruleId":"ND1701","debt":"10min","severity":"1","expl":"The <i>method AddChildren(…)</i> is not invoked within the context of analyzed code and may be a candidate for removal."},{"line":"12","ruleId":"ND1803","debt":"3min  0s","severity":"0","expl":"The <i>class VisualHost</i> is only used by the <i>class CanvasRenderer</i> and seems to be an implementation detail of it. Consider declaring this type as <i>private</i> and <i>nested</i> into its parent type. Doing so <b>improves encapsulation</b> by constraining this type\'s accessibility to the smallest possible scope."},{"line":"24","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>method AddChild(…)</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>VisualHost.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAL1W224bNxB9N+B/GAi9SIC76xuQ1pEFBLaTGmiMoA6ahyABKO7IYrxLbjlcKWpgoF/TD+uX9JCru+yieakgQ7sk53LOnBn6S2dkSr5RFXfOOr8ZaVT5s5OQaekcdDyXKpgJv1FhjO0sy5dfCdjRPyirypkY2X13jdcsee1Z2MZNZ/Pb4E3B2YXznL1Z28je1aP80qupsXf5dhJqKK5swiKJy7Nc/Y/Ra+8+sQ5zgv7NBQ6XxsZTp6d4jilxhQNY+AnvBQ/j49FpZSxetZvg7SZ/gWcj0rB0zt5/WXg4Oo7sNyVfF/HU5dHx4UlKBm/695W3QzgjOjmMmQpP2Jswi+Z45c91GW0d6VKJUIHNCQuNvKsojJn6ZtDurCD3czMgZQsygYyQdYHqZlgaXc5oYsQMS87oOpBWloZMlfL3XJCS6EtYlVxED1nn4WCJ5ORoC8mzw6PHkBwdtrw8juJtm2/FYewKelEUF2NTFp5t9+8//+qltOf5GjtxMampCWNwE4FqZwN/DuRGlATyB7a1KzghrdQsQlERU2EK1IxGzpPnyk1UuQFlpyg/Pl6Uk1SU7Zoc7qB5lH3AcBZ0N4Ish7PNSl0oO1HyK1sUk/2yWsJcCQWXgFgyVV0m5SVpovBBmTKiNyGjC2cFEvZYhk8PySMEgoZZzfNK1hAKeFi6x5JlCW1xQTACmSBUK/AfkmFGly56Ekf94QDxvYtSY6tVLU2Z8ujnw0EEhGpI8MrYjdDfCymNjoXGTAnCIpoIXSpVlghOtZOkPxLtEHC9LsenO3V59hXNsluYLZltaKylban6tj3S5rAJUTZAJiBpgQYZD3nmUk8BowhXQ5S3aJh2ecTRyMpWDDDOHsJNvfVkAedJ75oc0HRs9BhKv0dNUhY6QHJbhCdeKRJhNITSefjw8PHbbz7GvzxH1Hrmzd04UFf3KLu5eksvXWOLVmJRJcgLwxEkOC/UHYdQy1meFy5YDqPl0cz5u5y+o8W+pIF6UmQ41Ut+bpEONEK3oSmMg1tfZyt/0+k0k/aEpAOZdtmnure/hyQvjbQpgLom9kiS0OvrtwQDtgKd3jKnxV+uL65ubq+yqqB4/9F8VMynPXmHURLnQIVJj008Vm3++3uNRM5vZ+iICjcB5KnjjmSv2EJT+vnWkXfGFm4qTyxnr7kwCpv7exZ3jNRKMz15zcxvqf29L/t7hE8O1H1pKkzi2WC19Ab9BweoNI0xWGLUPoYEac+j885Lj0BT5++v2jHRyQcJK2bgEk0cF2sm7ZDCwWwtbr4ZeKE52p5rdEbbIVuLOYj4mc8cNJAq0vxrzVf0kp5P/ETV0iy131qsbm+1ueY+fhYO6JwsT3cCdGMX9Z6vbB5Wj6unBNzYcRwehdP5YB2CC3AF7WH4+VjASMkizjz4BToh0PlgmU2WVh4DFY2XI6j10lo9DdFzaPyKqgzm3dZkE9dOrIkzm9fq9ZVtKvYK86vfxh7E/wDwK0+Hh4hYYdJ0J8q3ScS+WmTT2zy8Zbteocfz3qrJBoyvK8uczFcc1orTjXyjJ/nzf+b3fTr+YVcz+ME3js5/ABXWq0JfCw==$1180$';
+</script>
 </head>
-<body>
-    <span id="source" fid="141"  style="display:none">H4sIAAAAAAAEAJVTwYrbMBC9B/IPwx6KfZEPve0mgZLNbgPdZSFLeyg9KNIk1taWzEi2G0r/vWM7iZ1kA60wWIzmvTdvRkoSmLtiR2abBohUDOJ58QoPrrRaBuMsSKs5wwYy6zI48hClIRT+Nkm0CxbD5pgqHG0T+ACHc88YjR+14Ky45VmZzCjmXIVSG8e0VIier65r4bsM3yYI5cRbEY9HSQL3xncloAYWRIKQIjwtX4EBaD0KWCG2wS/L+eJ5tRC5ho3JEIxtwwW5N1QByLkAG0eQO2oOeZt39Y9HpTd2C6udD5iLucsyBvCJF49okYy6O0v5Zqx2tb8SFk+ojeTD8cjKHH0hFbL3pitMTiheCD3a0Knfk6yZYzz6PR4Br4RdT3yZ55J2sz70Qq5iAg8SUudDozrx7FwRbqY3D8RCtaOfiwxzpr5JZq1XCeroBtxmCPlqfCkzThQD3eRU2NiAZGUGKpPeQwf5zPJwC+eSHWJvolkFmUoGBEKpnc12e3jfXlCpyTShbVt1hJVrHu1AK4r7wwF9sw4EMAWL9YVAFFLj47se86ff9rvWuLEpDzpop5LZ0IILTMV3z1VIzQCblhx09uJzfgkBprNjNaKNvGeqAX/SukVGHUuHum6RMJTUt0owPOogp74utCpn9FGMkdFyYcscSa4znHTaM6jav78uz5cIpUohqiR1RTTv6lBNfJp8hh1O6P26z2ZyYuP/xrJv5iOGwXCipt/8JvHXP/f3e5v+4/LO8I+/v5896fM3BQ==$568$</span>
-  </body>
 </html>

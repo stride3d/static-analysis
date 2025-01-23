@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"GestureConfigLongPress.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Input/Gestures/GestureConfigLongPress.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Input/Gestures/GestureConfigLongPress.cs","projectName":"Stride.Input","line":"71","statement":"14","debt":"4min  0s","cov":"N/A","issues":[{"line":"11","ruleId":"ND1207","debt":"2min  0s","severity":"1","expl":"The <i>class GestureConfigLongPress</i> is not instantiated in the context of the analyzed code. Should it be declared as a <i>static class</i> or is it a potential candidate for removal?"},{"line":"29","ruleId":"CA1507","debt":"1min  0s","severity":"2","expl":"Use nameof in place of string literal \'value\'"},{"line":"28","ruleId":"CA1512","debt":"1min  0s","severity":"2","expl":"Use \'ArgumentOutOfRangeException.ThrowIfNegative\' instead of explicitly throwing a new exception instance"}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>GestureConfigLongPress.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAMVXa2/bNhT9HiD/gTC2xQYyKc5adEvcDFmSFgZap4i9T8MK0NKVzFYiVZJK4gb57zukpEh+JA0KFDMcmI/L+zj33EvmrpeIjCY8p95R7y0ZW2o6UzIR6Tsl0w+ajAki09vvacq4Fdf0gdsFRIMgfPgai53oVy55tjTCbM5VqSMyIclUSAqnVouYgrEsShvWJk34lG0+NyorbWP7/CjkP95oodUnimwNTfc8NjPoxOqrIcbOMuUkLRaGL7AQ09yNX+RCMnbgdEXqGguT8BRjYUxJpnf0z12jZei06DKjceykzoeHB6+8A5hFX1qFh61CQ9ekhV2605jSbZFhOFsQG4mTKOPGsO2xjUJxwoRhUlkmJFyXVsD9GBNmcTxS0tKtZSrxUw/nV2xHCtGz6UKVGWQtmxOLCYY09rhh3NmtUsC8eW9HaWcK0pwVypIzlbGIy1jEsMkS7GvK1TXP/uzd7z/gcfhHF4+z0+HLFg+dtXgMt+Jx2OLxtyEmkT8EA8ki4xG5wAxyKVOWCUsaDu3Bfkl7Kx78vu7B8PC7Pdg71Wnp+HFZ2svkisuULm4jKqxQMpgttLoZJxNKfXXt+aQQj52fToeIhM2WyAXEnNOcSbrBTn2+zmFEvft/7z/+/NNH9xeG7EwVSy3ShWX9aMCCycWMvVGlBOzuEDIACQkY5qVV2rD+wtrCHIVhrKwkmzyIBkqnIfuFNfvGl8FvcQCpgdczFfAROqe2jIWCWl0Erb6bm5vAVBLGCwSRCj4Vg90dOHkuTOUCOASDpD3l3o9nSE1E0jjCEfnFd+Ozi8n0Ishj5vpVw9a6RplWoLOjU66028Qwr/zf3SmNw226BKz58e7O7o5jhCkcF7pFvbtzt7vD8Anh2ciUec718qRdquqo1BWCVYl5z1BZzJcWS+u2EnQUhZuaRuA815/NySnLmrJszrrqcLUVqbxQhjwNhqwJLEEkpE0wChsVldainAMxZohnrlSfKH92tLpRna8jfyT6Ztl1F18qKNoCysDoCoKc34q8zFksKi6CpJWnPhqruTSZq/e49HXnjrSB86jO04oH4XYXRi3xI03J694TpdU7aR1eoEVZ5YAFqsIVGjB80PUtI2MJLSK+LKjKfteEFkAcqnMVi2TZtNAOU3iCLuN6oPNhTiRZotVX/MwraeOJ+ZQ7q7lulv9agufwj5sKUzRaH+u+11oaGOVZpm4MMzkGcPDaX1Kmae01mdazwgp/BW4YQ7d/0hhKbi5i5FMuO7a2K1/nb4fDSaa4Ze8rRs1q6gCU85pb7YEOad0nJcvuwExwWzaM9OfPjT1m96vChuzqwpoy9zlbUPR5ouwbn67+wPeOdSGRsH5FsRE7GGzuu4/v3b5tP8HWfs+r6W03sxYPe13Bf7wq2QmyMyy0uPa3rUd2HZmutW/UvhU5tfmuS2qh8B5wfKgrXlWN2YAs4DgE0GLTtG7tdZP73mL//+qwJucMCEwL9LQr+lIKPH18C3Orz6OlXj/244i5Yeq7OPMQ8KbnzyTOGZqGdTdCTAkvM8vebV553TwF7JnkaDrIFLzLmm7mXyRDoAid8TM7zvaLsj94NKWnxqjIP5rro7Nl4eDtzIIHPRvJaagzKfM56cvkTd2GX7Ph8XbJbgqbhARIfj71YZr+QfDq5WDt8OMdFFoOgoPD5Hgl8+1E4B8AjWc/QxPX7n3UBHYFc6kUXwFzldV2YZwXWb9qMFXlXzmTj0NY14PriRvK2xS4e2Z/ReHxBlvxg6979f4HlT9uHcoO$1326$';
+</script>
 </head>
-<body>
-    <span id="source" fid="29"  style="display:none">H4sIAAAAAAAEAMVWbWvbOhT+Hsh/OPTDSGDY7R3jwpIWur5cAl17afIHFOvY0WZJniQ3y8b++z2y7NiO064MLjMB2/I5z3l5Hh0ljuFKFzsjso2DSTKF6P5mBbe6VJw5oRUwxclCOSPWpdPGwmTjXGE/xDHXTqFL96aRNlkMb6D5bsmH4zsekdW0wlmKXCSEuXQlF5pgTRG1eNvtNrLBwlYGUaKjz8V0PIpjuBY2pIAcKCAacBuET4sVkAMqixEsEavFu8XVzf3yJpIcUpEjCFUtF0Z/xsSB0dpBqg1IbfxHepQh//GotEJlsNxZh3I2Ho1Hikm0BUuQcvbVRAtVlG48+jEeAV0xZTa3pZTM7C7aJepXKrLShA4mObM2ZKYJ/V+D9Joh1UhPUQcoHiLNDdLKF3txCTk593whYQrWdNOy0Jb6olM4g6awlCpBY6N53EAE1KJcU8fAIsvJJeT2TwAMad/t43zofwj+deXPVN8sr6jaJ5aXCAYLAkPlQgsk+yZkKYETn0xRX1mdaVWNM0zZnDkEXhpPhXdpC2dJzVMvg/h4CnP8lmARGDCYnp9cmqyUlMhD6R7SR0ZBbxqLk4s24Q2jTLVvLHVVOPGE1MM91q+CLBShCP5QYGC/G8II6jhBS81FuqtqS3pKYamjRghX5bBGVJAa/Z1u62BtK2G+lE6f62b54450TvkxG3oqbKj1bYVaWgrK8lxvLVhJD5TgE8qKMpKUN6nFdMgKeGptNAjG8eVgtOXWghOfateJdRz8UL8dDae5Zg4+BUWtaulQU65rbbUOHdH6K0MHP0iZpG3VKLLyv7ZuBj/7xhZdf+EAzF9XG0y+3Gt3W9E1mVaz49BIpDAJEpvD6XT43V9uY/QWFG7hBbVOTiqYk+NhDuqB89D+Wd+yU2TnsTDiye++0NnDznSj/WLvOyGx5bveUhudc/B6qHe8DoPZklhI42RAIzbL6tFeD7nf3ex/bh/W4lxRB5YFzbRH/FoKg7waYX71dbI0h27/nzAHoX5LM/uCh5m/UjhXNDScPxE4pqzMHdwNj7wuTxG8UhzNBFmS7vJmmlX/SM6oi4TJXzlxjh+Uk+mzlF5aqxNBVfHadbUrfHs7b9EeZ0BOI537Uq7RPKS39Rg+h7PZccsuhQ0hEZEvl1WZdnIa/f1+euD8/AQllNPo9K901mO+fRGKNopiOdAQN/7/UVPYI4XLlPhObQ6stgsLWeSTMGDCzn/0IZ9vYb0f/EwcgLcU+HPmbQ9wNlAr3ej3Hw7LVZzyCg==$946$</span>
-  </body>
 </html>

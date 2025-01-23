@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"SessionData.cs","relativePath":"../../../../static-analysis/static-analysis/sources/editor/Stride.Core.Assets.Editor/Quantum/NodePresenters/Keys/SessionData.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/editor/Stride.Core.Assets.Editor/Quantum/NodePresenters/Keys/SessionData.cs","projectName":"Stride.Core.Assets.Editor","line":"16","statement":"2","debt":"21min","cov":"N/A","issues":[{"line":"9","ruleId":"ND1804","debt":"0min  30s","severity":"1","expl":"The constant <i>field Session</i> is publicly exposed to other assemblies. This situation can lead to binary compatibility problems because when the constant value gets changed, clients of the library may need to be recompiled to use the updated value."},{"line":"10","ruleId":"ND1804","debt":"0min  30s","severity":"1","expl":"The constant <i>field DynamicThumbnail</i> is publicly exposed to other assemblies. This situation can lead to binary compatibility problems because when the constant value gets changed, clients of the library may need to be recompiled to use the updated value."},{"line":"12","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field SessionKey</i> is typed with the <i>class PropertyKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"13","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field DynamicThumbnailKey</i> is typed with the <i>class PropertyKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>SessionData.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1WXWtjNxB9N/g/DKYNMXh17aSUrpMGljiF0K43xaYvpQu60thXi650q4+4JuS/d6R7nTjOB31Z+tAaGyTN0cyZM5LGd4OV0jjnNQ6mgwV6r6yZ8cCZ8IPRwKHmQd3iDQ8V2RkrHr4+kEW844brrVf++dxGJ9AXKFWwrlgEpySyS+uQffAeg2dXreXXyE2IdTG3Em8cejQBnS9+xq0vnhHipbc6hh2h2bTg/xKTxtkvKMJOudecElIrkyCT72mcuGFNjmnhhOYSyzyc1MrQVNhbms2LDzRW3kf0g+nvdzsP71NFosZrmUCzyQ/j7zIRmok/H52NyRfA6Tix9HiLToVtik9T/KvRNFxWCMIaImMCnKuLlUItoUvxvFAXoDw0sdRK6C3QJutRQrBgQ4UOOCVYkxE9g2VFUK9CJM2tAcENaOQZXCrD3ZYC1Q0ZS6WJB5BspcbaQ4mCR4+wqdBA2Cd0y3VEWJOGICpu1ihHICiaoQW7ylitSpd813wLBltuJYLDFIzOc15I3hM4NpJEl61fNrgfPQg6GX9dRWdbw2slllWsS8OV/i9Je3Ig7fvxyUvSTsbtyX9dVlKzvdHw5JjSrdzJGbYNcdioUGVStEFoEhJunG3QhS1Bj3Q4Wx6tw1neEyoe0sY6Bk6STUFR/vlq+iwz5VtbqSieBEK6aIKqsavIfh06SxJ4FRMr4EZCpYykWgp6RoBcUoxcIAbXJpH7VKaH490nl3SnCERz7XhNOqwTu1HCqFwwgW3OPrPmrhW9cbhC52inqKxKGOugslqSg453yqpL6GlVTr9WVQ6P+v/l+cfl+eP+87fffE6/ooBL22ydWlcBjsUQ2PxqCT/ZaGT7BiT6l9ZQsykjNRcPx1UIjZ8WhbTBYFg9QJl16wKOYGf3uUGdSkaoYfazoKxJGFiEKJUlt65hj/42mw3zLcJnABOWfWmG/R6RnCnfUqAkYxYzJf7xekmvh0DjqRYLbNX45fryar64YrWE9EcDlOlEyt0TnLUhC1RT5yQjDeuWf79HFSPFXu2s7DeFm49URH3W7/V7dPzQN5z0fn1H1+DZ0wbPUoPv9+76PaBP+zZDd7jbk7rX/FtQh93DZ50gyZI4t3j4ERIruzruFoZnb+87vESPDg4tw5zzga+Os6PTbw11l70Ldt4xeNDsYu8dTWFw8zZ8l8IoX+fHlJImwxfyeotLaS3Ff+HFeIFIxj5L/00W9/0efdN9+htC20XZ3Qo=$929$';
+</script>
 </head>
-<body>
-    <span id="source" fid="214"  style="display:none">H4sIAAAAAAAEAH2QQWvjQAyF7wb/B52WGJbxobd2d2FpUihtQ5eEvU88SjLFHg0jGWPK/veV7aQtabGZg5Genr6nsoRbin3yh6PAoirArFdbuKM2OCueAtjgVBEk+V0rlBgWR5HI12XpSALK/k1qKB1K+AbnPuuMwytnVFWMPhtf+0o9N9I6T2qbonn367rO8KTgUWAqMi+xyLOyhKXnCQEd6EJMIEeEp/st6AAGRgMbxLH4eH+7Wm9WpnGw9zWCD2M5JnrBSiARCewpQUNpaOpvM/HnWcs+HBRvADeKh+Y3MwqblfMa3vz12D2Rw/omz/Is2AY52gpnJv60NkjbmLVOPSdkDIKJzQP2nGeveQb6xXanIYBFMSqoasusYZiVaWnFTqKT9oN+vBMMZxmYJz38hIGK9otTobiZn1v2qvfV9tg2u2B9/W5w2SnGzBdeJ+aE1lGoe3hOFDFJr/l+nAjebvbrDKnNYQ128/JzhO8gffwQabhJ8UWuOZYdke6/jPQ1yKj9FH+W4l+e6fsPAOYLLUwD$107$</span>
-  </body>
 </html>

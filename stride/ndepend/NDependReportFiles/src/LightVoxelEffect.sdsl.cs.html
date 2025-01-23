@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"LightVoxelEffect.sdsl.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Voxels/Voxels/Light/LightVoxelEffect.sdsl.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Voxels/Voxels/Light/LightVoxelEffect.sdsl.cs","projectName":"Stride.Voxels","line":"76","statement":"23","debt":"22min","cov":"N/A","issues":[{"line":"23","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class ShaderMixins+LightVoxelEffect</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"23","ruleId":"ND1306","debt":"6min","severity":"1","expl":"The <i>nested class ShaderMixins+LightVoxelEffect</i> is declared as <i>internal</i> and is accessed outside its parent type by the <i>class ModuleInitializer</i>. Typically, types are nested to encapsulate private implementation details. Consider making it <i>private</i> or non-nested."},{"line":"68","ruleId":"ND1701","debt":"13min","severity":"1","expl":"The <i>method __Initialize__()</i> is not invoked within the context of analyzed code and may be a candidate for removal."},{"line":"68","ruleId":"ND2007","debt":"3min  0s","severity":"1","expl":"The <i>method __Initialize__()\'s name</i> should begin with an uppercase letter."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>LightVoxelEffect.sdsl.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAN1YbU8jNxD+jsR/mItaNVHDJhAJKuCQOKgQajmhA/XL6Q45u5PEPa+9tb0he4j/3hlvXneTNOpJbdVVUNZjz8wzM4/HDi+NgVT4XqTYOG38Kocj/5uZoPp5MMDYRy5xKopdo92wqISXY7wXfkQro6gz/zhPM/GB0EIVTrr62OQ2RtdBPZQaOw/eygSj4MZ1pl/Bc2eLf9F3RuV+5v/6tCP+GceZNb+TZJqhFRs0q8gwiU+O6Z3dY4rak+CoR4IE++H9KJWahrEZ0+h955LepXM5usbpx5eZiaBhc4W3Ca+6Pjzq9oJ7GsV/LKx1yRhAr8veHY7RSl+Q+JCGOMkU6xqIlXAOEpoco4OBNSn4EcK5vChnHkaCJu/kRGr3YzX48468AKETkB6kA208ZHlfyVgVMJZO9hVGcOshFhr6CKmwXzAB4di8Q6EwYQtR47W9Obhe93hdcMdlptbH9VhGoNF58rdrIJLzQIvtHKPUHi1xZBGnAxETURwtMbl3VGGK3UFGStqDLzKEfrGawTuTcDhaeimU/Io2xAyPRSZjoVTRDmpk2CJMEXsDqGORuZy2EkJGxeFvmWYq0IbIazSB9UIqF8GV0YzEUoK/SD3kapD3qVbAbiwVRx+U5lfyffxTJd8n3cN1+T7s7ZDwFP3IJPD0tIj26anZmmWX+SH12DAJnqUfET05U7GhNE88mAGEDfmVa2Yos5zxVBRMHcEcSmTCaRhQNBZTMxZqayhH3e7JulB6YV9s2Rbbo/mBAqEtHoJyI5OrhABS2wghEWbIswxtLByCQk8EIpCfXj9//91n/ut04Fzk3hwMUaOlcJKL/T0SXpuQHkyoeJQZ2orUbKGgvuRQDd7wmrDukedCdp6Jo3MjzLqy40yJDoHpRA2S3JSrjI1KE2aux1SZ+WgDsYtR0wbxREyYdTDpcqEefJ5IE92L+IsYIkRjJyfBGhfJ4oETYwzVJMqbWAZM1BsHk9LneacW9P5e7pitDwWRMj2bD0uvV8ZiVfYBNTcqPaxO3FiRjWTsqvIyFTUx247u6HjAlI+Bxfy7nLqBhbdVu1E5cbYEuoIouhZebMQbhX7Dfpg5LhMx1teUJ0X5dXO7v/eyvwf0zHoQlGcWtxom45quVq6fqq2orupUmx/AKdwuGXqXS0XvCztLJvkpWzyMjUxm1MLmkv5DOEwh5ff2MsKr6UafbvjWqtmKF36mC6Og3ZwaXLp7lLYbrbO6qhxAc6Z+g/5eWJE2q5q/YOGiRA4GucM7YeMR2ha8eQs6V6pVt/nC9a8KN0CfPWNhqYME6I/myqSZcdRFiGJ/C9yaQFcdubxfbnwKAp+hVpXmNhMzSPe5G5VQJR8088Svgmm0l/ztYras4kKnvSYxO8Ez2TK6TSqvdfEa0e48cRnGdB7b/yZRquj+XaZU0PyPqRIivPTUzPv0m8OFWsyHD4JvbNb9BVfWQaJLDop41ORiCbJHzbzOhN2ct7awcXMKt1CVn410bTLabbVZaH8TBfnZQMNLa0Ux52ItITuzcdnFtzJyBe5urORnDQ03iCui12ptP9Z+h3xaXVC9aITzvXr5rVpdw5KlMt7RfX5IF+APdD+mS55t1v5vQLXg0lfFzVY1KUvhTV/piz58p/4TeRsgipoQ$1230$';
+</script>
 </head>
-<body>
-    <span id="source" fid="73"  style="display:none">H4sIAAAAAAAEAN1WTW/aQBC9I/EfJpyMRMy9SSolpEJRixSVKJeqsgZ7DKsuXmt3TaBR/ntnbT7MGihqDq26QvJ6PPPmzczD3n4frrGw6nJKGWm0lHxst/p9uFeQKQuUCAt2JgykQhKsVKENyfTC+ZR+T+5ZrBKCFzSwBYHJCsZWC7aPZ5iQhpFYigwGznNYeSkdVhBqGwecbZOjB7kkNGzLjEUp13jhszAFyrEtEqHCR4x/4JQgXBixLNEwS0DTpcEFMXECNEbFouQUmiRdVjmv+42i263CiGwK45WxNL/a3lZZB0qTb/tKGVfGBv/BUGM+E7Hx7VUrGmaHHY6Q2c7R1sPuijTl1t34uGH14KpG2mMU3qPFo3zDL2I6sy5PhnMyOcbU9HlWS5Kmugwf2q3Xdgt4icySzlACD4XJQo7aCr6NJXd6Pexy1qbyX4fthe7HlGTKNJ+4qtgCfICHGtBdISTvdzg1SLfyYiKZyEKJZCMtCmrxYxYUFzh3+16d4UAxoaVl+ZbX7j6sl8WttWNYRgdrwM6Of4Xd6V41Q0UKwSZ8SPYRNc4DP/IzrUyYiDQtDI1QxzPSXbi4gayQstvEfHXz941HqG/WAjVEUUn9SQ3UPFeGoogl9kfkDhS6n8gUk+qPz0XQCzSmEpyC2FB6LMysoiqsULvG75Pp9Gr5zoGtpriL6R1ozFn0VF5ndyzkrWk+YDpfJyanuJCo/02h+Oz+rlI8Nv+xVMoKby2/zCeFJVPOYns7xjl/U7X5jVYOUUr5G4XxLHDDQsbjl3lTCecl755Q4/EWnpCqW0flGji2p2azi36XBN06IsNbrXG11WKjIWersZ7ivYrco3ueKt06IMMjZs/05s/220glhaSHTLijgPhJ+vu+g3/QKL/vUbQLiKKgIaUDKqmNcYQZHxY1H3Kmgg95Ouj4Zw+ehRu9bw66flNq5a23fOHfL4WrcwNQCw==$715$</span>
-  </body>
 </html>

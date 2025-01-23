@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"VoxelMarchConePerMipmap.sdsl.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Voxels/Voxels/Marching/Shaders/VoxelMarchConePerMipmap.sdsl.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Voxels/Voxels/Marching/Shaders/VoxelMarchConePerMipmap.sdsl.cs","projectName":"Stride.Voxels","line":"25","statement":"2","debt":"26min","cov":"N/A","issues":[{"line":"21","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field offset</i> is typed with the <i>class ValueParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"22","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field coneRatioInv</i> is typed with the <i>class ValueParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"21","ruleId":"ND2001","debt":"3min  0s","severity":"1","expl":"The <i>static field offset</i> name does not adhere to usual .NET field naming conventions. It does not start with an uppercase letter, an underscore followed by an uppercase letter or a <i>s_</i> expression followed by an uppercase letter."},{"line":"22","ruleId":"ND2001","debt":"3min  0s","severity":"1","expl":"The <i>static field coneRatioInv</i> name does not adhere to usual .NET field naming conventions. It does not start with an uppercase letter, an underscore followed by an uppercase letter or a <i>s_</i> expression followed by an uppercase letter."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>VoxelMarchConePerMipmap.sdsl.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1WbWsjNxD+bvB/mJr2uIKz66RcobEbaJNyhCO5cAn3pfSKvDvrVStLW43WsQn5732k3ThXO1xLaCmUmjVejebl0TMv8t2o0oYv1ZJHx6P3bs3mQvmiPnWWr9hf6GapmkxKMVkho/HIs1FBr/hKhRoGWZZvHwnYKQ6UVWYjWvbXrvUFS852oS3n18HrkrMUUvL+J8XWdpFf16pk38s/iUjNxZk2PCA6O87VvwWl8e4XLkJP5h+8YtcgFMRHr/AeAfGSbYgCrEuep9evl9piWbgVVpf5d3jXIi3L6PjHu62Hw5iI1vB5GbXODr+ZHKXoWBW/PXo7nHTehFfsddhEEZa8bgxeb2qmmT7pqKFKsynJVZVwmOX6hLRQ2DRc0q0ONYVOuTBKhN4r04Juj2MG9m9488KE6c2LRZgmy1CrEM2XbVBzw8ekg1A6sFChLM2Zlq7UiFgSNH1rg15yRje17hQMq5KCe9ihwtmqFe0sKVsScoJ0QFgywSViaIPDZXRuI8S385iCg7deg11EuPJuAaRgYhHRjaOOtjCzBXenloRaeU6nbDxX7D0si9rpqOM81c6UcNDjjqfqD5SN7sePeTn6p/ICBvgd1u7crv7PzjOzs9M1R5PJ4VPZ+QpgiCby3MaxIJ5KBzqtC6TKmiN2R620ylB2+cNNbwPFiBr8rUAGCBSwFB5NEcCHLsGgvW0a9oUSRgICEjtOwki2FM5HIoxxtyBmvnlKncCTSrB/TihxFs+S0vYnlp8s8b+VxL0q/w9S+dP9hy8+/xC/eU4z1QZ3sGDLHuVangwHEJ65BJlLHVDyaLp4P9MGN5awqT6LOkmva8jYZ7dKaOskhu5uHuouLrrQayTjNGq+7rSczzoXbmuHMbCNMaYGTQ7UqRONoYebTEfer0NbapddqeJXtWDKVqLXyVtsf88HolZdr2IYuUInTLgjq3UXc5bvHXo4wPxA+q43gktxul12UU+Rkl3ZO47ZgmB347VXTa0L2ZX3d/hTvrML/HHgZazDx/3v2wpzhr7d9Zt1G9MIOlanNApDaBfVcHA3HBA+TTs3KO++yhsUoUbh9nP66b8TGNjSGfc+9v14TGBnzWZ/1M8q41Q46ccR4H+8Kdkl3yaTXu3ll9Pnh/i4Wf9yoPvhAE+s/t8Bqcwvu3cK$870$';
+</script>
 </head>
-<body>
-    <span id="source" fid="7"  style="display:none">H4sIAAAAAAAEAJ1QzWrCQBC+B/IO01sLNXkArYdakFIsosX7uJk1S9fdsLNRQ+m7d5JYkXgpXfay33x/O3kOE6yjH+3IUcBIxTRN8hxePDgfgQoTIZaGQRtL0Pg6MFl913I63kc7U74gOCLDxQS2DaxjMIKvSywowMKcjINZy5z3LB+y3sJfdCBpvxmPUFlCFsxxRGvPftnGcI12HevC+GyJ6hN3BNmBzalzQ1dAoBHjgaQ4ATJ7ZbpOGRf61GdO8ptPp0nNxu1g3XCk/fjy7FNnPtAQW5GTnwkwHMwDVqVRPMT7VdzArXe2QGm7x3gte661ltU9DX2zfjBuSzvcE1eo6KZVmnylCcip6q01CmSL4g4VhmjQgrKyGtj4E9kFBlXOvKMlhYWp9li9UcO9+Oxx6xMIC+9sAxu0NS0xSJFIQZQTbT3GKXitmaLUvx5y9k7HTnKm3T+M/x+hpPRKuP7VHf4c9J0mcn8AFuOWEvoC$143$</span>
-  </body>
 </html>

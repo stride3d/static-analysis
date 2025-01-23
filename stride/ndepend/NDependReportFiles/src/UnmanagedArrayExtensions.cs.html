@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"UnmanagedArrayExtensions.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Physics/UnmanagedArrayExtensions.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Physics/UnmanagedArrayExtensions.cs","projectName":"Stride.Physics","line":"35","statement":"12","debt":"17min","cov":"N/A","issues":[{"line":"18","ruleId":"ND1311","debt":"5min","severity":"2","expl":"The <i>extension method Fill(…)</i> shouldn\'t use the <i>class UnmanagedArray&lt;T&gt;</i> marked as <i>obsolete</i>. Removing this usage will facilitate smoother transitions to newer versions."},{"line":"18","ruleId":"ND2208","debt":"10min","severity":"2","expl":"The <i>extension method Fill(…)</i> creates an instance of the <i>class IndexOutOfRangeException</i>. This is a reserved exception that should be thrown only by the runtime."},{"line":"20","ruleId":"CA1510","debt":"1min  0s","severity":"2","expl":"Use \'ArgumentNullException.ThrowIfNull\' instead of explicitly throwing a new exception instance"},{"line":"18","ruleId":"CS0618","debt":"1min  0s","severity":"1","expl":"\'UnmanagedArray<T>\' is obsolete: \'Obtain Memory<T> using GC.Allocate*Array or a Stride-specific allocator mechanism.\'"}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>UnmanagedArrayExtensions.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEALVV724aORD/HinvMFr1AlzSXUiUuwhIpIjQU6Q2qRr6qWolszuA77w2tb0kKEK6p+mD9UlubLPAEri/uhVR7PHMb2Z+Mx4/RyMu8I7lGLWjjzJnko0xu9aazftPFqXhSpo4NdFJpFEwy2f4ntkJKcdxsvoZSyfpazIWc8PNy70qdIomQTnmEpMHq3mG8fsJHaYm+XO3bGiUKGzp9qadsP/V31SrXzG1S0qqpnQsCJDkZ+e0dm4xR2lJ0DolQYZDv/4555K2qZrR7i65pjU3pkATtT89lxCtC0dqIfA2c1o3rbNWy/unXfp1jXYewAzOUHM7J4lzhU9TQcvBBKHLr7BMAnK0E5XBGy5E/fvv3xrdhF+BmahCZLJmoTAINtikghkDVTKOhO0Mjsa2481ypn/DDJhx6srVAS26kxg+YK5mXI4JjBtCJQR4JJ8wYikX3BEDJleKfGmwmlFw1nEMVoHERxJSNoH1aHGyl5PT0+bFLk5azf9OSqqRojTAJHBJpZQpghpV2bmVGT7dF/Z+9IHJMfafUpy6PAIJA5c7/RhoNKhnxBWWGoTD7JJ4GDrStXqUoKSYw3DuvehCWp5jhYDT5iYBvevWeatZEqDFBgGUP0DT7OXgIxW6dq3HhevPu0KIVezxwIVyO3LCmk8dWeYyd5Y85VbMQ7SuvMxVayOrkqn9Res9NH9qXfz9mFvrmGvVZuwOrmqO3rLz2lC7H1pGIO+o+7Q7p85zUf7Si6+FUCnV80dvCkpT6OHyvjZTTPmIp8CCDp3lmE6Y5CaPa9Hi8+LLD6++uL8kgZ6azjUfTyzU0wbEd/0BvFGFzJhPn8mMNCThDgvCMVCfWDs17STJlJVoRyvVWOlxAkdQnhsfy1kWk1bj8IA83XATcKhtyMrdE2qKd7cDoCpQ42IMDxhu69vbXv/uoR/nGbhxTVXw4uWoAk33DEYuLaXdIS3zEMThQSDoYU5VzjurbZhqPVIn2eGBpGFnpowuQHXeHR48Hx4AfdNiSEFBmLOwa3Ksx2iwWBq6L6Fku6bIaZzMr6pidyN9KsxX7ZHbCazKNWOiwHgLJ9kN1LXzKU6ZZjm4ZC6jQXTlxoATQ5BTh2/1V7Iy2kbbRCoqRgE2Q2O5DD1BE42KIuJu8pdQPqOA4JduHGf/BIC7eRQAqBbagheUY+tfRuX03tJTSe+rR3Z71yXCy3YgVLthpngYrXQf6/45eHGNocrhCQxC/icU/zKHsFyH0oBHejqQNNvkSBepXfvf6C338RHUqw7g8hIkjbdGGGR+hu2chXXHgBptmTca/lZs+pgxveQDLreyiUPAnZcGKDP/gJBJqNPxRoIvXLg0li66S4PN+Pc9RWUKwaDR2Q+6imcXLWu8V9Ez7KYFFvGeo7gs2sINbEnjCKUqxpNVG0YvKXUDq+7rX/LToeU6yg4cH/NG1War8u6rBvKJfyY031xbTCzW2+WS/tHPzf0/AJSkUIcGCw==$1108$';
+</script>
 </head>
-<body>
-    <span id="source" fid="63"  style="display:none">H4sIAAAAAAAEAJ1U22rbQBB9N/gfBlOKRYL00Lf4AiF1wJAmpVGeSh820kjaIu2KvcQxIf/e2V35ItmhtIvBq9k9Z86ZGSlJ4Ea2W8XLysA0iyC+X6VwK63ImeFSABM53RBG8WdrpNIwrYxp9VWS5NIINMX+aixVmcBn2J1rwuT4JY/pVjQeJQl85TrwYA6EQgWmQvi2TqHmGQqNMTwi+uDd+mZ1/7iKmxwKXiNw4cOtkr8xM6CkNFBIBY1U7pC2TRAxHlnNRQmPW22wme0fvZj4hq5TbDwSrEHdsgx3J9+rreaZHo/exiOg1dpnEgXaEG0GWc20hifRMMFKzK+VYtvVqyHNlFMHRAd0KyGzc22bhqntsh++5XXtrTDHARtuKtAtZrygNC+sthgPeJLzRHOzbbFlijXgzCwm6WSZEq8LQ4jLYiB5nuxBQ7ZjJtsDBdocteEizISRril1PE/+SuUdBQa/Baup+f9AwGlOXgMB9UIZ8AFnzfy/KnfvDkVpqsDsnt2U1D52hqE/DS+S576R83Q5NRUfTgaFoV/DS0iD/0vS33kI24OUCDYV0jSncEWJlM3MIf/RbLnFC5j2E8BiAcLWdURlUXIDAjdwrUrboDD3FF+9Zti6Mk1dBWQxgEeRfyuOc7ww1dUDFgM3cRA8OwWgyNe+P4uuTxdHBk9SOBtdinkHONbvmR6seSh+MFHiiYUAiGYfk+71nCvLge/T5A3OlwXe4w+O4l3T3oH6L+hzhELastqP4eS0pO6DNfX939VnRtuDyhlcXPCojxl03q2+kJ/8F7H54RpU4v3w2G3pj35/AH0a8830BQ==$610$</span>
-  </body>
 </html>

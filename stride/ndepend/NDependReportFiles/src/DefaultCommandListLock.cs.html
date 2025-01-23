@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"DefaultCommandListLock.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Graphics/DefaultCommandListLock.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Graphics/DefaultCommandListLock.cs","projectName":"Stride.Graphics","line":"39","statement":"9","debt":"36min","cov":"N/A","issues":[{"line":"11","ruleId":"ND1313","debt":"16min","severity":"2","expl":"The <i>structure DefaultCommandListLock</i> should override the <i>Equals()</i> and <i>GetHashCode()</i> methods. Additionally, consider implementing the <i>==</i> and <i>!=</i> operators if you anticipate users comparing or sorting instances or using them as keys in hash tables. Alternatively transform it into a <i>record struct</i>."},{"line":"11","ruleId":"ND1903","debt":"5min","severity":"2","expl":"The <i>structure DefaultCommandListLock</i> should be declared as <i>readonly</i> because its instances are values, not objects. Mutable values are unexpected by the users. Making it <i>readonly</i> ensures predictable behavior, thread safety and efficient copying."},{"line":"16","ruleId":"ND2502","debt":"15min","severity":"2","expl":"The <i>constructor of DefaultCommandListLock</i> calls <i>method Enter(…)</i> but doesn\'t call corresponding <i>Monitor.(Try)Exit()</i> method. Refactor the code so that a <i>critical section</i> is contained within a single method."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>DefaultCommandListLock.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEALVVbU8bRxD+jsR/mFp9sSX3LoASKQQiReCmSECr2v1UNdLe3Ry3YW/3srtnckJI/TX9Yf0lfXbPxjYYkg+tZcS+zD4z88wz49tBKRVfipoHh4NTLkWr/Impa6GLc+n8ucmvk9wNxgPLSng551+Fr2CaJOn913nc5D8KLVTnpHu8N63N2aWsr6TmdOqtLDh5b0VTydylz3kVmTOq9Uuvp4ep+D/dNdZ85Nwv6HjwEvcKgLg4eI11cMs1a4+DsC84C8uDV7XU2OZmjt1l+g5r6VzLbnD4x+0SYW8vUNoqPiuC1enewd5B9I9d/mmFtrdAczxnK32Ho31s+XOjsJxVTEfyrfO2zX1rmbbndpTKt+Qq06qCDHBCVuT7t5NPrVBuOIo2eBPO3rP/WbjqxBS8uKjZV6ZwCb0rCumlAdWqG1NutAOWJVk3KnIh9dUS+fh4HfObfmcatsIb60iW1JkW16idbEAltY5xnpu6ETbgGEvO2AgpNdjWKGo4bN3CS03C0TV3ANNUIWLyIlMcwlSerY56VR15K7Qrja1Jeph6QyKEZDk3tqCevRBdMrgbP12h1y+2Vujlf1ygjKngXAnLRUgvxikKo1UXrTLOBYhCJm6NFVjTXCiIbEzaeDJZkDGIuGgjJYvLaNdqBIdb4GddLFYkHrbiOnLtHzll7RC8owZBybxHzLgSc2nsGBDBmJwo2Xex3lyWKCrkgGo2HUA3mX21yez+yxf7W7X/NdQGCUZ2IQxTPsdvDs1GPnsx00RDI8N//vq7l3jWeioMO/2Dj6YI3SLnxugisIJ3F0ZLuEmGM9uNJp+l32iOhH6D7xhH4DRH80C+WAvfyy1HDhLI5EA+Wii+lUHw2gswU9CN9BWULCgIHBQvgAd3f959+O7bD+EvTekElFp5VXka5iNKLicz+sm0uhABNNJ/AkQrkVDos2HlfeMO07QwXrMv700TY69S+p6W9y5Ou4MigdUo4kylkoiOpr4tpAGsbZIV3s3NTeJ6CxcNktwkH5vR7g6CPJWuDwFpwSH3pFyczQgPICdOaMr9EDo/O5lcTidJXVD4KQq9HI4Xo5isgZ7RvFQbGy5DH/fx7+70k2DaOQziN5vbZBZViQNc7O5oTHTXiJzpwVDf3bnd3SF8UkR95FroxnZvV0e/O2SAiQHpz3tB67yFMLBE27iguTWxkbgSoStjBjWWZDQnaw7STQ9Nm4GPxQh6Qrx0SGegszEu9F3/bhFzhLByHqbnsmEpM0aRwsOZuGb95rFlPxyiyS9xGRm6t+pD2h7LcD3XFcBo9XwtsvDBlB+u7O5ZP+U5ZJCc6Tim1QWYWkc+Pt4OvsVB+KBrXLJ6QMebuT00v+cGhiV+/HiLzbLX+yGxghuD53KFMHrw9G5zywD/+ui/FNPjNHWr1NMR3G0p69zIgno14bf9i2Xrk3yGnjAF10r1IJjngl0Ein/4htH2L68TTZCKCg==$1099$';
+</script>
 </head>
-<body>
-    <span id="source" fid="32"  style="display:none">H4sIAAAAAAAEAI1Ty27bMBC8G9A/7CmQgYI69JbUvcRuYMBOD3Y/gBJXFhOKK/Bh1yjy711JqSU7TlJCgJbk7HBmRGUZ3FNzdHpXBUiLKYjHxRZ+ULRKBk0WpFWMsMHpPAZyHtIqhMbfZpmiYDGUJ6ggt8vgBv7te+5R+FUJRk07no02umDOTYhKE9O6Rgx8h8NB+B7hO4AoSDw102SSZTDXvpeACvhAdBAqhPVyC9yA1qOADWK3uFreLx43C1ErKLVB0LZbbhw9YRHAEQUoyUFNrt3ksu71J5Potd3B5ugD1nfnU7GtHErFC7yRTKys0TeyQDbT2hQPTjaVLnwy+ZNMgEfGqr/5WNfSHb8PS788OwjEcnCPNgC7LaJzbRk9eqCSc+Emq1ZsGeROao6jc1BzCWRRjA7Izk9oYs55AGcV2eocSxlNGPGtqHiGW1hynA15mRvs+141dxRO72VAaN2SNUfIiQwYbtzKZ7R3b5GUd8G2kJ9d2SV0QvWSrmtJx14HgunQPlLWDl1COuBOqc9xz9dALG1AZ6VZc1Jj5tnsOvmVA9oRKu3F0ACzc2+X8FM2DCyl8XgFsyar+fcRi1bhyMEXzrkcGKYXrS/nU2Ty/1f/maa3Nm005n0FL1c+6560gv42Yfr5Z+tNfhDPbx1G6VzG8ZHYV6H84ucvXA3phtcE$508$</span>
-  </body>
 </html>

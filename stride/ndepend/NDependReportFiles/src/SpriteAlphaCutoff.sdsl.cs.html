@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"SpriteAlphaCutoff.sdsl.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Graphics/Shaders/SpriteAlphaCutoff.sdsl.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Graphics/Shaders/SpriteAlphaCutoff.sdsl.cs","projectName":"Stride.Graphics","line":"43","statement":"2","debt":"38min","cov":"N/A","issues":[{"line":"27","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class ShaderMixins+SpriteAlphaCutoffEffect</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"27","ruleId":"ND1306","debt":"6min","severity":"1","expl":"The <i>nested class ShaderMixins+SpriteAlphaCutoffEffect</i> is declared as <i>internal</i> and is accessed outside its parent type by the <i>class ModuleInitializer</i>. Typically, types are nested to encapsulate private implementation details. Consider making it <i>private</i> or non-nested."},{"line":"35","ruleId":"ND1701","debt":"13min","severity":"1","expl":"The <i>method __Initialize__()</i> is not invoked within the context of analyzed code and may be a candidate for removal."},{"line":"35","ruleId":"ND2007","debt":"3min  0s","severity":"1","expl":"The <i>method __Initialize__()\'s name</i> should begin with an uppercase letter."},{"line":"25","ruleId":"ND2101","debt":"13min","severity":"2","expl":"There are 3 types with full name <i>Stride.Rendering.ShaderMixins</i> declared in <i>3 assemblies Stride.Graphics, Stride.Particles and Stride.Rendering</i>. This leads to confusion and also naming collision."},{"line":"19","ruleId":"ND2102","debt":"3min  0s","severity":"0","expl":"The source file <i>SpriteAlphaCutoff.sdsl.cs</i> should contain only one type declaration instead of <i>2 types SpriteAlphaCutoffKeys and ShaderMixins</i>."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>SpriteAlphaCutoff.sdsl.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAL1W70/jRhD9jsT/sI1aNajBCUl7tEBPOqBCqOJ0Iqd+Od2hjT1Otqx3fbvrQA7xv/eN7YTYCZR+aQSKvT9m5r15M5OHTqo0vZcZdY4649ypQO90PpNnRbBpGvnE6yj2nV7HkZZBzemDDDMcjaL+6s8H7MT70ki98MpvvtvCxeT7ZKbKUH8cnEoounAyn6nY98czmZDD9wve5cRbXYSl9/Ojvvw/3ObO/k1xWNLTtIB9DcPY+HmEZ3ZPGZmAhSHeE5rw4+jXTBm8xnaOt/f9d3hW3hfkO0efHpYWhodMcaHpMuFT5wfDwaj0j7f465O1AYwJMRqwc09zQugLLB/gle5zzXetiLX0XgAc0uVF6mwmwozEiXpb7VTIr9S9Mv6nDfh/pCkgn/TVWyFNIlQQygtjg8iLiVaxXoi58mqiKRKXQcTSiAmJTLpbSoT07MWT1JSwhajz2Hse42jwZhvGNxVh2+F9rIAY8gH+/iMexazgjluFqkwgB8E8wfVCxlCNxxFbBI+EgwIvclwyQYRFTmKyaPJ5ZRNGZVRQUqtv5Ero4uMiV7HUetErr8GwI1EHHqwgE8vcF6gqEoh5zt8qy3WpISjZGgQbpNI+EmfWcCQOPN8qM+WkwHt9q4zdOuTI7FfmG7SPfmnRfjg42Eb7wegVvGcUZjYRNzdPaG9uuntLdlkmyswta+FOhRnEykzFFjTfB2FTUVbnN06dBbPMeCYXrCDJUkpUwjSkQOMos3OpX4QyHAwOt0EZlVXyQpG8jOZHAEHFl6D8zBY6QYDoISUkxCyKPCcXS09CU4CAmjJvB3nwar6HjQihFlbMqFZP6TwttC6D4/DrfnRNhmvdTKP1QiijX6kdwePCCKr3lKGMYa/VzXrLhQ/SoY1q1iuy0/ZRS3uGZGuSiWclI71p4VmwfENqbzlE1mlstVa802Do4LcNhoavT+OgmcaqywueYiUnz3Xz9WyyHiVsW4NuZg1VZV2RVVUeCAyAx4qF0WGdgg3jf9KipqnFPPB+fvzyw/df+L/fFycS5/enZAgOKHm7u4PFc1sWDCUo58CMliAWAORJp9/xmfJcyXZZL3foWisj3Ieq9NTuRekfzQIrF9Up66LKhF3d4+ax9NET6DesY8aLVrVM91/KF1KPQ5EoC0HEt3JKIpp7dV9aY8SO9r2cU1nfUJWNVRkT6E7vK58n/Q3QuzvQCXQxXoDe7Hj1Wnk9s47aayvhtTeWum2v12N9m+3oCr8eKONfCU/7pwXmgxO/t+1G1cYxB80F53MJmbWj2t152N0R+FTDUVS/QXhacD9Zzqdtsqmu1bcfd3ceX+VmOa+ecbSmwob9xtV/Ca6al0Icics1e6eF0nh+MrdmeQ3/3KpkqT3qrt0fV2Wa8XNvPdCzejbUM2KvabblhT/1wai83a0Nbv507fRWJy8ooKnJrFsdOoXgOQPQhLbu0o+vp5O9veOmp0fO+/rCp40p/7l5oJ2akor2aGlb3YJvjZsrTMspxss1pg8KxnU3YVbZAlhDd8/lsrsNXeuxUiB3q38AgXAGOhIM$1161$';
+</script>
 </head>
-<body>
-    <span id="source" fid="7"  style="display:none">H4sIAAAAAAAEAI1TwY7aQAy9I/EP7p6CxIZ72VYqtEKoQlptql6qFTKJE6wOM9HMhIVW/HudDMsmgarNJROP/fzeszOZwANW3twXpMmip+zjcDCZwGcD2nigjD34LTvIWREcTWUdqfxdndPkfavvUpMRvKCDCwhsjpB4yxJPtpiRhRUfWMO8zlyELGPjAGEudSDdXnuMoVSETmLaeVTqjBd/Z1ehSnyVsYkfMf2JBUG8d3xo0FBnYOne4Z6EOAE6Z1JuOMUuyw+h58PkSvRwUDnWBSRH52k3vXyGrnNjqR97Ii3KJNC/WFgst5y6fjxYcRWuseMVCtsd+nbZrMpzse5DHzcOF9OatMYduRJTumI1HPweDkCestooTkFcFHQo0XpGBakSayApLXv6pMotzsWRPP9KRxfKztWn4eD0X21Ye7JakG83arQ3W9DF75T+g9wXkZ16gPewbOHNKlZyfoNrIbf07w1nr7tHUas+kY0TYbv6PG4TnRvhdfCy38171IXtdamfc2LcVEdnwLsrGXfjS+aC/CNa3EUhaSYLX09AdkIZu3TJU7EZjabdTqd67u3Aj5XJKkVLzbV5/IvsczehP5rGivX6rWC9jkZ91Bv6Wt6sUMuPZ2UPCpYfxkbXMsO0RKyml7/NMrqlrncMG/gH5qQOBKoE$8$</span>
-  </body>
 </html>

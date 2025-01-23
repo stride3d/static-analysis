@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"CubeCreationRequest.cs","relativePath":"../../../../static-analysis/static-analysis/sources/tools/Stride.TextureConverter/Backend/Requests/CubeCreationRequest.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/tools/Stride.TextureConverter/Backend/Requests/CubeCreationRequest.cs","projectName":"Stride.TextureConverter","line":"31","statement":"5","debt":"1min  30s","cov":"N/A","issues":[{"line":"11","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class CubeCreationRequest</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"18","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>getter of TextureList</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."},{"line":"25","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>constructor of CubeCreationRequest</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>CubeCreationRequest.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAOVWXWsjNxR9N/g/XIa2JJBKzoali5MYWicthm1Y1n4rXZA117Y2GmlW0tjrBv/3XmnGmYljwxZKXzo4jj6ujs45urrjp2yhND6IArNhNq7mOHYogrLmI36p0AcmfXaROdQ0uMYPIqwojjH+/PGBZuSPwgi99cq/7tvKSfQ8WKs9nwancmQz/Boqh2Nr1ugCOv6LkI9oct7s6vlJKmLura7CnsrdkIv/nEPp7GeUoXHtBB7FaWViwNUltSMnLNAEGnhL/RznsXlZKANwNYiw0q5p5IH/TG3lPe2XDf942qNcRhRXaZzkMeru8s3gKnGhnvzSIg46iB6JiwrbuJy6+LXUca0FqYX3kNPkGj0snC0grBBu1KieOSL9hqsRCJODCqA8GBugrOZaSb2FtfJqrpHBJIAUBuYIhXCPmIPwEdSj0JhHBJbtLlpJ7w4kvRv89A8kDVpJs5r8EgM5D3YBzWm8Vw1xFdWSNvfMqSafJudVAIeFUMaDMkJSriQ9pGNrk2JPizwWc9KaVwjBprGS4EyAsC1jqDLLwz2UITqUhUk5UGp4yhTXRMX4sCJiBYaVPbbkAjYrJVfk5SOdUmIhQyU07CkqTU6Al5YIRCeUVOGFw2/e/ssOS9IQXCWDTTafypP/ld1/7j59/92n+Mc57VpunVquApzJc2AP9zP41VYmTxal+0O8qGKQCdZ5OFuFUPoh57kNBsPiOZRZt+TwA+znfaoyVzmjqPOEMyU6dBwwDVWuLMG6krV4m82G+TrCpwAmLftcnvd7RPJO+ZoCWUcbkkfx9v8+mQEtQOPpJk8R0+D7yfj+YXrPihzim4IOLA03JRCcpTqwoGQorIuT1Cxq/v1e5aPn062nwnf9ssvGVmtaT4Ge/YaGEk5SSL9nqKb6UkiEE2WV7ctzv/fU7wE9nATd+KqgirMdtUNNXEweGTMUQUCowUBS2tZVrx3T5AnrIPKXkCfrIgxh0jTryIZWfOqkB0vUo5g9p1nM4PT1BFSy6NshcTDdedbd6hp2sIv27IGPaN4Px4va1UTHJQJslNZQ2rLS0Yl4gtEDdoDIX0M2ElIhpbOYFGKJo255rTVcU0aodcT2sZPIfhPdiVFBCa3+oisnwOCGkojelYYygOpLeil5SkU6wsXtsR8oGR/VZ/MNWtI4VRFRQMyz2yy0MrLRoXHshqfY12YcoXF2YFAH+bxd30mN+HRdvO0uuW7jdnWT/tEn1pi/ATpnyBCyCQ==$928$';
+</script>
 </head>
-<body>
-    <span id="source" fid="72"  style="display:none">H4sIAAAAAAAEAI1STW/bMAy9B8h/IHIYkot02K35uGRZEaDrYc4fUGzaUWFLqkTXy4r891F2PLtpDhUMW6Yenx4fKSVsrTt7XZwI5ukCxPPuAD9tbTJF2hpQJmOEIa+PNVkfYH4icuFBysySQcr/Q4X1hYRv0J8HzsnweyYYtWh5El3qlDkTqjNtmdY7MfA1TSNChwgtQKRWvLjFdCIl/NChk4AZ8IXogU4Iv/YH4AQ0AQUkiG3wab/dPSc7UWWQ6xJBmzbsvH3BlMBbS5BbD5X18ZC3Vad/OqmDNgUk50BYLT/+iq0tS85nYBCPaNDrlCHTiVEVBqdS5LJiweKAf6j2yKa9oSf04je+1hgoTCfv0wnwklzQKtRVpfx5M4SuOCALqUdFCAqoI4O0PiLk3lajWMmeiBGj/EiZlioE2HLiNrKx8P6CB9hftx3yKisuVx/ZULAsPRbTazqcHUL7eocCid8eWYMZn4vxVUu4wCXa0xPfqbkPH7g745q4XYqg0WUJzrq6jE7EDkYPxA2j/Ex5LeGJmVbci32lCtzAtSsx2tWw5InQb5E7xJ9W7Jfk7o0mrUr9FwM3w2DDQxRIGZ4Am7dCV4FHkVuYr2d37J/JTdebL9TSxp3yqoI4Z+sZDWXMNrfGiZVssZ/NuCNjfmPQiHkx5I9GI66xi+txynLAXbotf/j5B8FZxARgBA==$514$</span>
-  </body>
 </html>

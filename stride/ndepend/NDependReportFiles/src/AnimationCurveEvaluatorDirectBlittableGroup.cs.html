@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"AnimationCurveEvaluatorDirectBlittableGroup.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Engine/Animations/AnimationCurveEvaluatorDirectBlittableGroup.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Engine/Animations/AnimationCurveEvaluatorDirectBlittableGroup.cs","projectName":"Stride.Engine","line":"23","statement":"4","debt":"20min","cov":"N/A","issues":[{"line":"10","ruleId":"ND1202","debt":"6min","severity":"1","expl":"The <i>class AnimationCurveEvaluatorDirectBlittableGroup&lt;T&gt;</i> derives from <i>4 types AnimationCurveEvaluatorDirectBlittableGroupBase`1, AnimationCurveEvaluatorDirectGroup`1, AnimationCurveEvaluatorDirectGroup and AnimationCurveEvaluatorGroup</i>. A lengthy inheritance chain indicates a confusing design that can be challenging to manage and maintain."},{"line":"12","ruleId":"ND1311","debt":"10min","severity":"2","expl":"The <i>method ProcessChannel(…)</i> shouldn\'t use the <i>class FastList&lt;T&gt; and getter of Items</i> all marked as <i>obsolete</i>. Removing these usages will facilitate smoother transitions to newer versions."},{"line":"10","ruleId":"ND2009","debt":"3min  0s","severity":"1","expl":"The <i>class AnimationCurveEvaluatorDirectBlittableGroup&lt;T&gt;\'s name</i> is excessively long, which tends to reduce code readability."},{"line":"19","ruleId":"CS0618","debt":"1min  0s","severity":"1","expl":"\'FastList<KeyFrameData<T>>.Items\' is obsolete: \'Its best to use a List<T> instead of FastList<T> and iterate through the list as a Span for peak performance.\'"}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>AnimationCurveEvaluatorDirectBlittableGroup.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAMVV227jNhB9D5B/GBhtbLcuZTuLRddJA2SdpDC6mwax25fFLkpLI4sbiVQ5lB0jCNCv6Yf1SzqkfMullzwUNWyLl+HMmTNnqLtGqnK8lAU2Bo1TrQrplNHDys7xfC7zSjpjz5TF2L3NlXNymuP31lSliKnRaVjM2X6OV9JlfF6IaPMlxzvxN1LLfEmKns5NZWOkCPVMaYzGzqoExXk92wCh6MWY5JRMXrk1prNBJP8/MKU1n3lrxe8Dv7yb+8eg0T/ksYeEBWrHC694nuDUD/vdQmmexmbOs8volMeKqEJqDD7crT30ur4YVY6jxFud9frdfojOs/jXrbfXtTPCOVrllv4kT/G2zHk4yRCO1UmcSyJ4QaYHuTuaHMzc0XGkTiBhz3MkSK0pvLtX4JYlvsjhW0n4S6/z90eC5b+zAqmTvzILBh64gFPIuf4uW4LSmedH6hghzqTSvJKomAtEICE2Oq1I6RnnSmqmwWXSQSw1TIN5ngcZzcAZKFhiMwwACvbj+Cca951t4fqPCnfY6z1XuF73SeX6TypXoMtMAlfWsJZpmEmtMW/98dvv7VAZykyVJ7rpoCJk0DvVvpDk3ilym1IGxDN0Di2YFEYsTQpOODvOxN5gApK8A+PbDR3WHF5jYeYh9ww5SEWcPcFC8alUxorLzCQCFcawgQVnpSYVesuzpXHBi5wh+ZWHRD1SeL/bffMcUYfME0CX/juVNwk0t3NgQxHgrSebJZ8vITd61oFFpuIMHOokJGUxqbyOTII8lomcehqWD7N7s5vdcNx93ft2nZ3Nd2TwT9k115U8/gGXF5ZxnkknjycnJyLUsOkhr0s2gObIEauWnAfqVSEhHJ5wapoco/XV3/jkZa8LxarwZXQZEzPLgpRy3veKkDAuuRNSY6FEecN/lseFbyXRbNx/vP/05Ref/C+KYGjKpVWzzEErboO4PJ/Ahal0EioSIg2N5itzWnFNCFqZcyUNoigxTqNLN6bC2FkEB7Dep3DNHiaCrdrBz5gp57aFsasSZditLcXW32KxEFRbUDAQsRGfy/b+HoM8U1RDYMVzQC9aTvf9aMIpx6gJBYyxbqd3o+H55fhcFAn4lypTGJZX7wCwLPpATGGs3wy8BPz7e/V9Ml4y58XRw6m4rrRTBYqhKUp2a8do5xyatnb1a4WzwufWxHt+E6IPFfsz+3tevlRKFuXKavuG29+7298D/pTVlPODF7eJ18jgpZc9H6qjroIHANY4NmbWDQvdw2T6SaYIc6OeXHIWU1iN/RXsnx3whFk2wmTC/AVd8g3jxx0YaXflLHdsHHC2t4F3MPjPGJ0/ESJsPK/ctAOdu9ZzaeFm1XkE361PiMCDWPekL8PjU3FlLb/9Ryyx24cHN8tPov0UCBGndI0pc9hqeWq+arfWWcHXGz8/pilxN7TZ9QZffSV82I38UfzMtcIdfPf1kB/89Y37J32JS/UyCg==$1099$';
+</script>
 </head>
-<body>
-    <span id="source" fid="156"  style="display:none">H4sIAAAAAAAEAJVTTW+bQBC9W/J/mFMFbbQcekvaSglxKqtNGgU3l6iHNQz2prCLZgdcq+p/77AY7Ci9FFlivfO+9gFJAqlr9mQ2W4Yoj0HdLVZw41pbaDbOgraFICyTWbfsyEO0ZW78eZIUji1yOUGVo00Cb2Cce+EU+L5QgoqDTmYqk4tmxm1hnMhSo456u91O+QHhA0DlTj038XyWJHBt/BABCxBDJOAtwu1yBUJA61FBhhg2vy7TxV22UHUBpakQjA3bDblnzBnIOYbSEdSO+qEs6yH/fNZ6YzeQ7T1jffHyr3poLZsaVerqRmQpQ+rE2h9x4bwyJ/zXnrrVEqO3ynvOfGZ1jb7ROY6oS2uGJH4++z2fgVxNu5bzQV5p72Gapy11uOh01Wp5JNeG5FxXlWHW6wo/k2ubD6tPcP4/hCvtUUiD68E8BCDHApbWXYfUx5T6vS4ROmcKuCcnFfh0q63FKiIs4bCGfLifQV8YCQiLlfSXNdqCxV2/PoOl5XsmqFwecsZH45MM/ZUh94zgMCkfZOJQ5ym60wQ/cX9DfcXwcWSo0IP6Mk4uXrPylggtL+UV+/WSOG2/cvseClGX/gFL6TCK+mrextF4Kng36XwrSy9fQyzSUz61lNfLP506/1CP8qzwJN+fYSk3+f0FM5kLCrUD$8$</span>
-  </body>
 </html>

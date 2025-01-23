@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"GraphicsCompositorTemplateGenerator.cs","relativePath":"../../../../static-analysis/static-analysis/sources/editor/Stride.Assets.Presentation/Templates/GraphicsCompositorTemplateGenerator.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/editor/Stride.Assets.Presentation/Templates/GraphicsCompositorTemplateGenerator.cs","projectName":"Stride.Assets.Presentation","line":"43","statement":"9","debt":"16min","cov":"N/A","issues":[{"line":"14","ruleId":"ND2019","debt":"10min","severity":"1","expl":"There is a field with same name as <i>field Default</i> in the base class: <i>class AssetFactoryTemplateGenerator</i>. Investigate this ambiguous situation. It might reveal an incorrect attempt to redeclare a field in a derived class."},{"line":"16","ruleId":"ND2209","debt":"5min","severity":"0","expl":"The <i>field SupportedTemplatesToUrl</i> should be typed with <i>System.Uri</i>."},{"line":"25","ruleId":"CA1510","debt":"1min  0s","severity":"2","expl":"Use \'ArgumentNullException.ThrowIfNull\' instead of explicitly throwing a new exception instance"}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>GraphicsCompositorTemplateGenerator.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAMVWW2/iRhR+j5T/cITaLkgw3EnIZlMBhgh1G0WC7MtqVxrsA8zWeNyZcVi0yn/vmbEBE2Ab9aURgbmcy3e+c7F/FOYixAe+wsJN4V7xeCl8PZCrWGphpJriKg65wXuMUHE6YL4ulAsK6VA84yM3S9JjrLr7aEM3foVHPNxooY/3MlE+6ioG1n51YpQIkPW0RqPZo0KNkdWQUXXrW1ffjIvPtAwTs8Xl3VT5/wsoVvIb+ibj97xtEg1FZGVaTVpbjLiiSzro0j7AmV3WOythRX35TLuHao/WQusEdeHm84+thXrLZigJcRxYKa9Rq3cdFNr5f+es1VJrGp9RCbOxR7TF73FIy+kSFYLQwGEuMAxgLcwSNAUCkf3iGm7FXXrl4ZwnobmtijsQEZglwoxrBD/kWt9YObcCF/iI+0TP5ogwq81gHD2jNmJBN2THul/NxCKRiQbiOXFkkZSBlVgsDSjCzkPgEfn1pVLENXBD3MUGjKTrAMk1BbKNguBxCCjeZwxSfKzwUt5z13nFXaN2krv2EXW1A+r23EySOJbKYLCrnql8UqHjSi9lQiIzCnUTY0YxaU42mkJgT0o4UvIAG+08wEGv3q7XtgBVmEsuAQSo6UOQjT3IJ8rPu55aJLbMHpIwHH73MXb0TpdKrsdze/iOCCMsPAA5B6spfGHCDaWGRES0IDIjXNNNpuvEeeRj4eXLy9dff/lq/6tVGMh4o1zGin4J2MNwCiOZRIHLJ6UvIImIumOWUCVoKC6NifVNtRpIE6GZ70SZVIsq/Abbe+06qhkwkio5OxNBGMnmxCSBkGRWxWxvb71eM51KaCfAfMm+xaXLCwLpCZ1CoFSQQ1Sukv8cT4EUMNLIYILoDj+OB8OHyZCtArDzc1v1WbuDktLAXCpYSdtEES1XKf7Li8uLRFvm0iS/P9yygQxDskCimrnWEP5rEUoPJYQO2JTrv/T+Op0uFPF2xPzkiu3K8b2FZFtax9xHOD+j9iqXFz8uL4D+4mRG1KR9BG8YinDz8xmQWs2M5xzYGkvnNtjYZUQl+BZ32WCCD87CGzSKJUfHK/evXXvCZYirze19IoIy2LqJFnfnmj3zf05t7y8XudumsEm2WKBB1LoatXqVq367Vmld1TuV3uC6XfHqteFo1L4eeM1moVTO8vfI/b/4Ap/iheJUyCwj4piBjzQcwq7F+FI+79xrDYfNvtesdPu1TqXVqQ0r3foVOe/0Rv1Gq91tdf6z83rt37y3+oP6dcO7qnS6XrvS6g8blW5v1KzUB9eNUeeq32l0Pev9xPtL9azvT/I7hrpw4PjlVPIlTU8bFcykDGGssxxT4rZJLm4XHmpfiXQQmuOz0tlEizkUTyjAByocmsKldN46Sk6O7KLtXzk/ZaNkKzrvS6FJVHSuVJmdw5ym+B+4OWWOjYO8wZcDwpQ0NLtoeu44Gw8jQqv4LMRb1/ljsnkHA2olg+mMKbqfo0585IpiMkhPg3i3PM8gje+RoPEfZB2/yBIO/i7j9oXAd45zrwDcOoe5kqtDe89c7Wzsi4Ya+RxvU7W5R/OJhwkW94DZIXVlkIk5Y5uMlOD3XLAs6yNmA3MkFc9o3bgqOSjejJOJJFtL+whYU83AWsloUd6xEIF9UdqkJBxX5Kn4s4I8FM6VlX3vYwfpzWXvFMJU9jAfJwuWiv/zl2wu7EqpmNULfpS+e0jl3ZVPsJxh81J3Kaulkuv8XE1nP/Sx7y//AM//0OkkDQ==$1306$';
+</script>
 </head>
-<body>
-    <span id="source" fid="120"  style="display:none">H4sIAAAAAAAEAJ1V247iOBB9R+IfSv2wSiRi7tD0zswKSGih6Wm1BDMvq30wSQGeCXFkO82gVf/7Vpxwa2B3tK2WSOzyOVWnTjn1OoxlulNitTbghC6w52AOE5klETdCJsCTiCISo8QiM1JpcNbGpPqhXo+kSdAsD6FMqlUdfoP9vqYzEbYjRlGuxZmJWISEOTNZJCTBqpQd8bbbLdNFhLYBLJTse+pWK/U6+EIXKWAERIgKzBrhy3QOdAATjQxmiHbxaToOnmcB20SwFDGCSOxyquR3DA0oKQ0spYKNVPkmPW6K/KuVaiXTIlnBbKcNbn4/f2VjGceEQKGaPWKCSoTvQ+ZrhTyiBTbn+oc+blstCEEhG2qN5t+22Bw3acwN5kHVSsI3qFMe4j60jHpRqDExRe6HI9XK39UK0F+aLUgaCGOuNTwqnq5FqMdyk0otqJH7A7YQTgvwABZ4wkN6213sF6gl+AlBglvQeRYh5LXLJN79Ep2PS57FBj5ahF844bhWjnf076l9YTvE1e7DYyaiGuS+SVafYJalqVTkn4NUc/lVxSX/rWNHvpPK7WuRNsU6d63GoNOfdIZef9RteJ1+s+cNx/ddz282gsmkez/22+07t1b274WHP/gKv6YrxcnIrBTiUoEnfMV4kOf4VrtN7neCoD3y295g1Oh5nV4j8AbNPpH3hpNRq9MddHr/m7zZ+C/2zmjcvG/5fa838LteZxS0vMFw0vaa4/vWpNcf9VoDP2e/u2So3+T+Jn9irO/OiN+uNV++osqrgoWUMUx12WNq3L7Jzv7BRx0qkdo7zVyuuTcbLZbgXDkAH8k4WRy7dLkoubWSDNUq29BIPtN68DNEG+jk8yuX1zDc3NGnXApNppJbVmX5PcxFoj/j7hocm0angG9ngilp6O6i2/Og2TRIKFvFFzF+sJM/JcxPMKZRMljcMY79uZjEF66oJoP0NUgPj7cVpOt7Iuj6j8qJX5UNh/DQcTASQksMnOKUeKVMeU4OSyU353ivXB0wjqahQb6l21ztHtF843GGzjFhdi5dDWRmbmATiAt/nBTLyjlieWFWJOfGqQfrkjPzlprMJGGt80/AljwDWyWTVe2gQgJUg9kVIlw68lr9pSHPg09steD0mTxr70n3rmVYxJ7346phyfx//lXeCwcrOaVf8EmG9iN1Sle7onKZm1/QFaq6rp38E0+XP/T/D63No928CA==$904$</span>
-  </body>
 </html>

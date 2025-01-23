@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"StrideShaderCleaner.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Shaders.Parser/StrideShaderCleaner.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Shaders.Parser/StrideShaderCleaner.cs","projectName":"Stride.Shaders.Parser","line":"57","statement":"17","debt":"14min","cov":"N/A","issues":[{"line":"10","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class StrideShaderCleaner</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"25","ruleId":"ND1701","debt":"10min","severity":"1","expl":"The <i>method Run(…)</i> is not invoked within the context of analyzed code and may be a candidate for removal."},{"line":"10","ruleId":"ND1803","debt":"3min  0s","severity":"0","expl":"The <i>class StrideShaderCleaner</i> is only used by the <i>class ShaderMixinParser</i> and seems to be an implementation detail of it. Consider declaring this type as <i>private</i> and <i>nested</i> into its parent type. Doing so <b>improves encapsulation</b> by constraining this type\'s accessibility to the smallest possible scope."},{"line":"20","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>method Run(…)</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>StrideShaderCleaner.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEALVX224bNxB9N+B/mAq9SIDLleMGKRxZgGGnqIHGTWMjL0UDULsjiwmX3HC4UtTAQL+mH9Yv6Qx3JVu3uAWchQ0vybmdmTPD9afO2Fi81CV2jjtXMZgCrya6wHBmUTsMKqfOQSeg1dFM8ZWOE5ZTKlv+UOST/HvttJ2Toc21r0OOlKG7MQ6zxoVqfJB6pQNhyHY61iPyto4Lx+fHmf7CHqvg32EeVzKypsxSli3z8dNn/C7+sUQXeeNQNgocpfcfSuN4mfspry6zU343RDVS5/j3TwsTh33Jb23xohCp88Mn/aMUBq/yD3fW+mwM4KgvMRJOMZg4F3Ve4sfKiq6H3Goi4FC5VgTj4EuIE4SBGTYnW1APMjME7QowEQyB8xGqemRNbucwNWRGFhVcRMi1gxFCqcN7LECTGCXUFguxoDq3B0tIT56uQXrWP9wG6bDfJGg7nOsm8BLjxBfwunbdf/76u5fCbeM0buolmJmJE06OIM29i/gxgh9D4sOffJz7AhPCUs8FghYshSm4ajD2AQKWfqrtCoSNqvy4vSpHqSrrRelvoPh8+hmPd5zvmjjc0XytZkn8pfloXEO/ZcUIsSSIPoFyYMrKJh5yO3jHLIjaWMmEiQrOvCP2HXibzQbjbtgL+43zCttqVswazsnSPG85pNgUmJPNjkwkqHRgH0lRwbkXS+RhMBqy/+CFd+hyXVFtUxyDbDQUTFwZikEbt+L6OwKdc7Myz4zl5AkaQU+ltpadQ+UpcRAo9+xwhWabNXr2Pzpns0g7qNZkbEn6pjvS4aiOwh4GRZyfBRAOdoRzn1qK4RFhOeLiFjXCZgpZVBKy5oOTjYH5m1prZ+3aeDdVDmA2MfmECf+ey5GiyGOt7VquU0pBcmBy5kjn9o/bt998/VZ+s4y9VvNgbiYRunkP1OWLa/jJ165o2CUE4biY0JwEHwi6kxgrOs6ywkeHcbwUVT7cZPAtLM4pNcFRoViql+xccThMD26PujCezYZK3dmbzWaKGglKAir36l3V29/jIM8NNSFw6tgh50jY8/LiGlgBHTFFrxDT5i8XZy8ur16osgC58qCdGO28h+B5osg4KH2QQ34tm/j392qSnLd3AYd3dyGcUlTN/vMHxB46Vz9bsp8VesPTmFPNMvt7jq8nqnSOsPWG2t/7tL8H/CxYATsHEBy3E+Y1zrgzRFcUW315GsJv0+32WHukCbtjbQkPIP3p3anes3IrYS8WGZduQHXJt8l8uLrN3UcNvbmronYM0TeVogpzMzZcaccTXa1Zy7abG3Cv6RIkXycdSsF3htLvzbsaZElguAF36k0zChrErfx2bPKk6nRbqec7cG+3fSa1uZZhQKvr3d6mehERnIDDWVvD7n3P8rQoz9PgSHRmshVFd93RmprE9t+g8MAPwgu4lFv2HMe6trHJRdqRUn0exgceTFLWkORPkobMtIvfFge0Fp0ZQ3dV6ytWq63trcqtOZNnRU3deVBvtOUPM/VavgWw23Kdu03f4FJKOh11uZ6sx7DLy8c3yx/N+eRLxfxrW/jHt3xmvfsCZrcmeYXS8gSMdXBpqKkVNicirzbD4vWBpmj0T2N7Ud3rRdCLzd0tImRvEC0tcAtP+dNO85fGvT25jeVLpLs0quSfmF5vM5EtSGmZ5zsSsDSyCZn/8I98JfwLXFSWUj0O$1260$';
+</script>
 </head>
-<body>
-    <span id="source" fid="8"  style="display:none">H4sIAAAAAAAEALVVy27bMBC8G/A/bHMoJKCgDr3lBQROigZo3TY2cqellc2AIlUuZSMo+u9dUpJjOXbSQ0IYsEjOzs6+pCyDia0fnVquPCR5CmJ6M4cvtjGF9MoakKZghPFOLRpvHUGy8r6m0ywrrDfoyy1UWLfM4CP098Q2BX4uBKPSyDNTWuXMOfNNoSzTulo88W02G0EtgiJA5FY81Ol4lGVwraiVgAWwQ3TgVwjfb+fABmgIBcwQ4+G328nNdHYjqgJKpRGUice1sw+Ye3DWeiitg8q6cMmPVat/PGpImSXLC8IFy0MxW0l2RuKKvGjPz16BvXYvvmrSL4LuFSlONWPGIyMrpFrm2CN70E/pCN149Gc8Al7KeHRGasi1JOrALXaiURpO2Cm0+zvcOOWDbTDs7MOqmwUn85BtkrL1QhImpdSEnyD+pU+mOyx/g+x+k3HpzqmpKukeL4fHd40hLowi1k5eGg7RtpWiGnNVKq60sRzxHlt2mO68lk5WEPJ1cUJR/MnlPLDFZ3GeRcDls3DXVhVBTNJG3OEPxxZWrE7Soc6OxH2YexJqM3+se1Hb/XFva9krggswuOlqmOx6DquL8hq5/i62MzdbUST7jvbMgrb/C8Wu0YW+gCnXBK6xlI32bS7iSSjVy2H8bqQOZXURfxEtQBLc/uovaE+dKiEZWn1gs0brdIjbcxbWwEw8eRD3UjdI4g4rjijpep2nTS5xiwqTjrLaT9Zb8PL27Wl/Sp+v3kvzj67wb8880da8A+3BJA9aOiyHvnEmvtTEoJtjIw+HoX98ZSha+yvffah2ZhFkf3h8REKztxFtGXiE11JpudC7Z+FrLPmdmWxJxZTfemn6PJFdkGFkzo4kYEvyPGT+498/Dxk07SII$660$</span>
-  </body>
 </html>

@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"SpriteFrame.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Graphics/SpriteFrame.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Graphics/SpriteFrame.cs","projectName":"Stride.Graphics","line":"36","statement":"1","debt":"5min","cov":"N/A","issues":[{"line":"14","ruleId":"ND1207","debt":"2min  0s","severity":"1","expl":"The <i>class SpriteFrame</i> is not instantiated in the context of the analyzed code. Should it be declared as a <i>static class</i> or is it a potential candidate for removal?"},{"line":"19","ruleId":"ND1805","debt":"1min  40s","severity":"1","expl":"The <i>field TextureRegion</i> is used outside its parent type by the <i>2 methods UpdateMain0() and Serialize(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose read-write accesses can be better controlled at debug-time."},{"line":"24","ruleId":"ND1805","debt":"1min  40s","severity":"1","expl":"The <i>field CenterBias</i> is used outside its parent type by the <i>2 methods UpdateMain0() and Serialize(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose read-write accesses can be better controlled at debug-time."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>SpriteFrame.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1V224bNxB9N+B/GAhtIQHxru0kvdiGC9d2CgO1UURuX4IE4HJHElMuyXK4lhXDQL+mH9Yv6QxXa8mXIn7IYwUJIjmcmTNnZs/eDCbG4oVqcLA3GIdoEr6JvCs0DV4MIlqVzBX+qtKM7UVR3n0psUVvKafsggw93vs2aqQS3dQ4LMcpmhqLn6MKM6OpfJRKVeRtm/pUJ3ul+uI5QvQfUae+2vvX2W45ChtefstryYUNusQHO7yvsZLl68Y43ml/xZuL8ojXhqhFGuy9u+kD7LwS7lqLZ7XcOtnZ3f4up+ed/nMVbJeDAWxLasIrZLSLZTa8DpaXlzOEA3OorSKCtXIOSnMIhsD5BMYxVJcMw615A4l9tHcJrxP4Sd5mwj6xWXsuGMYz31q+m6BCqJGjR7YpAiXJOpIh58x5fJRUfFtB8AkllQWtXG1qzgkTtkds/JWyPw5uX6xI+OEBCd9vv36KhJ1MwqvPszAxyKgvua424lucGu96HlriAnybiBvKSAkCl+QSpEVAqBaZBI6wCw2mma8JfguC/VwZtz0cMT81jDmxsuYTDv/56++RBC7gCLqc1BFWCZOATqtArc18c1DTBJsHhWnzjvlMytjO/9g7QRShUX8YNxUO2YHbeMXOPbcRJ0onITl1PeApDRjTAuYzT8h2VW/NpfWgNE87IQn7gqbClDi6dDt6a6WJiQFU7XQrGR769XbsPpzJL9OOYy4c409G0f+9+Ewv3t9++PqrD/IrS4YTFtFMZwmGegTFxeklvPGtqzvgQsKxRDJVy3AIhrOUAu2VZe2TwzS5u1r4OC3hG+jtlEXtZV3wrSWZxhpGBePU1sZz2BiKVbz5fF5Qd4PyhUL74mMYbW4wyBNDHQSuhhNyedK887NLYAd0JFqCmA9/OTs+vRifFk0N8kLphWipuBA9K5UoReOjGHnZdPg3NzY3WpKOLPWYAeL+E2fFOb8ZULw07YuXYyGkoDTCAyXf3LjZ3AD+lFzDAbVNo+LicHV0BJSlFCaipdzUEJF4aKThktX2FtVfVM7cwe2jnKXcbB5byqXGrEi95KZOplbBpRoxLCNzY/I1Hg0ZNn5uqA3By7OTfNZlQ8GqBdZrKQ/K+8W8O1FJ5TnhqX3fnYW2sr18r78yOuuSmP8gpz++zOVofq0IFxRQm8miL+DpOhk0P/i5xWnGk5/LLB5kKx+nW8J9e5ftnr7nPj8TcMUaJDBWJOusTTKKwVyjpefD+R1FBXbX1O25SI6td90ToduYde/erHUva/0cZvJ5RCbD0eEROJzfeffkP5WiOCh7p0dlrY1DB3Q4Wt1ZGw35dEFguOYzOsemwjg3hEvv/ZXPbbfkP/6KyP0LyStcPloK$1023$';
+</script>
 </head>
-<body>
-    <span id="source" fid="132"  style="display:none">H4sIAAAAAAAEAI1TwY7aMBC9I/EPc6rg4kjtraCVtixbIZU9LKiXqgfjTMCrxLY8E7Go6r93YhNgd6lEFCnJzLw3740nRQEzHw7RbncMIzMG9TRfw6NvXanZegfalVLhONpNyz4SjHbMgb4WRenZIVenUuXjtoBP0OdJMCV+KZVUjRPPytbWCOeK29J6oY1Bnfn2+72iXEGpQBmvXsJ4OCgKeLCUJWAJ0hAj8A5huViDANARKlghpuCPxWz+tJqrpoTK1gjWpXCI/gUNQ/SeofIRGh+7pLw2Wf9wMBy0ZN1WBHbSlQjEyZWYWmph7FCGJh3K6QYpaIN91feow06yw8Gf4QDkKsTDlNqm0fFwdw7dA4VoGaGKQgERQ0RCxwQauq51n9F9oXb2JLdnWTDI0FhbR8lqxG13dL5KX4yv3MYL8s5Nlzgyy8GkMisflsESUBuCJ5k0e9gglJZCrQ9YXrScFm/N/HrQrNOeaMO/cyy0GzkcMLUmglWS/9i1zNnjYP4znD68TnYM6zQLCmhsdegNXPcpolvCdMS805xtqnfdio/tjnKfT93WmfA5dUnnfKPgjdXUyTgPWVaUZWdlFYN9xZpul/NT5Pj4GWaJ4Zsw36pkVnuX/wjTxijwt7smyyI+zS2TSfGIMgxHd/fgcH9C98O/1kJNix70wdbFOmSho/G55mI1uiuTwOgCM15is8G4t4RH9OSM+Ztf5SH3P0Nee0zhBA==$538$</span>
-  </body>
 </html>

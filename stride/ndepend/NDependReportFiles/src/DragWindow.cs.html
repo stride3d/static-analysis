@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"DragWindow.cs","relativePath":"../../../../static-analysis/static-analysis/sources/editor/Stride.Core.Assets.Editor/View/Behaviors/DragDrop/DragWindow.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/editor/Stride.Core.Assets.Editor/View/Behaviors/DragDrop/DragWindow.cs","projectName":"Stride.Core.Assets.Editor","line":"39","statement":"18","debt":"4min  30s","cov":"N/A","issues":[{"line":"10","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class DragWindow</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"10","ruleId":"ND1803","debt":"3min  0s","severity":"0","expl":"The <i>class DragWindow</i> is only used by the <i>class DragDropBehavior&lt;TControl,TContainer&gt;</i> and seems to be an implementation detail of it. Consider declaring this type as <i>private</i> and <i>nested</i> into its parent type. Doing so <b>improves encapsulation</b> by constraining this type\'s accessibility to the smallest possible scope."},{"line":"35","ruleId":"CA1806","debt":"1min  0s","severity":"2","expl":"InitializeExtendedStyle calls SetWindowLong but does not use the HRESULT or error code that the method returns. This could lead to unexpected behavior in error conditions or low-resource situations. Use the result in a conditional statement, assign the result to a variable, or pass it as an argument to another method."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>DragWindow.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAL1WbW/bNhD+HiD/4WBsnY25UtJsQ5c3wI3dxUDqBpHarhjWghZpmy1FaiRl18vy3/dQ8nvjftiHCY5D8Y53z909vPN9YySVGLBcNE4bXcvG76TmZhZlrtFuWKGYl1Nxy/wE4iiKVx/nIcmeMs3U3En39bspbSZcLLj0xsaJt5KL6MpYEXWcE95FvVryVopZ/EJM2FQa6+IAoWtNEe9iYUNnVOmXWLqnMfv/QRTWfBKZX6Rrrz1oKqmDysmvWAdYIhfaY+P4OTa4GIb1T7nURCdHwXJmptgZxB2spXOlcI3TP+6XZo6PQjVKJfo8aHWPnx2dVHDwlv21tni0YdGJqbDSz8NxvIovhQpnDWWKOUccwqlwNLImJz8RdC4va8k66PNYXhLTnKQn6UgbT0U5VDJTc5pKJ4dKRNT3lDFNQ0E5s58FJ+aCLSeYEjxYiBoP7f2RPH88kpMqkt1AjtaBpN+ADKxGA2PpAGc4/zq8UNxluZ8of5ZeGe2tUe1qwQDVPhn7s1X8TojckTchSsQq80JVBQXdjEYqcUSRGSFPEcGCAy0stuHQSj2GfyDy80IsclMg9aDEyjy2tHC+ThdJDUfSOyqYhY/qYERdEyw5Q+fDS/i3JhRP6IwVrlQVjvN4eBmizQDAWwSx5foHRyzDZUDVpEI2QzQhLy5nSsE5FcZVFSWXGTjcLNrJz5tFu+qgaL8si2bVumjHjxbt2bpofS29ZEr+LXpfvNBc8MTP4TIDBkeJ8HURbwyQD0tP3Iiadqhkhfb6rpe8uUnJWBLW4jszPEiYr8S58BPDyQpfWu0iSkP0mSkVJyUYDzGXGlhwhwMzFgxAxlfWNC4wcumCB2VmT62omwg56csqzTD7ZoEGwlL5cJytjzJFqwvfRsGdHOtNbWBgNAUxGJLdDn6KQEtcMZAD5GJ2XOZV3aGI2CegUh0XavLnw4fvv/sQ/uIYTCvmVo4nnppZi6JBL6WXptS8ZmUgVkVriUyiq1Fz4n3hTuOYG6+FH61UI2PHMT2hpdxVfe2ER9BqVXYSUAYBUuJLLg3M2iJa25vNZpGrNVylEGUm+lS0Dg8AsitdDQEJh0MEE3Lxqp8SDgjtQO1E1Om86V/1BkkvyjmFoRTyGrYXTZesARFGyFeOhgshlnmN//CgdIHsyRyXKD/bfo1qTrk921Ffe4F2sBZvdPVb1Gx5zTcUDw80JoArGHixdwhEYahEq6FyeHB/eEB4ZDATWLLbuuiU6kWtt1APT910N1SbrbVwQy88HQXahv5GFzRiyomzR+QutUy7qr9kcyh6W+7qvWDZ57ENHIFcl0rtyPvuWvoUjeNtPQj2uEsmZtbJfNXv+Dd0+jpl7vOQ2X066BmpCXwOV+Ni+x215H7S0fxahOuwe7RqMY8GkZoiN84/noE61cvTG2/RwOiv8FVdYt3fOP14QXva3cbRh0CmVZnrsUBTI/m+s00zrC6DC1u2Tb0p4u/YMWbBcrWfG+g6tGhnF9S8nmlew25t8rzeil7idwFKWzLVDDOktROvHFFzaapObWtbITx+YkFrLWaIZopY+OtC2MpJ70smirBoNt7o0AhDt0PbthJh1J1+hS4M1mqMzaoSNFpnm0mrwIASYmugXNCg+uV6LRRcRr9tTpYF7uganS104G3Ndzcfe78n6fub3m7Iux6acNtqbu/+s23tXQJjH9O7ziC57dz1BunjCjed9727XnfP6de3r14n6S6aLc3kv8TX3o6otU3LxT98wrT5F8Jfd0wnDA==$1321$';
+</script>
 </head>
-<body>
-    <span id="source" fid="86"  style="display:none">H4sIAAAAAAAEAJ1UwW7bMAy9B8g/ED0MNlbIh91a9OA27hIgTYvaa9dToVhMrNaRDEmOm3X799F208RecpkQIJL4SL5HUg4CuNLFxshl5sBLfWCzKIFrXSrBndQKuBKEUM7Ieem0seBlzhX2LAiEdgrd4hPKtFkG8AW2dks+Ar8JRii/iRPLXKYUM3alkJrCmoLt4lVVxWyLsA2ApZq9FP5wEAQwkralgAIoIRpwGcLNJAFyQGWRQYzYXE4nV9EsjthKwELmCFI114XRL5g6MFo7WGgDK21qI21XLf/hoLRSLSHeWIer8+6RPUoldGWPXLOJcmh0sTM36hlpRHZn0KJybZYdcDhQfIW24Cl24KG16CyLhKSCsweJFbvEjK8llX84eB8OgJaswyieQ5pza2Fk+LKlAmfQblrcB7xeRTmnYu1BPX9n3MPVK8xzXY2IJ1zAgucWzw/YbWK4Iv4GVbohoDNlH3fJ09elqWeE7KrM8559YsfSJWjdg7RyTt06nC7OdBWmTq55PQDHMROVcPs65+YYRv7CRNfzTP0gTOdMvRQuC5UYY/0c+q5u09A7ICLRxUpbd7gCbam33nsnNtPqH366NClOlHSS58RNwNcL2B2jN+IpUDT+e65/6mH6bLNpygRrLcUxX0/Pm8dg6ytzCtGa9IdmaQG3u+Ozsaby2oYoCfLGlRItbX9/ztsrdm30ilpb8txzmbR+T69cgLcN1ZbW7wLq5TJDY62wIjVr0iJuCzRNkugtxaLeeCc/FK/Hx2kwSG+JZDSvfscO9AJqClA1LTjxz/eL1pChkcD9KpG8GeVZ4xhzSsm+o2v7N9Vq+cGbjenLluNpD/k4fY5+xsnTNOpL7mfwKK3vdW9/d6M9xhTsObkPZ/FdeB/NksOAafgU3UejI963dze3cdJn00HG/6PvtKvI747lxx/9/gLplSaEagY=$701$</span>
-  </body>
 </html>

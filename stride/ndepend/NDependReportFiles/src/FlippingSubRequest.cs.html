@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"FlippingSubRequest.cs","relativePath":"../../../../static-analysis/static-analysis/sources/tools/Stride.TextureConverter/Backend/Requests/FlippingSubRequest.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/tools/Stride.TextureConverter/Backend/Requests/FlippingSubRequest.cs","projectName":"Stride.TextureConverter","line":"21","statement":"3","debt":"5min","cov":"N/A","issues":[{"line":"5","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class FlippingSubRequest</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"12","ruleId":"ND1802","debt":"0min  30s","severity":"1","expl":"In the context of analyzed code, the <i>field SubImageIndex</i> can be declared as <i>internal</i>. Doing so <b>improves encapsulation</b> by constraining this field\'s accessibility to the smallest possible scope."},{"line":"12","ruleId":"ND1805","debt":"1min  20s","severity":"1","expl":"The <i>field SubImageIndex</i> is used outside its parent type by the <i>method FlipSub(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose read-write accesses can be better controlled at debug-time."},{"line":"14","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>constructor of FlippingSubRequest</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."},{"line":"12","ruleId":"ND2000","debt":"3min  0s","severity":"1","expl":"The <i>instance field SubImageIndex</i> name does not adhere to usual .NET field naming conventions. It does not start with a lowercase letter, an underscore character followed by a lowercase letter or an <i>m_</i> expression followed by an uppercase letter."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>FlippingSubRequest.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAL1W7U4rNxD9j8Q7jKJ+gBR2AxS1Aop0e+FKkW5pVfhX9VZe74T4smvvtb2EFCH1afpgfZKe8W4SIMBV+6OrkHjtmfGZM2ds7gYTU/G5qnlwOHhXmaYx9uqiLX7hTy2HmOkwGA48VyqaG/5ZxSnMsixffkLEit5RVlXzYML6u2u95pBH56qQX0RvSs4u+Ta2nt86e8M+ss9/UPqabZn3u4b8JSSqCK5q4wLJ6WGu/m8IjXcfWceeshfCwa4yVgz2djEWSFyzjZjYx3vJhQwPamPxpt0NXs7zNxibELDV4PDXu0WAAylAW/G4FKPT3b3RfkKBN/1pFWuEWET7I4EYGChMnGNadufbphJfR7pSIVCJxRsONPGupjhlOjYn3cp6zse5OSFlSzKRTCDrIjVtURldzenGBFNUnNE4klaWCqZa+WsuSQWJGVhVXEqEbHA/XCa0u/cko+9Ge/8to7FN8LWzEfyTm1Aq+h9AoF3Jw0VyE8NVSUhqXKsrHtuSb1NePeiSkb1fwjaI5hEnAadTBz4oODouTkyN4gtzbLVqQitd4exxXpxQMRcYIXplrDjEKdhK+34dSGnoD1yZCilQdAlXqFVVgWFqXEg8UtCu4c9RdfAcVbuJqr1XqLp8nQmAbQMYcG0M0DOqHagBJzZSnDcs6fVc1hynrkxKQZitv//8a7sj6k2XLoWpa/EDXsHuiigEF27rpkqNkJgD81GZnmj0jmztoaFrYRCCg0MDqcI5gXSePE+UjhhgFdVShII06Lg5zaYuMNZVuTND+tyTjmL1VS44oq5JLN6BeZQ7AkDRXu1EUz/h/Zs13r/9FxIdrfHeaaNN0CHTF/rMhKda7HotLRZtRHo19BXI2IWkKkls7lKDgg8kXBdozbJl0dlaGVmYfVXvyzJ0Vkst93VfdxmCeqOnUjaQnVDo2KrqieqTuElYMdrEV1W+NxqNnmN7P7H9eZGDoaisZnpJ7RZnN5WOu/NMlVP2ia42CO7s/Oyyd4WhEKDlWLei2JAOu6Ur9vGRZiZOIcXKzdhrBRVWSWpDaYAWm3rkjg30VHlQA2on0B+MS2mrdT/ROTyl135PcJGdFybRMI88Eb1pHrmC1t/uP3z5xQf5y3MUs5l7czWNtKW3u8TeOUDquk+O9bfSDgbacj7Q1jTGJhzmeemi5ThZmmbOX+X0FS3WQ7r19ssMVtspzgWqDJroIralcQjrm2wVbzabZaGzCMkg0y772GxvbgDkqQkdBKSV6EpHzY/jS4ID24AL5oI5Tb4fvz07vzjL6pLk3xb0QZrur2TyDjWZgL5a+DYWw7rDv7khNQ+NgipeuLKzxc2/uXG3uUF4Fiqnly5HOlxO9jOdY+8vT9fAhFvDy67U211KN6avO7riiG/PQGMfrmcPNjyie7rf3FjFzUHccWhrXLjzk8fT0gVGtC4nTbpp2mLHSAeIxicImj2Jk68H6nGDgsf9c/QQRG+0TsyW+CUMQ/rJm+V571bj7VUYeQ6pgIy3nje4e2z7CBB93210tLK574b4wUc64R+3Jw/g5Qo=$1157$';
+</script>
 </head>
-<body>
-    <span id="source" fid="79"  style="display:none">H4sIAAAAAAAEAG1STWvjMBC9G/wf5lQS6EqHvSXtXtIUAt0W1v4DsjV2VGxJ1UfTEPLfd2S7dbLdwUjDzHtvngZzDhtjj061+wCLegnseVvCo4laiqCMBqElIXRwqorBOA+LfQjWrziXJmgMzReUGddyuIHPvieOxJ+SEWo56BSqUzVpFiFKZUjWWTbrHQ4H5keEHwCsNuzVLvOMc3hQfrSAEmggOgh7hN+7EoiA2iODAnEoPu022+diy3oJjeoQlB7K1plXrAM4YwI0xkFvXGpS2o/+80yLHr0VNZLFZJ6V+BGiQ1rAO7qAjv3Bt4g++Dw75RlQKE1lLTqoO+E9PHbKWqXbIlYTFFZfxakyEid+ChsregUYmpGmwoQrjxZhOE7QYqDTIbnRl312MXANZzjn2azLaXF3Pva9cMdf1+Vyn94u8QNMM6zHx+qH6kVLOzTQkCj7R4d/F5p80wqAxu8Se5c015cmJtD3xSwSb/BwCy9OoQ7jH2fmfDnLpFhBJTwu/g84XWOvDMH9OGg9Y85jShd9fwEUMdcdBgM=$99$</span>
-  </body>
 </html>

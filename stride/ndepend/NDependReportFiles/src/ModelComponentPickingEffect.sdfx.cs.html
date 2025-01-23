@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"ModelComponentPickingEffect.sdfx.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Utils/ModelComponentPickingEffect.sdfx.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Utils/ModelComponentPickingEffect.sdfx.cs","projectName":"Stride.Rendering","line":"38","statement":"2","debt":"27min","cov":"N/A","issues":[{"line":"22","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class ShaderMixins+ModelComponentPickingEffect</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"18","ruleId":"ND1305","debt":"5min","severity":"0","expl":"The <i>namespace Stride.Rendering.Utils</i> contains only the <i>3 types ShaderMixins, ShaderMixins+ModelComponentPickingEffect and ModelComponentPickingShaderKeys</i>. To prevent an excessive number of <i>using</i> clauses in client code, refrain from segregating classes into numerous small namespaces."},{"line":"22","ruleId":"ND1306","debt":"6min","severity":"1","expl":"The <i>nested class ShaderMixins+ModelComponentPickingEffect</i> is declared as <i>internal</i> and is accessed outside its parent type by the <i>class ModuleInitializer</i>. Typically, types are nested to encapsulate private implementation details. Consider making it <i>private</i> or non-nested."},{"line":"30","ruleId":"ND1701","debt":"13min","severity":"1","expl":"The <i>method __Initialize__()</i> is not invoked within the context of analyzed code and may be a candidate for removal."},{"line":"30","ruleId":"ND2007","debt":"3min  0s","severity":"1","expl":"The <i>method __Initialize__()\'s name</i> should begin with an uppercase letter."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>ModelComponentPickingEffect.sdfx.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAMVWbW/bNhD+HiD/4WZsWII5kh2jTZFkAdZkKIIhRdBk+1K0AU2dbS4UqZKUYzXIf98dJb/Jhhfsywwbpkje8e55njvquTNSGj+KHDunnRubob60eWENmnCr5KMy499HI5Qh8dlolkjf6XYcahHUFG9FmJBRkqSLrw+0Io+EEbryym8+29JJ9CmasTKY3gWnMkw+ocnQ0VHpcvRnUNqnrwtIDL3VZZgHdHWaiv8pksLZv2mmgbPtlDZoOoxWBu9ozCFhTt5o4pieMxzG4UmuDD1KO6Wnj+lvNFbel+g7p5+f5x6O2cKVGq8z3nXVP+4NYgD0JL8tvfXIGcCgx9F5nFIcoaLpPj3irNBsa0Fq4T1wkFP0MHI2hzBBOFcX9crdRNDijZop43/ZgcR5qi5AmAxUAOXB2ABFOdRK6gqmyquhxgSuA0hhYIiQC/eIGQjPJ3kUGjP2kHReuos8++9aeQ56b7bl+aYGbSXF3jLF+zoZQ7T4QkiENjNJJDmGL60JgvIEayjqBoYBhKrAdSC6r4YlQrJ1vfbwB1bx7ATuLRSOUjBsAzgjhXriBEyZD9GBHXEwpSfLOlYtSk9hEcVSK7aSdEoXHI4c5VAz6XHscEzqN+Oa6GgQLDtFZ0sPPhdawwIdv0bAhtAGvbfbCHi7QUB/kwD0gQj/D6JSLE+ycwu9UAroqJqXmvMgJANGW2wZPBFMOvRQkBEhwwTCsFoXNh3LmRkVlNDqO7qGhqpQkjCpug3v5AKa4Ak4NFIUvqQuiESXmvK/ygsdi5mAtoaCJRFpn8ClNRyJI7FzSlwZdHpjFWO3jgrFHNXu16Af9FrQn/T626DvD16BfY5hYjN4eFhm+/BwcDhHl2tVmanlgnxSYULqYaS4GnAWWHmxdX5n+oiriHguKi5jwfWcqYxhGFE2DnM7FXpnKse93sm2VAaxXe3oVruz+dlHGcek/MSWOqMAqcHHlLikyqJAJ4VH0BhIQBTkl5evP/34lX9pCueiDPZojAYdpZNd7O/R5JWN8GBG5BEy1CHpyoSKbhCPevQD74n77nktovNEGl04YdXVDafRPETRkzRo5kO9y7qkdmEXdiyV+RldIHVx1FQrgYu1aWB/KV8KfRfKTNnkVshHMUZIpl7NojcmyeGRF9RCmE2SvJUqxlRfWnHXebqR9P5ebDJwV5Eo87PFY33qpXXYnlu00vbCByeKiZK+PV9DsTHNvpMbusgx5wt7uf6+pG7g4Ne236ReOFsJut3cr0QQtP5v7X9/73l/D+gzby1QvzRwB2GNbelb9f7GbM103WbX5QCncL3i832pNI2XLle886e+UGFqVTYXDx6s2N/FFxvIebx2RV02pdyU9OG629Yp/Gk2JtH6oHG4/R2xPqZzeLbu5YVJWZ34vNFwv6xvaEMf02xXedvrlthX8r6hxjWmSv9EjYDU7A52veZ2utTnn3bxdXC4JcvWkP7oyy3lH24kNl5fCw==$1108$';
+</script>
 </head>
-<body>
-    <span id="source" fid="120"  style="display:none">H4sIAAAAAAAEAH1TTW/bMAy9B8h/4HJygNS+L10PTYeihwDFvO4yDAFr0wlRWTIkOU1W7L+PttzUdoIKBiRRfI+PH04SuMbam6stabLoKb+ZTpIE7gxo44Fy9uB37KBgRXA0tXWkii+NT+v3s3nLTE7wig5OJPB8hNRbFnu6w5wsrPnAGlaN533wMjYOFOaEA4n2HmMBlSJ0YtPOo1IdX/yLXY0q9XXOJn7E7AW3BPHe8aFlQ52DpSuHexLhBOicybjVFLu8OISY18lZ0tNJ7VhvIT06T+XydA1RV8bS2PaDtGQmhvHDvcVqx5kb20MpzswNd7xGUVui78Nu66KQ0n0b88bhYdkTPVIU36FHeddYkqswo3OPJ8/KTSdv0wnIYu3JalQgtRYNUKH1LNdMSQG7HrYtdMG/gw2gQ8xaWq1WpqyMJu0fOXuRqN9Fd+YBvsJDj/O2ZiXnD8oee7Oq+lmJpr3h/H14KOrhUxkZSbFszou+2JURbQcvA9ru8yHtKEqzOse4RUcd4exiKiHMbL4csvxrmtI3/BZ0rehBc1Mc/kv2z9BhXPo2zc3mA7DZRPMx6wXtvbzXqOWvsNLtLcs02+hyCqEbswVoev2sX9H8Qpajo2zy/QfG5DTMTwQ=$33$</span>
-  </body>
 </html>

@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"ProceduralModelDescriptorContentSerializer.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/ProceduralModels/ProceduralModelDescriptorContentSerializer.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/ProceduralModels/ProceduralModelDescriptorContentSerializer.cs","projectName":"Stride.Rendering","line":"33","statement":"6","debt":"16min","cov":"N/A","issues":[{"line":"13","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class ProceduralModelDescriptorContentSerializer</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"13","ruleId":"ND1803","debt":"3min  0s","severity":"0","expl":"The <i>class ProceduralModelDescriptorContentSerializer</i> is only used by the <i>class ProceduralModelDescriptor</i> and seems to be an implementation detail of it. Consider declaring this type as <i>private</i> and <i>nested</i> into its parent type. Doing so <b>improves encapsulation</b> by constraining this type\'s accessibility to the smallest possible scope."},{"line":"15","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field DataSerializerHelper</i> is typed with the <i>class DataContentSerializerHelper&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"13","ruleId":"ND2009","debt":"3min  0s","severity":"1","expl":"The <i>class ProceduralModelDescriptorContentSerializer\'s name</i> is excessively long, which tends to reduce code readability."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>ProceduralModelDescriptorContentSerializer.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAM1VbW8aRxD+bsn/YYRaFySyh40aNUCR2thNrTZOFPhWNdJyN8Cme7uX3T0wtfzfO7N3gHmx47RfikDc7s3OPPM8M7N3janSeCNzbPQa751NMSud1G9thvoSfepUEax7bU1AE0bolNTqb3Qi9Y12w6GWQS3wvQxzOi5Esvn6QG/SF9JIvfLKH65t6VL0CZqZMpiMglMZig9oMophZsn2aQ+U39/4Iko58VaXYY3yspfI/xO8wtlPmIZagv1IZKAJAb3pdumZcWJOXmjjJa0znPDj+ctcGVqmdkGrm+Qnelbel+gbvT/u1h7O2YMrNV5nbHV5ftHpRgC0Sj9vvXXIGUC3w+g8LghHWPFxWuJtofmshVRL74FBLtDD1NkcwhxhoIbVm+fTMEjUEKTJQAVQHowNUJQTrVK9goXyaqJRwHWAVBqYIOTS/YUZSM+xPEqNGXsQjfv245n+cDzTbsx0P9HONtHxf0iJcrGGcig9wZ2snknPhg2PmHsIlnOmzFVe6Kg8Fao1RHyQSoOdEmsCCICnsnG0Te65bigaxQ+rAmumChKKamfjnrYM+lCRB8pQIBU8FNJRjHhQwKVlT97CYDKk+M6y1GhSWfhSRxyDZDLk3FICEJxUZif0dx5kSm1EGipN3HI2zILPpdYUHArro77gU0sBdyT8fk/CV52LYxKed6rSP16otX5Ve8NUoc7gUga5lepX1MVWMEadwVKF+a5cfOZA5eromQ798dks9KOPMJexivMySEqsF0mNXes3BWwzRUiohAO40gSVE9Vj5owNNMqMearfMLPT0rPkrNpc8VygzQyBXFKMSCz1h2Gw7yY8Sl68c4qAUgSqspmTOTE0Y3RttlGklDQpVmz4qiAcxnwLh1N0jk6mc6vYxjqYW52xrBVuGeWKCT3Zchedzqvnt9yhZF/bclRrhkboWki8jXW3QGpAbc2sDcu5SklVGqyxqyjJMsWKSUecr5ls3P95//Hbbz7yL0mos4qVU7N5gGbaAnFzNYZfbGmyqgtZEkbi1KQkUB6a8xAK30uSzAaDYboxFdbNEjiD9Xsf53w3E2TVin5GFJ/EhlEoM2XJrSvE1t9yuRS+svDRQKRWfCpapycE8lL5CgIJV8YCYTHfXo+BDqDxVF8jrBT+/fr11c3oSuQZ8MVPjV8LHy8hcJamL4ueW8cv6TGv8J+enJ5QHVIdjFY0NvL+g43qziLE2D+yJ9YiRUdfthC1tn7f9I2TBYnoY2gW2xeSJNy/MsX+lXx6cnd6AvShKYeOrnj42uKCHhzs/Sw9DuLBYeW9DsKfethCPXe4vuJV8MQYGTyKZnh0YsGPYHD5Lz02W5HDDdx43QKNd8dUwpivjR1NeGdr/yBT/swwwB0lGUpn4gS10+ajsVt9uN8ev38KxsKqbAMDmwdpxo3bwCOS/9u7kKksUOYkAf+1IcLgGYa69WgmC+m4FR4ir3l+NJ9I5UMfx8QS2yw2YNfA9uLtKrMG5dEtqJU9oanOiTp5MZYzL95gaI4qkw8442mwEnvr33B16HovNvkx6Khw46q5Dtquaevv6Fb/0ZdH5T/cgCQiSAw=$1181$';
+</script>
 </head>
-<body>
-    <span id="source" fid="167"  style="display:none">H4sIAAAAAAAEAJ1UTW/bMAy9B8h/4GmwgUA+7NZ0PbTJumJrMdT5A6rFOCpsyaDkZF7R/z5atvPhNBswIYhi6vHxPVJOksCdrRrS+cZDlMUgnpYr+Gpro6TX1oA0ihHGk36pvSUH0cb7yl0libLeoF/vocJSnsAnGM4d5yj8rASj4sCT6kJnzJn6WmnLtFSJA99utxOuQ7gAEJkVr1U8nSQJLLTrJKACLogEfoPw+LACTkDjUECKGII/Hu6WT+lSlArWukDQJoQrsq+YeSBrPawtQWmpPeSfZad/OplOaqdNDmnjPJbzo0DwIlgxzj+IiRRJy0L/DkT/Roi2o2i8G0PvSVYbnblQ2sgSXSUzHE6fsXXOcPGTbIaqJlk8WoWFm07ephPgpZmXjCwgK6RzMMIt0GWkK55jL2BQxf28grPYrXR4HRJvOva+SLsq0lvpEZxnRxkQSmVN0cBCenlG9A2LCun6opqbkDbGwxcwuPtPxigOPdzLrV/4ooDdIrWthFVTcVuPZ9JGDvgjp+3K0cMbm/Q18W1ipF1HF2vHc3g/pL//TcbWarWXgdGZzRD45SHr9tmpZL4WKEseQbvNIMjga83f8UUnW0ntq3CsvO/zRT+hlcccHw1LHFzsxQ7CRvVOJzOIckhbfpUdq+nyRG9erGTuxD36KO0gz5i3/waNGD1/x+acelSbeQwSX9zwFA1FZ33b5idz6zf+/AEzBQQnJwU=$536$</span>
-  </body>
 </html>

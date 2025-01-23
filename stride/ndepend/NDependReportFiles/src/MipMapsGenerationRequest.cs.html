@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"MipMapsGenerationRequest.cs","relativePath":"../../../../static-analysis/static-analysis/sources/tools/Stride.TextureConverter/Backend/Requests/MipMapsGenerationRequest.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/tools/Stride.TextureConverter/Backend/Requests/MipMapsGenerationRequest.cs","projectName":"Stride.TextureConverter","line":"37","statement":"5","debt":"1min  30s","cov":"N/A","issues":[{"line":"13","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class MipMapsGenerationRequest</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"24","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>getter of Filter</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."},{"line":"31","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>constructor of MipMapsGenerationRequest</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>MipMapsGenerationRequest.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAOVWbWsjNxD+bvB/GJa2xJDuOueWK45jaJNcMVxCqf2t9EDWjm1dtNJGo7XPDf7vHWnXL3HicIVCP3RxHGk0mnmeR6NZPyUzpfFeFJj0kztV3omSfkWDTnhlze/4WCH5VFJynjjUbFzib8Iv2DlNs92HPK/I74URek2KXs5t5SRS5q3VlI29UzmmE/ziK4fX1izReXTZL0I+oMmzJitlb+MRU7K68ls8N/1M/DdASmc/o/SNiCeCsp9WJjj03vM4AMMCjWfDjzzPcRqGF4UyAL1uCCvtki332c88VkScL+n/8bSNctELR1JpHOXB6+biXbcXsfBMPu4jdg8iEjIW5ddhO0/xS6nDXgtSCyLIeXGJBDNnC/ALhIEa1iun+A8yNQRhclAeFIGxHspqqpXUa1gqUlONKYw8SGFgilAI94A5CAqRCYXGPERIk835jte7H454/dR9/w94dfe8JjWDOXqWH+wMPijNo4hZBbbMze3g1Ljj4rTy4LAQyhAoIyQXTKTCFNY2kiXeRFhMmWZeIXgbbSWHMx78ugyuysyPcyjD+bkUI2ng0iCuFNd4BX+/YGAF+oV9bcs5rBZKLljGBz6liEL6SmjYQlSaRQCSlgEEEZRU/pm4vYt/WVzJHLyrpLdR4Tfr5H+l+Z+bT99+8yn8ZRlnLddOzRcezmQH0vvbCXywlcmjRPH+MC5uGyyCdQRnC+9L6mdZbr1BP9u5ptbNM/gOtusUW00vT9mrE+OMGQ6fCYx9lSvLYV2Z7uOtVquUag+KDqm06eey024xyBtFNQSWjhOyRqEF3I0mwBvQEN/kMWI0fhxd396Pb9Mih/D24AOL5qYPgrPcB2ZcEYV1YZGHRY2/3aooaD5eE3e/y+fT9NpqzfvZkdJYQkoeu3xU5vHYFjot29otww2YSiERTvTgdNvQ262ndgv4yZj4gKqCO9N6uDc1fqHI5nUt18QLVRaiBLngOoVwdODrFHDWy3fjxmu+uwWxMa7RA1VlaRlJ3jlInz3Pv60+eLv1Qh9GzbDe1zAKT32vwDLroMOWziRckvj1xOA8fztkwOZwPX2R7xI2sAny7uO/otrWHPrCLPbZIB73/Iq4nlYLNJyMpNDxyvEbx+FzUSn0D21XvFFzx9HpUbrs9XyDpdAVngTxIsqxeyNV/WpoyO+5N/Zar0sucLUMqClMvl6TkVFeMfO/uIMIMLjiM+b3v+FCZc7xRUt8s1iS2dXJ32BJNqwr4muF4c4oCgh34iqpxUiGB8IMsujwUopTAM5OaVQH7OwDHVRieBoNrxrHy/3qph7yP/6EXvk3rRfuB44K$987$';
+</script>
 </head>
-<body>
-    <span id="source" fid="82"  style="display:none">H4sIAAAAAAAEAI1TTY/iMAy9I/EfLA4ruKSHuQ0fF5YZIQ1zWPgDoTWQUZtk4pQuO+K/r9MUyscgTYRKaj/bz89uksDU2INT252HfjoA8T5bwYspdSa9MhqkzhihvVPr0htH0N95b+k5STLjNfrNGSqM2ybwC05+4pgMnzLBqEGdZ6lylXLOpS8zZTits6LNV1WVoIigGiBSIz7soNtJEvitKFLADLggOvA7hMV8BRyAmlDAErE2vs2ns/flTBQZbFSOoHRtts58YOrBGeNhYxwUxgUnX4vIv9spSektLA/ksRhev4qpyXOOZyCJV9ToVHoLeVP689a2wr+ebd2OlgWSlSly+0GY2lM6ZHH36Dw68Qc/SyRP3c5XtwN8Em58RGVRSHeYtKYGB97ANhCRPjZeKFtIC+lOcsthdOBjCeg/Zed7g2oiw4g1C3JAD1Raa5hJNrgon1zXV5qZaplDmksiWCi7kJZez8lO3J5h3lxjXNNROLZc88zAcNdBh1M7q4NFqB9fTM7z0yET1pd+cVdvCEc4Bnnb/N+odjKvWCXeCR/Wx8AaoSTep2qHmotRKvMwOPakDq9FJTAbyE3FgTnuMRc35ZLv6432Mi/xIYm7LLfwRqqXiI7Nt7039qjXkBdc7QNrCi8/12SulVfc+T8k3hiNFc+YvNS8qNxzkGBE/GWxJJtx79G8e8kkbsRPhbHSyQLCNzHuRTF6kwthRkkNuJfiEYH+I41iwkGb6GITw2k0HDfAYes9xiv/8e8/B66VDCgF$570$</span>
-  </body>
 </html>

@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"BloomAfterimageShader.sdsl.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Images/Bloom/BloomAfterimageShader.sdsl.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Images/Bloom/BloomAfterimageShader.sdsl.cs","projectName":"Stride.Rendering","line":"25","statement":"2","debt":"24min","cov":"N/A","issues":[{"line":"21","ruleId":"ND1802","debt":"0min  30s","severity":"1","expl":"In the context of analyzed code, the <i>field FadeOutSpeed</i> can be declared as <i>internal</i>. Doing so <b>improves encapsulation</b> by constraining this field\'s accessibility to the smallest possible scope."},{"line":"22","ruleId":"ND1802","debt":"0min  30s","severity":"1","expl":"In the context of analyzed code, the <i>field Sensitivity</i> can be declared as <i>internal</i>. Doing so <b>improves encapsulation</b> by constraining this field\'s accessibility to the smallest possible scope."},{"line":"19","ruleId":"ND1803","debt":"3min  0s","severity":"0","expl":"The <i>class BloomAfterimageShaderKeys</i> is only used by the <i>class Afterimage</i> and seems to be an implementation detail of it. Consider declaring this type as <i>private</i> and <i>nested</i> into its parent type. Doing so <b>improves encapsulation</b> by constraining this type\'s accessibility to the smallest possible scope."},{"line":"21","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field FadeOutSpeed</i> is typed with the <i>class ValueParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"22","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field Sensitivity</i> is typed with the <i>class ValueParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>BloomAfterimageShader.sdsl.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1WbWsbRxD+bvB/2Io2bcG+k+0WGlsVJDYNpsQ2lcmX0sDqbqTbdm/3urMnSzX+731m7yw5stuEphAKFSfYnZ3X59mZu9vBzFi60DUNjgcvrff1i1mkYGo9p0mlSwoZl2yzggd7g0BWR7OgKx0rqGdZvn444qTY107bFRt+vPdtKIhzcnPjKJ/EYErKfiKHCMbN883qXEJznnLJ35eRnrK3bbzP6Ow4158qlSb4X6mIPZTbXqFgEQ0nh99iLTlRTS6KAPuSpmn5TW0ctoVfYHeRv8DaMLfEg+Ofb9ceDoSL1tJ5KVpnB98ND1MC2BW/b7wN4Uypo6Fkx7RAHnEFsVjTsrFYnjsVK1KFd5GWUfmZSij9QSVkJe2l05EZzwzZUv2Aii/bOGmIylFuxqrQTk1JlVRYHWCjWZQNnAW4EZVMnXlUr9ir0XRsaoC0IFbkCt1wK7fJu1E+HavpSrLgGLRxYhArwyqF/ZKVLsAXm6mxqEBFn9LiWltLHFXj5cxCUviGssHd3gapw0+D1IQcG3QK3Pw3gDp4/gioo6eAOkpAbeM03OB03cGAOpnVky3zI604gYK8vbMr1TIQQVnxoenGKulqVyomqlmKApLAExjZ1EIJG2AbtbFCjImZOgVE6L/QQ74GKq4a6tFvglmgCdfuIXJAqb/a4MbDE6sGhLmYDD+OI/HwUXd5u+ufP32XD4bdDHn6Hvf8dDNR/UVf99mW6sbE6l1e3mjbYtoGTLmYuHxm48n1s3k8SZax0lHM6zZqlHGcIEzDju+boPalQVw0QVShddHUAPZaEBIFS7oUVPoTwXHWshAsHFVGxmnqOAWXiJFgzBTaEyleTmUC718GA8oQ4Sr4OTIFHnPJbq9rOpi5grrau5sIilOVTaAZBWnQovJGdHxQlbelkNjlrRM5qaC/nzT/Gjvbs+R/cj6QnF/u3n7x+Vv557ka6Tb6/Tk5Cjgux7s7EJ555XxUVJp4P0fhYIXvAyY7+0x0kl4HgNR1g9mxdiJ93r3nVTfa1GuzxHw8Fc1XnZYPWefCr+0A+zrGnsIQ0wyZVG5t7y97Y7jVdhLb0vjsShe/YRCqbMFmmbwJ3IH2WS86bEC+L0zKCV8ks2UXc5Q/Knp3B3wBr8kKk64+WW+7qKc+0LZs/QWzffAq6KYyBW/LOygeicV39hqfaVTL5d6cv2xn4FV9v+036w5OJGmHG82NBunbWWXdN9ruzu3ujsLv/p2q+h7C+I4G2/e8kDrj3of8mnZqYd57Cbj46V31qMNGM+t1HL8zQ1HLQxXOLugmGfbKX3198s8DPRgHHxznbncHj3TCn0myur3vCw==$997$';
+</script>
 </head>
-<body>
-    <span id="source" fid="369"  style="display:none">H4sIAAAAAAAEAJ1RzWrbQBC+C/QO01sLzeoB7ASalIZS0oYo5D6RRvbQ1a7YmXUsSt69I8kxwb6ULrrsN9/fjqoK1pg1XmwoUEKl9qosqgq+RghRgVpW0C0LdOwJxpiTkO8+TJyZ9zjNmtgSvKDA0QSeR6g1seH1FltKcMd7DnAzMW8XVkxusYhHHVjaW8ZnGDyhGBZE0fuDn3tiyehrzS1Hd4/Nb9wQuJ3wfnbD0EKiC8EdWXECFIkNz52ctN1+yVxXZ48uiywcNlCPotSvjtcl9SYmOsUeKNjLDDgd3CYcttzIKb6s4gyevN0dWtse9b3sOnedre7y1Nctg9VUOmBPMmBDZ63c995WI2XxpyzADgelFNCDrdNiYMCkbNfG247g2sfYf+mMwpNsqfqDRlnEB4/pDPnZm/zgkgjbGPwIT+gz3WOyPjor152PqFfwzZx+Za0Hsn9wCe8p4n7Syyw8kD9+Wv1/UE1BWHnHOv5zzmtZ2PcX5jMvdQYD$131$</span>
-  </body>
 </html>

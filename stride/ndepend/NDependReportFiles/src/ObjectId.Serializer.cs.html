@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"ObjectId.Serializer.cs","relativePath":"../../../../static-analysis/static-analysis/sources/core/Stride.Core/Storage/ObjectId.Serializer.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/core/Stride.Core/Storage/ObjectId.Serializer.cs","projectName":"Stride.Core","line":"46","statement":"13","debt":"14min","cov":"N/A","issues":[{"line":"14","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class ObjectId+Serializer</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"14","ruleId":"ND1207","debt":"2min  0s","severity":"1","expl":"The <i>class ObjectId+Serializer</i> is not instantiated in the context of the analyzed code. Should it be declared as a <i>static class</i> or is it a potential candidate for removal?"},{"line":"14","ruleId":"ND1306","debt":"6min","severity":"1","expl":"The <i>nested class ObjectId+Serializer</i> is declared as <i>internal</i> and is accessed outside its parent type by the <i>class Stride_CoreSerializerFactory</i>. Typically, types are nested to encapsulate private implementation details. Consider making it <i>private</i> or non-nested."},{"line":"16","ruleId":"ND1311","debt":"5min","severity":"2","expl":"The <i>method Serialize(…)</i> shouldn\'t use the <i>extension method Serialize(…)</i> marked as <i>obsolete</i>. Removing this usage will facilitate smoother transitions to newer versions."},{"line":"25","ruleId":"CS0618","debt":"1min  0s","severity":"1","expl":"\'SerializerExtensions.Serialize(SerializationStream, nint, int)\' is obsolete: \'Use Serialize(Span<byte>)\'"}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>ObjectId.Serializer.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEALVV7W7bNhT9HyDvcGdsjb25Upy02ZAmKbokxQKsWVFn2I+gHWiJjplSpEpSTtUiwJ5mD7Yn2bmSFdmJnawYKjgRKfJ+nHMPLz93xkrLU5HJzm7nt9GlTMJJGg2lU0KrT9JFie/0O05qEdRUvhZhgn1RFN/8fMBK8lgYoUuv/N25LVwifZxYJ+NhcCqV0WE9tk5cyHhlUDHyVhehCXq0G4uvGC13lldmTMyZYk0rwx+f7GDMEWUmTcCHwTY+pHJUjZ9kymCa2Clmp/ELjJX3hfSd3fPPjYvBE2az0PIk5V1Hg63N7So4ZsmH1tsmnBFtb3JmXk6RayjZHFP5MddsaynRwntKsTiVnsbOZhQmkvbUQb3SYP2hxboXqwMSJiUVSHkyNlBejLRKdElT5dVIy4hOAiXC0EhSJtx7mZLw7NRLoWXKHqLOdf8+SD8ug7RVQboH0dl/yX2WtDKogwkKtQAWU+FOrAnyYyA7rqaVJj5hObGoJA0nttAVbuBKJaK4GpmosFU6qhmt4ljHobBbUG6D5FCaWUlVipg0xrqTmZ0K/fxeMrY3d5aRsVOL5V4ijPSM7kE+5sHATIEFB+xtqYExwaHw2GKL4CFsAPOUw8gECmUuaVQuSqfW/5+s/zbgS5HgFJWVAuiszFUitC77lQfEcJJmKQdL0iQi94VmsnIIlN8qy3V1dMC1Ncg7CKV9RIfWcFIOcnuvzAWzjkRmVk01jDWPa/eL6tu5TfhgsIzwp3cI37pDeCbDxKZ0A7j7z19/96r4vhKP2QhUeNkwBa1JJA4kqw0XDpDlhiZrSBG9Yfkw3DBBhQqP7kRXSmsai0RpxW2GfGYtojkKTiAU0+aZXSOv8BFQOLxfIGTr6Twhh8PNncFPDSFOz/Wrh47jRlv44wapb9tmtxlVxYRepMj6ZKC+Pg5k6G2w7hrEu7TxO4ibM86F2RuVQR70NjrXb6/fffftO/6LY6ghL526mATqJj2KTo/P6KUtTFqLhgUNvUCeowJi9NSdhJD73ThObTAyjG+2RtZdxPSImnVfSXo7jbCrV/kZgmY0DYi9SJWFW5dHrb+rq6vI1zt8tSFKbHSZ99bXkOSR8nUKKC4CcoUgilcnZwQDcMUNR9ZK+fXk8Ph0eBxlKfFV23Sr2X1DDhWu2kmGs4ZFDLM6//W1wrM+hiVUnz27mbZXU7RQA+xYXzO4v3wuErm4r7791tc+r68RnhgQ9nyRQZ7lQfvpBU2En7DACqM+FBKXAlyg941LAqkimrOOF83Pj7DeKqbLPcGOu0uu217vbW1SXzwI5cVYcjeqeix4LUBLY1hvnaXNT9PeZn2x9Uu7tJjDXuPjoLWeczSXgoX+mSyaWjV/jJ0c3yQCLV/26YVLJrhtX+FKQcFS2aclx4Ax4NVbjHUrdIVlTF32Qvv7855bsnp3bZa44WcqHBcPee5zpvTNPh1neSifLd9eZxj9gWMvu5Vdb8VOzrHesHx9RT78jNVHHI9ugZJ9Xytrnx4huYjHgxX+bmXYFqN7YsLr4Hps3Kdf8H/IDK1I+/ru5yWfpEZXWlWFI+n/Xx1mEN5Ikf5s0QeF6X4Fljmi4nC4FIhb6nnDzdsVwfi5Q69K+7T5MK/8sL7qcM3hgPUXFIIfZv6LodaBb3rKfQJ/uP5z09kQL/z4GvoXtWTgnBYN$1254$';
+</script>
 </head>
-<body>
-    <span id="source" fid="45"  style="display:none">H4sIAAAAAAAEALVU32/TMBB+r9T/4XiZElQ5IN62ddJYi6jEBiKTeJj24MaX1lViB9tpCYj/nXPSNO3aME2IU5Uf9nffffed0yiCG11URi6WDoIkBHY3vYcPulSCO6kVcCUIoZyR89JpYyFYOlfY8ygS2il06Q7KtFlEcAbtvqUcge8EI1RY88Qykwlxxq4UUhOtKVjHt9lsmG0QtgawRLNVEQ4HUQQTaRsJKIAKogG3RLid3QMloLLIIEasFz/NbqZ38ZTlAlKZIUhVLxdGrzBxYLR2kGoDuTZ+kx7zRv9wUFqpFhBX1mF+sXut+2CkFlmMRvJM/qwTCDEcKJ6jLXiChziyii9wOPg1HABFRC1c2jLPuamuuqVrWHK7BKepJ/m9xKwColBOphWQqZztZUeH6Q8T2m/loAlcVaBOg89z3+RMsG4rDB+blKKck1lUyvKU/ODGEQLI15JsaRMb6Fa2D6kcGkXAJOPWQscL53Co4bLluOqy94j2JOg1Gm8WrLUUHWVgMN0JAT1fjeDaJEu5xltN4JwuIzgYAXmOPPc90C08rPWkdN1LCoFngfF4n7kzKzzOOUHjY82NHx7pHHul8GoM07xw1cVpeKOQfTPSYVDnhT1Ir7EBnN7v0eMjlT/o8whKGtnr5mSN4YzEMf/8tofvicJuGMFMuS/OhD55BB/pGnuHemT/Pl4+sYSZxd4pTND+2xy2LXxFLt5rnSFXwX9w2VeUvpzCDcwrhw+tN489xXwc2SvFCN4876sPf76acu3HQdkvGIQP7/yLW20K7/5T/nbAn5//3uv2kW70+wP3lvkagwY=$605$</span>
-  </body>
 </html>

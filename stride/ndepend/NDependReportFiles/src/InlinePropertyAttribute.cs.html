@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"InlinePropertyAttribute.cs","relativePath":"../../../../static-analysis/static-analysis/sources/core/Stride.Core/Annotations/InlinePropertyAttribute.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/core/Stride.Core/Annotations/InlinePropertyAttribute.cs","projectName":"Stride.Core","line":"21","statement":"3","debt":"1h  0min","cov":"N/A","issues":[{"line":"13","ruleId":"ND1400","debt":"15min","severity":"1","expl":"The <i>class InlinePropertyAttribute</i> should not use the <i>enumeration ExpandRule</i> because its parent <i>namespace Stride.Core.Annotations</i> is at lower level than the <i>namespace Stride.Core</i> that contains the element used. This situation prevents <b>clean layered architecture</b> because both namespaces use each other."},{"line":"18","ruleId":"ND1400","debt":"15min","severity":"1","expl":"The <i>getter of Expand</i> should not use the <i>enumeration field of ExpandRule</i> because its parent <i>namespace Stride.Core.Annotations</i> is at lower level than the <i>namespace Stride.Core</i> that contains the element used. This situation prevents <b>clean layered architecture</b> because both namespaces use each other."},{"line":"18","ruleId":"ND1400","debt":"15min","severity":"1","expl":"The <i>setter of Expand</i> should not use the <i>enumeration field of ExpandRule</i> because its parent <i>namespace Stride.Core.Annotations</i> is at lower level than the <i>namespace Stride.Core</i> that contains the element used. This situation prevents <b>clean layered architecture</b> because both namespaces use each other."},{"line":"18","ruleId":"ND1400","debt":"15min","severity":"1","expl":"The <i>constructor of InlinePropertyAttribute</i> should not use the <i>enumeration field of ExpandRule</i> because its parent <i>namespace Stride.Core.Annotations</i> is at lower level than the <i>namespace Stride.Core</i> that contains the element used. This situation prevents <b>clean layered architecture</b> because both namespaces use each other."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>InlinePropertyAttribute.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1WbWsbRxD+LtB/GI622JDu2U0LRVYMxnaKoBWhUj6FBPb2RroNe7vXnT0rwvV/7+zeSafEThpIUvrBQkK7s/P6PLMvt9lKG5zLGrNJNrNGW3zhXYM+bC9C8LpoAwpF2ZPMo5FB3+ALGSrWFSLffynwivpRWmm2pOn+3LVeIeXKecwX7LVEcRnHF9a6qOss5Z8MLgtyhmd98KtJLv+DqI13b1GFHp0DF7wWzVj40ymPY2Ss0QYWPOV5iUUcnlYAJ7W2LFHuhgXz/ILHmqhFyiavbndOTqORbw3Oyqh1dfrzyUkKzzP114HDXzpvhDfoddhGEU/xXWN4uKwQpvpcGUkEH6lrmutzoMq1pgQGAVpCCJ0d2rZGn2CB63eNtOWfnFEyKFDJqKkDQSM9FxoNLMNCjVQIB8iIA3CTrSaQAYzboAfDeRuOJ+0u6IM+kh1rBVDOBqktJXU0CeOYcylgWbFn0qHtMm48+7ac37RgBJAjGLlFjyVIryodmMY2ei6GagoXKtgnQAkLlKoClqMX2d2TgaBfvyJBawyBwXCrHubP5GSlkRX2Vo/kfBNy6JGc/y85XBQF36rgEkNfdsY9UvYeZa/v3nz/3Zv4y3O4dM3W63UV4Egdg5hfL+G5a23ZhWe0WMN2cDtPcFSF0NAkz0sXLIbVXlU4v87hB9itU6r7aSlY6zj5WWijuXBGpC21Y7e+EYO/zWYjqNOgpCCUE2+b4/GIk7zS1DNeAgdkyCNwf8yWwAZoCQUssKP+99nl9XxxLeoS4nMHdMdJf7+Dd9wmK26qmgnhRR7WXf7j0XjUkrZrWGyJ7/izKPjXXhiPbscj4E/OaU6prWvpt+eDKNEpd/3KAUut+AVBXR/EzPgKd0rLWFrT9/eupYtoEBu/jGXELu0bhwHgxiBujJTFEG5ToYVSUxO7JFnJweuaKxAH2ebvp/tqv61eklzj0X66lJ4vMhK77Qd/w72152mLPbBwmd4oDyzMLJ++K4b2+HUXv2kLZhMIpeHUP/m2gcngrzPuWfgIEzvxbxwYmHyK/4xV3BAQHGA6FxIdHeADaH3/vJzFrYlQ4kq2JsTtPyVuOeVx9SwbzhUxj6dalp+LDxLK72fUFzwY90O4BUboLGZ5BnfwDD50f9b5uBuP+Bv38T8r18e02ws=$869$';
+</script>
 </head>
-<body>
-    <span id="source" fid="147"  style="display:none">H4sIAAAAAAAEAHWSTW/bMAyG7wb8H4gehuQiHXpr2gJFlhYBtmBY0tPQg2LRtgpbMkR6WdD1v4+243hrO8OAZX68fEhKa1iG5hhdUTLMsjmozWoH96H11rALHoy3EuE5un3LIRLMSuaGrrS2gT1yfg5VIRYaPsHoJ8mxeGmVRM17na2rXCaaW26tCyIbGzXpHQ4HRUME9QEqC+q5maeJ1vDZ0YCAFqQgRuAS4et6B5KAnlDBFrE3flkvV5vtStUWclchON+bmxieMWOIITDkIUIdYueUYz3wp0matOR8AdsjMdaLzuBNjdSYDIW660cJNao77wP3WZQmL2kC8mjBvKa2rk083k6mXekIDJ/opaB1mWEkgTLckxmikDnTtSaQDUY+ApWhrSzsu4TKeXFJG44JZDpsxBAlFgn9QDGVO5TowTpqKnMcssykWkgH6i9a/S/uj7sR85FMgbPz787EApnUt1HoN7zz3TsU4A8cy0oa/Mix9owxl9HOn4b6TbuXbQKhqQQ96/PWfftj4bMGXE16Q/JpC//ZxGh+kMIgy6fuK7OS+ctVCoC/mu6GdusYBj4N7XR/HtdKdolgMTdtxSBbvSa5clnE/OZi1ed/bytUG/yJ8ULfqjdA+j3RqeEp+XSEF5AJLTrKBbzCDbyVXwwar2ki7x+LB561xAMAAAA=</span>
-  </body>
 </html>

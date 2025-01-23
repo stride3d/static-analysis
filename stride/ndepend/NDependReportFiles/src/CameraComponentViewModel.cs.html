@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"CameraComponentViewModel.cs","relativePath":"../../../../static-analysis/static-analysis/sources/editor/Stride.Assets.Presentation/ViewModel/CameraComponentViewModel.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/editor/Stride.Assets.Presentation/ViewModel/CameraComponentViewModel.cs","projectName":"Stride.Assets.Presentation","line":"52","statement":"16","debt":"17min","cov":"N/A","issues":[{"line":"26","ruleId":"ND1208","debt":"1min  0s","severity":"1","expl":"The <i>method FinalizeNodePresenterTree(…)</i> can be declared as static because it doesn\'t use any instance member through the <i>this</i> reference."},{"line":"15","ruleId":"ND1400","debt":"15min","severity":"1","expl":"The <i>class CameraComponentViewModel</i> should not use the <i>class EntityViewModel</i> because its parent <i>namespace Stride.Assets.Presentation.ViewModel</i> is at lower level than the <i>namespace Stride.Assets.Presentation.AssetEditors.EntityHierarchyEditor.ViewModels</i> that contains the element used. This situation prevents <b>clean layered architecture</b> because both namespaces use each other."},{"line":"24","ruleId":"CA1822","debt":"1min  0s","severity":"2","expl":"Member \'FinalizeNodePresenterTree\' does not access instance data and can be marked as static"}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>CameraComponentViewModel.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1W227jNhB9D+B/GBhtYwEplbibdpFbkToOaqDJpnWal8UuQIlji1tK1JKUEzcI0K/ph/VLOqR8XzvJbtHtS4UEFsnhmTNzhkPdNwdS4SXPsXnQ7NCP4R2dl7rAwt1IvL3QAhVLbXOnaVBxJ0d4xV1GxozFsz/raCX9mhdcja20H451ZVK0MQrptIn7zkiB7NRadJZdGbTkjXboIp75jB8nwxOrVeWmZM4OYv4fsCiNfoepm6RvMyCZKll4m/02vXtimNMiTex9SxMCk/D+XS69bapHNLqMT+ldWluhbR68vp9CtP0OUynsCW91ttfefRm40Ch9v4BGYAC7nqfFERrpxn6WhnhXKnq9zhCO5EmOLtMCziXlSf6OlxTehDuaa4PY+uuPP6OjWJ5AygtIEASmihsUwC3UOabZlFcWQToQGm2x7cAPeTEGWZBNkSLkmCdowGVGV8OMfoN3l0kbwA0O0CAZsubDzizYvf2VYF/s7q4Ndr9O3aOREm1rYZOkgYXNdKUEFLoOwC1u7BaOkJft54FbKCkphfP2BbmwJaegN9cEWwaSFrgDpW8pRYqCUOSb0j0h8CzAMNcNxW1ZTfZHSaGaNBvX03Ofdc7JhYNUEwCpFHyhCoXpgxcMrkkcsNJVwQGUhogVFOlRQilBoqf4GEMlkA/p6ChUBo/iZJ6XRLsMZuxtSCryNAOaR7MkdfvFotSd072X7fZUaqOequv2XO2LutC2N1b0dijSIDJPiZWdF6ngjlPZimmt59z8tljpzYc3D2+//OKt/49j6OhybOQwc9BKI2CX3Ws411Uh6nx5nA5l18ik8qJAK3OutAdxLLQr0A1mpkybYQxfwXTdBpW/EYysooDTl0qSUqR/JaQmWFOyOd7t7S2ztYUNBizV7F0ZNbaI5Jm0NQUKhByGM4hw0bsG2oCFRQZ9rGv9p16ne9nvslyAvxcoL2F60ufAaErZQBvItfGL9JrX/Btbja3KymI4LVAiOKvSSfH9XPHCVTlb0sMertvYvXNEjIDXLy+V/QT22YZss+9/fKpWAbvFkIp7/Sy50b749IYcrG8W3rax9XENprF139gCesoqIcnh8T4IB75iSu5SOqELGB5gghOwjBzRNUZ9mwtdqPFqewQM40B3tqf2v8lzqzd77aMZUXFSikbSV6xdHu9s8BYR+YRbbK3YR3MOCyH4x98/rN4Mx3PO0+WHNfRHWj52XfaCFkvz4eBs5kDHKPTE1ogb6koinDu/hXUyqQTdKuwHn2aXnUtjXesOjk/gbrYYRctwK+j+kQNoeWB2Fe6o79kNVxX6S2dFi+jDvWvgliD91w8cH4curwetFUB2g4b6JlfnEpV4NfCKrRJ+wpN/gqdTIc6wRGphRTpejOf1Bt9Xdd+iwxC92YEBVxajQ6CW2EcHToMzPgkD/9mSUYtPJwn1/a70tNE+wahnb6SVCXXKY5h4n/v0hRl9JMuJMJTOdWjsippW6ccjPFxPbalgP0WvV4Y+B4eGl5lM+1Tg/4v1qWItZvLfUus0lMMvvuF/NqF+tdiprNP5ovPPIFmitXqOROv51WJt1uGJqYelO2HyQ3/+Q/Bv2P8wHUUP$1197$';
+</script>
 </head>
-<body>
-    <span id="source" fid="27"  style="display:none">H4sIAAAAAAAEAO1VTW/aQBC9I/Ef5lTZUrUcektEq5SAitQQWlIuVQ+LPcYbmV1rdwyhVf57Z20HMDFNGqk5dYWEvTvz3puPHfd6MDD51qplShBEIYjJ8AZGptCxJGU0SB2zhSarFgUZ6yBIiXJ31uvFhjRSsjMVxi578AYezh37xPguFmwVljgzlamIMWdUxMowrM3FHm+z2QhXWbjSQERG3OZht9PrwaVylQSMgQnRAqUIV+MbYAfUDgXMEMvNz+PBcDIbilUMicoQlC63c2tuMSKwxhAkxsLKWH/Ij6tKf7fT7RRO6SUL9NIFC0Rx4RySE8NYcfjiSyE1FSsxMTFOLTrUhNadtzkO74iFMXD7ce1dUdewzzYUp7lrvQ2vcq+KgCPRpGj7SaGVNkq3dWBzhZsrDip7BDjUS6WxfZdpTITOmRM5aKhoUHQ7Wq7Q5TLCPynf+XQ7v7od4JUXCy45RJl0DgaMYeXArHKj2WdnDWe+Y3JJUYr2AMMD1DglllVrSQgWZWx0toUqN3sYLN9LuTufiv8UczDePc7Qrrk5OUVr5TvWNd/fnmALWfxCOgyO7MO9hoMQ/KJUOVE5Q3+v+eH4vkX+2qgYRkrLTP3ERjPfWMRgXNaisV9enNMa+BqhjFII1tKCZkd/77yLGKQqiy1q8dGnmdKRso6CO+i/h7vdYRg24Y7Q/VIJBB5YTCU70Acxl1nBNI+6IHzs2wLXgJwwAvT74HvSJMERoJijJRXJbKQwi68TX7FjwU8w+VUyXcTxJebII0xH28N4vp/gnlZziy9D+OMtJDJzGJ4Dj8QZEpABsj4JCSiCVDqI6oT6eZd72eieUDR2c+XUgidlH2r2PadvzPAvVdaF4XS2oYkpD63cv6/xvF1ao2FfUq9rS6lZWpmnKppxg/8v1kuLdZjJf1Wti7IdvvqB/2qF+uZwUDgyq0PyVyjZwpjsOSVq11cV63Qdnti6b3wT6j/+/QafK1//BQo=$734$</span>
-  </body>
 </html>

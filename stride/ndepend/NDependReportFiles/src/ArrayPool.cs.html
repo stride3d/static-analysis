@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"ArrayPool.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Particles/Sorters/ArrayPool.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Particles/Sorters/ArrayPool.cs","projectName":"Stride.Particles","line":"69","statement":"21","debt":"7min","cov":"N/A","issues":[{"line":"12","ruleId":"ND1908","debt":"3min  0s","severity":"0","expl":"The <i>public field Empty</i> is declared as readonly and holds an array. The slots within the array can be assigned by malicious client code potentially exposing a security vulnerability."},{"line":"8","ruleId":"ND2102","debt":"3min  0s","severity":"0","expl":"The source file <i>ArrayPool.cs</i> should contain only one type declaration instead of <i>2 types ArrayPool`1 and ConcurrentArrayPool`1</i>."},{"line":"31","ruleId":"CA1510","debt":"1min  0s","severity":"2","expl":"Use \'ArgumentNullException.ThrowIfNull\' instead of explicitly throwing a new exception instance"}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>ArrayPool.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEALVWbW8aRxD+bsn/YYpah5PcO8Bqm2BMhWwSWUocq9B+sZx2uRtgk2X3si8Qavm/d3bveDlw3BKpCIt9mXlm5pmX9UNtzAXesBnW2rWe1mx5q5SIU1M7rWkUzPI53jI7pds4TtZfY+km/ZFJJpaGm/29cjpFk6CccInJwGqeYXzLNEkJOh8obVGbZMciGxklnF1ZvGon7P8ylWv1EVNbRr6rRQKC0Ojm51e09jZxhtLSQatJBxmO/PqXGZe0S9WcNjdJj9bcGEf67buHFUKz5bl0Aq8zL3XVfNV4GRygXfp5A3ZGYAANb9vgHDW3Szpt0Ba/5IKWwylCh3dzNxI8hTFHkUF/lttlJ+Fd4AYyTAXTmAEzoJFlSoolMJnBVInM0AqYJyEGj2SEsgYW3E7JrKWDcAcpSY1oYwyfSIIaLWHGyB5XzkAqOJEAqcoQcmVpzZkgG+SgMlxOgIHB1HnXYe6ERM1GXNAurj2ergl5WeWj1Wy0vpmPIvvgi9hzs53kwIqZKkc0pUpaRnCBESUR7DLHki8qJyWBS2OJMlBjj9MKAgbWeH81A5GXSlJ4mgLfuvGGKgGeNbcjvOw1f2o2VhFqsYmw+WSErU2EvxuEFz09cb72bpwQ/S8p5t7feDjVanE99ocvtp33mpQtS3FaL1JkReKCbkrdIM5kirXH+8cPP3z/wf8lCQWXLzWfTC3U0wjim/4QXisns4KgMnxqlJGzShuoT63NTTtJMmUl2vFaNFZ6ksAJrO5NaK6zLCapKOAMqCgoJTCwLuOKYHUeb/AWi0VsCgkTBOJUxR/z6PiInLzipnCBapMMog61++56CKSA0mAMA8Rw+Pb6sn8z6MezrKiPss7LzgetlIWx0jBT2l/Sclb4f3zkQjUPlkTr7Ly6jS+VEKRPgiZ+g1TjPCWR4yNJo8TkjKpxd5rE5Qw6Pno4PgL6lC1M1We2aqwz7MJiiuTMENpAYbrUFvKlWlDVfE7DaNPfVzz4wvSyw6U9JeMs/dQZ3t13u/BnTrBwEdL/jFw9CgGsTRTeFYN2Y4hEi3FDgMHnuBg+w6/oz7m2jgmYK06VI5DperQR2grJf4KncSl1vrl7fAbYO9QTQqXER51iAsP/xq+b4GOoewnoQCMqmiMQs+qv986+H//G5ATXXVb3OVXjoBadQu2dM9ZPRz/t/MsY16qRV8xcXHg7Gq3TsiBuT3aTAz93M079g+a8KlMCFAQN9fIN2j+YcBiMnIJydks3gpOTrS3VqiNeutCAX7ePb1Vej6jGfPjDOw90/x85D8l8rRHrnv3wZDzPePGqEBeSJtVTtFfG2orwAvhpcos37C2993ZaIfmb6PWI3+2Tu21kj+SoCuE/BUIvy3Y0N1plG258qkfRji/bGXJmWrJQzUwlQZU58sTb5CdK+9ABU2Aqeo/8FDu0y0jwE9Tpnwqzw9LDPmllaY8YTe21iQC/Q8zj88W59vWg6jzE0+BiAN7LycH+/dsoPNiv/am571P5Q1//2P8DPsVGZvYL$1137$';
+</script>
 </head>
-<body>
-    <span id="source" fid="51"  style="display:none">H4sIAAAAAAAEAJ1U72/aMBD9jsT/cOuHKpEqU2nfWsqEOlpVartqRPtSVZNxDnAb7Mg/YKzq/76zw4CQjo1FSCT2u3fvns/X6cClLpdGTqYOEpECux9kcKW9yrmTWgFXOSGUM3LknTYWkqlzpT3rdHLtFLrxGsq0mXTgGH7vW4rJ8WPOCJVGnqEspCDOofO51ERrSrbhWywWzFYIGwFMaPZcpu1WpwOfpa0kYA6UEA24KcLdTQYUgMoigyFiXLy9uRzcDwdslsNYFghSxeXS6GcUDozWDsbawEybsEmvs0p/u+WtVBMYLq3D2Xn9k13qoqB4Alp2jQqNFARptxSfoS25QCorFMweuHFSFGjZUBuHxrZbr+0W0FP6EakFUXBroW8MXz5oXXSzHiymSGIyOAMq0wtX4VdhMdTIOXcIBnmuVbEkQ6IWbpZdqdwJJefipZs9PvV68L0kWrgAhYt9uCSNBaxTVOqsIzfEJhFBYTAr3ZIIo2YWv0j1+/FzaZznBcy1pM4pkJsk3YC2SgpPVMpWqPPN3tse4iCoXxRakB8J1QRW/sQ/p5BjSAICunCaUicYvYjG9M3Ez1C5L959GX/laoKDHwLLYFYSzlSPY1h6Akd33joYUQtpK52cIzuqV15Lc3ER8hh03qjKuAZ2cwYg6F5Iuj9oz+uYFUFlUGaW1+i+8cJjTHIC2rut2BSOj7c+qVc9+dKDU/i0vfygyySlHgvlZ4+B6OkfPY+HeWUQk+A+D22w3/EICV4oXxTv2X5P6w3DK+L3zY177BbVxE1rJv+XvYHxQ9Pc7SQNk9M6RXgqhn6e70RuolbXcKMpSdMdLdsn5O105UL9ZGoHVJsjNJyFN4YsrU2Us0MHTMWp52jCFDv0lhHwBRI3lXbHpdemaavWHnGa2usUkX7HmLf9zbnWelB3HqI0SozEjTM5WN/fRuHBuppTs6lp9Ue/X8Og0PrpBw==$715$</span>
-  </body>
 </html>

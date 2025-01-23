@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"ReferenceCountingExtensions.cs","relativePath":"../../../../static-analysis/static-analysis/sources/core/Stride.Core/ReferenceCounting/ReferenceCountingExtensions.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/core/Stride.Core/ReferenceCounting/ReferenceCountingExtensions.cs","projectName":"Stride.Core","line":"32","statement":"2","debt":"16min","cov":"N/A","issues":[{"line":"6","ruleId":"ND1305","debt":"5min","severity":"0","expl":"The <i>namespace Stride.Core.ReferenceCounting</i> contains only the <i>class ReferenceCountingExtensions</i>. To prevent an excessive number of <i>using</i> clauses in client code, refrain from segregating classes into numerous small namespaces."},{"line":"15","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>extension method AddReferenceInternal(…)</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."},{"line":"26","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>extension method ReleaseInternal(…)</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."},{"line":"8","ruleId":"ND2013","debt":"10min","severity":"1","expl":"The <i>class ReferenceCountingExtensions\'s name</i> starts with the parent namespace name <i>ReferenceCounting</i>. This results in redundant naming without any improvement in readability."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>ReferenceCountingExtensions.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1V22ojRxB9N/gfCpGLBc6MZOPN4jUGYzsg2FWCZciD8UJrpiT1bk/3pKvHsjCGfE0+LF+Sqp4ZSZZEvA/ZkIcMMu5L1anq09WnnjoTbXCoCuycdm5wgh5thpeuskHb6fVjQEvaWUoy6hx2PBoV9AP+osKM7ZMkXf4o8E72g7LKLEjT9txVPkNKM+cxHQWvc0wuZbwVdHtlMw01Jmeq0KZxdZqqfzV+6d0nzELD2hoY7xltZfH4iMeSAxZoAy/IPMexDPtvCm15mrkHng3TCx5rogqpc3r31CK8Eb4rg4NcjK76x72TGJpn2W8rsJMai/ABvQ4LXunxFB9Lw8PbGcKZPrecKJUqQ1jLNdk65lmqzyFzNihtCZw1Cwg1QGYUEfwNL+KawK2D0nMiNoCygI/MN3G1gK2KMXpwE8GqaBnKqIqQQFseavHKXI6H4HHiOQWYeFcA4dTjVEk4iGlEh+AEFL2rCKhQxsDyjJR0ng+XLPZPNmh82/txF409phHguEevcYntmaHAMHM5XOT5kpiBDei54g7+/P2PbjyjJsiR8/aYgyIBKKux0VncHFeBD1tEurVVWeRrbBDGuHA2Bx0I5MTFmK8irxD42LJWMhyzFRalmAozGzF0k0d9LZd8QXzrvrES+zDjxJoDbLscwnymsxkU6rOwLVlkoVIG2hS1YXqAMscJCD060+EF7Ueb1fuP036DBhX9z3jL+NuXhB/1+se7CO/3tvSiv0X2q8/9e4rvLVLKIuc537kOsygXDVUrzZGRoO7UGxYNIcYjVSZEKWBOK5urGkKYE2RXiaQsQBesvQ9RU2tblauaGybj/vnjt998lL805SsoF15PZwEOsi4kw+tb+MkJcJAiUnzXfEmshlwRzhMczEIo6TRNcxcshsnSNHF+msJ30O5TVNDjPGGrbsQZcXxWTdbWKteOYX2ZrPDm83lCtQVFgyRzyaeyu7/HSV5pqlPgOuKAXDDC4IfBLbADc40JjBDj4vvB5fVwdJ0UOUjHltNHtutWBN65ABPnoWBp500eFnX++3tRcWG0IG5GyY1wX0gLKErG8SP0DxyL3i3t1lrEhbUuRBjZ39/7wkayv/e0vwf8tSUOdTeGVwurdmu85UuZpTOqikL5xfnL5YHNfKwEikz4FpW7CMNKt4lvjp96ULycbICmu1HPPIbKWzqXt9C812YphrE43wyVnKWt0wrr7kP0HRSlOVgNfy4jmcnFlLtabI4Dyw+YOejer3xrwWpJYxJ3N5m7oQvDypj7+qCD1kKJoPm1SXcFvUatfHXeL4yT9VgH3Xcrh2cpgS+4mCv8L19Mg8URPtP5rzO0O5Pk/KYu6raD3mE0yfjFOCvKQ6xHRqLHFpTmmkpHyGJfIj9iObcby6ukmEAd6WtVxmYf/EpF0YTZrIfmH/9Edv8Cbz5BkE0M$1071$';
+</script>
 </head>
-<body>
-    <span id="source" fid="84"  style="display:none">H4sIAAAAAAAEAM1TwWrbQBC9G/wPcyoWlFWht8YEjOOCoHHBMvQQcpC1Y2lTaUfsrOKa0n/vrCRbsZNDL4EuAkmzb96bebsTx7Ck5uhMUXqY5RGo9WoLX6m1OvOGLGRWC8J6Z3atJ8cwK71v+Esca/IW/f4MVeSKGD7AaZ8lR+NnrQQVdTypqUwunKlvtSGhdY0a+Q6Hg+IewR1A5aSemmg6iWO4M9yXgBpEEB34EuE+2YIkoGVUkCJ2wW/JcrVOV6rWsDcVgrFduHH0hLkHR+RhTw5qcmFTPuu+/umkZWMLSI/ssVab1npTo1pS3QiPS9E9ixbfnHFdg7LvUC2sJd/RhP3pxGY1cpPleIHa4B4d2hyXFMhtMZ38nk5AlrEenc0q4MCSQ15lzPAKv/rlpdmg0qcN2WHF4tKc27rO3PH2MpzY3GGN1nPnhDuxQh5ogfYSNiw1iLiE1RVp/Dbr3KFvneXbrXDW6EvSMIQ6GYuHayk1j09JI9fDfZeb1E01Gz+/N52ZalEUDpnNMya2MlY8iB7H3KbdyfmfTBMTYaH12bVkMHX2sCa/bqvqsW80OSGyXTXaEX6ikfqFtWH1dV+A1UutWXQzJvwJV+AfDuYO/+eDGbhE4Sff/ijRvlmk1FdQGAdP8OljB8llYshKW8AltVVQrzBjjLXhhhhBY4MyxKFv2oWp5K6AXum9bsamL+K9L8Ugc30fhpc8fwEo6/N1cwU=$536$</span>
-  </body>
 </html>

@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"PreviewEntity.cs","relativePath":"../../../../static-analysis/static-analysis/sources/editor/Stride.Editor/Preview/PreviewEntity.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/editor/Stride.Editor/Preview/PreviewEntity.cs","projectName":"Stride.Editor","line":"26","statement":"2","debt":"1h  7min","cov":"N/A","issues":[{"line":"13","ruleId":"ND1805","debt":"3min  0s","severity":"1","expl":"The <i>field Entity</i> is used outside its parent type by the <i>6 methods PrepareLoadedEntity(), LoadContent(), UnloadContent(), PrepareLoadedEntity(), CreatePreviewEntity() and ResetCamera()</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose read-write accesses can be better controlled at debug-time."},{"line":"18","ruleId":"ND1905","debt":"45min","severity":"2","expl":"The <i>field Disposed</i> is assigned outside its parent type by the <i>9 methods CreatePreviewEntity(), CreatePreviewEntity(), CreatePreviewEntity(), CreatePreviewEntity(), CreatePreviewEntity(), CreatePreviewEntity(), CreatePreviewEntity(), CreatePreviewEntity() and CreatePreviewEntity()</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose accesses can be better controlled at debug-time."},{"line":"18","ruleId":"ND1906","debt":"9min","severity":"2","expl":"The <i>instance field Disposed</i> is assigned from the <i>9 methods CreatePreviewEntity(), CreatePreviewEntity(), CreatePreviewEntity(), CreatePreviewEntity(), CreatePreviewEntity(), CreatePreviewEntity(), CreatePreviewEntity(), CreatePreviewEntity() and CreatePreviewEntity()</i>. Do reduce the number of methods that assign it. By now there is no clear and predictable pattern for how this state changes at runtime."},{"line":"8","ruleId":"ND2013","debt":"10min","severity":"1","expl":"The <i>class PreviewEntity\'s name</i> starts with the parent namespace name <i>Preview</i>. This results in redundant naming without any improvement in readability."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>PreviewEntity.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAOVWbWvjRhD+Hsh/GExfYkikvPTSSy4NXJMUAtdw1Omn0oOVNLb2TtrV7a7smpD/3mdWsn2OHZoPLRxU2Ghf5uWZeWZW+zAY64rvVM2D88F7x1PNsxsTdJgnuR/sDxxXKugpv1ehhESSpMufD9jJD5RR1dxrvzm3rcvZp1zoYF06Ck4XnNx0s95VusWlyryt2rBweX2eqv/MV+PsR85DH/+aGnYrbWT5+BRj8cg1myALmBecyfCoJPqx1gYruZ1i4S59i7H2vmU/OP/jYWHk6ESy2VZ8W4jU9dHrw1cRAGb555XBExgjOhRwnqfsAFW0MeW/mgrD+5LpQl+ONVcFdbFcpPqStKfWc0G2DR5RkA6eGuWAmMK8YcrmFDrVU6o5lLbwhIyIyDurCi46W3vDfZL5lTUBujL93VTrC8+oXTlGjtayvDckZQr6jT2HKyTZqb2hoE3oLXUR+NK2eGUMQWKTq8a3KDkEAqS6bqqYdLBtDRUclK46fcCRMB3V6pM2E4QrCo3TUyjHhFhHjscqB5eyqzwpAt8NuzCnWWk9Y18VBzPkGN5z1I9nTzlwAE3GIcB6jqidrSrgUQEAsnZyEHTNyeBxf8Xt6yfcnm3n9odXXaV8QezxM8Rea98AYbGgVnmvJ+ZF9J4t6d1KyDM8fT3LsWK27nxFlfMvl8vptnI5e0G1aIODyeRM/1A2Y2fr/0uBXFvQV7RIigRs2joDM3a8jDqUKvSZAb0J/TwnY2ci7FiSZizlFSsX/TQwpfOgsorRb0KyoTHqoowakI4fBspLZSYoB1h2rdmg/Anjx4fxc7DB+NHhBuWbJ39eATutRf49QON0jawDj8PZMNOhjPH3h4Ts+0YhKTISO72FLmf3EopjdBB08QWSBJpCdYrSJWIPZw9yMic0l7PT2F6drCpUpiv5qg4e/3z88O03H+Sfpui1Zu70pAy0lw8pubu5p1+sGI5dGXmUjtFZi17ztFeG0PjzNC1sMBzGS9HEuklK39Fi38cv9UmRQKqrhxH8o/toFNpCW5h1TbKyN5vNEt9J+CiQ5Db52Ax3dwASTdNBQJ/AIYpF8vbr7T1BgY3nhEbcFdO726ubu9FNUqOjcG+S6GOOu2sEOWtDrI7aSikZDOsO/+5O6yWNo7nHNeLNctrfOMwEdYLV3Z0VT2u3kaRna3fnYXeH8DRtBnS0pRi6/V5MnhQxXvi2rpWbX64vS0lx1KJgpdbFTPJENd3U7b13DvtXhP9CnzhbkRUvTmPGg/rEOFl5kc6IY4EstmTobjcoP8ntyyG+jZ6WB+MayF5k/RDpY+p8D1fCXyRUnl7sp17wzWr3sRvihZ/0wd92kjMXZAs=$1010$';
+</script>
 </head>
-<body>
-    <span id="source" fid="28"  style="display:none">H4sIAAAAAAAEAI1RwWrDMAy9B/IPOo32Yh92W7fB6DIobGWQ/oAbq4m7xg62shDG/n2Kk7brdqkI2JGe9J6epYSla3pvyopgVsxBrLMNvLjWakXGWVBWM8KSN9uWnA8wq4iacCeldmSRdieocL6UcAPHeuAejbdaMGoe5+TmYAqemVOrjeOxvhHneV3XiTAiQgSIwol9M08TKeHZhFECamBC9EAVwttqA9yANqCAHDEmX1fLbJ1notawMwcEY2O68W6PBYF3jmDnPNTOD0W+1qP+NGmDsSXkfSCsF6ffuIfIbGkscjZNrKoxNKrAU00b9ka8e/w02KXJV5oAR9NuWR0UBxUCTMXMkqF+rE+wISTveB/aula+f7xMb1g8xi4gx2vEMeJPq/zfO7GPhNMR5V/JqYrBlTCQRsdJfSB0FR7tjDqOykwAy762gd9H2X7w9nqJT5FpeOPG8YALkRPkwr3ZtNPIPT+Dfxk6xAR7mICLc/V7vPLB3w96dS4gBAM=$129$</span>
-  </body>
 </html>

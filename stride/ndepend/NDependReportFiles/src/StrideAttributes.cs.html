@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"StrideAttributes.cs","relativePath":"../../../../static-analysis/static-analysis/sources/shaders/Stride.Core.Shaders/Ast/Stride/StrideAttributes.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/shaders/Stride.Core.Shaders/Ast/Stride/StrideAttributes.cs","projectName":"Stride.Core.Shaders","line":"12","statement":"1","debt":"14min","cov":"N/A","issues":[{"line":"9","ruleId":"ND1805","debt":"1min  20s","severity":"1","expl":"The <i>field AvailableAttributes</i> is used outside its parent type by the <i>method Visit(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose read-write accesses can be better controlled at debug-time."},{"line":"9","ruleId":"ND1901","debt":"2min  0s","severity":"2","expl":"The <i>static field AvailableAttributes</i> should be declared as <i>readonly</i> because changing it can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"7","ruleId":"ND2013","debt":"10min","severity":"1","expl":"The <i>class StrideAttributes\'s name</i> starts with the parent namespace name <i>Stride</i>. This results in redundant naming without any improvement in readability."},{"line":"9","ruleId":"CA2211","debt":"1min  0s","severity":"2","expl":"Non-constant fields should not be visible"}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>StrideAttributes.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAL1V7U4jNxT9HynvcDXqB0gwgWyrdlmKFAFtkXYBNah/qq7kGd9kvDtjz9qepBFC6tP0wfokPXecwAJZfhYFjT2+H+eee67nNpuZmi9Vw9lRNo3eaJ5EPIoucsjLkO1lnmsVzYKvVaxglOej+1+IOCn3lVX1KpjwfO86XzKeldLswyglyE+d53y6fjcJcf1+tD2/KoKrsV3nPzsaqf8ncevdBy7jI3IehYBNbawcHo6xFhDcsI3yAnvNRb/8rjEW29ItsLscTbA2IXQcsqM/bjcRXgvTXc0XWozODn88+L6HgF356bNgiEU0PpDcgRfsTVyt0/FfbY3lTcV0bE5mhmtNk4UytSrqz2o7HpkTMoG6wJpcFwOqIhMDtcoDO8VVy1SsKKY4DcfKafrdBBN3/v37n13xz2lCKUGoXIdHwaQssS1VGzrIBaHha5q27glBc5wlzRFokv+ps5LYU6M+GjsHAHFovVnAuYfoPHmeqTJigVMVSBE60rKPK1pWLjDOld5fggJkL9HuwIFK4ACagmNE9NLZ6F1dA4+KAFB08/1oGs6zu70vUv/64HAb9eOe+qfMj58xn7RILzfggTfNZQ3mtVQIb6nJ2XrVWxVcKvSJykrZ+ZomKbCGEUVHvrNSjZQ564JwrKymyljd147GIl9UhakBNqcLKxmuClH1/pU36AzyXns396pBdXNJutd3zsLNlpyqSJABshdFi7awF8Rl5YzYoEOVq7UAbJw2MyMFUz8O4RHTPzxmenxw+GqryA/SxLwocLAWAj2d3G8DWcxr4jgqD10vTawS8CRwOQ+tAnBZSagUJAnzpsJseIaK4YqGo87OapX8pEIJh7EB0yuCwL1b9BJPtkpvyP6iwE4n4/HhvcB8/XS2XxDYpbP7aLW0Jq47sxGSdVHEtMCYgvvs7s+7919/9V7+RyMMW7vyZl5F2il3Kb88v6GfnVQVN5I5lTkRBp0PtFPF2Iaj0Ui7aDnO7k1z5+cj+oY256Hn7ZXOYbXbx5mieCBEWzptHML6Nn+It1wu85AsQm+Qly7/0O4OBwB5ZsK6iZq6XsDSs3cXNwQHtoFzmnJS4NuL0/PL6XneaJKvl1CfhNnf1+QdyBBRNrircYhlk/APB5gS9HC6CripcZfjZijlJOS/sAXj5ZvhYDh4UMiWSz/HdyNP74eD2+GA8Nd2BUDSevK3KzNZrh2eO/2qQjXleCwk2PnJtouDfiLLy2eWt5S9NfZjtkfZbyzQN7tz9HR17Qw+SNgBD6vmqott1+/fqVYeN7ju5QkunM/o7k0CeDcc4Cf6+Q8km27qIgg=$983$';
+</script>
 </head>
-<body>
-    <span id="source" fid="145"  style="display:none">H4sIAAAAAAAEAGVRUWvCMBB+L/Q/HD4MhZE+7G1uA3FuE9SN1T8Q29PGtUnIXVdE/O+7troNDIHk7r7vu++SJIGp84dgdgXDMBuBWs3W8OJqm2s2zoK2uSAsB7Op2QWCYcHs6T5JcscWefsLVS7sEriBS52Ek+NdrgQ16nRSU5pMNFOuc+NENnj1p9c0jaIeQR1AZU7t/SiOkgSeDfUWMAdpiAG4QFjO1yAEtIQKUsQuuZhPZ6t0pqoctqZEMLZL++D2mDEE5xi2LkDlQluUa9X7j6OajN1BeiDGSk1dWQpBKqRe0WIw2TiO4sjqCsnrDGWOdkIBBlRpocUVqQmx6vNxdIwjkOXrjZgEYmmTQVZqojN1wuehqEeeCdekN01FivzQPoLdPcHkW5tSb8p/CvAIFpsr5BEGC2O/Brcw+MTW+iWayZ8ePpyx3EbiB3X1XrOvu3ipfXusDx7bU97ChQGcxr3BUxzJ/gED0UKBPAI=$144$</span>
-  </body>
 </html>

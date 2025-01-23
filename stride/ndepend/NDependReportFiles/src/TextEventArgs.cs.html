@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"TextEventArgs.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.UI/TextEventArgs.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.UI/TextEventArgs.cs","projectName":"Stride.UI","line":"34","statement":"8","debt":"2min  30s","cov":"N/A","issues":[{"line":"12","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class TextEventArgs</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"17","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>getter of Text</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."},{"line":"22","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>getter of Type</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."},{"line":"27","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>getter of CompositionStart</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."},{"line":"32","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>getter of CompositionLength</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>TextEventArgs.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAOVWbWsTQRD+Hsh/GIKKhXoXG0FJa0HaCgEtYuonUdjsTXKrd7vnzlxiKP3vzu4luTStUrF+akjI7bw+8+zszl32pqbAc1Vib9i7wJ98NkfLb/yMEk29/Z7HQrGZ4wfFuVgkSbr5EotGP1NWFUsydHPtaq+RUrQzYzEdszcZJp9G6S1p1IRcUfM6zekwVfcav/LuG2pe1bkxFU0hviIavJDnkAFLcRTBK1lnOAmPB6WxAIN+CKTdXCTn6Rt5NkQ1Um/4+XId5flBoKwucJQFq9PnB/1BzC4r/aON2N+KSDhHb3gZ3GWJP6si+DrQhSKCTJRzJJh6VwLnCEfmuNFcK/MoNcegbAaGwRBYx1DVk8LoYglzQ2ZSYAIjBq0sTBBK5b9jBopCOEJVYBYiJL2r/baYlzvFvOq//Iti+m0xFw3sGTKjBzeN0CNiEwqUcvwGTIM6Kic1g8dSGUtgrNKy2bEQKWDpYqkkToTlRIrMagR2UVZJOMvAyyqYGjvbzWGs4JA2iiXDibMk7eBXVsGecwFWIufuNpd9WORG50Lid9mYiEJzrQpYQzSFUACknQAIFBht+Bq1B7t9co/UStUPmtr/17UnrqwcGTbOjln5B93Bg//XwVs0v5O7nfOHx/OXq6+PH30NvzSVrNXSm1nO8FTvQXJ+dgFvXW0zFRiKd77gkokmJDhP8DRnrmiYppljizzdmCbOz1J4Ams9xSk4yBKx2otxxgJHS8wx15lxEtZXSRtvsVgk1FhQNEi0S75Ve92OgDw11EAQ6iShcBRm1fvRBYgDWpLpM0aMwnejk7Pz8VlSZhDePWTDong1osE7mV1T56F0PijlsWzwdzvdTk2B9dUAH9mq5sMd4adREqciHQZ7KxOfKqWxVXc7l90OyCcV3EdUlzIMl8etKDSk8rM6vAjEtnHaqFDXwnAOSlykEO1x+jq+MEUQMWMv3YpylF6PvG4LuGV4wxA+ukDdRtL4rHD+Bus2XpZwwqJiWEgXYsiF2Y53etO9OUIQtk4IDJjgEuQkHrZwKayuWpe7QwqHSo5zhGYCSYChvDujuk5umGtxuP0W4Z2QxYs7whKIuvbx/Ov2xlldA5gZ/gsCBcuN6fBvOJubbxdotQ3+nkGvMv5p/+UvXky/AIxA3Ng1DA==$862$';
+</script>
 </head>
-<body>
-    <span id="source" fid="22"  style="display:none">H4sIAAAAAAAEAK2Tz27bMAzG7wb8DkQPQ3ORDrs13YChzYAAXQ+z9wCKRTsqYkmQ6HlB0XcfJXdxmqJDhtUH/6H4ffyJtKSEG+f3wXRbgstmAeJ+VcNXN1ityDgLymrOsBTMZiAXIlxuiXy8klI7skjtIVW40En4AH/WI2s0ftSCsxbZpzI707BnRYM2jm2DF7PfOI4iThkxJ4jGiQe/KAsp4dbECQE1cEEMQFuEb+saWIA2ooAKMQfv1jer+2oleg2t2SEYm8M+uAdsCIJzBK0L0LuQFvm1n/jLoiyGaGzHgAldrK0faHkS/LEWq59oKS5TvlU9Rq8anJfL4rEsgC/J3Ndx6HsV9p/nUM0wKnRDn0xAxegao9K+RkNbUCzhjTQB208XNf6iDJErXsgjl2v50tlYwmDVDpodW0JSZtGX0EW4gu8ute4QmTTPnG+wHvMS23EXFcGoImCqhfpELV/L/bDh8UAaHTcwMcEjdEjLGTemr6dZcj7S3iO4dkIzqUmAaXtnU71sbp3s8u0twrPIKlKBMhYjNkMIbA2N672LJp+nDaZWoDb0Dw1kFj4tB5OpyH9x3qHt+G87AfXH8O8M/Vzxb/Pnx9NvbTmNfJEE$47$</span>
-  </body>
 </html>

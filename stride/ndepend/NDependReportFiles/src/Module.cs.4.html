@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"Module.cs","relativePath":"../../../../static-analysis/static-analysis/sources/assets/Stride.Core.Assets.Quantum/Module.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/assets/Stride.Core.Assets.Quantum/Module.cs","projectName":"Stride.Core.Assets.Quantum","line":"20","statement":"1","debt":"33min","cov":"N/A","issues":[{"line":"10","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class Module</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"10","ruleId":"ND1206","debt":"2min  0s","severity":"0","expl":"The <i>class Module</i> doesn\'t contain any instance field. Since it solely performs processing without managing any state, should it be refactored into a <i>static class</i>?"},{"line":"10","ruleId":"ND1207","debt":"2min  0s","severity":"1","expl":"The <i>class Module</i> is not instantiated in the context of the analyzed code. Should it be declared as a <i>static class</i> or is it a potential candidate for removal?"},{"line":"10","ruleId":"ND1700","debt":"15min","severity":"1","expl":"The <i>class Module</i> is not used within the context of analyzed code and may be a candidate for removal."},{"line":"13","ruleId":"ND1701","debt":"13min","severity":"1","expl":"The <i>method Initialize()</i> is not invoked within the context of analyzed code and may be a candidate for removal."},{"line":"13","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>method Initialize()</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>Module.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAL1V72/bNhD9HsD/w8HYDxvIJDvG1iEtOgRJChhYgi7Ol6FoAZo622wkUiMpu26Q/72PlBzbtZIWAzbBQUTe6fje3bvjfXemcr4WBXdPu1cmq3JOpOsedy3nwqslvxV+AVOSpI8/52GRvwgt8rVT7nBtKivZpcI59i6deKsyTs6N5eQsbiV/VUL7qkh3DxRTZ/LKbw68OE3Ff3RSac1Hlr4h/fRHcM2VDj4nA7yHw7lg7bExxDrjaXgdjQqlsZRmidV1eoZ35VzFrnv67n4TYRgiWEAYZ8HrYngyGEUoWMl/ttEGCEY0GgScjpdslV835/GnMg/fGpI5CFMG45IdzawpyC+YXqnXtaUm+ypVr0nojJQn5UgbT2U1zZXM17RUTk2RDxp7kkLTlKkQ9o4zEi7EcSxyzkKEpPtw/ByL39pYnEQWX5MYbEncPgE3M+z0z8BktBeIIfSalEbmtWSaKc6zhCYqLEAKemFwKdnOjC0coa4Qg1N6TivlF6byIKXFPGyEQLGAx+RgyWNWwNryTEiP2mNDe0Miso8yq9McYP3xjRy8+P4cDL+dg6ZWNW2vgDlgixUOaeFPnswsLmMffIZZGiiYJrvEMkZgWxe0lRQZG46Ct6DSeA5H5UEMmcpwJiGnyE5hliJ/nv+LwaCN//DXui/+FfnKAXko4iHxPdJR34VYB8aiHfy+gEcH4Iet4EffAb5giCyjsVYhdeoz9/r7BVyau/+Jxu/tGnximhw24jNUdoUEz3qEROMUDQZ06FPISAsZmw9TBSzWJs4dSA8TtZiiS7OKCf0V9kqE0578ugyuoTu/OgOdyBb5ifOHzo12mNC28Qr+SKijBvPhJ8e0Wii5QELv2NUopK8g7g1ElSMP5KQBgJAHJZVHft8/fPjxhw/hL01xarm2ar7w1JN9Sq4vb+mNqTTKooyO9QIuXB1IgrGOegvvS3eappnxmv3s0TUxdp7ST7Sxu3jdjLIEXv0YZwI4EAZNfJUpg7C2TLbxVqtV4moPFx0SaZKPZb9zBJAXytUQkDociBwFlV2NbwkfsHZhKDDHzT/H55fXk8ukyCjc+JuJ0tyFZA0UG+RWYBbCGCZqjb9zVMWR2nJP3loh72B72eLTtpfc8CzHaQjbav5bFDkMnSONq9mVAmP+6du5c3TfOSI8m9LT7jCpTY1HeN7V+1uF2/dbYy1qakbk0qj9Vtg67gQMD0pwBZGRq2zIsvC1Mh9Fj3fLcxSJIe79TyOZhspN9LHr5KZxPmsC9EKPmFmvxt5PNvv9l9tgD/Ur/uEXxPsFLsHZ0NMJ$975$';
+</script>
 </head>
-<body>
-    <span id="source" fid="21"  style="display:none">H4sIAAAAAAAEAG1RwW7bMAy9G/A/8DTYF/nQ23oqugwI0BRYkstQ7KBYdKJWlgySWpAN+/fSdjpvQAjDIvgeHx+lpoHHNFzIH08CVVuDeV7t4WvK0VnxKYKNThlRyB+yJGKoTiIDf24alySidH+pJtGxgU/wgbP2OLxzRln1pLPzwbequZPsfFJZGsyidz6fDc8MngimTeZ1qMuiaeCL59kCOtCBSCAnhM16D9qAkdHADnEqPq0fV8+7lekddD4g+DiVB0qv2ApQSgJdIugTjaCm/ey/LDL7eFR7o3Gj9tA8MKOw2ZNt3xS7v8G5VTNb7IJOU9mb8HfbBwXKItoeebAt3pr6LdsouS+L32UBGj4KUrQB2mCZYZNcDjhDV8YYL3N9Hb14G/wvpB8LOOSDXhiw6Mot/EzewUKs6oX4j+AY+gQb+4bAmcZbtqI/z6A2sD+EC2hOeNRHQkL3f+u0zHWV7cShi9leyQ9XgUouA6aumr3X5qNe3y9if+ZUD/3eAUJMRTi5Ag==$121$</span>
-  </body>
 </html>

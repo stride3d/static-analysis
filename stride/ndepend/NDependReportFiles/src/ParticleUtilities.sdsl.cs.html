@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"ParticleUtilities.sdsl.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Particles/Shaders/ParticleUtilities.sdsl.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Particles/Shaders/ParticleUtilities.sdsl.cs","projectName":"Stride.Particles","line":"28","statement":"5","debt":"50min","cov":"N/A","issues":[{"line":"21","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field ViewMatrix</i> is typed with the <i>class ValueParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"22","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field ProjectionMatrix</i> is typed with the <i>class ValueParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"23","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field ViewProjectionMatrix</i> is typed with the <i>class ValueParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"24","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field ViewFrustum</i> is typed with the <i>class ValueParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"25","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field Viewport</i> is typed with the <i>class ValueParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>ParticleUtilities.sdsl.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1WbWsTQRD+Hsh/GIMWhfbO1ha0iQG1WIpYi639Igqbu0ludLN77uylOUr/u7O3SVoSFaqNnxousDs7M8/MPPsyl50haTxWY+zsd06U85Rp/ORJkyfkhHPWScadzY5DrTxN8ET5QlSTJF187GUl21JG6ZqJV+e2chlyimZEBtNT7yjHZA7G6WmhcnSc/gleDdjqys/hD/ZT9V9wS2e/YeZnBVp2IQpaXMvKznMZhwBwjMaLYE/mOQ6a4dMxGZlmdiKz4/SVjIm5Evv9z5cLD9uhypXGozxoHWy/eLrTBCCz7Me1t+2ZN8YJOvJ1EMkUp6WW4VmB0KN+LAUMCXUO54QX75WEPu2l1Adi8HWJOVyQL8BHg0wrZjhXupISO8nWo3uH9Yb23bONke82lr5QPpiPK68GGveBPEOTNEOmDAwQxjYnQc1BNF1lPI0xgbOCooJGlYO38xXIrBlWTNaAMjkUZIQPEeYI4lIwAh91AkcmhPhhEJjY+uBIKiwIJ86OJFKpxihEtxl0yIiZyTBmzk3UymGTZelwiM6JZVZYCjrWQWF1Lg5mcYesZgklnavNa2521sXNSdxfUoJ7hv6JoWfrPD33LN0RS7vrZOmtq9hX43ty/pKcvXWSU1rn75m5DTNfrr4+evg1/NMUeqrydmuEBp0s5/12S4QHFoz1gDl5gZAkQy8HtbQ9jHr4IOg0erEAIa8LxbBwAoMaYkcDsRWC9zQlA2+C5mHUsi6JLuzCTsq+wNiEUorKIguZaz3zl5wTV0qf+ionK+1S9l2NEJIJ07TxFsrtcIvVJNZGyLcZNTFJ7zWcRsxeupJ0uyV8Sb1Oa5ZOq7uYRtQ31uGy7CMGVkWwvHDoVFlQxsvyWVf4K9+J3P4FjsPOvl5/XQ2FV3i57DeJC90QtJEdzaUS0pejarcu2y2QX1kNtByY2bkpQ4epNMRzsdKgytHgaDazXvXgZK9bo+vVQ9WLb1j/Rl8o0d/U4OQYLxq7ue7jJ91/AFp+PtcM96sXe02Q54Jh3W7/5vvze6i59h1ghev0FkBX7ZZ84S75CZENP0XxDQ==$796$';
+</script>
 </head>
-<body>
-    <span id="source" fid="5"  style="display:none">H4sIAAAAAAAEAL1QTW/TQBC9W/J/GG4gUfvCLaEHiugBFUUEcp+ux8nAZtfamW1iIf4742wTVYl6QKBae/C+fV8zbQtzzBqv1hQooVJ3XVdtCx8jhKhAHSvohgV69gRjzEnI968mzoH3bXpzsSPYocDJBO5HWGpiw5cb7CjBHe85wM3EvC2smJpiEU86sLRjxlsYPKEYFkTR+0e/ZsWS0S81dxybBbqfuCZoHoT3BzcMHSS6EnwgK06AItHxoVMjXb8vmfP2Yui6ysJhDctRlLaz07Wk3sRE59hXCjaZAecPtwmHDTs5x8sqLuDJu7lDa7tFfSr7kPveVvf+3LcpD7OpdMAtyYCOLlrV1a+6AvuGfO/ZgW3R3GHApIwenLfVwGK6OU/flT0rk3ymUYrsUX3pkAi7GPwIK/SZzMEqKCVTzm2KxPtrWDHtyr+1f8qQ5gvtDroj9/Wb2T8ELVL8QU45hheJm+Z6ociVZcT0rmR+Slk0b5+POrL/Q9YQk/5F0O+6svMHKRFiYkgE$116$</span>
-  </body>
 </html>

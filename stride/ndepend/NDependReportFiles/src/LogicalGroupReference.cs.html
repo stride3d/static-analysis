@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"LogicalGroupReference.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/LogicalGroupReference.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/LogicalGroupReference.cs","projectName":"Stride.Rendering","line":"20","statement":"2","debt":"31min","cov":"N/A","issues":[{"line":"8","ruleId":"ND1313","debt":"14min","severity":"2","expl":"The <i>structure LogicalGroupReference</i> should override the <i>Equals()</i> and <i>GetHashCode()</i> methods. Additionally, consider implementing the <i>==</i> and <i>!=</i> operators if you anticipate users comparing or sorting instances or using them as keys in hash tables. Alternatively transform it into a <i>record struct</i>."},{"line":"12","ruleId":"ND1805","debt":"2min  20s","severity":"1","expl":"The <i>field Index</i> is used outside its parent type by the <i>4 methods Prepare(…), GetLogicalGroup(…), CreateViewLogicalGroup(…) and CreateDrawLogicalGroup(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose read-write accesses can be better controlled at debug-time."},{"line":"10","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field Invalid</i> is typed with the <i>structure LogicalGroupReference</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"8","ruleId":"ND1903","debt":"5min","severity":"2","expl":"The <i>structure LogicalGroupReference</i> should be declared as <i>readonly</i> because its instances are values, not objects. Mutable values are unexpected by the users. Making it <i>readonly</i> ensures predictable behavior, thread safety and efficient copying."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>LogicalGroupReference.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAL1WbWvcRhD+bvB/mB5tseEs3dkJJG4SCLabGBInxKZfSgN70txp05VW2V35IkKgv6Y/rL+kz+xKPr8cpR9KjzMn7czOzjzPM7P+Ollqwxeq5snx5I1d6UKZV8527QdesuOm4Kzwk+nEsVFBX/N7FSp4Zll+8/UBluJANcr0XvuH77ZzBfucm5VuOL8MTpecfeCmZKebVb55+ofz1cJb04Xx/NPjXP0/B7fOfuIiDAjdjwEHg9iwHM7wLBlwzU2QBbyXvJDHo3mtG7wW9hpvF/lLPGvvO/aT41+/jhGeCMyd4fNSnE7nR/OjeD7eis+bYPNHKZjna6QQ+uEo/tIaPF5VTM/0Cx9cV4TOMW0t7VmuX5CvbGdKsggjRVFIW88+d8r4vf3oo5pS1l5xeK18dWJLHgw1h8qWPqOXZamDtsDc9FMqbOMRy5GuWxORAEhj5OfPb8f8Lr3Zlp0K1nnSS+ptBzNI1C2ApM4z1gtbt0rAJuvIWxdD6gZYoxIvi50fTqlJefqdewRrqELGFNTCsKRpArsmStj0FJxq/NK6mnSAa7CkJCXHhXUlJfAku2zybXrDz/zwHkFPZo+3EXQIfogOZ/4uSfMHJC01A/9zSOlLhEJ7qRiMdEFARG6eUDlApNC3TIt+RPLRiD+9dywue3/98ef+lMDTbb6H1RPHQPMXzesHxkhGsp869dAeQaCXlFIdFLNgbCPoSLW+w1jgyOcN40rkQCUHpU3afzKqola/R/KCbGidvsbmpAJHjpeqgBDEChYVofOgjdDTurKeYVflwRpg4vQCxHtwXyAPZLPgAHZFfMFZY5CPCkhg0a0Ogq75Louzeyw+nR1ubbPZgzZ7yGCaODQSea2MLkcqhbKS1jpUI2v/pilDhdSxu+6ico+jCOJYuam2tqXGibFI1zWxQrqqdHIwgIkg6MEioCzRH2BEqK60DC4sSr8z4i60QXEZkpcM3y1k1h28cxo84oT3zq6cqoHESrKbRp6HzktV+9TSLo2P1kkxDjuLymrxAZ+VNaWwnvKWqoaC7vByf/o9nW2dfo//2+EHOEsujJKUIbo4A1RpG9NHrwUXCi0ZSdhMHKkWVGN8T6mxgWxEDUPmbSJtMEa/rkFusCL+0L5xqMH3divcOZQbj9y9gFnqIkVccKWutXVThBBn8mrJaA3hlJdLDEyZEoVtewQFrr99+/jD9x/lL8/Rfm3v9KoKtFfsU3ZxdkU/264pU6PGCSCdoxddnMN7VQitP87z0oaGw/LGNbNuldOPNNp9vAyPygxeaZJcQk0QHF2GrtQWYV2bbeKt1+vMJw8fHbLCZp/a/d0dJHmqfUoBSHVRpALW2/MrwgZAAo1fclLZm/OTs4vLs6wuSf55kVmfxBdvanIWnIjwauvEKHM+5b+70+Aa962CMu/f5Ls7X3d3CJ8cyTzzXV0r17/YLL1GfYbTgEZ7fe7Y9WSSvmglArt31E2s/G6wtlugouGS2a7Q5Djkc2dPHDejWrZvHucQPaeG19t99g7m+z/t7mwOwB0o16ORh3QjbTdvjyabZLB82d9suZW9fGJMpKSH2OP6t/SIH3xFr38Dt/YLJ5EK$1191$';
+</script>
 </head>
-<body>
-    <span id="source" fid="40"  style="display:none">H4sIAAAAAAAEAG2Py07DQAxF95HyD16hZsGMEDtem1KgUumi6Q+kGTedKhmHeRAixL/jJG1DUUeRYtn3Hl9LCVOqW6uLnYdJnoBYztbwQsGozGsykBnFCuOt3gRP1sFk533t7qRU5A367UkqyBYSruA4d+xReKsEq5Kek+pS58xMfVCaGGtrMfKaphFuULheIHIS+zqJIynhWbshAirghWjB7xDe52tgAxqHAlLEvrmYT2fLdCYqBVtdImjTt2tLe8w9WCIPW7JQke2GXFZD/jgyWYWuznLkiF14scJulzZFHH3HEfCTHObBharKbPs0tt74Pt4VHOfzBB8BbQslFTrPSigshfrfqhNLnsPqsOGLgK8NHHYxEF47wAq3aNHkOAgPec48DM/BYqbIlO1lM8zNZ1ZqBY9gsLmsmVzfJPdxNC7QxqM1fAkXDFD4dXl8mdaZdGdKRsuf9N3rmRxJH9jH/s9Q8o+/X1QpM06sAg==$145$</span>
-  </body>
 </html>

@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"Utils.cs","relativePath":"../../../../static-analysis/static-analysis/sources/core/Stride.Core.Design/Settings/Utils.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/core/Stride.Core.Design/Settings/Utils.cs","projectName":"Stride.Core.Design","line":"31","statement":"6","debt":"16min","cov":"N/A","issues":[{"line":"10","ruleId":"ND1803","debt":"3min  0s","severity":"0","expl":"The <i>class Utils</i> is only used by the <i>class SettingsProfile</i> and seems to be an implementation detail of it. Consider declaring this type as <i>private</i> and <i>nested</i> into its parent type. Doing so <b>improves encapsulation</b> by constraining this type\'s accessibility to the smallest possible scope."},{"line":"19","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>method SetAndInvokeIfChanged(…)</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."},{"line":"10","ruleId":"ND2014","debt":"12min","severity":"2","expl":"The <i>class Utils</i> shares the same name as the <i>3 namespaces Stride.Rendering.Utils, GNU.Gettext.Utils and ICSharpCode.AvalonEdit.Utils</i>. This situation is ambiguous and can lead to complex compilation errors."},{"line":"21","ruleId":"CA1510","debt":"1min  0s","severity":"2","expl":"Use \'ArgumentNullException.ThrowIfNull\' instead of explicitly throwing a new exception instance"}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>Utils.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEALVW624aRxT+b8nvcIraBiR319ht2trYkoVJhNSiqGD1R5RIy+4BJpmd2czMglFkqU/TB+uT9JuZBQN2lP6phc1czuU737mMP7dmQvIoK7l10bpzQtokt62TlmGZObHkN5lb4CZJ0u3HOtzkP2Qqk2sr7NO9rk3ONs214XTsjCg46WOd3LIVc5WO2Tmh5jbdcZdNrZa127i7vUiz/8VPZfQHzl0T71MliEih/N15F2vvkktWDgcvsS946pfdl6XworleYjdKb7AW1tZsWxdvP28sdE89j7XkYeGlbru/nJ4HCNjlnx6tncMY0amHZ3nJRrg1Tr0y31cSy8mCqSeuc5lZSyGYXiquSVjSSq6ptlzQdE1uV2wT/BujfYKDQqYKssylJadpytiTKCsZAgS1WlHBLhOS9IyES6ivlQU/BscwamAOPuDVrSsoW++sMmIJirbmcaTYOi4iQgVHwlmqMgMfQTGhW+0tWU296TX8G71kS6zyrLK1DDh66fTaR5QDgDOZUHuuX1jKciTeiqmQIMtH42O3ZSYlnFOl/Z3ESa7hsPVw8piTX5/k5OfncnIacnL+9aSU7Ba68HTfqGKolvojD2f9RabmXLT/+evvziZVkUNkqiGunkqRh8tp7chwiTAtGNuEBvhTXmtw6glESrmcItlFzfSUVIh6ig58gH426Bbv5cvZbCJ4qnJCq4XIF1RmH5GggCJ3dSYP2A8kk2dF5KiaPbYPOuDstPvjc2x3z2I/7TB99tXytwuEamPm0c6k/J/MbtrgPBzYKgNWahr9D1YgAJEnwcwJvR7dJa/RKXzv4lEo4mF/DNtVX0PlZplJrQaFaAQilxNPnBVgI7QNNlk5FfNa19FCjtaSnBU+Vbn2PXYfvkWsb2JjtLF7XJ11d7nq33R/CuwFrozc4erZabFD151lenFj5rVv61Et5eA+58q7TSYLo1fDmT98gVJDnwIimn2TPOmHCER8bWSkeIWbRjeIZyrn1sO7h/ffffve/6YpqqpaGzFfOGrnHUpGgwm90rUqYpyeC9Qd2EeRI2JqL5yr7EWaFtopdrOtaKLNPKXvaXNvQ8bOiwRSnWBnjHLDQEAu60JomDVV8mhvtVolNkrYIJDkOvlQdY6PAPJW2AgBrVH7EghF8vtwQlBgZTGUxszh8LdhfzAaD5KyID83EXY4bt4NMlo7mmlDJd4MXGJZRvzHR8dHtfXMjdcgtrzcbncemRuldBy19tIrbEt0T2ozu4+PPh8fEX4QwuAegzD3AcyMLvfE36ANNhM8nsQHj/5kFF0tC4BdAqzz1Wh1yasFA3ycQIRYQicVhNoEM2KGxHPBRRJ9byYCxeeXdtowCjQYI86UerYuy8ysr/eP7yrkuWnXOf6vUKCXZbGZ3fEIvVYjF8NZOIsCeZil6FURhuuONOiIxO+5T5/33/NjEhMzK8NcuGpNWtd+sITpqXcd+lrzuwiml24VDy3uWguq0eI2rjqEDAtf1Q6uonZYhkSx+y+qkYSoG9fheYhcid24FpiNkcziGcNNNTRJXmrxhTetN7luG57RJFo9wSJAPqG3Ix3GzTu6iTginM6jj51KCZU1o3YD+eqKFFQ7cfyEyfPsBGv7oPWsUet0LvctTrWWmxjpir4ZfMJzZdsN0oDzUMWDaDQ6+zcHaP1PJPIqWrp8eh9htQ99PDxumyW+8PEj9F9aqYZigAs=$1277$';
+</script>
 </head>
-<body>
-    <span id="source" fid="85"  style="display:none">H4sIAAAAAAAEAI1TTYvbMBC9B/IfpnsoNizyobcmWQjbFAJtKCRLD6UHrTWOtbU1riQnG0r/e0eSN19daI3B0ui9N29G46KAe+oOVm9rD1mZg1gtNvCReqOk12RAGsUI461+7D1ZB1ntfefeF4Uib9BXR6gguy3gLbycO+YofKcEo/Kos9aNLllz7XuliWVtJ056+/1euIRwESBKEk9dPh4VBXzQLllABZwQLfga4fNyA0xA41DAGjEGPy3vF6v1QrQKKt0gaBPDnaUnLD1YIg8VWWjJhkNetsn/eDQe9U6bLawPzmM7OW5jJYL9opgbQz7i3SQQjGzRdbLEC9QavWemG49+jUfAD5ewePZWlqGAylJ7Af9i0aFJsiny4HXjBHxFKKlvFJvdsVkPnsBRi/sa2XzXP3L1wLW4WloWbqTnzugKDKJCJVJubThqZAMuZCihbKRzEDMkwOAx+Sxg6vq2lfZwdxl+6Pie0cVmbvUODbcX2RpbOoV2sun5LpZVjCVAWUuzRXfLRnb0A8/Q3I7U+Iv0xev5p/7QYSetbCE0fXazubnbsFQIA50nDLMWdsnMtDgSrxXP1SI1KR7r6mPJrPBPdkyV2HEZLwr9/1BTExI3rQN56JU+r6uWbmimekV4mIbhknek+YdDPzdqGaWW1X2iTjd3mcUKNkn1lhfR8i18W5Ff9U3zHebJR7KTn3KcTUqcrAqywfJsBoapOdu1tOcB3MPcbvuWxzpILp5L7AIwC0VTNdDyfHKp+EjUvNQIM3iz+NnLxmWD0+jzmhJMDIz88uTKbXhSI2dJafL3ebKVXef4fdoOS/7w+wcbpUiGPwU=$617$</span>
-  </body>
 </html>

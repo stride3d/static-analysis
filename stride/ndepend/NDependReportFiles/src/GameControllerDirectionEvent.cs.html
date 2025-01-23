@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"GameControllerDirectionEvent.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Input/GameControllerDirectionEvent.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Input/GameControllerDirectionEvent.cs","projectName":"Stride.Input","line":"58","statement":"14","debt":"16min","cov":"N/A","issues":[{"line":"14","ruleId":"ND1905","debt":"5min","severity":"2","expl":"The <i>field Index</i> is assigned outside its parent type by the <i>method HandleDirection(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose accesses can be better controlled at debug-time."},{"line":"19","ruleId":"ND1905","debt":"5min","severity":"2","expl":"The <i>field Direction</i> is assigned outside its parent type by the <i>method HandleDirection(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose accesses can be better controlled at debug-time."},{"line":"14","ruleId":"ND2000","debt":"3min  0s","severity":"1","expl":"The <i>instance field Index</i> name does not adhere to usual .NET field naming conventions. It does not start with a lowercase letter, an underscore character followed by a lowercase letter or an <i>m_</i> expression followed by an uppercase letter."},{"line":"19","ruleId":"ND2000","debt":"3min  0s","severity":"1","expl":"The <i>instance field Direction</i> name does not adhere to usual .NET field naming conventions. It does not start with a lowercase letter, an underscore character followed by a lowercase letter or an <i>m_</i> expression followed by an uppercase letter."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>GameControllerDirectionEvent.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1W0W7bNhR9D5B/uDC6wQZSyUmarnWzAEGTbga6bJizp6IdaOnaZiuRKknZNQwD+5p92L5kh5Rt2U6ceED3MkxIIJLiOffwXPLSs8ZAZnwjcm50Gj/g9VorZ3SWsbmShhMntboes3JRYhtHDcOZcHLMvwg3AiCK4tWfdfiSPBVKZFMr7d2+Lk3CNmY1lIrjnjMy5airitLFjwcWfauz0i0DX3Vi8S9HLIz+iMGFNetgfMxAiNGzF2j7sJwDh4HjZxhIuR/az3Op0E30GL2b+BJtaW3JttF5N1tSBIQpM+6mftbV8cv2WYiOXvK5ZjuryCyP2Ug3xcgJuvylyNC8HTGdy4uB5Cylrkr5y3ksL0haEtbKoeKUdOksVkDSWSqEgVxy04KpPyVXoXN2I53Sj0KlGa8caf71x58tzxbRJVUB7EiXePWZhCJWiShsiW2BIGCReZEFN4RHU8pOyKzCw28vwVAuPkk1hBQPKIwcAxwEa0OGByJxaOCrgH5CHgo2bkqTkbYImSClli0lCA4JfXYOlMkylykJh6j9cvjUyZyjxvyo9vrl1/Z6ZdP/ft/n99bePmm32/f5fQq/idp20/PjO55LhbOmEqbtja5wSCnVUKk0lpGO2DA5TaUtRUbRzfXtAoKJ3gmo9wcdhtmIuq6Ggt84mkg3ghOZnrBJBEzIwqKPvP8lghqbaARIRsLAO7gxgBOYnPrs3sV5m4H0Kf89yMWqDEz1+dpAgr0oNqAPbt+vbOfmXv4vW/p+/uGbJx/8fxzjlBRTI4cjR82kVS3sjYak6jzhcFK4J2S/xCmx1Bw5V9hOHKfaKXaD1dRIm2FM39Lyuw03xmkaYVYr8PRkJmET9VyZSg1aU0Q132QyiWw1w4YJUaKjj0Xr8AAir6StJGBZwa5QRH7q3hIArCxH1GMOg2+7r69vetdRnpK/2gl7wQ8vrjMyGjkZwL7c+y0Vmnml//Dg8MBn3RYCe2L9wjs8mB0eEJ4YUs5tmefCTC/qoUuUpXGocBqlwCZQisLhk6mGQcDQb6ZVyTCULrcahctzjTzeZC/KPhZISYa6Sg/d2dShIDV0KuxC8w7dy2F/FqQvJKQHwahaWy14iym+S7UQKqEklKVX3s09wyue1FH3DrVaf936J0F9SgqRYsmo3zYkb4T7i2v/9tDQ3UoJj7Ebt/JE319Q896Jreq1oXpBrFG2/P4jv+1RXW51LzSarXrqWn79Y9iVRtGTxsxvYj1ohjy05h2ahdacmrNNFdHKuC6OgX0Xpr2P/C++eeuIljyrWYFr1Qt87Fb9N0YybvKphzdb6wSbUQPLlpAQsvGqXtB8w5Pqxl56sTvoTm/kgOplRF17w6UzImttzlpzsbGYsa7JPxZ1PBmtk0HNrUw+2eaL1hbd7C57KMPtzt0P66F/K7ajrqDHj0B/9XX8AfzJPvid6NN90Fd6onYyPHuE4UHw2SPgtzx4OPrzPQh2gr/bA3y/8yl+YZaZewT/c+l8BTb+ythmmW8cjMUr3OF/AxEXGru/Dg==$1144$';
+</script>
 </head>
-<body>
-    <span id="source" fid="10"  style="display:none">H4sIAAAAAAAEAJWVXWvbMBSG7wP5D4cyhg1D3tZ9kW6F0abD0GWwZFdjF6p1HKtzJCPJSUPIf5+kJP5q03i+sSyf9zmvzpHsKIIrWawVn2cGgiQEMhnP4EaWglHDpQAqmI0QRvG70kilIciMKfQoipg0Ak1ahRKp5hG8hMN7bTUMzxmxUaHnTHnOE8ucmpJxabGqIDVvtVoRvYvQPoAkktwX4XAQRXDN9c4CMrAJUYHJEL7HM7ACFBoJTBH95G18NZ5Mx2TBIOU5Ahd+ulDyHhMDSkoDqVSwkMq9tMPFzv9wMBwIukBd0AStSWefxKIozXCwGQ7AXpG18lmXiwVV68t66qsAXKIwYCQw1Il1ikAhyaiYewNzi4XElVHmuTXPuLJeXH21oQYb8KhNL8o7u0BIcqo1fLOUqwpyfWCMfeoReKv+Yafdez7i+zA9y5xDhg8gU1+o2lttuEOKHqP2Rrl1Ejvahatmz/QCV3XW3qmq9dej/0nqWlJQZpdMDWjfvIzrXR97e4g7LcGl3Y2dPsGXSwieDAx3t5brPVguUbn9B27biznM5NQPgrAObfTXXQpNqQS8ONu4TSzTwPch3I5g40dbCDZtF6QqXGyPgf7tw/6QiQ3ahq/gwKmiPKt68jw01fON4ihYvnbyIGwC2lk9pWPEpzy7qBe0bdVE8aU9JYdaHE96tDY8hXoZJNYTLI2iediOalTxbB/R9OQuveImyZow62bGk786+BR2cJvH9IRqhNejxy+aqX8V3ayV9M0J6U/3HX9G/7aP/qj6vI/6Wq7EUcK7E4Rnxe9PiG8xfT77hx6Ao+KPPcRPV55hSsvcnND/KI37Aiv3y+hStq2Dsb9t/wHp53iRvAc=$641$</span>
-  </body>
 </html>

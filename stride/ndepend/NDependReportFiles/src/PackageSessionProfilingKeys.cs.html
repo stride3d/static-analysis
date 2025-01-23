@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"PackageSessionProfilingKeys.cs","relativePath":"../../../../static-analysis/static-analysis/sources/assets/Stride.Core.Assets/PackageSessionProfilingKeys.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/assets/Stride.Core.Assets/PackageSessionProfilingKeys.cs","projectName":"Stride.Core.Assets","line":"25","statement":"3","debt":"30min","cov":"N/A","issues":[{"line":"12","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field Session</i> is typed with the <i>class ProfilingKey</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"17","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field Loading</i> is typed with the <i>class ProfilingKey</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"22","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field Saving</i> is typed with the <i>class ProfilingKey</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>PackageSessionProfilingKeys.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1WbWvbMBD+Hsh/OMw2GkjlvjDGsq5Q0g7KuraQfBsrKNbFVmdLnk5OFkr/+06207RN15ZB96nBAUl3eu557uSTr6KpzvFUFhgNonOZ/JQpjpBIW3PuLNu0Sb/igkRCUT9ymEuvZ3gufcb+QsQ3D3m2JJvSyHxBmtbntnIJUiyJ0FM88k4rFEPrUBw0S09GlxOyeeWX0Q8HsfwfYUtnLzHxbY7WEdiFNwTbznseBwZYoPG8sMtzhZN6uFVow9PEznh2Gh/wWBNVSNHg+9USYXsnZLnK8VgFr8Ptj1s7NQWeJb9WaNstGuEMnfaLsMRT/F3mPBxnCHt6v8kFTDXmClp9e7HeB03gFyUqmGufgW+8k5xzBLf1174+kz5sKCovJzkOQHuCWiNBIg1MEAqrNAdRwJ6uMl4XKGCc6cYhR6nA26UFEmumVaAC0ijItFHoeFEhMCTH4Oh+IeDYBFJnk5D6zTOnOaEcgemlThYsPg3s+sFHG95mEmyEUs1aOqx1lQ6n6BzvTDKrg491kNlcMUDLO6hqBYnour8qxYeXKsWJlaoV8FqK55Ri5+XeCjl7rcSTlfhxffH2zUX4xzEMbblwOs08bCQ9EKdHY/hiK6M4qy39oTXcJCeVt45gI/O+pEEcK+sN+umNq7AujeEdLO1UN9ZdJdirV+OMWDUnBka+UtoyrCvFCm8+nwtqPKh2EIkVl2Wv22GSh5oaCiyyqpMZhH87HgNvQENcixE22Tg5Hh6djo5EoSBchaBNm6S664Oz1tcJKrjjs5GHRcO/2+GKccZu3wiHWqbGEh8w+tTtdDuGLw0qJed4/d7odq66HeBfzIT3qCoK6Rb7q6VwA0FFrCCEL5dnsGaXynBowuEUtzDiuyBlNWG10B749ij//bZrNrWc1vc7PrLW5Is7b8PyWoHPYHB+x7Rx73Mi6tUZWYI/IHq5fIMCOXdKsFOQQA2IuAcQryM8h3XbgR9i3bLtQxScov4d65dcpiRObPoPWkjO8CW0NC3scSnsg49JCbGuux1+wkv+B6HD+8YUCg==$781$';
+</script>
 </head>
-<body>
-    <span id="source" fid="90"  style="display:none">H4sIAAAAAAAEALWQ3WrbQBCF7wV6h8EXxYawe9G7/kGIHQh1Q0B5gc3uWN5U2hE7qxhT+u6dlewkakwbAhG6EDNnvnOOtIYL6vbR19sEc7sAdb26hUvqgzPJUwATnChCiv6uTxQZ5tuUOv6ktaMUMG0epYpireEDHPcsNw4/OiWqxcCpfOOtMKvUO0+CjZ164u12O8WjggeBsqTuu0VZaA1Lz2MEdCCGGCFtEX5c3YIcYGBUUCEOw/XVxeq6WqnWwcY3CD4M4y7SPdoEkSjBhiK0FPNSPtsxf1n07EMt8XJwJfFQLb2pA3Hylj+XRVkE0yJ3xuJEdc6MicviV1mAPFoCf+G+bU3cf3safcc9Q8/SINtLHomX/XK6WrhgG8OsnjH0FNL1d9IWOEleO6rhxtifpsYKmaXDzRGavcajQ6aX9xGNo9Ds4fkRHEDwFQLuJqv5bOo1Wwx/5Ag/Ufo4fqRAQ8YBbcAAjxD1F0C/JLwm9Vq4mX8i9SHtGcyyaHY22V42pma1pvoNXdg84Ht0qczDf6uIBv9VJXv9Lgt5/wBS7RLG4QM=$90$</span>
-  </body>
 </html>

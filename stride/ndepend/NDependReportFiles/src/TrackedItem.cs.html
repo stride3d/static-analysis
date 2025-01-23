@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"TrackedItem.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.VirtualReality/TrackedItem.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.VirtualReality/TrackedItem.cs","projectName":"Stride.VirtualReality","line":"36","statement":"0","debt":"9min","cov":"N/A","issues":[{"line":"9","ruleId":"ND2003","debt":"5min","severity":"1","expl":"The <i>abstract base class TrackedItem\'s name</i> should be suffixed with <i>Base</i>."},{"line":"31","ruleId":"CA1816","debt":"1min  0s","severity":"2","expl":"Change TrackedItem.Dispose() to call GC.SuppressFinalize(object). This will prevent derived types that introduce a finalizer from needing to re-implement \'IDisposable\' to call it."},{"line":"31","ruleId":"CA1063","debt":"1min  0s","severity":"2","expl":"Ensure that \'TrackedItem.Dispose\' is declared as public and sealed"},{"line":"9","ruleId":"CA1063","debt":"1min  0s","severity":"2","expl":"Provide an overridable implementation of Dispose(bool) on \'TrackedItem\' or mark the type as sealed. A call to Dispose(false) should only clean up native resources. A call to Dispose(true) should clean up both managed and native resources."},{"line":"31","ruleId":"CA1063","debt":"1min  0s","severity":"2","expl":"Modify \'TrackedItem.Dispose\' so that it calls Dispose(true), then calls GC.SuppressFinalize on the current object instance (\'this\' or \'Me\' in Visual Basic), and then returns"}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>TrackedItem.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEALVVa28aRxT9juT/cIXaApKzC0G1ahJFcrATIcWWG1x/qRppdvcuTDM7s50HDbX833uG5eWapE7VIFh2Zu7j3HMfc9cupeIrUXF71L6xIv/IxcRzleSufdy2rISXC74Wfo7zJEm3X+dxkj8TWqilk+7x2gSbs0tZz6TmdOqtLDi5ldYHod6zUNIv00cOReaMCn7j8HyUim/kqbbmd879OvKDSpBSsIjj4Qneo1+uWHts9LEuOIuvp5XUWOVmgcVVeoZ36Vxg1x79ercxcBrJDIonRRQ6f97vD1cYsMr/2Nn6sbHleME2Ahi1B1jyp1rF7MyZXspXoMgjGE+ZcEy5Es7RXnQdRxoxvUzlK3JzE1RBGZMLZSk/cUF/Sj+PVl5DOcok7fvjLcrhYB/m+Gzw0+BkA9OqHcwBYBL13UOoz3dQx3OhZ7wPKzmXrjaOuz3yhnKhFL0dJ9NQ15adeyORTPkXd00Wk9JL6GYuHcBCDAILkE4F/CwQgV/W7MjPhSepvTVFyJkElWsTlkprKtLMhdSz6MzyM1nVapU66kwaICJT3NlCkf7LPPRPhv+JhwvtguUGbOcAGx1ClAUjiRaRCUd1yJTMSeiCHIqQi31Yp/8TqmtrFqh2eCGDc1R+ZIO2JKG9DI5K2uQsM0b1CHv7MXTIWKqE/YjweJWVGECDOqGzhlgQvDFSCuW4t6lJo9USxcvAEGpUbJwyyNS6lw/pext26lvNzKCeK8yCWSQQtD0y9U0Se2kKWS4/k1Nn1uXpV0G4hyEcR770+uRAD0SeI6N5sDZWbNMSqHXMH41S73Y8emPFfucyVpCmW+kwtQg9LXPYjzSsfFj2wWrXvv/t/sP3332IvzSlsamXVs7mnrp5j5Krixt6Y4IumrRH5bFBY8kseGMddefe126UpoXxmn25FU2MnaX0A23O3WqGDosEUr2jFjwh7sYOcgMt9GYM7HJyQyhy1o4TmjKvNt9NxhdX04ukKiheSDGquL2e0mSN8VTGgjM2HuK1akActYKLjT5dOiThxXbZDPQxxJNLXCYcxXP3z/O3GJVx86gVh6arBQg+eBccte6OWoTPpkM3U/jRAKYR7c2YRmmte0j/FuEZO6Rr4+QqAXc0Y/+C7iOozyn9HHAVWR3F35t1vz5Fb+PsHdpB2FtWJkdsX6V6pmdBfaXuOS+Q72m8P6l5Pl1rvOK3eT5FK1ZczC+aVqirUGWouqfolcqgZV8LD2KX14zRgUE4+yLSRVMhtDCyoF9qdAV3Y0HdyApFjUdvp3JHu89u91+tbm/Ng5YeGFr/4Rv7/G8lE0JI2Ak=$983$';
+</script>
 </head>
-<body>
-    <span id="source" fid="20"  style="display:none">H4sIAAAAAAAEAJVTwW7bMAy9G/A/8DQkF/vQW3ta02wI0AZdk+ZOW4yjTRYNiQ4QBPv3UnbToEO3pYJByyQf/Ug9lSXMuDsE2+wEJvUUiuV8Dd+49wbFsgf0RjO8BFv1wiHCZCfSxeuyNCyeZPuWWnBoSvgCp3hUjKErU2jWNM/KEu5sHOuQAUVRANkRPCzW4GxNPlIBK6LBeb+YzZeredEa2FpHYP3g7gL/pFogMAtsOUDLIQV1244k8qyP1jewOkSh9ubtcyBTzDS9eEAtldLr+Gf8O7aUnHnm067Dmk6hjQ3So3sidFYOeXbMM9DV9ZWSB6y0NVRmtcMYYa37X2QWSgGuYaGNdxyxcjSCXrEf4TfaHocreORohwM4QkNyA78Tqb+BfvQoFHxKf2LBi3Gnn91bTxg25LjW3j4F/eqb3n0Se0d7Pe+VEk3TTfZy1GyY72gvQSXFpfOlYNEt+7ZS1V2C2zpGgVsUHezhkYLqU7D5J9P9qBDYszXw3OmtoEkS1Nq2Kmo10zPkCOd19v636igkmnxc6V2h15c+L9Qd0AXkAw==$91$</span>
-  </body>
 </html>

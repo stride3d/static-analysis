@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"PrecompiledSpriteFontPreview.cs","relativePath":"../../../../static-analysis/static-analysis/sources/editor/Stride.Assets.Presentation/Preview/PrecompiledSpriteFontPreview.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/editor/Stride.Assets.Presentation/Preview/PrecompiledSpriteFontPreview.cs","projectName":"Stride.Assets.Presentation","line":"21","statement":"1","debt":"37min","cov":"N/A","issues":[{"line":"13","ruleId":"ND1202","debt":"9min","severity":"1","expl":"The <i>class PrecompiledSpriteFontPreview</i> derives from <i>5 types FontPreview`1, PreviewFromSpriteBatch`1, BuildAssetPreview`1, AssetPreview`1 and AssetPreview</i>. A lengthy inheritance chain indicates a confusing design that can be challenging to manage and maintain."},{"line":"13","ruleId":"ND1309","debt":"21min","severity":"1","expl":"An instance of the <i>class PrecompiledSpriteFontPreview</i> has a memory footprint of at least <i>320 bytes</i>. If this type is often instantiated at runtime this can be problematic."},{"line":"15","ruleId":"ND1311","debt":"5min","severity":"2","expl":"The <i>method IsFontNotPremultiplied()</i> shouldn\'t use the <i>class PrecompiledSpriteFontAsset</i> marked as <i>obsolete</i>. Removing this usage will facilitate smoother transitions to newer versions."},{"line":"13","ruleId":"CS0618","debt":"1min  0s","severity":"1","expl":"\'PrecompiledSpriteFontAsset\' is obsolete: \'This asset will be removed soon\'"},{"line":"12","ruleId":"CS0618","debt":"1min  0s","severity":"1","expl":"\'PrecompiledSpriteFontAsset\' is obsolete: \'This asset will be removed soon\'"}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>PrecompiledSpriteFontPreview.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAM1VbW/bNhD+biD/4WZscwJkkl+QbXUzA26SAgY2o5jzrWgxWjpb7ChS5VH2jCD/fXeUXdtNnW6fNkGCyOO9Pne8e2gvtMGpKrE9bL/xmLmyYkI+q7wO+NrZwMSVxnWSUfuy7dGooFf4RoWCBZIk/fRS4JPsB2WV2ZCmp3tX+wwpxVwH59NZ8DrHZEyEgRI2QmhFwtl0azH9ujtqTs7UYefO7TBV/4kflXcfMAtbGE+rZFajrfD0e7wW17DkQybIPse5LAc/lVpYM7fi3TQd81oT1Ujt4duHnYbeQPJRG5zkwnXb63f70RXeZR/32l40yghXyL5vtqbwr8rw8r5AuNajzCgieC7O61SPIGcNKyRYeFeK2BWETcX7A74/epewXb5mrkbPKxWyQk5e1drkEZcD9uM9KJsfkcRyAmMwaJeh2IC2hQSibIaQFUpbpuQ6YyQJFGTOLmrSdsnOkl5aCIUKkCkL88huRI0cBwcl18QSo8GS9QT+kvbj5WmEB90XX0K433sO4rE4SI2/bsH+/BvECyVBlVg6v4GFc4G5bBA9HJVBRUGUDfpdmG8YgAariVjRFJMD/HeLgDsngmagcpH2NW9KbFi3AHEdzw2WcmGOkbj6HIle70tIXD0Bov+k1koMhcthQhLr1Em4ZW2CrozG/Pwihk2Fq01uOwFqwn8AWayXKFkq/6fERyLhpD1gwAaW3xnFVUy9RFyT5H6tjYGFyrTRcheBSsaY6wuCV5a03FmSUrG4ZiJHRUJ5pkpuZt0fez/vsPFmj40UCUCXThZK53RonZjGbTRD6NxLBEpOmgg4dV6i48jJOds58q//f/Tv3eP77759L1+awo2rNl4viwDn2QUk07t7bim1zWPPjPfzhi15Pa+5YxOcFyFUNEzT3AWLYfGJNXF+mcL3sDun2IgHecJcF1HPjBPNLQJmoc61Y7W+Svb61ut1Qg0HRYYkc8mH6uKsxU7eampc4CDYoNQI1+Vvk3tgAbSECcywKdZfJzd309ldUuYg05WvXiRvpwR4rjG+zB74VsshL8vG/7NW07uOJ8ge7JefMdzFGZaMrXXNgKETHNuewqdnLctTiirF7ej0oNoJnLUezlrAT8oIXFNd8v3ajPYkaW5lZeIQa7K1a3HEWGQeF7+0D5t5Ox3tO3LV0OS/qyugGCujY9mjA9Ppse23RxPidGGO3jX8VT3nLMHXuy4MD6fZc5obxVt4og3vAqeXg+BC94IszJ0zJzvdXvJAiTweQ+0tfBPtJBM6knu5531slvzjV67S33eeIpDNCQ==$967$';
+</script>
 </head>
-<body>
-    <span id="source" fid="185"  style="display:none">H4sIAAAAAAAEAH2RwWrjMBCG7wa/w2wPJblIh7212UBoUwjshoJ7W/bgWONExdIIjdxQln33juVknZbdCoPkmX++Gf3SGu4ovEa7PySYNXNQ2/UTPFDvTZ0seai9EYVP0e76RJFhdkgp8I3WhpLH1P6VKop7DddwzrPUGPxqlKjmmVPZzjbCrFJvLAk2BjXxjsej4lHBWaAaUs9hXhZaw73lcQQ0IA0xQjog/Ng8gRSgZ1RQIebg983delutlTPQ2g7B+hwOkZ6xSRCJErQUwVEcknJ04/xl0bP1exlvGFytmDGxqkK0CR/EgtsPgrWx4ohaeU8pE/g/iseILxaPki0LXzvkUDf4oY1oGP3IOReUxe+yAFlaHFhw71wdX5dTaOXButChOxcCtfmuCxYvmojtt6uMP/Gu9FLSdYKm9uJHjg17Qy6IUwY431Xc8TLRRWv9vvfPS+jicQJMXmXF8teoD/1OXgmarmaGf8pPLLiBi7/PyCP4ZE/uESnJ88ol6AXj4CzsiDrY8FC0pQHq+i7Z0Fk0s/lUeQEZVsTURw9fch+14Xd1t5P2z3iUTb43kF5nLkcD$74$</span>
-  </body>
 </html>

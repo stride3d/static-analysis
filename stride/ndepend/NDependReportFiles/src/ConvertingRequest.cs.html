@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"ConvertingRequest.cs","relativePath":"../../../../static-analysis/static-analysis/sources/tools/Stride.TextureConverter/Backend/Requests/ConvertingRequest.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/tools/Stride.TextureConverter/Backend/Requests/ConvertingRequest.cs","projectName":"Stride.TextureConverter","line":"29","statement":"5","debt":"1min  30s","cov":"N/A","issues":[{"line":"9","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class ConvertingRequest</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"17","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>getter of Format</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."},{"line":"23","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>constructor of ConvertingRequest</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>ConvertingRequest.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAOVW72sbORD9bvD/MCzXkkBOchKO9pzE0DZpMdyFUPvbcQVZO47V7EpbjdaOG/y/30i7jp06Ploo9+UWx9GP0dN7T6NZP2RTU+C1KjHrZ++cnaMPxt5+xC81UhCasqPMY6GCmeONCjOOEkI+fijwjP5VWVUsydBu39VeI8ngXEFyFLzJUYzxPtQe293Qy7dK36HNZbsryT1E1IRcUYc1kcu+VP8xg8q7z6hD69ceNI4rjI0BJ79zOzLCEm3ggd+4n+MkNo9LYwFOexFWuzmPXMs33DZEvF/W/+thjRJBfF3gMI9Bl8cnvdNEhXv6ywawtwVIyFRMWMZ9uIv3VRHXOtCFIoKcJ+dIMPWuhDBDODeDZmZH97k0A1A2BxPAEFgXoKonhdHFEuaGzKRAAcMAWlmYIJTK32EOiiIkoSowjwgiWx096jl+9Y2g171XPyCotxE0bqjfYmDbwU3hvfOlajibKJNF+Uc6De80OakDeCyVsQTGKs0ZkqSwhKVLYokXEZYTlpnXCMGlsYrhbICwrGIou/TtHsYyE869JDq6SZwhvo2K8WHGxEoMM/fckiNYzIyesY13fDyJhQ61KmBN0RRsApB2TCCaYLQJT8w9Of3J5mrWEHytg0sOP58g/yuz/159evHLp/gnJe9aLb25nQU40Icgrq/GnIS1zbkKOZsuDvPiOsEmOE9wMAuhor6UuQsWw/QxVDh/K+ElrOcp1ZbTXHDUYcIZMR0+DBiFOjeOYX0lNniLxUJQE0EpQGgnPleH3Q6TvDTUUGDreEP2KF76P4dj4AVoia/wCDEN/jF8d3U9uhJlDvHNwAeWhtvCB95xAZhyKpTOx8lpunCRf7fT7Viui1QpjbCnNIp1ge12Hrod4EcyvXOqSy4cy8FmqI2LqaCbxaAgNGhxMHKiCrWZGtbUsBBbiPIp5PrYYU+Vgz4M22azoGUXnyaTwfGKqGlNbRzTMn09ABcg/vbI7Oz2vNhsdAYrWEWPNsDPSF8Px7uXMwhfl5RHTwTuE7lFtrX/g1cVpziJG3OPRVMc2xrZsD7jgzVzfj8Bxc7qO+kNrQlGFeYr3xsFFhdsML/mLB88l4j0QiHOJ+1xerH7qyKTg+YcvkNPGudCoEqIyXWRNU5kgz0OncsUvOvIDouDf/OoQTvcoGzlQ3xiYRFt7EUbfbYJWTVN/sefWCj+AZq97a5nCQ==$898$';
+</script>
 </head>
-<body>
-    <span id="source" fid="71"  style="display:none">H4sIAAAAAAAEAI1STW/bMAy9B8h/IHIYkot06K35uHTpEGArhiV/QLXpmIUtqRLdNCvy30dbzpwi61DBkGTq8enxUVrDnfPHQPuSYZrNQD2sd3DvGpsbJmfB2FwQlgM9NuxChGnJ7OOt1rlji1z8hSoX9hq+wPk8Sk6ON7kS1Kzj2VJFmXBuucnJCW3wauA7HA4qJkTsACpz6snPxiOt4SvFJAFzkAsxAJcIPzY7kAS0ERVsEbvg983d+mG7VnUOBVUIZLuwD+4JM4bgHEPhAtQutIeyrZP+8Wg8sqbG6E2GIrKVr3b4yk1AseAFA2NQv/C5wchxPHobj0CGFnmL2NS1CcfVEOpxwA6ylAwGOLG1wVZT9JhRQVJTUqEuGPV7SrJyuTUVZJWJEXo9ZPfne25h029TQq+uHb55FJfASUZb01na7ugRuukN9sgyBxR19vJcDRfN4QSn1qOB+B+ln8M7KS8XErLpHb0r8KMiL8T29n8LxpeURfWTXrG670igXzrVc2ksvRgWM9uf0yflbSwxmYp+Y5S2WDyIwZGNlca7ouvNIsp7ygIWy8mV2RO9Sn34RD1d3Jtgamgf13KSnJisPnBooTvwtSNXKqb/8yixzQaWi/fQDi4pqh677NHzAXJKW1nk+wNDVuoAJQQ=$18$</span>
-  </body>
 </html>

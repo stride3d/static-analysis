@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"Video.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Video/Video.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Video/Video.cs","projectName":"Stride.Video","line":"27","statement":"2","debt":"22min","cov":"N/A","issues":[{"line":"22","ruleId":"ND1905","debt":"5min","severity":"2","expl":"The <i>field FileProvider</i> is assigned outside its parent type by the <i>method Serialize(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose accesses can be better controlled at debug-time."},{"line":"20","ruleId":"ND2014","debt":"12min","severity":"2","expl":"The <i>class Video</i> shares the same name as the <i>namespace Stride.Video</i>. This situation is ambiguous and can lead to complex compilation errors."},{"line":"24","ruleId":"ND2209","debt":"5min","severity":"0","expl":"The <i>property CompressedDataUrl</i> should be typed with <i>System.Uri</i>."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>Video.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAK1V227bRhB9F6B/GBBtIaEOKasJitiugdRyCgOtG1ROX4IEWJIjadMll91ZylEFA/2afli/pGeXutYGmocKErmXmTMzZy5aJzNt+FZVnJwlv+qSbVpIcpI4NsrrJb9RfoGbNM12X/G4KZ6pWpmVaHm8t60rWDKu57rmbOodYNOInR1YULlY0/qthclZpv4v6MbZj1z4TVSHUrg00MTp+FusAz5XXPtwgH3JeVyOK11jW9gldrfZK6y1SMuSnL1b7xCChmsN35RBanL6cvQiGseu+H2P9qIDE16y0361McWfGoPl3YLpQl/ONJuSXiMVb5xdwlN3kelL0kJKRM9rLsm2XnBB2gs1ysFp8quGKV+R70Aq9gtb0hRmlNF/8ODvP/8aBpyUXlFnQRa2xStnUjVxXahGWiQa8NDXVWMiGyDd1lSyV9p0+le2DsYdVeo3Xc/hRFBonF5CObpqHTmeqcJjgVsFzwl5aNj5Fd0vrMBkgdwJCxUwDhdy9h6Qha29s8bACeVhNW/nz7yuOE0eTvZkj47JHo9Onz9F9un4M9guDFilWBDRd1mAT4k0CmqG6vBQsuU1bKVRBdNhKXXE3C2QI9G+7TgLCatyPW9ti1VdxlANq5K8RaCB4E/xrU2nwM5ZJ8ehPv9XqOPRy8+rq9GjSHcZuIJNF9gvJ8qrt85sAt+WQyilku61XwS16UrQF+lbp2OUycP7hw9ffvEh/LIMWM3K6fnC06AYUnp7fUevbVuXXUQh6quQUp23KAahwcL7Rs6yrLS+Zj/biabWzTP6irb3Etn9pkwhNYw4U200ygO8t6W2gHVNuse7v79PpZOQKJAWNv3YDPs9ODnR0rmAsGAQdRay+dPNHUGBa+EUjcLx8Mebq+vb6XValRSGIek6Hm+mCDlrPc1Q1pV14RLLqvO/3+v3Wgn9sCFsotW8toKZJee7q65m4Ds/dZbe/Pzk8baLo6X/lkgD5WjdYLffe7pi+711v0f4ZODnQtqqUm51uT+KQrEdAZQeiGbHsu8moUfn7MBxY9RqkKwT+jp2jZ0NwtQdYps8JMP3G4WNc7vJ5Aah3iAcivHR5UV05HK4U/+FZ4yBV/Be5oSC6n7/g7G5MlvYJxS2oCeECRvT/B0lG9N7R49Bt3BRdX8cHesUmjZHOZGwCuPrYK7QWWw5WwP+eyXciW/4Dx8Nyw7/azGOHBKHw//on+B8a+zQINKKcnjU1bSmOftzOITHQ6eGF76hd/8BqdRjr+0H$939$';
+</script>
 </head>
-<body>
-    <span id="source" fid="3"  style="display:none">H4sIAAAAAAAEAIVSzY6bMBC+I/EOIw4VqCtz6G2z3UM32SpSm1Zl20vVg4GBeAW2ZZtGabTv3rGBkFUjFSHA4++P8eQ5PCh9NKLdO0irDNhu8wSPapA1d0JJ4LImhHRGlINTxkK6d07b2zyvlZPomjOUKdPm8AbmfUucGt/VjFBZ0ClEJyrSLNxQC0WyRrNF73A4MDsibACwSrFnncVRnsNa2DEC1kCGaMDtET5vn4AIKC0yKBBD8dP2YbMrNqyvoREdgpChrI16xsqBUcpBowz0yvhN+uzH/HEUR4MVsoXiaB32bC14K5V1orKr81b4K0bZ8VqNbb9cLRdoBO/En+D0fwTzLUfpvG8cSd6j1bzCmfCDHiqOTnEEdOXUnzs79D03x/ulFEBQjULsApq/xv5cYzm0LRrqse74MU1OCbwFb6qadEevjJbJS5L9mghTuDkxmtQdtQevueP/bN6FIPfZmf4NGzQoK1wwN+Cpy/pjp0rezbJXCLPoDXw1Khzze0gm6yXoa9FZLlCXcgg2EvRQ0jiBRd7RnFUdt3Zq4y1Na6+VJPkP3OIIn/rvL0HORvIu/EdJiEfKRNF+Cz+rl4vVbHZpSMdK4+AtDFqLtVf5bjo4QYtuRYHo8TLS6EX3X3dJuTK4Aw==$25$</span>
-  </body>
 </html>

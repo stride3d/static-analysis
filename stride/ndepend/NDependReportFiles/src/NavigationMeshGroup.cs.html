@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"NavigationMeshGroup.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Navigation/NavigationMeshGroup.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Navigation/NavigationMeshGroup.cs","projectName":"Stride.Navigation","line":"56","statement":"7","debt":"28min","cov":"N/A","issues":[{"line":"36","ruleId":"ND1905","debt":"5min","severity":"2","expl":"The <i>field AgentSettings</i> is assigned outside its parent type by the <i>method New(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose accesses can be better controlled at debug-time."},{"line":"18","ruleId":"ND2013","debt":"10min","severity":"1","expl":"The <i>class NavigationMeshGroup\'s name</i> starts with the parent namespace name <i>Navigation</i>. This results in redundant naming without any improvement in readability."},{"line":"44","ruleId":"ND2013","debt":"10min","severity":"1","expl":"The <i>class NavigationMeshGroupFactory\'s name</i> starts with the parent namespace name <i>Navigation</i>. This results in redundant naming without any improvement in readability."},{"line":"18","ruleId":"ND2102","debt":"3min  0s","severity":"0","expl":"The source file <i>NavigationMeshGroup.cs</i> should contain only one type declaration instead of <i>2 types NavigationMeshGroup and NavigationMeshGroupFactory</i>."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>NavigationMeshGroup.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAM1W627bNhT+HyDvcKB1mw20kp3L1uUGpElbGFjSos6/ogVo6VhiJ5EqScUTAgN7mj3YnmTnkL6pdtb+2TAjsSnyXL7znQv1EE1libeiwugkuhX3MhdOanWDtnhtdFPHqY2eRgZL2r7Ht8IVJBfHyerPOjpJnwklytZKu/2sG5OiTVDlUmEydkZmGK89JY86FROry8YtnV6fJOJf9FYb/QlTt2BiS5EkSrJIR8c/0Zr9YoXK0cbP9JzhhJcHzyvJoqm+ZzqTS1pLaxu00cn7h6WFQ7ZgmhJHGUtdD38ZHHsE9JR+Xls7DsYs3qORrmX79Ii/1yUt7wqEM3kxlVhmcJkTlDE6J1VuzxJ5AdKCsFbmCjPQjbMUDUhnoRaGRMG1NcKkBResVOgKncEtznp//fFnny3EcAnBuC10Qz8TBKEAVSpq21A5kGHSlFVdeiI8S5ChE7IM+ldasVsDlfiNcJF7VqiNvCdlD1IbMDgVqaMFnQrCDJSHGo1rYVZoSy5TSqdFCyk5JwgTCpJMplo5o8uSQAhHXidN/szJCuNo/nTF8/B5l+eDwfBwF8/DwRbRwy2i05L4hB3l86MFRUXjA6KyMETyTLrCU7tgm89tLVL0K7a2thO4uisoYQaJWFKXipZZozIRdJk8Nkl5pBS0QJwbfe9ZD7IiExNZEvJO+EdH/0X4r3z62v8tC1tFMBwc7GLhkBwADGyXiEGXiDBegEdmF//mMAkchKbhOhVkWKuypS8MjZch0WlCx0hlHUEHPWWLB15gJ9EUdPYPCfAMRvMP84/fP/nI/0lCHVi3RuaFg17ah/j25R280syo98z2rriP5KQhCxZ6hXO1PUmSTDuFbroSjbXJE/gBlufWT8fDLCapvrczJuIpVhi7JpOazJo6XtubzWaxDRLWC8Spjj/V/f09AnktbYBAvUwOqbm5Zm5Gd0AKqCzGMEb0m7+Orl7ejl/GVRZSQMT6+gqjG4zWDqY0Sypt+JCWVcC/v/ddbUReCZgJo7iSMmnFhEyML4dHgwMgHK/YYiXakKtl4gRYEi9D4vb39vcafoZxS1mrTleP4bqgsHHXXnyplA4T0u48f4fTkiKg81P2se6UrXtof+9hfw/okxDkM9tUlTDtxXrrEnJfLK6guUjd1Fii1WmOly+HRtqCZ+gMkYa1nE7Rt6bIl5fCom2lo4Y+s8R7ShP6PKLmSS6CMbJrGuWnLRsW6edGmpAftYIJFEDhcyECoA3QSRf1+2vhhK9DKuQPi703E87oorR7DExPe48Xf7+/VBwp7vu3i0tksVs3E6oleHSGwQmMRhlRIKeSqyJoLYheYbzBaoKm92w4WHoLR9LWpWh7L4yehZo6h6koLXakbrV6Q1OFsskiGycLbK8bmcEogwfI0Z2C5a85WeL9mO5l/u31fXUsNXdUwHJ7gckP2i8Ukm2Nzei6se1kcwM1dy6VMr80dZF/I07/3sIq/sXF14vjO2CjZL4V+HF/G9461Z0XpO7rUofThaIOqcJlgHd67Be9/lp0ozz4Y9A1RsGT6IHZmEen6+N5WK5I+Vo5Loqaq7LTB1tluUTrhfzb2x1fL9wuXwWqcLbLd1f2C1X++FyfQ0TeQpqip9tCXbrPoRPGO8x55Ldc1iO6EIRK8eyRVF30+l+Yn+8klv74zvsbq5JU0M4M$1254$';
+</script>
 </head>
-<body>
-    <span id="source" fid="16"  style="display:none">H4sIAAAAAAAEAI1V226bQBB9t+R/GLlVC1IDSS8vcRzJzU2WGqeK/Vb1YQ0D3gh26e4ShCL/e2cXsE3sqkEWhrmcOTNz1g5DuJJFrXi6NuBFPgTzmyXcylLEzHApgImYIoRRfFUaqTR4a2MKfR6GsTQCTbINDaRKQ/gAnV9TToxf4oCifIez4BmPCHNhyphLglVFsMOrqirQTYR2AUEkg6fCHw7CEK65bihgDFQQFZg1wv1sCZSAQmMAC0Rn/DG7upkvboI8hoRnCFw4c6HkE0YGlJQGEqkgl8o66TFv+A8H7wrF0pxBxZTgIoWYa7YiiMX07OvpZyAetxYxZzVIkdVAVA0jfAaawslj6gKHg+GgtO+wqLXBfLx9dQMJqG08ZgumQkjjqOij/kdMMuqA/GNbQ7AcdcEi7ILm7JmnLn84eBkOgK6QKF/oMs+Zqi93pimkSpYFzYUZ4BpKTWM10vZrqGrJ9RpWaCpEQbYkQYXCAEvt3baooeJmDdx81ARPc48UJpPRLB6Flw0Y4apSnBieowVm0Z+Sq2Y/YksTqIG12wVrCO2RDvusf10zw5wOWWR+t7aHld3oLVmkqj1LTCbebgr3hH5nYdsI3+8SZyLjAn8qWaAydWstyhVpCaKMaQ1HUOAcZrOYRsATblXRZLWD3nK8x3yFyjs5O+2qNS6ui4zV3nclq0ZTE0hYprEXNZfi4RkVbdOG7Hlabnclj2EWwwukaMag7W1DSNYezLGy357v1NFlHlFAZ245gRXSq4TwMGO/u35vR6e5x9qeXJLynMr0mb+R59TpjlKsNrXTi1mTavck81bi3/xDertVu0KLrk7vrTfTNlE2q8KuwaVcuAfP34XuycNeCk2pBLwfvdhpbEbjnXvTPG6H8j85tqK2quydgwNZdmxdEJBKvCWdFHeO/0tUYHWsdj/2Vaq93K4nMKJqzZpGnw6D+uOeQK+NR0ztT35tZT2jPwQmIrz4x6ouPf8V/OboYOnzF8KBdlrwBg==$745$</span>
-  </body>
 </html>

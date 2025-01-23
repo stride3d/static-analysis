@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"TcpSocketListenerConnectEventArgs.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Engine/Engine/Network/Sockets.Plugin.Abstractions/EventArgs/TcpSocketListenerConnectEventArgs.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Engine/Engine/Network/Sockets.Plugin.Abstractions/EventArgs/TcpSocketListenerConnectEventArgs.cs","projectName":"Stride.Engine","line":"34","statement":"3","debt":"1min  30s","cov":"N/A","issues":[{"line":"12","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class TcpSocketListenerConnectEventArgs</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"21","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>getter of SocketClient</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."},{"line":"28","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>constructor of TcpSocketListenerConnectEventArgs</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>TcpSocketListenerConnectEventArgs.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAOVWbWsbRxD+LtB/GI622ODcynahQVUExlZAkIqA/C0kZbU30m10t3vd2ZOiGv/3zu7p5SwltQP5UOghcbezszPPMzP3SA/JXBc4kSUm/eReVVOrlujfafJo0N1aY1D50QqNv3ELShUlF4nDQnq9wvfS53wqTcX+Q5531CtpZLEhTadrWzuFJNAstEEx9U5nmI6a1fY2Qb+2bikaKJS+L2q2pzcz8k4qr60hsUckXohZzsgWtd9hvusL+d8FWzn7ma3brjzJy7tFuPWT61/5OUDGkg8HA68znIXHy1IbgOteCKbsii0TccPPmqhGSvofHnZRLq9CQ+sCx1nwuru86l1HBLxSfx0i9loRCVfotN+E47zEL1URzlpQhSSCjDdXSDB3tgSfIwz0sNl5lv5A6CFIk4H2oAmM9VDVs0KrYgMrTXpWYApjD0oamCGU0i0xA0khBaEsMAsR0uTxYk/w6vKI4Oveb99BsHcgeN9QWaD36MDOoeFyW2hGH5HrQJ6puj2oBn3cnNUeHJZSGwJtpOLJioSYyMZGysSHCMsZk81qBG+jreJwxoPfVMFVm8VxDm0YD89spA5cUuJxcVuv4O9zBlaiz+3XjlzAOtcq52IuuWkRhfK1LGAHURdcCiBlGUAohVbaPy3x6x9cYsUcvKuVt7HOLxub/1XxPz5++vmnT+ErBGetNk4vcg9n6hzSyege3traZDLIT3ydGBeLCBfBOoKz3PuK+kJk1hv0871rat1CwC+w26coPNdZyl7nMc6U4XBzYOrrTFsO66r0EG+9XqfUeFB0SJVNP1fn3Q6DvNPUQODScUKuUZCGP8b3wAfQEL/YU8RofDe+HU2mo7TMIPw4ccOieauK4CzLwpxHo7QubPJj2eAPiWKygWSqrxZhVmRIKIZwRktdQdT2v9HRRRM6ahR+aRoCjeAz3ppC66YbHrfy926n2zEsxVRJhfAvQt/tPHQ7wJcIEKguWZ82w4MpXG91mJ11jtyY08HmGVUYxVOCwTWoZtAbbvvI4mnoF2or9GH/3Bzcog1XxZLNleL8MrOG34HxPl6jb/AntVaxJruzX2HbZnwDA2UzHB4FHIho5YyVQ2JD87Jg4M35t8y5Viq6p0f5xGnC5nU/Rd5eHLxb5MPFqg4PDMbXzhxxhceD6+N3EL9tqVgY16MyfPMvwLYyzxOOdlYoWUKYzzdJG3Yy/EGFH4iY4rTQzzI5O2lFG+D5N3vxpPzwBo4mr9WL7Y0/QQr/ATo2dLPMCg==$943$';
+</script>
 </head>
-<body>
-    <span id="source" fid="6"  style="display:none">H4sIAAAAAAAEAK1TX2vbMBB/D+Q7HH0YCWzSw966NBCyFAJdGTjvQ5EvjlpbEic5WVb63Xey08SNW8pgIhBbuvv9O1lKmDt/IFNsI4z0GMT9YgW3rra5isZZUDbnChvJrOvoKMBoG6MP11LmLlqMm1OpcFRI+AQv54F7cvyaC64aNziZKY1mzCzWuXEMS16c8fb7vQhtRWgKhHbiwY+HAynhuwmtBMyBCZEgbhF+LFfADWgDCsgQm8275Xxxny1ElcPGlAjGNtue3APqCORchI0jqBylQ36sWv2JqCGbKLb6pUCLpBKhnMIoPBrPJlR5+IMUPrfQG3IV4O+IxAcQXE0aWW8djC0gO4SI1bfhYDiwqsLglUbInH7EGMTPsi6MFbM121I60Yfh4Gk4AF4ySQh1VSk6TM9bad0aYj37LfJgYKV9C3fH4SSxQKjR7DDwocU9cJIW9dHbCVm+htalCqGPNW97Fzu0cUZFgGs4PbeNR7VpeTI7Tor5Ve5seYDlCW9eGu6CX6Hz1mTy0vuG267jGUy0y3F6ATiRzS4zesLAGynxNGb2zfxH55yVbsrFBZ/sE/p6zVepr7z7cq7umE+rwAhPLCbWZC+8wvO59PkfjM/TZ0C15o+uua4XMbw3J3FM5mPDzb5XpCpI9/Pmqiv7avqfgp/IhqIf9IdORr1RdAWO353Fq/jhBi5uXmcWxz/+/QWUrzJMBwU=$527$</span>
-  </body>
 </html>

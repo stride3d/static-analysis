@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"CloneEntityComponentSerializer.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Engine/Engine/Design/CloneEntityComponentSerializer.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Engine/Engine/Design/CloneEntityComponentSerializer.cs","projectName":"Stride.Engine","line":"38","statement":"9","debt":"42min","cov":"N/A","issues":[{"line":"13","ruleId":"ND1207","debt":"2min  0s","severity":"1","expl":"The <i>class CloneEntityComponentSerializer&lt;T&gt;</i> is not instantiated in the context of the analyzed code. Should it be declared as a <i>static class</i> or is it a potential candidate for removal?"},{"line":"13","ruleId":"ND1400","debt":"20min","severity":"1","expl":"The <i>class CloneEntityComponentSerializer&lt;T&gt;</i> should not use the <i>2 types Entity and EntityComponent</i> because its parent <i>namespace Stride.Engine.Design</i> is at lower level than the <i>namespace Stride.Engine</i> that contains the elements used. This situation prevents <b>clean layered architecture</b> because both namespaces use each other."},{"line":"21","ruleId":"ND1400","debt":"20min","severity":"1","expl":"The <i>method Serialize(…)</i> should not use the <i>property Entity</i> because its parent <i>namespace Stride.Engine.Design</i> is at lower level than the <i>namespace Stride.Engine</i> that contains the elements used. This situation prevents <b>clean layered architecture</b> because both namespaces use each other."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>CloneEntityComponentSerializer.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAOVV3YoiRxS+F3yHgySDgul2ZhaSOK5h0UkYyA7LKOQiZKHsPmotZVWnqlrXHQbyNPtg+yT5qtv/UTMXy96kUbpOn9/vO6dPP9bGUvG9mHGtXespo/lWe+mXPTPLIGg/YCuFkp/YRomrNWuWlfByzu+En8IliuLNz3lokh+EFmrppHsum9wm7GLWE6k5HngrU45uS2l167OTEx2/pBIxckblfl1Jvx2Lb11CZs0HTvyKvr1o0Kpwa9euf8I5FMIzhMCDnyGnPArHV1czqSEmZg7pPn6Ds3QuZ1dr//m4jnB5HYjPFd+lwap/edX6scgOKfl7Gy0EI2qFyhzPUatfBm+I/DFTOA6nTB3ZTZRwjs4DvFD+Zngx8TedWHZJOtLGk9TAAQ9gSSGQR7zEaM8fPZlxIRZUf4I6MeCCBlOTK9h6GjGljMwWOuFIhELK9lBRT5HH2JAK1oIy4zmkUpQIncoUOWkMveWZmQv1S+2peZqgV63WUYJaJd1fmR1XggwM5Y4LGhDnivwyY0dlEBCT0kG8wnnEiQhe0jvKwI72wVljpFwmEqa9qYrK4Vz3RHhSZsGWFAApJBZ6nf1EgMITdr7om0BDCwdWxXC6UH8a0XCK4E76HO0xmjKL8EHbGYEdRhIlllw00iZT6fEK5BahR1s0I+OntKmhiEsskinhOd6e3eZdXX7F5s3YT01Km07Vv/zzuXGmSXiDM7ZoT9ma/3NH/np6//1378M/jqlnsqWVk6mnetKg6P52SL+aXKdl+jDLPVRr5Sj3xjqqT73PXDuOU+M1+/HGNDJ2EtMFrfWugH6dRrBqFHEGUkkgByl5Kg3C2izaxlssFpErLVxhECUm+pA1qhUU2ZeuLAG4kRCsB+be3g0JDqxd2D9ctvr3u97t/eA2mqUUPnjr5bVa4GQNxiJsl5mxQYnjrKy/WqlWcif1hAZLhxV+sy9GPaMUIsDUnVFFv7HGSCaHJg88XplsNeVwgAc+9ixaj7ZYeVUr5yezWnmsVghXlo/Uetn+x3rrDLvUpr7wYv/ZApPCNITuwLVJmhf1RplolW8np8EbGyqjuZEpvbO8fT8tjxGQD8O9CWM857f4iKAnKTdpDzeAspiRK26Nbb6d1OGSY6ofhKbXr0nnSjX2LcP1zDKAomG9cbO1fQqEn0X3DaEF74BnJ+JmPPgA4ONzvGWK6A8sUz6kKSobvAv9qNuxOQpzUw48vtlHdIe5GodZnvZFVmEZn8CLIX854rmwq36guSscDyzSTlllt2j1cTesM3HgdAp7t36MtpNMPbDDDn0JUc2iijNsrY644Rc2+b/EQIE03ws=$992$';
+</script>
 </head>
-<body>
-    <span id="source" fid="135"  style="display:none">H4sIAAAAAAAEAL1UTWvjMBC9G/wf5rTYEOTD3voRKElaCtuyxIY9q9Y4UbElI8kx2dL/vuOPfNh1Qk8rQmxp3nszbzQ4imChy72Rm62DIA2Bva4SeNSVEtxJrYArQQjljHyrnDYWgq1zpb2JIqGdQpcdoUybTQQ/4BC3xBH4UzBCha1OLHOZkmbsKiE1yZqSnfTquma2Q9gWwFLN3svQ96IIltJ2JaAASogG3Bbh5TkBIqCyyCBGbA9/PS9Wr/GKFQIymSNI1R6XRr9j6sBo7SDTBgptmiC9Fl39vud7lZVqA/HeOixuh1u20HlOCgS1V0LsCRUamY4ha8x6yCnSdojIBqfOWEw6PJd/ec/yPcULtCVP8YBbqY1UyJZo5Ub53ofvAa2yeqO2QJpza2GRa4Ur5aTbL3RR0ka5gzKau2QON7Dkjg/P6i1SexKKjagzUFgHYZeoz3eWU+/QNJXBTksBvw0eZQODGQniWO7BpFu5wxdNpIL+ZjDwTUaRF2DbR3jKd5a6WTKDYCQN9/egqjwPh8hmfUE2piAJwtsT9rNp+FV3/9Faw278nCkexwNHBj+++u1SsD9GOhy3iXUXfG59kjY1R83cdAPP3VRsnCscZ/kcbjG3eNEvDfn3He+46e+DLrf3sUYu7roq5+1VT9Poc8ZHpEve58FU2y52ao2WvqHfadSsreJKt/pXetDvHzSNCV7GBQ==$523$</span>
-  </body>
 </html>

@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"ThumbnailCommandParameters.cs","relativePath":"../../../../static-analysis/static-analysis/sources/editor/Stride.Editor/Thumbnails/ThumbnailCommandParameters.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/editor/Stride.Editor/Thumbnails/ThumbnailCommandParameters.cs","projectName":"Stride.Editor","line":"40","statement":"9","debt":"13min","cov":"N/A","issues":[{"line":"29","ruleId":"ND1805","debt":"3min  20s","severity":"1","expl":"The <i>field Asset</i> is used outside its parent type by the <i>7 methods SetThumbnailParameters(), Serialize(…), UpdateMain0(), PreloadAsset(), BuildTitleText(), BuildTitleText() and constructor of TextureThumbnailCompiler+TextureThumbnailBuildCommand</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose read-write accesses can be better controlled at debug-time."},{"line":"31","ruleId":"ND1805","debt":"1min  40s","severity":"1","expl":"The <i>field ThumbnailUrl</i> is used outside its parent type by the <i>2 methods Serialize(…) and UpdateMain0()</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose read-write accesses can be better controlled at debug-time."},{"line":"33","ruleId":"ND1805","debt":"3min  0s","severity":"1","expl":"The <i>field ThumbnailSize</i> is used outside its parent type by the <i>6 methods DoCommandOverride(…), CreateCamera(…), Serialize(…), UpdateMain0(), RenderSprites(…) and RenderSprites(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose read-write accesses can be better controlled at debug-time."},{"line":"31","ruleId":"ND2209","debt":"5min","severity":"0","expl":"The <i>field ThumbnailUrl</i> should be typed with <i>System.Uri</i>."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>ThumbnailCommandParameters.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAN1WUU8jNxB+j5T/MIraCtSwG8Jd2wOKRBNaIRWKmvB0upOc3Uni6+56z+MllyKk/pr+sP6Sft5dkg2EHrz04aIQ7JnxeOabb2zfdqY64UuVcuewM54X6SRTOhmYNFVZfKUsFI6tBJF0uh3LiXL6hq+Um8M8CMLVVxw00Z7KVLIULY/nprARS8ixdsaGI2d1zMFZNVvtK+HnQlATMUnh7kMYHobqf9s7t+YDR64Ga8MNtInOvPhVD2MfAaecOQjeYB7zxA/3D1KdYRqZG8wuw1OMtUjB0jl8e3vvoe9X2CLh89hbDfd/6L0ud8cs+rj25p0R9Xs+NOEbttot/SaY8qc8KevJdKxPppqTmE5F2B2H+oS0UCEckymcIAXSTihXFuGSW+ZMkyW5auX3hPznJhYasVvBs8ZlZ7cLjdUq0X/yzj9//Y35dR4j+Quls55XX4E0RsXl7n7+U6GTeKxdwmP+tFVCgJ4ik4mzRQRsyUzJawrLzQrl4K399qGidFbXzycb0ClV+cvcFPg3YfgnziKVSwE6AwckqtM8KQsG5piMYnbwVa0fIBKgZClVf+hsBrT8gtzqGywu8USIlqeqjBVaJaQIXMnZuiUt5kYYehXvLVAh7B6Bi8JCEeJANBN2gNIn7KxJEsSjHAKYFLM9p1MOOnfdFTUO9p9Hjf2SGq+eS40Vetc2eSFD+g2GNHlQFnGDCl9gNQ5e0qgvLsYIWL6wGt+tqjE0dRP8hg39QVV35wC5Ox6gf62qRZ9p4N85A96j3MMl69o+Fn+BBX7Qbv1+7822Ar+ujvVGcXvP7bQ1TL6UMS20m3vz0VJwgwTXVpewdO7e3b3/+qv3/i8MAVK+tHo2d7QT7VJweTamn02RxRWcvjwDn5+eFABJaGfuXC6HYRgbl7GbrkwDY2chfUP3einvtIM4gFVV5pFONLCikStibeDW5sHa32KxCKSykNIgiEzwId9ttxDkUEsVAtIqPFlKll6cjwkLOBMOQD0uhb+eD84uR2dBGpN/jhD6xYvrC5esMY6mKHdqrFdimFbxt1vtViGeJ/V1jAA5KC8bOdqi2iYLLvCWYO8werRmu6dfrMrnlXW7laGXJFcR08aLIFg/LNqt23aL8AmByrEU6Eu7PFmLPEPAIJ0Wqe/r+m6ljDkGdOhuBTRqZzTxFxzoWzZ30PAbbjp+O1ROlSxAp7yrZHkxAfQUJUqEnn7tVMZ1zI11T6/Y2V0bN9bdeXye76QEG/2M3y557gBx12iYLp1nrr8W+QNy+8b+U3n7sfJ3tKlrtiFMmps8Zek3a5r6+dF/p1pFcPpg/0dmdabNmI5Q0vv6O+OpH/lDbS9SSeRPUd/leBWtghGce5xVqdYdJGiWG94SVYnh+EEaj6wGJjE43T2tG8NbmiEX8gltzbi6FJDNhcE9tTl7sLYGDV9/pv0Lx9U6A4cM$1080$';
+</script>
 </head>
-<body>
-    <span id="source" fid="14"  style="display:none">H4sIAAAAAAAEAI1TwYrbMBC9G/wPcyoJbGVob01bWLJpCTRLqd1T6UGWJrEWWzKS3JAu/feOrCT2Jt5lTQj2zJs3b55GWQZL0x6s2lUeZmIO7H5VwBfTacm9Mhq4loTQ3qqy88Y6mFXet+5DlknjNfrtGcqM3WXwBk55RzUS30tGqHnPk6taCeLMfSeVIVrbsoFvv98zFxGuBzBh2EM7T5MsgzvlogSUQA3Rgq8QNusCqAC1QwY5Yh/8tl6u7vMVayRsVY2gdB9urXlA4cEa42FrLDTGhiS9NlF/mqRJ55TekcAgnZFAZLfOoXeLidRUjG04NQuE4qpmmumr5W0V0WmieYOu5QJP2ZVU5Dorqq4pNVe1S5PHNAF6MnLlo+uahtvD5yFU0KiN0qrpGmi5JT6PdGoaUZJ15QE4uXEkg7JTtQRhiERLNuLNnhL/uuOe91vAhf8dY21XkvUgau4cnPUtI9f3c+cIPmoe1T1fMZsP4FHdv+DP60l6s4GH/xsIu0OOnwf/aesbWGv/bgjl6i9ONw5PZPsU+RZPc8WIlSDjJs8hQ7MxNHwvXh41Kri96H8FO0461rSgIz2dvzdh9Wm9LL4VvBZdHW+52Q5iHOwr1HHU4w1ydFn+4ISq3sPiYowr1NLUxub9Wo9eH2FHs0AYaHLiHxjuOU2zMRIvvi5qj6bR7z+Wg5q50AQ=$512$</span>
-  </body>
 </html>

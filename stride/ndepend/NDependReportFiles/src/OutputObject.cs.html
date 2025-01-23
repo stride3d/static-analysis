@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"OutputObject.cs","relativePath":"../../../../static-analysis/static-analysis/sources/buildengine/Stride.Core.BuildEngine.Common/OutputObject.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/buildengine/Stride.Core.BuildEngine.Common/OutputObject.cs","projectName":"Stride.Core.BuildEngine.Common","line":"48","statement":"4","debt":"13min","cov":"N/A","issues":[{"line":"21","ruleId":"ND1905","debt":"5min","severity":"2","expl":"The <i>field ObjectId</i> is assigned outside its parent type by the <i>method AddOutputObject(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose accesses can be better controlled at debug-time."},{"line":"17","ruleId":"ND2000","debt":"3min  0s","severity":"1","expl":"The <i>instance field Url</i> name does not adhere to usual .NET field naming conventions. It does not start with a lowercase letter, an underscore character followed by a lowercase letter or an <i>m_</i> expression followed by an uppercase letter."},{"line":"17","ruleId":"ND2209","debt":"5min","severity":"0","expl":"The <i>field Url</i> should be typed with <i>System.Uri</i>."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>OutputObject.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAL1W7W7jRBT9X6nvcGUBaqSunXZZwfZLKm2BSEsXKd1fiEUT+yaexZ4xM+OGUFXiaXgwnoRzx/lstyVaJKJEGY/vx5lzz732XTLWFV+rmpOj5G0bmja8HX3gPKS5T/YTx5UK+pZ/VKGEQZpmy68PuJO/UEZVM6/942vbupx9Nmp1VbCZaMPZMDhdcHphHaffyP5V3MdGXVuTPc6vRt5WbVjkvzzK1P+TuHFWLubEPO8O8wpXsPvya6wFD9dsgmzguuCRLA9e1lpMc3uLq+vsHGvtfcs+OfrpbhHh8EBYbyseFGJ1efC6/yrCwVX+2yraqy6Y51t2OszEE5f8e1NheVMyneizseaqoO5Ug+Ik02ekPSnv9cRwQbYNHqciHTw1ygEwhVnDNJpR6ALUHEpb0HlRrBO09/eff/UkWkrn1OXwpW3xN2JShtjkqvEthIMkiKLrpop8oEzWUMFB6arzv7BGIDiq1a/aTABFHBqnb+EcAVtHjscqD1jgrgJ+Qm0admFG09J6pMxRbc+eciQHhBGHgJC5NcHZqgIIFZB11E5eBF1zmtzvL+k++GqT7sN+v/8xuqV2RH2/SfnBI8q1QfVNznNe3rl4UDKQERUWGI3FIYqSHVOw1PpWVZReX93MHWAoPAD7LQgDXT6lQVi5IroLNNWhBA+VnbLLFSio4pH3hf3WgE+fQ6mUl8qBOXAxBg8wLqS2j/2EZHhKwX+JcHEmB0qlWhueiN40G67Pk3nYf72ddvtPaHfB30pfotCiIwBWw5lHq6XvnI56Su5/vn//+Wfv5ZdlUFczc3pSBtrLex3L31rw0+lQmUL0h84etVCXp70yhMYfZVlhg+EwXpqm1k0y+oIW932cBi+LFFa9GGeoK42a0TC0hbYI65p0FW86naa+s/DRIM1t+qHp7e4A5KX2HQQcK9YuNt8PgxuCAxvPKQ2Z4+abwcXV9fAqrQuSoU2QpGzPRxU5C4GMUctaiq8NlnWHf3en9SKrOV0X0hV5p67v2KAI+fHSZG3SDXFHVfqPLohwBU36j5uCQTVh3NvdEbH7RqEJnhibuzt3uzuET4bzn/i2rpWbna22zimObhlQGDpk49TZl96HRtDxUYwnHqzkmA2nyRtQGMMPAzdJhrlyU2LQdX4YHyJmQR7ZKpUvyY5FzBvxYx1lFGI+2lzH4dW6Kl1Dmm1CbdoRSkR5BQ9aH5Dd7fkZnzjnYlvkjjSCSNB1WNIHrtlj33lyx6qwpprNpzz6RXrmeOvUCzY+JffiwbJcbJ82qMkG0RiF/+n03+MYQw4n0kpmckY3iL8dmnODTsEgw8sDpm4rS0zlDlKNV4oJP5BJzQ4anmwD0tkAD8RaZsACwyFm2Z6sHC8ZIs5Q4jk2kX7tOFtp/NPAXMzjzv9j724BaWB0iGOB5VlseErLh95cSGutud4W6MyuWbaAG/fxUqLq+Ow8TdAjydnDZlkvTHqSRfvngti5ULtIG9r/l1ALya+/Bq1aDpj2V+2wyNJbua/NAvmIz6l4HW/uL0OcLoM8sBBh466w/kDze7010/tuiT985Wn4D+5/qK3nCw==$1174$';
+</script>
 </head>
-<body>
-    <span id="source" fid="24"  style="display:none">H4sIAAAAAAAEAKVUTW/bMAy9B8h/IHIYEqCQD7utTYAuy7YAXXtw+gMUm7FV2JIh0ciyYf99lOQkTvZldIYNCyL5+EjxKUlgaZqDVUVJMM1mIB5XG/hoWp1LUkaD1Dl7aLJq25KxDqYlUePeJUluSCPtTq7C2CKBN3C0O47J8W0u2GsWcFJVqYwxU2pzZRjWNuKMt9/vhYseLjiIzIiXZjYeJQl8UC5SwBw4IVqgEuHLegMcgNqhgBQxbD6sl6vHdCXqHHaqQlA6bDfWvGBGYI0h2BkLtbHeyMs68h+PWqd0AenBEdZiaaqKA9jixCfUaFV2e3IJtbGLRZGyRVbqWwTxvUJN7veu3EFZINvGIy1rdI3M8MLjfauqfKULpXE8+j4eAT8J13/n2rqW9rA4b93D1juDaalpCczWl3cD0gF+bYzjRm0PHMddySzu5pMHbmGATwmbSbIQsCmV6+LAYmPReeahW6V0JZgdH9slfjhHxU7SOZMpGc7DVqLHNLmk2rRbPiLIKo6Ap4D1FKCiuavxD3UetzdMidN4Rp5d5CKuQpNfY7vkFmVudHWAmPmZkfi7HZz62I3X5I4p1/lpMTwtyeKi0WT+r/rPXEaKdOelpIsFbBh/GJt7zUohtFpWkLHieQmti5RqqXmmr8akRsszXAwhaQ1xBGOdMvCCL4eQZXizMsMWHk4qJUHh9Rp7dp7x15FZdrjdP2h3AKW1VhSuBeQjBI17RnQkNeu9G6SeNPuyYGVGsQygG/YbaWUN/jqZT1gjk8W1WPoHI+6S4P83ENMNakS6mP1/QB1HvlfO9Cw55nRzlsMxy+wc3rsL/ONj5j7q9nL/BDE/gVx5+MFmq+/61cxPZz3XH3HJP35/AjdVjbUKBw==$652$</span>
-  </body>
 </html>

@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"Configuration.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride/Data/Configuration.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride/Data/Configuration.cs","projectName":"Stride","line":"16","statement":"2","debt":"34min","cov":"N/A","issues":[{"line":"10","ruleId":"ND2003","debt":"5min","severity":"1","expl":"The <i>abstract base class Configuration\'s name</i> should be suffixed with <i>Base</i>."},{"line":"10","ruleId":"ND2012","debt":"10min","severity":"2","expl":"A type with the same name as the <i>class Configuration</i> is defined in the <i>namespace SharpDX</i>. This leads to confusion and also naming collision."},{"line":"10","ruleId":"ND2014","debt":"12min","severity":"2","expl":"The <i>class Configuration</i> shares the same name as the <i>4 namespaces Microsoft.VisualStudio.Setup.Configuration, Microsoft.VisualStudio.Setup.Configuration, NuGet.Configuration and System.Configuration</i>. This situation is ambiguous and can lead to complex compilation errors."},{"line":"7","ruleId":"ND2104","debt":"7min","severity":"2","expl":"The source files that contain the declarations of the <i>namespace Stride.Data</i> are located in a directory that also contains the <i>class ParameterCollectionHashSerializer</i> declared in a different namespace. Concerning this type, either change its namespace or its source file\'s directory."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>Configuration.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAK1UbWsjNxD+bvB/GExfEkh3HSftQe56kMZpa2h8BzalcORAuzvr1aGVthopiRvy3zuSnHVz2eYo1NhYI83LM48ezf2klgqXosXJ2eTC6FpuvBVOGp2VNDmaWFRs3eB74Rr2yLK8/5Ljk/I7oYXakqTntvG2RMpRb6TGfOWsrDCfCyfygUKiIKO8eyw0P8vF/1yhs+YTlm7Xa3LmbcWhbB//wOtQAFvUjjdmbFdYhOXJaSs1m6W5YWuZn/NaEnmkydmH+z7DNPDlFS6q4DWfTacnsSxb5Z/7bN+nZIQ3aKXbhkg28a5TvFw3CG/kW2bDWVE6KAQhlEoQwZOWviXQ3MibXL4FaoxXFRQI5Ota3mEFt9I1Ic9PHB58ssnD0QtAj2dDQI+nz5DO9kjPwW07TJUcoyaGEzGBoLjB5QeAR8SSoMKa0VQg9aNziKVOlAirRthu/kcEDuuGvRWKirMaKDmXJ84DQlcgFJlQU+oNnyglw8mXej0d7HX2Uq/rl9shxov0ryycQt8awZUsrSFTu+x3SV6olfOVNNkKne+yJ6mP/pPv0v+C7ulmpGi1JZZ09gz0jliSzidnNkRbsI/xFCNLoSPvifa2U3gX/6VKAWitsfSE7VefkX08HST71Ze4Tg8bwmgKLAoX7t2JnVYq5ItInRCYekA/8W1nYRDE++HbAWVKfttRbwIqaXkSGLtNyaOMdhU+0+57LtSiQ3vB8uIYrvmroGbFwIWSf6GNBRKiffa6RstTZH/vWVBNiVYHpbpAfHg8R4D8etBC2Qi9QZCO9iFgbNz4Bxf86HvkzPv1w8evv/oYfnnO+butlZvGwUF5CNnycg0/G6+rvRIYAfNSeI4mOGic6+gszyvjNLq6d82M3eTwDTyeU+TypMrY6zApSirJZEFSI6e1XbbPd3t7m1HyoCTX0mSfusPxiEHOJSUITBUX5M4D2VeLNXAAamKeVohx87fFxeVydZm1VWz9cU7shjhYYxzUTFFrbDjkZZvwj0c8H5jlXvhtZzRfxpWpUL3uT5NEGDwO7WXnWhuXJMbn49GguMaj+/EI+PMhWJFfntkHC90EXXOPP4KzHg+vk1fnC24T+tk+ME6S4y5rn/kK2wLtYqMZ2fX+bJevMEbBu7oOb/CdVlu4hw2614Eqx1QxDArmQwrkP/4G0fwNd0c55fsH$885$';
+</script>
 </head>
-<body>
-    <span id="source" fid="35"  style="display:none">H4sIAAAAAAAEAG2RwWrDMAyG74G8g06jvTiH3VZ2GF0HhXU9pLexgxMrqUciBVuhlLJ3n+Ks7WXBEFv/p9+SXBSw5uEcfHsUWNRLMB+bA7zxSM6KZwJLTgmS4KtROERYHEWG+FQUjoVQmhtqOLQFPMBVj5rj8NEZpZbJp/Sdr9WzlNF5VtswmLvf6XQycSZiAkzN5ntY5llRwKuPcwnoQC/EAHJE2G0PoAlIEQ2UiCn4vl1vPsqN6R00vkPwlMJD4G+sBQKzQMMBeg6TqNt+rj/PxuiphfIcBXuz5n5gQpIdO+xWNzW1pWrA/2LmhYglGUbV84xsj3GwNV6pVys2zy55Bvp9Tqc0X1vLYktHDH7q8RkkjLj8mqlhrLRNsFVMHNSdjXF6lsa3Y0iXzeCf6815h32FYduSVvZ11/78KuYO9k3TecI9dWe4QIuymkYlOiotI07HnzlRf7p+ASwOXdoxAg==$157$</span>
-  </body>
 </html>

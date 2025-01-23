@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"ColorCombinerEffect.sdfx.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Images/ColorCombiner/ColorCombinerEffect.sdfx.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Images/ColorCombiner/ColorCombinerEffect.sdfx.cs","projectName":"Stride.Rendering","line":"37","statement":"2","debt":"22min","cov":"N/A","issues":[{"line":"21","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class ShaderMixins+ColorCombinerEffect</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"21","ruleId":"ND1306","debt":"6min","severity":"1","expl":"The <i>nested class ShaderMixins+ColorCombinerEffect</i> is declared as <i>internal</i> and is accessed outside its parent type by the <i>class ModuleInitializer</i>. Typically, types are nested to encapsulate private implementation details. Consider making it <i>private</i> or non-nested."},{"line":"29","ruleId":"ND1701","debt":"13min","severity":"1","expl":"The <i>method __Initialize__()</i> is not invoked within the context of analyzed code and may be a candidate for removal."},{"line":"29","ruleId":"ND2007","debt":"3min  0s","severity":"1","expl":"The <i>method __Initialize__()\'s name</i> should begin with an uppercase letter."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>ColorCombinerEffect.sdfx.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAMVW227jNhB9D5B/mDVa1EEdybGBDZqkAbpJG+Qhi2Ad7MtiN6Clsc2GIlWSUqwN8u+doXyTrAbtUwUb5mVmeM7M4cgvvZlU+FFk2DvrXRll7JXJplKj/X02w8RHLp0to8T1Bj2LSnhZ4r3wCzKOonjzcZ52kmOhhaqcdPtzU9gEXYx6TqHjibcyxegT6hSt1PN4O7rNxJwMG0jit3GJqTOq8Gtc12ex+H8B5db8SSurpLZjk4EiN9oZn9KYkWGG2tPCiOYpTsNwlElN08SUNPsY/0Zj6VyBrnf25WUdYXTCdSkU3qZsdX0yGo4DAJolf22jDSkYwHjI6ByWhMNXtMzeuMwV+xpIlHAOGGSJDmbWZOAXCBfyst6ZLARt3sml1O7njgxcxPIShE5BepAOtPGQF1MlE1VBKZ2cKozg1kMiNEwRMmGfMAXh+ASHQmHKEaLe6+Cf+Y2H77v4va+T1U3toSah0Xk67z9wkZwNsrcbmFJ7tKShLVUHIiEhOTIxhXdUaaLvICcn7cFXOcK0aubxzqTMSEsvhZLf0Qba8FDlMhFKVYPgRoEtwgq0N4A6Ebkr6Aoi5FQi/pVZroJ2SNxGE1gvpHIRXBnNSCzl+IkUxwWh01deAbuxVB99XIdvpvyXVspPhyddKT8Z/4ucZ+gXJoXHxy3bx8f+0Tq7LBGpS8M6eJZ+QSLlTCWG0rz0YGYQLux3LpuhzHLGM1GxegTLKJUpp2FGbCxmphTqTSqj4fC0i8o43I43LsfbbH4iInTVAym3MIVKCSC1lUCJMEOR52gT4RAUehIQgfz6+u3HH77xN47hQhTeHM+R1Ed00svDA1q8NiE9mFLxKDN0IalPQ0V9y6GavWObYPfAeyE7z6TRTRBWXd15VlqHIHaSBq3c1FbGRnUIs/FjqazPGACpi1HTHfEkzFW86LN0hVATX6TSRPcieaIGCVHp5DJE4yJZPHaixFBNkrxJZMBU98hgdRHvkT48KByrdVKRKLPzzbQ+9cpYbK9temp748aKfCET116vU7G3zLGjO3p9YMavie3+h4K6gYVf23GjeuOcQXPtXS4S3EMV1e+Ow4OXwwOgZ909oH4bcZNgGXW0pNp+5dZwbfp0dC6AM7jdifWhkIrG21A7UfmpWzSURqZrXWB/x38S3pSQ8XiwC/JqdUtXt/WoGbZ1Cj8rwyh491cBm/856vC9wcb2Bv29sCLrN8yiP0TieVpof3R03jzqlYuyu/Blr+F+bRq06xJy0b7l7agdBHeSc0eNa05AP1EjIDXbftd/K+Kp8bmriP0uVq0h/dCHW8jfN0STTMQJ$987$';
+</script>
 </head>
-<body>
-    <span id="source" fid="337"  style="display:none">H4sIAAAAAAAEAG1STY/aMBC9I/EfppyCxDr3st3Dpi3igLQqVS9VhYZkAlYdO/IHC6363ztOsmwSsCLFHr958+aN0xQeMXjzcCBNFj0VT9NJmsJnA9p4oEJ68EfpoJSK4GKCdaTKDxHT4L7Hu9wUBK/o4EoC+wtsvZUc3x6xIAsbeZYasohctShjRUthrnnA1d5qLKBWhI5j2nlUquMTP6QLqLY+FNKIF8x/44FAnJw8N2yoC7D04PBELJwAnTO5bDQJV5TntuZjetP0dBKc1AfYXpynank9tlUzY2kc+0aaO+PA+GJlsT7K3I3jrRU34cgtNshqK/T9tOdQlmzdpzGvaC+WUbTGilyNOd2oEuuKrXHTyd/pBHhJ7clqVMB2chmo0XrJx1yxR92Ymim5Ft+lDVKHOZlRxmam2ku28QtLyj3AR1j3uJ6DVLx/p+qxxlWHvWItJyOLt3dBSS9/y6+Be6viftEXmRnWdPb89pr/fEg7qhJXBxRNdtIRzgYttPSzxRW7Iv+CFqtkABNfMffxGLSfz5fDUv/iUPqBnxtTBEVrLaNz8g/ZX0PAeC6NF7vde8Jul8zHrHca7JmzQc2jt/wWDpJfs01md0bFfWp6vTfE5F5Xoy3/+PsPDR7Q/z8E$29$</span>
-  </body>
 </html>

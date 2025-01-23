@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"RenderNodeFeatureReference.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/RenderNodeFeatureReference.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/RenderNodeFeatureReference.cs","projectName":"Stride.Rendering","line":"20","statement":"3","debt":"26min","cov":"N/A","issues":[{"line":"6","ruleId":"ND1313","debt":"18min","severity":"2","expl":"The <i>structure RenderNodeFeatureReference</i> should override the <i>Equals()</i> and <i>GetHashCode()</i> methods. Additionally, consider implementing the <i>==</i> and <i>!=</i> operators if you anticipate users comparing or sorting instances or using them as keys in hash tables. Alternatively transform it into a <i>record struct</i>."},{"line":"6","ruleId":"ND1914","debt":"2min  0s","severity":"1","expl":"The <i>structure RenderNodeFeatureReference</i> should be declared as <i>readonly</i>. This way not only the intent is clearly expressed and some optimizations can be performed by the compiler and the runtime."},{"line":"8","ruleId":"ND1907","debt":"3min  0s","severity":"0","expl":"The <i>public readonly field RootRenderFeature</i> is typed with the <i>class RootRenderFeature</i> that is mutable: its states can be modified at runtime. This situation can be misleading: the keyword <i>readonly</i> mistakenly suggests that the object remains constant, while in fact, the field reference remains fixed but the referenced object\'s state can still change. Replace the field type with an immutable class or declare the field as <i>private</i>."},{"line":"10","ruleId":"ND1907","debt":"3min  0s","severity":"0","expl":"The <i>public readonly field RenderObject</i> is typed with the <i>class RenderObject</i> that is mutable: its states can be modified at runtime. This situation can be misleading: the keyword <i>readonly</i> mistakenly suggests that the object remains constant, while in fact, the field reference remains fixed but the referenced object\'s state can still change. Replace the field type with an immutable class or declare the field as <i>private</i>."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>RenderNodeFeatureReference.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1WbW/bNhD+HiD/4WbsJQE8yU6GrnOaAkWSdgG2bEjybVgBWjxbbCVS5VFxvSD/fXekrDh20n4YkE8zbJh3vJfnnjtSuh3MTIUXqsbBZHCJVqO/cBrfogqtx0ucoUdbYFbQYDjwWKlgbvBPFUo2z7K8/1LgneJHZVW1JEPbsmt9gZSjnRuL+VXwRmOWEho7zzdXT4NQU3JVG1YgTie5esbsjXcfsAgdYZuB2KDiBLxzMOK1wMAabWDFIcsap7I8eFEby2Lhbli6yN/w2hC1SIPJX7erCC+E8LbCcy1Gp+PD8WHMz1Lx6T7Y+GUKRnjDEMJS4rOIn5uKl9clwivzmoJvC6kGnq7vVW5eA5WurTQ4jiWVQUj+Z59aVdHefrRRVovuHYZfFZUnHKrbqDGUTlMGb7Q2wThmv1oOoXCWOJYHUzdVpIOZWkU+Pl6P+U2SXINeBecJzAyWruVtbqdpmE1oCVlfuLpRwjg4D+R8DGksE86VkChb6rLUoAg+4pKDWSgZMQQ1rVBgVgG9jRNdLSF4ZWnmfA0msGlwoASSx8J5DYlBQZcN7oZPNumX8U+PNemAewQwood9Gv/nPk0RNBaV8qilyghXaWerZUQK16UhWKglWBdA1JF2Lo6bALxVVKg8axmFRyKJwo0gVyP3IJja/KOkj2yorCTjvghDbDdNoaQPfH/46CcK33KranxA0stNkkY/P0bS4aMkjbZIatppZQpYVQozg0zFpXMhkdYRFnniGsOyYbwLE8rVzDFhRE84hFJFZuo2TsmEh4EgnuOehNppwzmZq9CXm5gmE9pIWG9qiBnWPImTmJzHcCHTtNEosQvqI0o11M7nSJw0IhEnN5Ubh+utlZFWuDjmYQiLkqmXqZ6pgkWxTVz41az0TjPzWZrWpoj9vu6C/9DVGHFTMFUFRansnAu7xKZSBa5FF0ITn2xs6o4pSKzyyesmcs0jjWbjzQ3n2DpD49GzzEds9R+x3K+Oxqbt/1PxTFPx99377759L788hxPXLL2ZlwH2in3ILs6u4a1rrU5kyo1z4iw/gbkAeVbslSE0NMlz7YLFMOtNM+fnOXwPq32KT+1DnbHVfoxzZXhiOOZVaLVxHNY32X28xWKRUbKgaJAVLvvQ7O/uMMhTQwkC09bK2MQKfz+/BnZAS0zWFaayfzs/Obu4OstqDbOuR6LuXinA84UEfL3yKHnZlJs24d/d2d2x/MZBjXC++dKxu3O7uwP86QY/PUS+8ARJ1p3TmmN/Yrauxm3N0Re8+8R9xjXdVx3TsXsgHAkBG15Pl7e3Dd9vaoaPovS9bvgQjF8T9u+hrFEon+28x9uZjzZ8+pRi/BhL91YdmOMHcNYs79KS//grZ+hfR/5Qw90L$1032$';
+</script>
 </head>
-<body>
-    <span id="source" fid="77"  style="display:none">H4sIAAAAAAAEAIWQwWrCQBCG74G8w5yKAdkceqt4sgpCa8H4AjE70RWzE2Y3iJS+eyeJjdHYdlnI7uz/z/9l4hhmVJ7Z7PYeRlkEajXfwIIqq1NvyEJqtSisZ7OtPLGD0d770r3EsSZv0eedVBHvYniCn3cnHo3PWokqavok5mgy6Zn4ShuStlyqa7/T6aRcq3CNQGWkDmUUBnEMr8a1CKhBApHB7xHelxsQA1qHChLEpvi2nM1XyVwVGnJzRDC2KZdMB8w8MJGHnBgK4vpRjkXLHwZhYNMCXZlmKJA1vlpjnWbsLgw+wwBkldVWMkF4KmnXvq9I4wJTXzGuMUdGm2Grvph6RsZUkz2eYS0krf1iHVYmf7i74C6xV/vX+LFtptG/TOoB3Ll+/73REJ/vK+OHlNzVxrcw3LtEV5TeCOs1zJ0Okyd3ni6yFj+a0lV1gZne4PSUX+1RPrK/AfN0LcZAAw==$157$</span>
-  </body>
 </html>

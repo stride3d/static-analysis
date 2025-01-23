@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"SphericalHarmonicsRendererEffect.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Images/SphericalHarmonics/SphericalHarmonicsRendererEffect.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Images/SphericalHarmonics/SphericalHarmonicsRendererEffect.cs","projectName":"Stride.Rendering","line":"38","statement":"10","debt":"57min","cov":"N/A","issues":[{"line":"8","ruleId":"ND1202","debt":"15min","severity":"1","expl":"The <i>class SphericalHarmonicsRendererEffect</i> derives from <i>7 types ImageEffectShader, ImageEffect, DrawEffect, RendererBase, RendererCoreBase, ComponentBase and DisposeBase</i>. A lengthy inheritance chain indicates a confusing design that can be challenging to manage and maintain."},{"line":"6","ruleId":"ND1305","debt":"5min","severity":"0","expl":"The <i>namespace Stride.Rendering.Images.SphericalHarmonics</i> contains only the <i>class SphericalHarmonicsRendererEffect</i>. To prevent an excessive number of <i>using</i> clauses in client code, refrain from segregating classes into numerous small namespaces."},{"line":"8","ruleId":"ND1309","debt":"27min","severity":"1","expl":"An instance of the <i>class SphericalHarmonicsRendererEffect</i> has a memory footprint of at least <i>439 bytes</i>. If this type is often instantiated at runtime this can be problematic."},{"line":"8","ruleId":"ND2013","debt":"10min","severity":"1","expl":"The <i>class SphericalHarmonicsRendererEffect\'s name</i> starts with the parent namespace name <i>SphericalHarmonics</i>. This results in redundant naming without any improvement in readability."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>SphericalHarmonicsRendererEffect.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAM1W72/bNhD9HiD/w83YDxvIJCdeljVJA7RJthhbs2HOPhUtQEsnm4VEaiSV1Ajyv+8dZceJbSRr0QETbIikjnfvHt+ddNspdMmXquLOYWdUT9npTJUXylXW6Mz/ySZnx+68KDgLSeY7Ox3HpQr6mv9QYYpNSZLe/3zAk+x7ZVQ589qvz23jMvYpm4k2nI6C0zknbRBtJulyNKzUBIbriDYsbQKpxt6WTViAPDtM1f8IXe3sB0wWtK8EgkEJAHgy+AljgckVm4CF3T4Wch7LeP+g0gbTzF5jdpm+wlh737DvHL69XbgQD64peZiL0dnuXn8vAsAs+3vpbHe/deb5GhjCTJYw5Y91ieHVlOlYn2Sl8p6eS/E41SckmVyzp8LZSrYeUJjVmEfmWrvRVMFq5+HSDp05dbMYL9y+Vp6Xs1PruF05tVVtDYiRKSmT05n2tfXxsaBI6BWVOM0wnZE2gjookzFlU6UNVnJkEQBKUWZN0XhwD+BeTwyFqQqUKUPjaF6WURQTCpYqCGbSxqvgJ+CfdO527hn/cYXxQX9/E+PrhPfXCDcQiK8VIK9qJGklmKwfRqQf+QguT9aUMyTziceX0JWl2gGaCUiU+CPqwuNAyTTVmB3ZQhxGxtp4pWo8mAStWallV2ZzHJHjwgnXUQaeJ44nqDnwGLHEDWAUTtnZxpOvwDTdZ+0f8bqq5EH/xSZe9w6eUvIrOXffygBJfDIzNFWil4or62ZUWBtqHEcQXxBMycoHcfjD4AWNZ9BWy+ZQImkfa4Bwt0XgBZCgocFcdrsGk4pb07n20CnGJVfSqJ4iY6+/O9hY1v0vVtbf+XgwkQTgdsHTjQ7TSGGtnJz5Uq4yEteb5Ql5SYqOfVOGKBrHeWNy1foQfYhr24j4ULoVWLiOLbC1Vbka6xLpgJJ3d++/+fq9/NMUHaGeOT2ZBupmPUouz6/oZyuOg7YmVuwpCsPpcROs89SdhlD7wzTNbTAcinvTxLpJSt/S4rmP1TfIE1j1op8R4qPIUJdNri3cujpZ+ru5uUl8a+GjQZLZ5EPd294CSDSpFgJOvRGGI4VvhleEDWw8JzRijou/DU/PL0fnSZWTvKYl+0h3+/ogB/lBg44gRnmIYdXi397a3mr72bxxSNdM3uBl2GrJH4nF57SX7a3b7S3CVTdj4KV/Jx46XO/8rZu5N7lSkHPsm6pSbnbyePkXhk6QqJe7UDCdx8FiZNAS+g/ljYtNGgbgK7SprARI1yPMU1nlaEP2NDR1E0YXdEsTDkeC54juhMsVX88R0u0ttzygQK7WQL4N6CU9+03WOVrufgQkJjt/6+U2Sx/m62zAVugPZeXk5Ona6pz+qiF/fDI5xAZ5/gmQY7xik3X7o4cI5NIFdRecffUSnb4se48tVhzLtfSYjDh01yl4YHC/9rtrvybaYEmc9o4+w/mC3195BpOLU8tFoTN5qfml+4erq1HuHk+59Pyfprz75dM0fPP2HUSOO8qitG7Q7dHdE4nOh7jhJ934H5pKHVdZDA==$1141$';
+</script>
 </head>
-<body>
-    <span id="source" fid="461"  style="display:none">H4sIAAAAAAAEALVTUWvbMBB+D+Q/3PowbBgyo2/12pcsW8LWbMzd0+iDYp1jFVtnJLkhlPz3neykSZzRwthEQNbpu++++3RJEphQs7F6VXqI8hjEYnoHn6g1SnpNBqRRjDDe6mXryTqISu8bd5UkirxBXzxDBdlVAm9hf+84R+GlEoyKO55MVzpnzsy3ShPT2kYc+NbrtXA9wnUAkZN4aOLxKEngo3a9BFTABdGCLxFu53fACWgcCsgQu+DX+WS6yKaiVlDoCkGbLtxYesDcgyXyUJCFmmy45M+61z8ejUet02bFAoN0wQJR3ErODojcpQFhZI2ukTnuUT8w6OE0Ma/lCp3ImpLPuaxm0tZkOHE8ehqPgFfTLlkv5JV0Ds5xPRXaaVEEqVfQMfanrJR819Ps2MJK2JwPrq1raTc3p+HP6B1woy7swYJyV4eDnYMErUNQbRDfAdgv37cyKJCcV9i1MvToD93D3DStz2bwBCv0adCTwjZ4OeB6zZAoPqQcWRBWD1jw28A1XLxGdJEesk+EdM1qE7K9ojw57teS51SeP3pEG14eHkkr+Nnw+ON3abk2m+deELmUPKfn+PRYQVi6gGjv2ZtrMG1VxaeIAXFYB0aRoY/OLTgCPMe+hUF4t38g0R3j9C/I9/5+wQ1DZhPCotC5RuPdgf44OqyyPT1i5fC/tvz+37dpcP3rnoecd/5bVGQvoxi2LzS6++SNf78BUn4n1IoF$540$</span>
-  </body>
 </html>

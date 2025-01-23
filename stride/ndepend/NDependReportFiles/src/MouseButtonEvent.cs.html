@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"MouseButtonEvent.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Input/MouseButtonEvent.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Input/MouseButtonEvent.cs","projectName":"Stride.Input","line":"26","statement":"2","debt":"23min","cov":"N/A","issues":[{"line":"14","ruleId":"ND1905","debt":"10min","severity":"2","expl":"The <i>field Button</i> is assigned outside its parent type by the <i>2 methods HandleButtonDown(…) and HandleButtonUp(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose accesses can be better controlled at debug-time."},{"line":"14","ruleId":"ND2000","debt":"3min  0s","severity":"1","expl":"The <i>instance field Button</i> name does not adhere to usual .NET field naming conventions. It does not start with a lowercase letter, an underscore character followed by a lowercase letter or an <i>m_</i> expression followed by an uppercase letter."},{"line":"9","ruleId":"ND2012","debt":"10min","severity":"2","expl":"A type with the same name as the <i>class MouseButtonEvent</i> is defined in the <i>namespace Silk.NET.SDL</i>. This leads to confusion and also naming collision."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>MouseButtonEvent.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEALVV0WojNxR9D+QfLmZbbMjOONm2sN40kMYpNeyGgtOn0i3yzLVHuxppKmnsmmDo1/TD+iU9ksbr8SaB7UNNwtyRdHXPPedI8zBYSsV3oubBZPDOtI5/aL03+nbN2meFG5wNLCvh5Zp/Fr7CoizLP/05j5nipdBCbZ10j99Nawt2OeuV1JzPvZUlZzPdtD5/uphYOKNavy82neTif6jSWPOBC9+13U/ApMImGL34DnEoxTXywgDeS17E8FUtNV4Ls8bbXX6NWDrXshtMfn3Y73D+TWCvVTwrw6rp+evxt7E43oo/Drudj9Nujtdspd92tfjPRiG8r5gu5dVSsiopdXKZyyuSjoRzcqW5JNN6hxZIekeNsMBLftswLbbkU/oF1ewrUzr6SehSdZRMzUYP//nr7xFh8GjmlyaOh0oZXVOq7irT4rFgLCfWhWhcC28AACrIulGRKohjNJXshVQp/8boAM9SLT5KvQLMkNBYuUZybMZYsrwUhUeAWYHeCCI1bP2WNpVxKFlAY8eOChQHhAV7jy0Lo701SgGE8Ki6aFcvvaw5G+zOnlXiYjweP6VEkJVo7I7FOH8khtQwhi6YHqmiYSkqDWBqgz7Kii2TN9S6VijK7m7vuxwsDFQAfrAlGHMZzfwhFQWsp430FahQZsO2EGBBxa7PggCtBqWuMChQVMKCPNCxBBVYXAbpH+cFnpGJDurfI1y0ZcFqEOwoE7s3zVHqEZ+vP6fz/OK/G/s6eTS2GFzqAnWRP8jf2bZQ8Dh9foj3/i95KYP9IVq3PqS7RkCZuVQfA93ZfPo2ufC+QopigTMAQUD8so2NB+sL5cxBEqVkmEHLv+3ef/XiffjPc9i42Vq5qjwNi1HS8kcDFZLhwzY3wYxy0cLGjoaV942b5HlpvGa//LQ0M3aV09e0n3fx/nlVZliVTiLASwCkuW9LabCtbbLDfpvNJnNphYsLssJkH5rR6QlATqVLEMBLdEik5t3snpDA2nFGc+Y4+HZ2c3s3v83qksJHYE9jdzmSNbDhEo6pg8WkRlgn/Kcnpyc9pnvX5+nJw+kJ4ZcDyqVr61rY7dVhaMquADoO53sRBaVAHUpA4WDjcIWvKF67vY3y452adoFm6Glz0IR6bymhA/UMsP1wONwdKF/hMolwQGMPzXOIeqh6eDogbwJfX1g/ERHLu3iNB9PyoZMvADCLCKa8ht4JDX1/RcP+8Cg9joB12QZHNehJwUaQ4t7MYzAcHZb26Aw/y761ml4MHoIpzHKY2h7tJvSQwt0Z7edmLnx04lwKe3MRYZyKURa+z7vBm0O1XQrxiOfyX9Bfuyq9CA==$994$';
+</script>
 </head>
-<body>
-    <span id="source" fid="58"  style="display:none">H4sIAAAAAAAEAI2SzWrjMBDH7wa/w1DKYsMiHfaWbnvYJgXDNhfnBVR7EqvEkpHGCSX43XckJWv3UKguGs/Hf34zspTwbIcPpw8dQdGUILabHbzY0bSKtDWgTMsZhpx+G8k6D0VHNPiVlK0lg7T/nyqsO0j4Abe455oWf7WCs8qoU+ujblizprHVlmXdIGa98/ksfMrwMUE0VrwPZZ5JCWvtEwK2wA3RAXUIr9UOuACNRwE1YnT+rZ4323oj+hb2+oigTXQPzr5jQ+CsJdhbB711Ichmn/jzLM+M6tEPqkGGDPiiMsNIeXbJM+AjGeW3H/teuY+n2bVG3zAdelDAjMQzhtVxi9EjNJ0yB20O4EkRLoTkZ6VhfONhoDkq7+E1lP6JWpsTGoIVLL5SwRXqC7Cbe8fDX6GoU5RweI0Lmq+IFlQLnivIQ9jXN/unRcT2PgxDnfaA8yTfAKgiwRpP/N6JBh6foFi6y3R9ArtW2xO68J4QfiN+ip2to1GUc+pineE4pNEZuL+7hJ/C7os0djmt4JLM6SfcYpVf23OKJXMRi4QxFC2xZfd09zB3m5LJ1/QPuHSYkZAD$71$</span>
-  </body>
 </html>

@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"SphericalHarmonicsRendererEffect.sdfx.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Images/SphericalHarmonics/SphericalHarmonicsRendererEffect.sdfx.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Images/SphericalHarmonics/SphericalHarmonicsRendererEffect.sdfx.cs","projectName":"Stride.Rendering","line":"37","statement":"2","debt":"22min","cov":"N/A","issues":[{"line":"21","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class ShaderMixins+SphericalHarmonicsRendererEffect</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"21","ruleId":"ND1306","debt":"6min","severity":"1","expl":"The <i>nested class ShaderMixins+SphericalHarmonicsRendererEffect</i> is declared as <i>internal</i> and is accessed outside its parent type by the <i>class ModuleInitializer</i>. Typically, types are nested to encapsulate private implementation details. Consider making it <i>private</i> or non-nested."},{"line":"29","ruleId":"ND1701","debt":"13min","severity":"1","expl":"The <i>method __Initialize__()</i> is not invoked within the context of analyzed code and may be a candidate for removal."},{"line":"29","ruleId":"ND2007","debt":"3min  0s","severity":"1","expl":"The <i>method __Initialize__()\'s name</i> should begin with an uppercase letter."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>SphericalHarmonicsRendererEffect.sdfx.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAM1WbW/bNhD+HiD/4WZsmIM6kmMDDZakAdZkyPIhXVAH+1K0AS2dbS4UqZGUYjXIf98dJb/JbjL0UwUb5svd8bnnHp781JlIhR9Ehp2TziifoZWJUH8KmxktE/cRdYoW7R+TCSY+culkHiWu0+tYVMLLEm+Fn5FnFMXLj/O0kxwKLVTlpNuem8Im6GLUU6kxHnkrU4zqk6SexqvRdSamZLgNa8fSN5GKsTOq8Auklyex+NEg5tb8QyuLKrROIwNFKGhneExjxooZak8LA5qnOA7DQSY1TRNT0uxD/DuNpXMFus7Jp6dFhMER165QeJ2y1eXRoD8MAGiW/LuK1qdgAMM+o3NYEg5f0TJ74zxX7GsgUcI5YJAlOphYk4GfIZzJ83pnNBO0eSPnUrs3r9FxFstzEDoF6UE60MZDXoyVTFQFpXRyrDCCaw+J0DBGyIR9wBSE4+McCoUpR4g6z71vJzvsv92V7Nuaud153tUZaXSezvvexCTzRM52iVlqj5b0tsrbgUhIdI5MTOEdaYC4cJCTk/bgqxxhXG0yfGNSTk9LL4WSX9EGDuCuyhmQqnrBjQJbhCYDbwB1InJX0AVGyKl4/CuzXAVV0UUwmsB6IZWL4MJoRmKJ8AfSIleHTm+8AnZjqVj6sA6/yf9vLf6P+0e7+D8a/o8CZOhnJoX7+1W29/fdgwW7rBepS8OieJR+RvJlphJDNM89mAmEy/2Va2iIWWY8ExVLSbCmUpkyDRPKxmJmSqFeTGXQ7x/vSmUY7s0L1+blbH6lRKgJhKTczBQqJYDUgkJKhBmKPEebCIeg0JOACOTn5y+//PyFv3EMZ6Lw5nCKGi2lk57v79HipQn0YErFI2boqlLLh4p6nEM1+Yltgt0d7wV2HkmjyyCsuronNcKHoHySBq1c1VbGRnUIs/RjqSzO6AGpi1HThfEkzCZe9Ld0hVAjX6TSRLcieaBmClHp5DxE4yJZPHSixFBNkrxJZMBUd89gdRZvJb2/VzhW66giUWany2l96oWx2F5bdtv2xpUV+YwudXu9pmJrmWNHN/SqwYxfKav99wV1Awvv2nGjeuOUQXPtXS4S3EIV1e+Z/b2n/T2gZ9E9oH5zcZNgGe3oT7V947bh2vJ5pY0BnMD1WuD3hVQ0XsVdO4KfunlDaWS6EAl21/xH4RULGY9764gvmivbXN2DzbCtU/hpDKPg3W0CvvBfptNbulyhvxVWZN1t67CORJWLlmt/WQpwcHC6ieGZS7e+8GmrLX/eNGhXL5DU7gXtqDsyX2PthtrblPrBR2oXpHnbffXPHNGg8fHVund35dsa0g99uAX9B8GmA1NPCg==$1000$';
+</script>
 </head>
-<body>
-    <span id="source" fid="354"  style="display:none">H4sIAAAAAAAEAIVSwW7bMAy9B8g/cD05QCrfl26HZkOWQ7BiHnYZioC16USYLBmSnCYb9u+jLNd1nK4VDFh+Jh8fH5mmcIONN9c70mTRU/FxOklT+GRAGw9USA9+Lx2UUhGcTGMdqfJdiGnjvod/uSkIHtFBTwIPJ8i8lYxneyzIwkYepYZliFzFKGNFpDB9HnC1pxpzqBWhY0w7j0p1fOKHdA2qzDeFNOIO81+4IxAHJ48tG+oCLF07PBALJ0DnTC5bTcIV5THWvEkvmp5OGif1DrKT81Qt+s9YdWksjbFvpLkzBsY/VhbrvczdGI9WXMCBW2yQ1Vboh2m3TVmydR/GvCL+WATRGityNeZ0oUqsK7bGTSd/phPgI7Unq1EB28lloEbrJX/mij3qxtROycX4Lu0sdZRT77lSjuoL2spoVhaLk/3M+nIP8B7WA+LbRiq+P/MOSoRTNw+KhR2MLJ6WhJJBfsarwY1W4T4fKl4aFnj0vIjte3ZOO6oSThco2uykI7z6fz9X8z5lRf4OLVbJZXSLE1vlRI99tUwwmy3ONfwNoxsCPzemaBSttQz+yt9k788DxtNrTdpunxO222Q2Zn2h84FrG9S8IJY3Zid5523yigFxoGyDpsc355681O/oyi9+/gHCmD1tfwQ=$18$</span>
-  </body>
 </html>

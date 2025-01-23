@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"InstancingUserBuffer.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Engine/Engine/InstancingUserBuffer.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Engine/Engine/InstancingUserBuffer.cs","projectName":"Stride.Engine","line":"42","statement":"7","debt":"8min","cov":"N/A","issues":[{"line":"31","ruleId":"ND1805","debt":"1min  20s","severity":"1","expl":"The <i>field InstanceWorldBuffer</i> is used outside its parent type by the <i>method TransferData(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose read-write accesses can be better controlled at debug-time."},{"line":"34","ruleId":"ND1805","debt":"1min  20s","severity":"1","expl":"The <i>field InstanceWorldInverseBuffer</i> is used outside its parent type by the <i>method TransferData(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose read-write accesses can be better controlled at debug-time."},{"line":"31","ruleId":"ND2000","debt":"3min  0s","severity":"1","expl":"The <i>instance field InstanceWorldBuffer</i> name does not adhere to usual .NET field naming conventions. It does not start with a lowercase letter, an underscore character followed by a lowercase letter or an <i>m_</i> expression followed by an uppercase letter."},{"line":"34","ruleId":"ND2000","debt":"3min  0s","severity":"1","expl":"The <i>instance field InstanceWorldInverseBuffer</i> name does not adhere to usual .NET field naming conventions. It does not start with a lowercase letter, an underscore character followed by a lowercase letter or an <i>m_</i> expression followed by an uppercase letter."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>InstancingUserBuffer.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1W62rjRhT+H8g7HERbHEgkJ9nSxckGcmtraMJCEvpj2S0j6dia7WhGnRnZa0KgT9MH65P0G0m+Jd60lM2fUmNbczm3+b5z5ug+GknF16LkaBANtfNCZ1KP7xzbs3o0YhtnLtqNLCvh5YTfCl9AMI6TxRcqXmZ7Qgs1c9I9nZvaZuwS1mOpObnxVuYcX7az7vF5xyJ1RtV+7vhikIgX9lhZ85Ez30GypoxdFR6D6NUBxsEvl6w9Fr7DPOc0DF+XUmOWmQkm18kpxtK5ml00eHc/N3C4H1CtFQ/zIHWx/7r/beMcs+y3pbF9GCM66IfIHE/YSj8Ly5jyp0pheFswHcuTkWSVU3cs/tlYlbenOk7kCUlHteOcTO0dzkPSO6qERezkZxVTOiPf2inZFyanWyu0g/aF8KL35+9/7AQzMZ1S68cVpsYjZRKaWGeicjUyBB5gQpaVanABLUZTzl5I1eqfGx38WyrFr8AecQSFysoJlJtIjSXLI5F5DLArHAkCJRVbP6NpYRxjX+R7UyAB7xmIduwoQxyIJmXvYT0z2lujFOIRHgGk9XjPy5Lj6GF3ScGrl6dgqCHv+H8mnmfiUTEc9Pv9TUwcNkz8PRGyo4CeLwqNEqfcIGZtcL68YMvkDfiphaL4+vK2MwDBABHOMgGWQNLFNPRLVZi3nqbSF4BImSnbTAAd1UCwG4ipNaB2mYGDrBAWoAKbEXCBcB44f6oX8IdmSIRfmnBxRguIA5FrmrBeVWuqz6b5S4L7NN3/yxi/f/jw9Vcfwi9JUE/VzMpx4amX7bQH+94gpLbyhM5DxaGZpDXqyVGv8L5ygyTJjdfsRwvR2NhxQt/QfN81DegwjyG109i55fQjAvpRqHJ7C54vpGvtItYGg+YCuRrekpIZa8cx3TA3iz8Nzy+vby7jMqfQ9gmMh+Wu5ZE1AHoETMoAotQYlm1Q21u1C/R07fAc+0cb1uIrtGkOOpl7vP+DFVWxut5mCb15LBC3G5Db3grp4yqBbFtrxNtb99tbhM+7cCs2wILu3sYXmGjn/VxWukqJWS/asFnVKdCiTAnnaJMZGtBwud4qdUEsArniMmXb2+/Pra67vTI5q+4+nyNLd06MOVpV6EKZSOtDjTRaC6VGfOPaPY3ZH5ELfw8Bu7m9BDly7OqyFHZ2sr4cSnpRzxly0D9SS57qrZx0ONYg/fOhSzS1+f1wHqz/6yDTUB8haVLzicyoydppuHHQvpAYaD27qNC86XsCFdakoFBqtuinDiWQoZ+9WX+li99aExoXajJe0rtYjJKT+ItCctYd5AznWB2vAYOaWNmLL8vKz45W0foHDrus3dD7voSltYt+zeD8vEbmdNcw0ttZ7q5UTAsoXRsy1S6d4g0Zpd5whfcjSwXeN3KjmUIvmvkCWKww8dAO8cA33MB/AU3NaEXIDA==$1072$';
+</script>
 </head>
-<body>
-    <span id="source" fid="88"  style="display:none">H4sIAAAAAAAEAK1TXaubQBB9D+Q/DD4UAxdt6dv9giY3bYUmFJLQh9KHVUfdi+7Kznpbudz/3nGNiUlTKG1FdJmPszNn5oQhLHTdGpkXFvxkBsF6uYX3ulGpsFIrECrlCGWNjBurDYFfWFvTdRim2iq02SE00CYP4RUMfuKcFN+mAUfNHM4W40eh4KMoq+kkDOFBUo+LKTAKGrAFwiraQikTVIQBbBCd8VO0WK43y6BKIZMlglTOXBv9iIkFo7WFTBuotOmcfKz6oqaThqTKYeOqCRbsv7lgC1aC8bqchM79H4yoi7F93mQZF3t3HhD0Do6bTpSokGqR4BC0VLlUOJ08TyfAz9cHYYUjViTW9yJFVqiE0XeEpsfxZt+GWEl1KVrfu+Csm5jZgqQURHAJBq4hOtr7pH0Rh0JWWMVo/DevB9TTa1c6xRK2Rig6MAs7Ejl644R9KU/S2EaU4LIOSS78ou0ZcrQ3QN3npeNuwAt5R26pqSph2vtT87boxuyaQkh4B+1ZWvhr3qjTKFc89N+XLpUduMRFh/7XRcadPrqlifUP0Jnb2u/alCkwjYbXnK6gqVlBrAHBCnMrKMqyhbh1wbfEEkgMZnfeySYFn43mbGJNBsfxHoxeeB/8V0rm+0bm3Mf4fEIMa2LkC5ZVbdubMVt/cOF+awf6v3RkjYT1j0iRekJDeAFw6FfLFHZuIv7s6B0ppicU1hp0fQXviGlFcrNqWHRQCIJUKwTkm1pbMBejSbz0R/7x+xOCrQ5LfgU=$566$</span>
-  </body>
 </html>

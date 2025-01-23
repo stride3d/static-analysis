@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"LightProbeComponent.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Engine/Engine/LightProbeComponent.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Engine/Engine/LightProbeComponent.cs","projectName":"Stride.Engine","line":"25","statement":"2","debt":"26min","cov":"N/A","issues":[{"line":"18","ruleId":"ND1400","debt":"15min","severity":"2","expl":"The <i>class LightProbeComponent</i> should not use the <i>class LightProbeProcessor</i> because its parent <i>namespace Stride.Engine</i> is at lower level than the <i>namespace Stride.Rendering.LightProbes</i> that contains the element used. This situation prevents <b>clean layered architecture</b> because both namespaces use each other."},{"line":"22","ruleId":"ND2300","debt":"10min","severity":"1","expl":"The <i>property Coefficients</i> should be read-only because it is typed with the collection <i>class FastList&lt;T&gt;</i>. Doing so favors <i>encapsulation</i>, <i>predictable behavior</i> and <i>consistency</i>."},{"line":"22","ruleId":"CS0618","debt":"1min  0s","severity":"1","expl":"\'FastList<Color3>\' is obsolete: \'.NET Lists can be faster in the latest .NET versions.\'"}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>LightProbeComponent.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEALVVbW8aORD+Hon/MEJ3CZFSL0ku1QnSSD2gUqSUVg3fqlbyegdwZew9jxeKovz3G3thSQJ8PLTs2ut5eeaZl31qT7XBsVxgu9d+0LN5+OpdjgO3KJ1FG4Si9kXbo5FBL/GrDHOWEyJrLgp8ot5JK82aNO3vXeUVUoZ2pi1mj8HrAsWo3m0eR/3KnJypwtbvsJfJ/9dh6d0vVGHDxytdPjXx0Wtf3fA6usUFK8YXvC8wT8v3C215q9ySd+PsI681UYXU7n1/2lq4/DuSWhm8L6LU8PKvbjd55536d2ft8qa2RrhEr8N64wt/l4aXkznCrb5TRhLBgZBuM30HNHeVKcC6ABUhhMM6fGPOyPmkk6OSUVgHglJ6NhV1LJNCpVQIr3hJGppABjBuhR4MgzXsSNqttz3Nb2gLDsjOxA4CJUOsFkA5G6S2lPTRJJoj+kLAZM6uSIeKk+4slJ6dWYZ5m3NMyC6NXKPHAqRXcx04l5VniPkuqNyFOTSIKLGCUs2B36MX7eeLJk1XV6/TdHV9JE3dvTRd7qWJS6tEH9YwcDidaqUj7pcpyhE8yuKds2b9IgWR27AuOaSVZuSREuWM4cgiAU0uP0kKD5rCqQn9yeks9KNpAUPHLAM5mMql8xTl0SpZUmUSg1HqooaHhVZB5oYpwrlc6k0xSFskL85ydwVWXifLx3kaPHbfpwJPPHnzgiemCaBLR6k620ZxO3DG+eu7sxi9i1MAA/bgTIxHE4gCBIqTzZRNWYOLTtfFxkEhBUhi7IA4QhJn7ecfzz///ONn/GcZJ6Bc+1h30FHntewnV9miLqkY74AL0Ou8CpGyzjyEknpZVrhgMUwbUeH8LINT2J5TKu7rQrDUebLzqI1m4rjsq0I7NutLsbO3Wq0E1RKUBIRy4ld53jphkENNNQROfBW7JcX3+X4CrICWUMAj1v38cD8YjR9HYlFAHOZbLjazDLzj3p86Dwvn4yEvFzX+1knrpKJYIJu+ZIDYP/BOfLQ8QJISHTwfNBV5+PwzD3CMXtXeeT1FxBBJz+zbw4ODoh9xH5lGrZOn1gnw7/tQBpnyKFXoHPq0tc9/bEU1lTw3NlKRuJzHPYx+lzGJHzaLb1zg4otVuNPDqaxMGNnAldzYrTGj78SuddPOgSl73photL54Vupc3nS73f3DAZf1zPktQmqgl1XO5QBHPwHQgzfoar0NSa+i/8e7FaX+/8BdZaiJM0mNnb0vWF9PdZTZJfyeP4P0QnID6W0nvxp78AQzDH2geHuudfnBV2zR/wBB+1fTlAg=$965$';
+</script>
 </head>
-<body>
-    <span id="source" fid="91"  style="display:none">H4sIAAAAAAAEAHVSwWrbQBC9C/QPgw9FhrJyCb0kTaG1FTA4TolzKz2spZG8QdpZdke4JvTfO5JsuUlcIaRl5r03b3YmTWFO7uBNtWNI8imodfYEd9TaQrMhC9oWgrDszbZl8gGSHbML12laEFvkcoQq8lUKH+CUD8Ip8KpQgpr2OhtTm1w0N9wWhkTWO3XW2+/3KgyI0ANUTurZTeMoTWFhwmABC5CC6IF3CPfLJxAC2oAKNoh9cLWcZ+tNppoCSlMjGNuHnadnzBk8EUNJHhryXVKOzeA/juKoDcZWYrCzrsQg3lyIqW/WEvekcDE/p7qWWv/N32tx1FXN3+UzWxmLaoHBVPZt8hG71iWgVt3AfnjaYqcQR1Y3GJzO8bVOHL3EEcjzc6FZ93PUOSeTM31OjSOLlifTXyeoCa7WhyOqu7gtTj5C9tt1Q7w9Hh7bGtWDzfHMw1K3NWeWDR9G3cEz+oQPDqlMzqXlk2MI5KejxMh68EJKPn2ezWbvk3PNWJE/OQyjddduZR0gr3UIcKFHuIY37gbe8ZJedf/d0z7orSzQLZS6DmOfPWpNdlkI35Smw5wHvmRswj/Io6U7HXglO/xFkOSvvsryY1ma3IhGgBeokG8gdJ8/A1d+8v4F9Dg+e58D$26$</span>
-  </body>
 </html>

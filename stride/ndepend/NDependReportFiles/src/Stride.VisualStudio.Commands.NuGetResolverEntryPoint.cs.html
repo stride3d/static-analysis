@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"Stride.VisualStudio.Commands.NuGetResolverEntryPoint.cs","relativePath":"../../../../static-analysis/static-analysis/sources/tools/Stride.VisualStudio.Commands/obj/Release/net8.0-windows/Stride.VisualStudio.Commands.NuGetResolverEntryPoint.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/tools/Stride.VisualStudio.Commands/obj/Release/net8.0-windows/Stride.VisualStudio.Commands.NuGetResolverEntryPoint.cs","projectName":"Stride.VisualStudio.Commands","line":"22","statement":"3","debt":"35min","cov":"N/A","issues":[{"line":"8","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class NuGetResolverModuleInitializer</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"8","ruleId":"ND1206","debt":"2min  0s","severity":"0","expl":"The <i>class NuGetResolverModuleInitializer</i> doesn\'t contain any instance field. Since it solely performs processing without managing any state, should it be refactored into a <i>static class</i>?"},{"line":"8","ruleId":"ND1207","debt":"2min  0s","severity":"1","expl":"The <i>class NuGetResolverModuleInitializer</i> is not instantiated in the context of the analyzed code. Should it be declared as a <i>static class</i> or is it a potential candidate for removal?"},{"line":"8","ruleId":"ND1700","debt":"15min","severity":"1","expl":"The <i>class NuGetResolverModuleInitializer</i> is not used within the context of analyzed code and may be a candidate for removal."},{"line":"11","ruleId":"ND1701","debt":"13min","severity":"1","expl":"The <i>method __Initialize__()</i> is not invoked within the context of analyzed code and may be a candidate for removal."},{"line":"11","ruleId":"ND2007","debt":"3min  0s","severity":"1","expl":"The <i>method __Initialize__()\'s name</i> should begin with an uppercase letter."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>Stride.VisualStudio.Commands.NuGetResolverEntryPoint.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAM1WbW/bNhD+HiD/4SZsqA0kkmxvS+G+DEHaFQW2rIiD7UPRBrR0jtlQpEtSdt00/30PaTu2Y8/1hmEYIcMi73R3z3Mv0m0ykIrPRcVJN+l5K0tOf5euFqrn61Ka9MxUldClS8/rV+wv2Bk1ZvtSezt9Y6T2aeGSo8SyEl6O+Y3wQxhK0+z+ch6S4lhooaZOus29qW3BLvPGKJftCiEz/Q/ZBSsWjjPN/nGaH0+kLs1k93O7Qxd9nNd+EfqLbib+9zGPrPnAhd8jbVBWUgetdhv3AQhXrD0OOtiX3I+3P1RSY1uYMXbn2SnupXM1u6T79nZh4XFIdK34dRmUXrTaeSfGgl3xcWkshy2iTh58O0b00k9x3MKWP41UeNZQoYRzVEI4ZkcDayryQ6an8vlMsgb/V1MGt1p6KZT8zPZpJp8T4JH0JB1p42lU95Us1JTG0sm+4pReeyqEpj5TJewNlyRcsO9YKC6DhTS5O9oB7sdt4NoR3ENs+RLb5d9EURp2+hFCNdoL2BZ6SlIjT7pgGkhWZUo9GTbACkMMiCO2A2MrR6gDlKGT+pom0g9N7YFVi+twEAzFdB+Rg0RFskCG5YEovLEgBPVkSERSYoHPshLC+mk3NSf7U9P659TMMztjAxIfQ451EtjiT57MIG5jY36GuDBoBOqt4i0ZDu0s/VuxkrHBFbQFjYzn4EqF0illCZ8EqkFaZcZC7aTlJM+30dKa99a/ykntACikfJOPNS5ik1RiGogQ2zGtdUGrtQGqtRVUZw9QFaMkS7q6WoK4umo013M7Njf/DZR2vr1sO3uW7V+geQQgGMMR1LzP+owGjJAQM9UjtGuB8U+KvWeLIN/dvf/u2/fhV8fe7U0dpvKTw4PVLUa4Uhjy0miXvmKNyIqHKhc8mKs8lFyCQpwdHoTg3EhgfsxfE2do/fTUOfbu8OD28ICw9im/meb8gbDebqg0jlt5WM13Sy3MGLbII83bbmzkJolL9RX7YWUZ/aaXEw8FgsIJGefwRkRLO676arr+kBxQ45vG6VwG7nx8fy4OGk169ox0rVQwn56/vKSf/+jODsraBhKriIzSMCfXbYf15Qt9xfiq+EwoVOT1UqHZvPcbctGlYsjFDYlrESYdKjvq32OjBhoFWkA1z/AsjzFbvxiBd+hRGF4TifjRG+5GouLiuJswjiZDWQxDv02GAlpMEwzT5iYqy762OtbM6nF0swh+URxpD8qjKGok6181JymmIH3lm4SS79N2mqetpPlk6e5udos/XKE7/gQURXdinQo=$962$';
+</script>
 </head>
-<body>
-    <span id="source" fid="2"  style="display:none">H4sIAAAAAAAEAIWSX0scMRDA3w/uO0zvaRc0nlJQFB9ErBRaC57oQylHTObcwWyyJBPXa+13b7K755760GFhk5nf/MtMDGQfYLEOjPXJdBK3ruLcGYOKydkgLtGiJ/UeucbVgLy33OAzJ910YmWNoZEKYcGeNKawHsVZCMhhOvkznUASZWQIcBUvka8xOPOE/rvT0eBXS0zS0G/0PTk4ZPn5ASl29+dZyl8jRZbRW2kgsGRS8ORIw3I5ei2XRTniW/Gz7O3BD2vW0KBfOV8DVxQgnQAt+zWkqrG+N+u3TrSC4lNxNtjS2/FFpjeKooTTU7DRmBxeXF3cwJe7416ho8+PWHedgVDs/NvYWV5e4D/Bt83n0pgUcwTK8jVvnsUxqArVI8gHSTYwqJ5/7Q0K6zhRqathwv0cu2l9c1Kj3wFiaCnVf48QHqlpUCd/aDGp2opUBenZ2komCqGVlsuPXXnk6G23M9vqLs2m+M1yiEWCm85UzCzykZjvtmS1a8OhmM92YDYUeUshSrPgqMmlzatraXXI9s/iQMzF/qw8GdP97Y/pl75/o0mEwRoD$83$</span>
-  </body>
 </html>

@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"TypeHelpers.cs","relativePath":"../../../../static-analysis/static-analysis/sources/editor/Stride.Core.Assets.Editor/Internal/TypeHelpers.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/editor/Stride.Core.Assets.Editor/Internal/TypeHelpers.cs","projectName":"Stride.Core.Assets.Editor","line":"35","statement":"5","debt":"15min","cov":"N/A","issues":[{"line":"9","ruleId":"ND1305","debt":"5min","severity":"0","expl":"The <i>namespace Stride.Core.Assets.Editor.Internal</i> contains only the <i>class TypeHelpers</i>. To prevent an excessive number of <i>using</i> clauses in client code, refrain from segregating classes into numerous small namespaces."},{"line":"20","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>method TryGetTypeOrBase(…)</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."},{"line":"20","ruleId":"ND2016","debt":"10min","severity":"1","expl":"The <i>method TryGetTypeOrBase(…)</i> returns the <i>class Type</i>. Usually a method whose name starts with <i>Try</i> returns a <i>bool</i> value to allow client code to test whether its execution succeeded or not."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>TypeHelpers.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAL1V227jNhB9N+B/mLoXxIArORukl8RxkU3SrYFutmjSvhRdgKbGFhuJVDmUEyMI0K/ph/VLOkNZsWMnbfelQi4UOTxz5sxF972ZKfBSldg76l0vK/wOiwo9JZp6g57HQgWzwB9UyPk8SdLHHwp8oj9XVhVLMrT77mqvkVLMTHA+vQreZJicOY/JKREGSi6ak4kN6PlWuuNdTckVdWi9nx+l6v9wW3n3G+qw0uRFBLYsjBWTg0NeCxEs0QbekPcMp7LcPyyN5VftFvx2mZ7y2hDVSL2jX+5bhK9F67rASSZG5/sHw8NIhN/072uwFRbhAr0JS94Z8iveVYUkL0cYmbFl2lQpjfAi86SNfZSaMWhngzKWwNliCaFB0YUigg1pxDSBaweVZ+82gLKAd6w0cXmArcspenAzuVuTsfMGulA1IYGxvDRyS7sMB+Bx5tklzLwrgXDucc5ZtHOIbuOF4AQUvasJqFRFAY+BUdJ7GDxK92q4pd1Xwy+f027I2gEcDOnfBCwx5C6Da798g0EUeOdfK8K9v/74sx+jMgQZMlOPGSiSK1U9LYyOh9M6cHhlFNRYpaNC0wJhiktnMzCBQGIspyx2ViNwoLJXMRzrE9gfm4oWWz7MRs4SOHOWOLl+ZSX2IWdiK/K7VwZwmxudQ6luRF9hoUOtCmgpmoIFAdKOCYggRpvwj0K/Gu5/8ZzQ+8OdKt3/cJE9htqzhjv12MT/EzF3VlC1Ed/mjjDWCHAneo7v1oRcrrKPJ4hKNqfONdW/UEWTBIZzt5tlKpsBKTA0u2CpRTS8Q10H4yxQzcJhxvlxHqwTrX59eP/pJ+/lN005Q9XSm3keYE/3Ibm8uIZvXW0zFW8rLgXOIXcoF4zzBHt5CBUdpWnmgsUwezRNnJ+n8Bm05xS7+iBL2Krf7bCnc0MNDnPhW8xURHs7uQZOIlrCBK4Q4+b3k7OLy6uLpMxAxr40pmyvJh545wLMOJ6SZwYf8rJsSHQ73U7sa7haEs+546evPGSKghHYlJI3aDnx+ljufGzrolBS/2jln+x9yISKIG0dQzPsYWc4dTv33Q7wk7IcI6rLUvnleL3FJSDZnGOI4cYmYwinjRLRYqXIwZxnmYUR96IqeUbFcjrp3eBSfPXScTOwVootjCR/21iw36qKjQdr/3PXNChPs3m+pmBsLh2iLEuRG/TK63zJKQymkMJWgfuVezrWQrIRYLobYUNji/D4FHgZ6/i/UU5GaTx7Cbi1ZODMxGwzCyZaVTE+PqXnIFadN5be35C90WDWxHcMTprs1hB/H0Z6LHUzSrVQaq83iM2sbUtB4vxmd4zIElYyDGDyI6rsHX/dzh9Jj5oT+TuGVVj9xsGqlORZKA+69jKZI+JJi3m8tmkYNBy3jjK3Xm+gysNh763cJg37n2UQ7W14G4CL35IWuN9/CiHP1KO6iT2yufuU8sZbIuJskXyQDwP356Zr+OgEJAH9J9ANld1QH7od/pGx9zdXuKhbTQo=$1124$';
+</script>
 </head>
-<body>
-    <span id="source" fid="243"  style="display:none">H4sIAAAAAAAEAI1U72vbMBD9Hsj/cOtgJBDkD/u2/Bhdm3WBtYUl7LsiX2yttmRO5xQz+r/vZCeNk24wYRxJd/fuvSc5SQI3vmrIZjnDyIxBPSw38NXXLtVsvQPtUslwTHZbs6cAo5y5Cp+SJPXskHevqcpTlsAHOMaD1KT4MVWSNR4OkgRubehwMAWpQgLOEe5XGyisQRdQwRqx3fy+ulk+rJeqTGFnCwTr2u2K/C80DOQ9w84TlJ5iUKZlR2I4GA7qYF0G6yYwltPzpbrxRSEIkhrUHToka6ax5r2ri0JvpRW6+BP3nC4xVNogrFstUkyorkNADmqZWvFDrRwjOV20IPawgMDCxoApdAiwaSr8hkWFFIaD38MByEjEjlmoy1JTszhtbagB9pAht3JZKkEgvLE6mvZsOW8Dmd2jg1mlSZeEO4hM51dP2MReV8kCduTLo2N7oZ6+SY7Y97qS5Mmpf+ajVZyTr7P8RMG6XIxi7cSK3CJpMnkjR8i2AA3ivMnBBmjvguoJTN4q7GhcEF5cg0yj8v+krGZJG/sX8DFTgFPbnrawEKJV1eqTaPgbBCHX5MJik5/Z3nmw6/RNwQtJerYBJzAzi3hvZomJlI7lHWJVb+VaH69C1Pk5nu8dcpw/0hcdcBSncLBhAqsfqNNHVzS3r6RnXSS+F3CQNe4aHK5SHHtNYGoidC04zI+Y01NOx6DjeBFK/WneQ41DZI8ObVXH/qcuahz1uk3A19wDHo/PIeLYEuqn9hvp755T7q1UNOeC5As85/GvoN8a3s0hHsD4DLqj8lbqy3Agzx/hBQeO8wQ=$602$</span>
-  </body>
 </html>

@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"SettingsEntryValue.cs","relativePath":"../../../../static-analysis/static-analysis/sources/core/Stride.Core.Design/Settings/SettingsEntryValue.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/core/Stride.Core.Design/Settings/SettingsEntryValue.cs","projectName":"Stride.Core.Design","line":"50","statement":"11","debt":"13min","cov":"N/A","issues":[{"line":"16","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class SettingsEntryValue</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"16","ruleId":"ND1803","debt":"3min  0s","severity":"0","expl":"The <i>class SettingsEntryValue</i> is only used by the <i>class SettingsEntry</i> and seems to be an implementation detail of it. Consider declaring this type as <i>private</i> and <i>nested</i> into its parent type. Doing so <b>improves encapsulation</b> by constraining this type\'s accessibility to the smallest possible scope."},{"line":"16","ruleId":"ND2013","debt":"10min","severity":"1","expl":"The <i>class SettingsEntryValue\'s name</i> starts with the parent namespace name <i>Settings</i>. This results in redundant naming without any improvement in readability."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>SettingsEntryValue.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEALVW/WsbRxD93eD/YSraRgb3To5pKY4sCLETRFMnILdQQgKru5G1yd3udXdPtmryv/fNnk7fSgKlwh93u7Pvzbz5WD12JrrgG1Vy56Iz4hC0ufPXJrj5n6qoOcl857TjuFBBz/itClOYJUm6/PEBO9lPyqhi7rXffbe1y9inmXWcjoLTOScv8Jxcsdd3Jm0p00PcauxtUYeW++oiVf8/aeXsR85CK8sOAkwKbWTv5x6ehZ9LNgELZ2dYyHkcn89LLbaZneHtJn2OZ+19zb5z8e6xhTj7RSSuCx7mYnV19rR3Hn3AW/b3Cq0HMKLznjjoecZOh7kcxys/VIWctZQVynvKsTljTxNnSwpTpr4eNDu7EfdTPSBlctKBtCdjA1X1uNBZMaeZ9npccELDQJkyNGYqlfvEOSkvmJ5VwbkgJJ3Pp4cj+nV/ROcxou2AequAbr/BdfhsDXytPdwaz78Q7jJSz1x6ClbiQVS6rIqYPlSRNRAvKF2QnUCRhF5Y45F9h2VAOoCBAZxhXvFChQpiowCW8Fgy7EMjDGkDIh08VcqBIx5M6MoKkrfUHw/A76yki02mKl8X0Y9+Oh5IPBkcCE5ps0H9xJPKUOPIjy6gm0QjkftSFQXIqbI+5o58ZkH4pfQ87Z3tTc9Zrynf/cX2ldzAQYP2iRKgPxwEuNdhGp1cKCH7vlIZxycBa2FiRdGtBOsYguAwKsVxXptcNSdFDQG0dYDoc1qIKGlsbFWuGmkQ+/vPH374/oP8pikyWs2dvpsG6mYnlNxc39JLK8Ax+5JA5BwtP66DdZ660xAqf5GmuQ2Gw2Rpmlh3l9KP1O77OCbO8wRWJxFnBH6kj0ahzrUFrKuSFd79/X3iGwsfDZLMJh+rk+MjOHmlfeMCihqEqD8R7vfhLeEAG48SGjHHxdfDF9c3o+ukzElmuUQfRW5mGDmLjp5YRyXmFzbxWDb+Hx8dH9VehBzNUa7ls81XDDyUUiamPnnFBjWQrUzWZuJzg6ERIf3e/eGbvct/qbI4uJFcz5BJwTs+WtXJulVbK8dHj8dHhE8K2fq+LjGh5oPV0nMjLcgOlwPZcZQkTBV04Qq1JeWiSFyAcjMp3KgVlhbw9InnTQ8roEPyzPHkcnlVvnVWRO+kg2TNi3TTjSX/oWahi83F5tgirgOxtctDo4NWhf4HA0SR4XvQoeEM5MIIi9Nw1+0VNTxv3Eq22NL9dH00rypjx17KPRmjH9w2BRfrL86or3GOubCibrBJP42QX+KRvw1JnBTw1mZaSW/EsfcNfN/CEtPf0DSVIElvqf4L0zL/uwe6725suKmL4j1tlVSr5ymtTP54KRvi7Wlby9HTkxWXfC5orDx3lwByYM3kcdO6qcDLBunZ5t4I87XIwa8nc5gEt2HxWbpzQ05tpnJV5DZL1+JfBrBHEsxsJ01NrzHx+m+Vk16MzT+gVxxGgJPiVrjKGsFamX5DX6I3D8cFf5rQyjjsp2rGuPDZ4FQV5OpWchHF6cPCh8mKe7OrJ7Hlc52bJ4H4AYtb8s6Ua082UwrKNEwA3Q1jS1LgdzdPf3dJBupsscjHcaid2SR7ti56CygeXx6ECVNn7+NoGBpkWedvKnZxYF8/ZBADD92THdztEOX8bnTx4EbJLPIjU7zNHjt8cZ4oXOTJcqkreOtQgn1d6oDC2BTo5LSR91QSk9zi28+usweUWqvUxT/8yPeAfwHWtjf4+Aw=$1289$';
+</script>
 </head>
-<body>
-    <span id="source" fid="78"  style="display:none">H4sIAAAAAAAEAKVV32/aMBB+R+J/uPVhAwk5D3trAalqaYXWtZXCJk3THkxyadwldmQ7UFbtf9/ZJkD4sVVaVEE4333f3Xd3bhTBlapWWjzlFnpJH9j9ZAY3qpYpt0JJ4DIlD2m1mNdWaQO93NrKnEdRqqxEm21cmdJPEbyH5txQTIofU0ZefY8Ti0IkhBnbOhWKYHXFtnjL5ZKZ4GG8A0sUe6763U4UwbUwIQVMgQhRg80RPk9nQAEoDTKIEb3xbno1uY8nrEwhEwWCkN5cafWMiQWtlIVMaSiVdof0Wob8u51upzZCPkG8MhbLi/ZPdqWKghDI1bBblKhFsnXxxZKLRnYppbIe0hw9nz4cNX/jZXHygE0WKK3D63YkL9FUPMGWV4zWUqTpdl67HaAnItmGpi5LrlfjrelSUtEWteQFqLmXxOacdMFKoyES4OBSIOUWvKjRa0WmNTz8xJUDUGQbGpI80ZiNzhr2R62c6GfRmO1kEbXT2PAnBTcGmtgJTdnqq+c8bxtD2LquE7U15qkUVvBC/EJDKUpcEp2xXJJcKvOTcCTtLTVlHtJie2zRcbphxTUvwfVkdFatqx/PwsD5+bO5MP/knGOhnLpWsWHkIf/G4z4DiXsDylYlgrvdoL68ie8tLL79gSZMgmt6Q/U/TJv+Hwb0vt8re18XxQ/YG6lGzwFsXb7cuAOX7aCZZZ9pf8vlnnOYc4O9DYAL2HF5bXuHCRwFpIv2WZyrukiJX2QrcrG65fHbbWdLTiFzuiZsqpJop/5NAUckUQvUbqnhjm684SPXbhf98o/hFm1McG64+bzAIFgj0yfaS9rN03VRPqG00l/2OV8gzBElRVW09G5bqkAH6PjoZjX0P0FkfuVTkcoPFvCFjHvyLrhuIsMtRcoEJgI9LGNPUsLvtaPfjUCSOnss7tFoay3bZBe7ojeALuPRSRiba7X0V8NUUpdF+lCh9hf25CUhMeil1z/A3S/RxR9W5wNbI7Puj7vFm+6hZteY8bqwbGPqObxdKIc9KYWlwWgL1B8EeQeuMWy2qvAw2RNK7Uzq+ov+/gAjeCWtBAg=$794$</span>
-  </body>
 </html>

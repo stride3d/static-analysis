@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"SkyboxShaderBase.sdsl.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Skyboxes/SkyboxShaderBase.sdsl.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Skyboxes/SkyboxShaderBase.sdsl.cs","projectName":"Stride.Rendering","line":"27","statement":"4","debt":"40min","cov":"N/A","issues":[{"line":"21","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field Intensity</i> is typed with the <i>class ValueParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"22","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field ProjectionInverse</i> is typed with the <i>class ValueParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"23","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field ViewInverse</i> is typed with the <i>class ValueParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"24","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field SkyMatrix</i> is typed with the <i>class ValueParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>SkyboxShaderBase.sdsl.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1WbWsTQRD+Hsh/GIMWhfTO1oKYxIBtQYpYiyn9Igqbu0ludLN77uwlOUr/u7O3aVISFF+onxousDvzzMwzM/t23ZmQxnM1w06vM/pWj+1yVKgc3bFiTDhnnWTc6XYcauVpjhfKF4JMknT9sRdNtq+M0jUT785t5TLkFM2UDKYj7yjH5CMaiUJmmm5GMb5Af0FEjdnqyt8SOe2l6j8zKJ39ipm/rdmWMwFoCSKaw5cyDlRwhsaL4EjmOY6b4fMZGZlmdi6z8/SNjIm5Qu70Pl2vPRyEylcaz/KAOj149fywISCz7PvG28HKG+NcOPg6iGSKy1LL8LJAGNAwFgUmhDqHM+PRsEAHKQ2BGHxdYg4L8gX4iM+0YoYrpSuptZNkPbp3WO9p37/cm/p+Y+kL5YP5rPJqrLEH5BmanBkyZWCMMLM5SdAcBOkq42mGCVwWFAEaVQ7e3mogs2ZSMVkDyuRQUKiqCHMEcSkxSAvpRPgHih/GoRH7HxxJgSXChbNTYSrFmAZ23YAhI2Ymw5g4N6yVwybL0uEEnRPLrLAUMNZBYXUuDla8Q1arhJLOTXfTmsP7as1FXF5SgjMjNowPLfrLFr24rxZdES4emvNvzTm6r+bIyf1eyaG8fGjNn7Tm882XJ4+/hH+awkBV3u5P0aATdT5st0R4asFYD5iTlxCSZHg5QC13K6OePAqYBhcLEPJaKIa1ExjXEC9LiNcqvKclGTgJyLcRZV0SXdi1nZR9HaMLpRSVRRYy13rlL7kirpQe+Sonm1yo7JuaIiRzpmXjLZTb4T6reayNNN9m1HCSa32yjDEH6U7S7Zb0S+o1qlku8f56GqOeWIfbsvUzYFvx1qmyoIy35bEUO+LgO5FlXOAsLO2N/riaSF/h9bbfJCr6gbSRFc2lkqZvs0pu3zft1nW7BfIrq7GWrbPaQaVynpSGuEG230CyRTharYx3HThZ89boendzDSbaKj/cvDwkh7t6Ts5x0VitkE+f9f8iStz6w91b9OfhVib/Fu/OlXDPkdbn2+/HuWm35At7+wd0+g937ws=$788$';
+</script>
 </head>
-<body>
-    <span id="source" fid="132"  style="display:none">H4sIAAAAAAAEAL1RTWvjMBC9G/wfprcWWvkHJM2hLZSydAl1yX1ij5NpFclo5MRm2f/ecZSGkrCw7EKND9abeR96LgqYYhf9zYocBYxUz/KsKODBg/MRqOYIcc0CDVuCwXdByDYX485+73WcVb4m2KHAUQSWA5QxsOLlGmsK8Mw9O7gfNx/Tlg8mSfgjD9Tt0+MaWksoijmJaO1BzyxYOrRl7Gr2Zo7VO64IzFa436uhqyHQjeCWNDgBiviK95mM1E2fPKfF2aXzrBN2KygHibSZHI/J9d4HOsVeyOnNFDgdPAZs11zJKZ6qOINHbfOMmnaD8Svtrmsare72VNekwWQM7XBD0mJFZ6lM+T4sfU+SZ7/yDPRpu6XlCrROtYEWQ2S0UFntCNJySnintf+gQRLrQD4XCIS1d3aABdqO5hg0SqSgzGljPcYZPLlITjgOeoevczE/abdnHTYvryb/4KKdBe5nMA/+jarI3j25rRZMf7Y7UP7Pb8G0+x4n/Svp8+99fueZvh9Kir0q2AM=$114$</span>
-  </body>
 </html>

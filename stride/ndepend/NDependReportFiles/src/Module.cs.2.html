@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"Module.cs","relativePath":"../../../../static-analysis/static-analysis/sources/presentation/Stride.Core.Presentation.Wpf/Module.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/presentation/Stride.Core.Presentation.Wpf/Module.cs","projectName":"Stride.Core.Presentation.Wpf","line":"21","statement":"2","debt":"38min","cov":"N/A","issues":[{"line":"10","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class Module</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"10","ruleId":"ND1206","debt":"2min  0s","severity":"0","expl":"The <i>class Module</i> doesn\'t contain any instance field. Since it solely performs processing without managing any state, should it be refactored into a <i>static class</i>?"},{"line":"10","ruleId":"ND1207","debt":"2min  0s","severity":"1","expl":"The <i>class Module</i> is not instantiated in the context of the analyzed code. Should it be declared as a <i>static class</i> or is it a potential candidate for removal?"},{"line":"8","ruleId":"ND1305","debt":"5min","severity":"0","expl":"The <i>namespace Stride.Core.Presentation</i> contains only the <i>2 types Module and XamlMarkdown</i>. To prevent an excessive number of <i>using</i> clauses in client code, refrain from segregating classes into numerous small namespaces."},{"line":"10","ruleId":"ND1700","debt":"15min","severity":"1","expl":"The <i>class Module</i> is not used within the context of analyzed code and may be a candidate for removal."},{"line":"13","ruleId":"ND1701","debt":"13min","severity":"1","expl":"The <i>method Initialize()</i> is not invoked within the context of analyzed code and may be a candidate for removal."},{"line":"13","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>method Initialize()</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>Module.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAL1WbWsbRxD+bvB/GERfJHDvJIs0xgkpwU6LoDYhNrQQEljdjaSN73avu3uSFeP/3mf29GrJL19aIePbndnZZ555ZnR3rZEu+FKV3DptXdi8LjjJfOuo5bhQQU/5owoTmJIkXX19gCX7RRlVzL32u2tbu4x9Wjn2bMRoTXoVnM45ObOOk48bhuSvapRuXqyG3hZ1WF58fpqq//jGytlvnIUFCU8dg3OhjXgd9/AsMLiEg2xgnfNQHvsnpTZYZnaK1WX6Hs/a+5p96/Tz3TJCryssA8QgF6/z3nG3H8Fglf2zjtZFMKJ+V5B6nrLTYS7HseTbqpCzlrJCeU85jFP2NHK2pDBheqvfNZYm3bepfkfK5KQDaU/GBqrqYaGzYk5T7fUQjNAgUKYMDZlK5W44J+UljmdVcC4Rktb90VNZ/Lovi+OYxcMkuuskrh+Bm1v25mdgsqgDYigzJ23AvMmYRpqLPKErLQskBeUwcqnYjawrPaGykIXXZkwzHSa2DkjKqLFsSKBYwCPysBSRFWTteKSygOpjwwRLKmYfBdfQLLB+e4aD1y/noPc8B4taNWkHDcyCLVZYaOHbQHYUl7EjvsOcWWiYrjYTyxmBXVPQvUmRdXIVvBVVNrBcVYgYcp3jTgKnYKe0U1Vs5X/yIP1+99W+9F81XfFk+Q160FcK1XysDSPQhRg8WYNyL5R+TGFe8ZK4qPO/VVlcQMW5ncWDCV1biAIIDJI0xLdRHlMmU5dDdkIjItWimOaiQtUeMcF2Vmg5JcQeiUicqDF2muex4zHQQVWRzHgA0kFQdrb25EtVFLRKzj/dQq+73X389XYJfLl2kEUee2BXN1uaibSVai6CUftrvw2+vwO+txd8/wXgS0aP5jQwWpSnv3O7s63/qb35n9I42d/CjwzjXSE/kcpmH8KzmcDROMR8ArqobG1UFsWJoYws5jaObXQu5FUOofq8ZoLGZK9COEhT5A9XkeGDO6BGduCn6YEzazx6yy28xB+Eelpg3j1yRLOJziYg9EakLSiyUGM2LCHqAjyQzywACA860wH8frn/+uMPX+UvTXFrNXd6PAnUzjqUXH64pt9tbfLY1bFewIWmBwnWeWpPQqj8aZrmNhgOo5VrYt04pZ9oafdxUPTzBF6dGOcKcCAMjJA61xZhXZWs481ms8Q3Hj46JJlNvlWdwwOAPNe+gQDqcCE4EpVdDK4JB9h4manMcfPPwdmHy6sPSZmTvEItB/LiZYKchWJFbiUmGIzyg9TgPzyI82Vzwr3Zs5d84lGBSDiy13ztlPGFeokdA9ROpeIenocHzw/Zw4O7wwPCZ6kC2pwrjWnhIZ/Pzf5a7O7L2tjomxY/NlOrt7ti7bgRUD7vF0L/xGMpyjxpHti1Red21G4u7SRLx6PVkTNbltacoeHH1mmMWzEE33mzfQPqvUZCYc3XttsGkRfy8sAuGSxeQFaYlgS3Dc/oDw4ylDbOrcydTQz3zSP+4Std8i86cRrGjQs=$1124$';
+</script>
 </head>
-<body>
-    <span id="source" fid="2"  style="display:none">H4sIAAAAAAAEAI2SQYvbMBCF7wb/hzkVG4p86K17KmlaAs2ybHIrPSjW2NEia4xmvGla+t87tps4gT1UCCzmffP0GLmqYEX9Ofn2KFDUJZjH9R6+0BCdFU8RbHRKREn+MAglhuIo0vPHqnIkEaW5ooZSW8E7uOisPQ4/OKNUOfnsfPC1eu5kcJ7UNvVm8TudToZngifA1GRe+jLPqgo+e54joAO9EBPIEWG72YM2YGQ0sEOcit82q/Xjbm06B40PCD5O5T7RC9YCiUigoQQdpVHUYzfnz7OBfWw13hjcaDx8eKNmnrEJ6qQtb8r7ZCMH+z+6eUr0qkJiJfMs2g65tzXe8U8JGaNMDXn2O89Al4+CKdoAdbDMsCU3BJylf8S4vs/1TfTibfC/MP1YxH446OyAR+caXsk7WMCiXMAbw3F9YsbuEM7P2I6PcjbzAVMh5x6pKeZLS3MB319bVtR1FFdWsKXkkSdEuHy4v0Hfe0kCsszrHrsZ5NZG22IyG/11bKzxmuky4CLiCb6iCP6Um76rXN5m+DMf9aP7L6hD04giAw==$94$</span>
-  </body>
 </html>

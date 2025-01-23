@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"InstanceProcessor.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Engine/Engine/Processors/InstanceProcessor.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Engine/Engine/Processors/InstanceProcessor.cs","projectName":"Stride.Engine","line":"51","statement":"13","debt":"4min  0s","cov":"N/A","issues":[{"line":"7","ruleId":"ND1207","debt":"2min  0s","severity":"1","expl":"The <i>class InstanceProcessor</i> is not instantiated in the context of the analyzed code. Should it be declared as a <i>static class</i> or is it a potential candidate for removal?"},{"line":"33","ruleId":"ND1208","debt":"1min  0s","severity":"1","expl":"The <i>method FindMasterInParents(…)</i> can be declared as static because it doesn\'t use any instance member through the <i>this</i> reference."},{"line":"33","ruleId":"CA1822","debt":"1min  0s","severity":"2","expl":"Member \'FindMasterInParents\' does not access instance data and can be marked as static"}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>InstanceProcessor.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAL1V7W7bNhT9b8DvcGdsiw2kUuxsaOF8FIbjbgYaN2j8r2gBirq22UmkSlJuvcBAn2YPtifZJSVZUexk3X5USCBSvDznnnN56bvOQiQ4Yyl2hp2pNJZJjjdacTRG6YCbznFHY8KsWOMNsyuKCoJw90fxVvBnTLJkY4TZn6tcE1SIcikkhrdWixiDSTErXzs2Ez6SAIuMSnJbJXA1DNl3Ys60+ojclv40QGg1ca9h59c+jR0/pigtfeif0ocYIzf+JRUS4MSBcbWmD7NwRGNhTI6mM3x3V6E8d07nCU5jF3TVH5w89wnQjH+q8QY1nsE1amE3jpGm+CVLaDhfIZyLS54wY2BP1nkoLkEYkMqC8ItWUOIxTcDSTq6kxS8W1MJPvZ1/0jJXJBxuVypPKNZChBAjcWhaYwaYoyxKAJ7Z8yjtqCiaQaYsOqoEOJOxiIkTFrSuMVVrlrzsbI93Tpye7lnx4pAV/W+0IkW7UjG8EjK+ZsainsobSlxa0/376189nypl9VBTKSdCznKDTkas0MgjC27K5KY0kCOkmEaoyTGt8uXKO0e8diUKHzQukPg4Bo/LHI/6LwaDSqZO/k3moJZ5XbAfHRB45HP21WbcnYA6ZyoBIxVxJT1l+o/7wjvb99sPP/34wf2HIYxVttFiubLQ5T0IZpM5vFK5JBShpMcZ09HRIsot9RN0V9ZmZhiGsbIS7WIXGii9DOFnqNaN76nTOKConseZY/SRUvqdJWm7RcxXwhS4lB2heJ8RrqdzSARHady5RPQfX0/Hk9ntJEhjcNdadajLLgatyAd36lKl3SIN0yKpdis3Qi6h7PAxrQcjSbb5ZXPWbrVbki4BkzGyrnEPBPUt0m7dtVtAT5ZHSdUJ+z0IQ5hQL9hN3ZVVzFilmZJUucsCqMS7h7mH1u1BHeSeIUSMDmjXbjJUi+5cM2mc0h12rwdk61v8lAtNh2M/oMa7a0LTttGCzle9pxZFBaJjtHDOljmSobvlJs4b7cp4Ac/6/ZOzemnrbN7p1XRlcFd0RYfeGQ5rJWJ4IwvzdtmO4piYusVXQP86hnczZWd5kryHPW/pMitHT4e5Duk96oVYUCdUsUHRd3BxAZLQes3QBzvds7/z4P1UhxXyemdNqG1zionB/0BNHSvJ4rpc3Sfw/19x3rr7HePvXp1aJF0f/EmdD4SJtfttqmNrxkMFauh6PJ0105D5LVToIvhl8BvaAsan09zweeXur26554dvPVaOhy6Ji5LMUZwfkHJ5gNE97kzT9sN01aPR5loSzUGInco6g3si70duH24vgR11szzli/7cj9E/Q6kk7rMK$993$';
+</script>
 </head>
-<body>
-    <span id="source" fid="111"  style="display:none">H4sIAAAAAAAEAL1UwW6bQBC9W/I/TC8VSC006s2OU1mu01pqnCj2rephDYO9EczS3cWVFeXfOwsGjO1YbQ9dIQE7b96bN7MQhjBR+U7L9caCF/kQzKdLuFUFxcJKRSAoZgRZLVeFVdqAt7E2N4MwjJUltEkDDZReh/AW6rjhnBg/xgGj/JJniasnQfBVpFm/F4bwWZqKF2NgFtRgNwh3syWkMkIyGMACsdz8NptM54tpkMWQyBRBUrmda/WEkQWtlIVEaciUdkF+zKqi+r3CSFrDoqwmmHA8GBMpW4bNsN/r90hkaHIRYY2a0loSBg9aRWgMu+73nvs94JUXK64NolQYAzMyVlCEDQ4GMCUr7a7Zua4xE5XlipDsTUW05zvgPGHzfGhBbg1gJQyCZ3c5qsRbakHGOW24fR+4rY/4s5AaDZwCWr7nLjWnjRPLE2hyWlM8IFhh4jq7r5Eb2oS7PPfajXEE76+uPgzb0Itrc+NXK8tD46GrLWrXcNgqGcM9Vc1rqh3HMSt51S5geXsH3+fKzos0/QEnvYWofroM4wMr/Fd7IRP+EmpscCeM68toBMRsfhd6lOnWaSbcSoqrlxk9CM0xcyBQ2fOHXaqX7iumBv9Cmr9Y4ha34/Iu8P/bcB4xY0T836fTmuTfR3TR55ExuRX28Ai3iucG1PH1ejlboSEvU3jQFfhT8AVtRVOW0034tXH/L2+f8+ZPj5XT4Z/EaC/mJK7PWLk5o+iWO9Ocfl6uXhptoYllzlI0LtsKDkweIl+O0/fETro7nv2Nr99UUgdRiQY=$587$</span>
-  </body>
 </html>

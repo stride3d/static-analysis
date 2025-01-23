@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"ContentProfilingKeys.cs","relativePath":"../../../../static-analysis/static-analysis/sources/core/Stride.Core.Serialization/Serialization/Contents/ContentProfilingKeys.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/core/Stride.Core.Serialization/Serialization/Contents/ContentProfilingKeys.cs","projectName":"Stride.Core.Serialization","line":"31","statement":"4","debt":"40min","cov":"N/A","issues":[{"line":"13","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field Content</i> is typed with the <i>class ProfilingKey</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"18","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field ContentLoad</i> is typed with the <i>class ProfilingKey</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"23","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field ContentReload</i> is typed with the <i>class ProfilingKey</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"28","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field ContentSave</i> is typed with the <i>class ProfilingKey</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>ContentProfilingKeys.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1W22obMRB9N/gfhqUtMTjaXPrQummgJCmEpkmo81YakFfjXYVdaavR2nVD/r2jvcRxc6GBhvYhZg26nBmdMyNpdBlNdY7HssBoFO1Z49H4U2d5UJv0Ey5IJBQNI4e59HqGp9JnDBQivv7I80yyLo3MF6Tpdt9WLkGKE+swHnunFYo9bosxOi1z/ZPh1sSrvZYJxfdTkhOyeeU7SvujWP4zLqWzF5j4Noz3OmYk2wXI9ia3Azss2CMPvOa+wknd3Ch0gCZ2xr3j+AO3NVGFFI2+XnYeNrdDWqocD1VA7W++3diqmXAv+b70ttl6I5wxFb8IQ9zFH2XOzbMMYUfvNnGCqcZcQStzJ9a7oAn8okQFc+0z8A06ySUR3AxDjfWZ9MGgqLyc5DgC7QlqjQSJNDBBKKzSvIgCRrrKeF2ggLNMN4AcpQJvuxlIrJlWxHEDaRRk2ih0PKgQ2CWvwav7hYBDE0idTEIG1k+cZu68AtNLnSxYfBrYDQNGGzYzCTZCqWYtHda6SodTdI4tk8zqgLEOMpsrdtDyDqpaQSK6Gi5T8eaJU3FkpXpOx5+mY+upT8YXzJ8T8piEPPX5GMsZPqfj4XR8uzp/+eI8/OOY41YunE4zD2vJAMTxwRl8tJVRdZWq6YfIOj2pvHUEa5n3JY3iWFlv0E+vocK6NIZX0M1TXfm2lWDUoPYzZtUcGBj7SmnLbl0plv7m87mgBkE1QCRWXJSDfo9J7mtqKLDIqg5mEP758AzYAA1xLsbYROPocO/geHwgCgXhOQPatEGqyzI4a30doIJLMk9ys2j493v9HueMY3azaO9rmRpLvM/oXUAYrutUSo7yvaVddK+Efu+y3wP+xSxhh6qikG6xuxwKjwaoiDUFQmW3K2u+qQzbKGxXccNHvOqkrCasH9pz0Gzuu14mDbolc9vQ8e61Jl+sHIzOEbwHg/OVqbXudRgN6ph0Xu+Q2Q1fm0O4L8FOeUcA00UvfrOPbzt4BNtQHu9i3E4PIQqIaLgy+zGXKYkjm/53cpry8rCgBvMXJRFfoU8nKVzQDwsKiIfkhAWv+j3+whX2C/9WAjq2DA==$808$';
+</script>
 </head>
-<body>
-    <span id="source" fid="33"  style="display:none">H4sIAAAAAAAEAM2ST0vkQBDF74F8h2IOywxI92Fv/rvoCOKsLMYv0KZrMi1JV+jq7DAufnerk4nOqLgsKBhyCF2v3vu9JlrDGbWb4KpVhGk5A3U9v4UL6rw10ZEH460ofAzurosUGKarGFs+1NpS9BiXz1JFodLwA8Y5y47Fn1aJatb7FK52pXgWsbOOxDa06sVvvV4rHhTcC1RJ6r6d5ZnWcO54QEALEogB4grh1+UtyAJ6RgUFYn+4uDybXxdz1VhYuhrB+f64DXSPZYRAFGFJARoKaSifzcCfZ3nWsfOVACZ0JYCozp2pPHF0JR8lhTcNcmtK3FMVGJyp3cPglC4MfeQ8+5tnII+WCsfcNY0Jm9OXoyvcMHQsnRKQEApwyk+8leRAWRtmteOh903a7k76A0fJLQc1bMN/j24pZFBvYd4uBjSWfL2B3aXRCE7A43pvNJ1sZ5NZfyej6zs1x+PndajJWKCl/BEguBjVq3391uA/aBfJ/R3i7fgAJkkxOdibXtSmYrWg6tvVucH6n4UGzSdWYvMHv65Skdw/LJQUH9VJgY95Ju8TudhuT78E$80$</span>
-  </body>
 </html>

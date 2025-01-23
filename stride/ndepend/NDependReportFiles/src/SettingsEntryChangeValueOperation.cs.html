@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"SettingsEntryChangeValueOperation.cs","relativePath":"../../../../static-analysis/static-analysis/sources/core/Stride.Core.Design/Settings/SettingsEntryChangeValueOperation.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/core/Stride.Core.Design/Settings/SettingsEntryChangeValueOperation.cs","projectName":"Stride.Core.Design","line":"41","statement":"7","debt":"13min","cov":"N/A","issues":[{"line":"10","ruleId":"ND1803","debt":"3min  0s","severity":"0","expl":"The <i>class SettingsEntryChangeValueOperation</i> is only used by the <i>class SettingsEntry</i> and seems to be an implementation detail of it. Consider declaring this type as <i>private</i> and <i>nested</i> into its parent type. Doing so <b>improves encapsulation</b> by constraining this type\'s accessibility to the smallest possible scope."},{"line":"20","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>constructor of SettingsEntryChangeValueOperation</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."},{"line":"10","ruleId":"ND2013","debt":"10min","severity":"1","expl":"The <i>class SettingsEntryChangeValueOperation\'s name</i> starts with the parent namespace name <i>Settings</i>. This results in redundant naming without any improvement in readability."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>SettingsEntryChangeValueOperation.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAL1V72sjNxD9bvD/MJj+SCDdjS+FKznHcCQpBK5pqUO/lB5oteNYd1ppK2ntuiH/e5+0XtuxnVwopYvjaKXRzJv3ZsYPg6nSfCsqHpwPJhyCMvf+2gS3vJwJc8+/Cd3wzzU7EZQ1mfSDk4Fjjbc5/yLCDLeyLF9/fMCJ/E4YoZde+f132zjJPpfWcT4JTpWcXWKdXbFX9ybvEOSvhCIKb3UTOihX57n43zHUzn5iGToO9xzCRCsTz74fYh3hcMUmYOMt3ksu4nJ4VqloKu0cb7f5e6yV9w37wfnvD52H4Wnkv9F8U0arq+EPp2cJAt7knxtv0RnRaYTnec5OhSV242X+q9ZY3s2YRmostfCevpjoKFdjUp6s0UtqPJdULCk86yKZC1OSZ648BUsF451UVeuUenJKJQehNNkpqZDRpTUezDlsw6WDM0RAzLCscdnHULVTc5C3do8twz5w2eIzCKSCp1o4xEgXM7qy0ZO3NCrGiO/snD2xkaL2jV4lV4xjPhIAghPKPAn9rSchUS5eFUqDxphNzNxXQmsEp9rGM40daRFw8HiyVuvNvlpvD6l1mtQ6e4VcCWIjg3WRtlfr1lIK2VY8NoVWMh0WTSDHFbL2ILDLFNkUvLSgOPIJfbkqoHzZMO1zDNPI2E4MqMEOLRejPC9uxWFmD105ocVMyRlV4jP0SihkaITeESNxTpEkJVFE2+Tvtsqb0+HBVhmeto23Rfzw3/YJisVgDCRm0ecOsBcqzFLBrBiL574WktMq+u68tkzdRVocozhDVATLsjGlaG9G3qJDC9WEWdKqoGNLtbaiFC0zoOKPx49ff/Ux/uU5BKiXTt3PAh3JY8pur+/oRxsdp06MzQSJMLpQD9Z5OpqFUPvzPC9tMByma9PMuvucvqHu3Kdxd1ZmsDpOfiaIjzqlSWhKZeHW1dnG32KxyHxr4ZNBJm32qT7u9wDySvkWAqoIAVEukbifbu4IF9h4tPOEOW1+uLm8vp1cZ1VJ8QcsZp9IbmcxOWsDTdElFeYwDrGsWvz9XuMjjdtz+s4J41FfOPfv+r1+byPStlknVL/30O8RnhyYR76pKuGW483We0NdKZMtEh7MCrtIVW+BTetCyM95XADYQriSZKqmpLiAT2QpHU8vnv4kD/JxthU5fxp6HdOz0GDwlTVL57Ret45W2cVnNXFTZaXh/8Qd5ii+3+2br7K2ukyxEqedzQHSuu0bo4ISWv0NIgQZXiAntJGBDph26ffmGWYOJQa2Wg6yneD54egjdKioUlteDFJmg3Fsf78K1GYLGCLQDBOrYDaor1JNFZfZKE/XX/LZ0dG6ncdll9dOjIKnsW7jSRtAtsW7H6Qd5V9W+eiAcCe7Oh1v/G7VQHzisM5abBd7qq8NOj+w2ZK+M3ncqwJlZnHkllbm2yk5G4AKFYzR5mL70dyqkn5d9c3R8zDnwsWyeQFEfLZgplSyQ0ZbJ7DrnP7H6ay6/4WMNkk/Db36h08c8P8ANzw0b8YL$1128$';
+</script>
 </head>
-<body>
-    <span id="source" fid="77"  style="display:none">H4sIAAAAAAAEAK1TS6saMRTeC/6Hg4uiUJJFd/eqUKwFob2FKt0fJ2ec3GaSIckotvS/92TG8X3tpkGckHz5HuckUsLMVXuvN0WEYTYC8TJfwWdXW4VROwtoFSNs9HpdR+cDDIsYq/AkpXLRUsyPUOH8RsI76PYDn1H0QQlGjRqepTY6Y85lrJV2TOsrceLb7XYitIjQAETmxGs16vekhE86tBZIAQuSh1gQfF2sgA+QDSRgSdQsflnM5i/LuSgV5NoQaNssV969UhbBOxchdx5K59MmT8vWf79XB203bC8ZF2yPxMqjDZil/fDc7/V7FksKFWZ0AVtSjHw09Hu/+z3gIdnzONRliX4/PS19tKwYyVs04NaNHzTG7ZJsdOzNmDVmP2WasLEdegVZgXZDIeVA5uSUmad8Mug059yc/UBOxZmyvJQ+agZCwxXMDIYAFwSzRuUHmpq+VeTb5j/Bcd4SHdKlUXm9xUjgCZWzZn9JB5T+n2/hh9TOqEarqWmHuVO0bnlhddRo9C8uBIKlHWcKES33weVNf9+qzL1gXK22BuJKXN5XH1fosYTU+8mgSTaYrlgzHITatGwDIxQYYE1k+X4pnWtSYiyb4484u3K0tNs07XJdaawpT/c27bQCWXt5b0Wqes1v499dHt5p3PvrPo1OvGd3II1Y6CBab5Obrh8BHQ9jzlrfQf7c3AJtC/I6KpfJ80jeRXbFN9htyafnB1unFXw/vJvh2za36NO1eWAijTObTRRxD3S2w7iO9D/HObz+B4lOoS+lDx/+/QVpyhWw3QU=$587$</span>
-  </body>
 </html>

@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"UpdateMemberInfo.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Engine/Updater/UpdateMemberInfo.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Engine/Updater/UpdateMemberInfo.cs","projectName":"Stride.Engine","line":"25","statement":"2","debt":"43min","cov":"N/A","issues":[{"line":"8","ruleId":"ND1313","debt":"16min","severity":"2","expl":"The <i>structure UpdateMemberInfo</i> should override the <i>Equals()</i> and <i>GetHashCode()</i> methods. Additionally, consider implementing the <i>==</i> and <i>!=</i> operators if you anticipate users comparing or sorting instances or using them as keys in hash tables. Alternatively transform it into a <i>record struct</i>."},{"line":"8","ruleId":"ND1903","debt":"7min","severity":"2","expl":"The <i>structure UpdateMemberInfo</i> should be declared as <i>readonly</i> because its instances are values, not objects. Mutable values are unexpected by the users. Making it <i>readonly</i> ensures predictable behavior, thread safety and efficient copying."},{"line":"10","ruleId":"ND1905","debt":"10min","severity":"2","expl":"The <i>field Name</i> is assigned outside its parent type by the <i>2 methods RegenerateUpdateChannels(…) and ExportAnimation(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose accesses can be better controlled at debug-time."},{"line":"11","ruleId":"ND1905","debt":"10min","severity":"2","expl":"The <i>field DataOffset</i> is assigned outside its parent type by the <i>2 methods RegenerateUpdateChannels(…) and ExportAnimation(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose accesses can be better controlled at debug-time."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>UpdateMemberInfo.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1W207kRhB9R+IfKqMkYqRZe1myubCAhAaSIAUSLeQpykptuzzTu3a3t7vNYCGkfE0+LF+SU23PhQWirLR5y2hg3F3VdTunqn07KnXFF6rm0f7o16ZQgc+5ztidmdImuR9NRo4rFfQ1/6LCHEpJkq6+PkCSP1NGVZ3X/uHati5nn7KZacPpZXC64OS0X/XeXPq4V5V5W7Vh6fVkP1X/pbvG2bech6EQ905CWsnP/ujFSzyLU67ZBNnAuuBMHr/aq7XBMrfXWF2kx3jW3rfsR/u/3S4tfCv1bCs+K0TpZHdvdy86xyp/vza2+3VvzPM1Ox26wRXfNBUer+ZMB/rIB9fmoXVMH6Z0kOoj8nPbVgVZWJBkKPSnTt+3qvI746ijTCF7P3D4Ufn51BY8CGoOc1v4hI6LQgdtUeGqm1BujYctR7puqlgEbWZLy4eHmzY/61e2YaeCdZ50SZ1tIQZkukG81HrGfm7rRjmxYx1566JJbVBmAyxls/WDl5qUp3fcwZihOSKmoLKKJcwK0JpI06qj4JTxpXU16QDVYElJSI5z6wrq6ybRJaO7yZPQfPf8UWi++WTIZEwF55VyXEheMUBVWFN1USvjXKFCSMFvlAPadK0q0GpCxgaymdAWFThvYy0GYdRrDcKCFPazLqIUKw5d9S4WOTxwysYjbE8NgtJ5bzHjubrW1k1gQpTJq5JDF4HmsgSa4AFgbDoYvVfS3ecPavryUbo//xdFLTWjaNKgMVKNHL3XM4PsbBuElrFU4JKEE7qGl1nj8Islo+k1z9gIJ7nHZjpXxjA64q8//hzHnE5vGrDw2OhaCfOjILKFjqkPYg2gMihZrhrfYkZyJP6qNeJpQByUrvrz02X71JsANE5f43DfLo4clypHx4gUtFDAQpoIBV/MLfigcvDAA6MczjOBJ4D70prB2aoSMgV4zdrZs6Brvg/I7icH5EQF9XNZeg7/w/JxsPx+9+aLz9/IX5oihqZzejYPtJOPKbk4vaLvbWuKPlrJfyqWdNbGYbozD6Hx+2la2GA4lCvVxLpZSl/SUu7jTbZXJNDq63ipK42o6DK0hbYw65pkbW+xWCS+1/BRIclt8rYZb28hyBPt+xCQDRwiPcHx/OyKcACjgxO65P6m+elsenpxeZrUBckLhgxs2R6uWXIWswsTmmrrRCjDuo9/e8ugxX2jcqbhGh5u7u2t2+0twidFKAe+rWvluqP11gmXYLlAU8d5S5j7bTwaPR14hJYDxsPhPae/3ZMp7h9EOEqPkg3z6X37TZshxeHqeDDVe50huvvqwieZWa8eCHEvbTQP5GuNRxJcbk8xgZHQKschQfDadR+X5lOprvbRsqomQeNwJP9HR9L4g19c4PN1gZODNGr/k4lilWtvyMZn/IAYmBqD3f4VTjoMfbbQVSW9NMO1bsTbU8m9bg0Sox3WIJnDgAkr+3jtQLlDvMomZEW+0OjX/uIECgXfjB+Jf0DpQ6h3Bkwlp0nEcJ3XeH16gwvyEQbQYTz06r5kzQDIi006LDXu+kf84CvT4m/wlomnsws=$1160$';
+</script>
 </head>
-<body>
-    <span id="source" fid="24"  style="display:none">H4sIAAAAAAAEAJVSTYvbMBC9B/IfhhxKDIt02Fs3ySVJIbCbQpP+ANkeO1qsDyS5bij97x3JTpxsdws1xhIzb9685xnOYW3s2cn6FGBeZMD22yN8Ma0uRZBGg9AlIXRwMm+DcR7mpxCs/8x5aYLGUF2hzLiawye45D3VlPhYMkJliecgG1kQ5yG0pTRE6ywb+bquY75H+ARghWGvNptOOIeN9L0ELIEaooNwQnjZHYEKUHtkcEBMwefders/bJkqoZINgtQpbJ15xSKAMyZAZRwo42KSrqrXP51oodBbUSBJjOLZd0ve0E0nv6YToIeTlIVvlRLuvBpDG6ykRg8CFKo8ijPQptLUaeFJWuGwWs56wq2uCc/WRllSOOMrdkPP7/ltm5NFIPstqe/rX1KXHWnvMYO6e7jUNezJ0NNfSakDbEQQX6vKY6D8iHjH4CW8dhgNXT0OBpF24/x/Nj+yeo1b4YSCOI3lLH5nqyNNcOhrRTiNP5gteEL/i6K8eu2JTLrTQYsh/YXXm9bR5IUHGaCTTQM5Qi1/oI7dPjL3rdVkDOYoackc5Odw5ZcV0O8OQeQNPoCJ+U56SudpESWt8c/sHf3DlN6Oej7MNHp6SDMcfWVj9c0uxCduACxT0dN9ZtwAype363BB/O6vdND7B0p8wYsqBA==$10$</span>
-  </body>
 </html>

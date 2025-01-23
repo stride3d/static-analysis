@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"StridePackagesToSkipUpgrade.cs","relativePath":"../../../../static-analysis/static-analysis/sources/assets/Stride.Core.Assets/StridePackagesToSkipUpgrade.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/assets/Stride.Core.Assets/StridePackagesToSkipUpgrade.cs","projectName":"Stride.Core.Assets","line":"22","statement":"1","debt":"4min  20s","cov":"N/A","issues":[{"line":"9","ruleId":"ND1805","debt":"1min  20s","severity":"1","expl":"The <i>field PackageNames</i> is used outside its parent type by the <i>method UpgradeBeforeAssembliesLoaded(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose read-write accesses can be better controlled at debug-time."},{"line":"9","ruleId":"ND1901","debt":"2min  0s","severity":"2","expl":"The <i>static field PackageNames</i> should be declared as <i>readonly</i> because changing it can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"9","ruleId":"CA2211","debt":"1min  0s","severity":"2","expl":"Non-constant fields should not be visible"}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>StridePackagesToSkipUpgrade.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAL1U7W7bNhT9b8DvcGFsQwIkUuJtwJp1BTwnLYK1TgC72IAgBSjy2uJCkRpJOTWCAH2aPtieZIeS7STNx88JNkSJl/eee87RvRnMteGJqHhwNJhGrxWfC3klFhxmbnql64/1wgvFmQyDvYFnI6JeIiSWiM+yfPsLETtyX1hhVkGHx8+u8ZJDLkLgGPKuVDZ2nrPR/VcvVBdFcKaJm+rHR7n4P8rW3v3NMj7g6H4GhBht097wEOuEgCu2ES/Ss+IiLX+qtCUaHqRw6ZZ4M8lHWOsQGg6Do4ubTZZXiejG8KlKQceHvxz83KLAk/znLuHhvYSBl+x1XK1L8ufaYDkrmV7rN3PNRtG6wdRFeJ3rN6QDNYEVuSYGdEQ6BqqFB3CKq5qpWFHsElQcS6doTcrvPEfvqfWqMJrDe4eXauffL193U96MRtRVDKVrcCuYhCW2UtShgX1QEjl1VZuWJcjlLCmOQpvu/NjZBMhTJa60XQBYOlB7vcThFrrz5HkuZMQCuyKQIKhUs48rui5dYOwLtX8NTlBdwgCBA0ngAJqCY0R26Wz0zhjgEREAimaxH3XF2eB271ktXh0cPqXFsNXiWymGj6To3EnPKHJHmGJpIIVKreFYasZZs2qjCpYCwpEshV2s+UmdGQRRdOQbm9pI/c2bkMgVVlGprWqbhtKRgaPQBigzOrWpwlmRLL5/5jUkQd1z7yB2hbYWqeheK5nFMSu5g99BBsjWJTX0YJ8Qy9LpFANpSmdUAlg5pedaFIap/TjC8xSPR8Ph4ZZib761+wsUT5zdR88JY1xD3DBqXUysLnXQADG4vbz99P13n9I/z2G3euX1ooy0I3cpm5zM6K1rrOqMmbgbJ6foooHdAu2UMdbhKM+Vi5bjfBuaOb/I6Qfa7Id2UPyoMkTt9nuodKxDlwc0Na0ciboPpzMyoMwGzmjKHZ/vT8cnk+lJVilK85nQe0dzO4rIO3SUKK7wKWITy6oD0e9Bc3A+XQVMIYwpGFymnZC9Ywva5K/9Xr9nk+lqAaEez7M2oG7wcUtaGxZuDIFemJT93k2/R7genkv92sXF5QOv029d6EV3S9dmqo6uOTh8gtMSOT20vgsBf7CqFHC+AxUes6rD0XpQKMwgutaxbHmSrqoaC4vQttG9x9XGm6hs8NLuzDlzpeNTMe+8qMu/sj/P32bjbpyEJ8MmH8E+ps7nJ7Oc1Wxnfzy184Fxl9ucl5Dmtt9Lxv0PoOSIS7gH$930$';
+</script>
 </head>
-<body>
-    <span id="source" fid="110"  style="display:none">H4sIAAAAAAAEAH2SQWsbMRCF7wv7HwYfSgJBe+itpYfUdYJp4xrWoYWQgyKNd1XvaoRmltSU/veO107akiW6SOh98zR6UlXBnNI+h6YVOHPnYFaLDVzREL2VQBFs9EpEyeFhEMoMZ61I4ndV5UkiyvYZNZSbCt7Ak85a4/GtN0qdl0VVwafARx/0oFWYQVqEm+UGuuAwMhqoEcfNL8v5YlUvTO9hGzqEEMftlOkHOoFMJLClDD3lg6jL/thEWQwcYgP1ngV7M6eu0wJV2FxjxBzc+7Ioi2h75GQdQj22qWBGc8mMwiOQhgdtCljU1oHrLPMJXVu3sw3yhupdSLepydZjWfwqC9Dxf93hvrG5u4dT0epwLHw4onfH6TBmpy4uH5GpR1O36pl5dvEX0fyWEZxlBNIoMqRTH2A1Auu9hvoYpB1zctT3Qwyyh+eLXrw8bf5Emdlr6oao2wWZYq6zTe138219ZcZPQh1PYqtbTV8Ef066fE0YN5+nlBvU2U16fsQ0rNs9/yPf68v9Los/sId3+tQC$107$</span>
-  </body>
 </html>

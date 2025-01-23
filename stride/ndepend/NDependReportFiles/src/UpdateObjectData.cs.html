@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"UpdateObjectData.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Engine/Updater/UpdateObjectData.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Engine/Updater/UpdateObjectData.cs","projectName":"Stride.Engine","line":"33","statement":"5","debt":"38min","cov":"N/A","issues":[{"line":"8","ruleId":"ND1313","debt":"16min","severity":"2","expl":"The <i>structure UpdateObjectData</i> should override the <i>Equals()</i> and <i>GetHashCode()</i> methods. Additionally, consider implementing the <i>==</i> and <i>!=</i> operators if you anticipate users comparing or sorting instances or using them as keys in hash tables. Alternatively transform it into a <i>record struct</i>."},{"line":"8","ruleId":"ND1903","debt":"7min","severity":"2","expl":"The <i>structure UpdateObjectData</i> should be declared as <i>readonly</i> because its instances are values, not objects. Mutable values are unexpected by the users. Making it <i>readonly</i> ensures predictable behavior, thread safety and efficient copying."},{"line":"13","ruleId":"ND1905","debt":"5min","severity":"2","expl":"The <i>field Condition</i> is assigned outside its parent type by the <i>method Compute(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose accesses can be better controlled at debug-time."},{"line":"18","ruleId":"ND1905","debt":"10min","severity":"2","expl":"The <i>field Value</i> is assigned outside its parent type by the <i>2 methods ProcessChannel(…) and ProcessChannel(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose accesses can be better controlled at debug-time."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>UpdateObjectData.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEANVW7WojNxT9H8g73Jq2OOCdSdak3TofsCTZNtBNF5L2T+mCZuba1q5GmpU0docQ6NP0wfokPZLGcZxkwZT2R43NjKSrc8899+rKt4OpVHwlah5MBj83lfD8U/GBS38uvMhKNxgNLCvh5YLfCT+HUZbl91/nsVK+EFqozkn3dGxaW7LLWc+k5vzaW1lxdpFGyZvNn/cqCmdU61dezye5+C/dNdaEiV6IjZ1YVeExGYzHeA9OuWbtMXGIccVFeB2/qqXGsDQLjK7y13iXzrXsBpNfb1cIr4KereLLKhidH4wPxtE5RuWnNdjBNwnM8YKt9B2mXmLIvzcKrzdzpmN56rxtS99apschHefylNzctKoiA4QQDPm06+JTK5Qb7kUboasw9z37H4Sbn5mK+4Wa/dxULqPXVSW9NFBYdSMqjXbAsiTrRkURpJ6tkE9OHmJ+kUamYSu8sY7klDrTYhkpkw34UusY86WpG2EDjrHkjI2QUkNmjVyGydb1XmoSjj5yBzBNczAmLwrFgaZCanUsU9WRt0K7qbE1SQ9Tb0gESpZLYytKugV22eBu9NnUfLf/bGq+/dcyUzBVXCphuQpxRYKiMlp10argUkAhhOAeyAFrWgiFshqRNp5MhIYCb9uoRb8Y7VoNWlgFftHFLEXFYSs+RpH9E6esHWg7akBKlgmx4LlYSGNHgAjG5MSUfRcTzdMpsok6QBqbDqAbksbi3tT08DlND7fQdCoZmp0ZneoxspWI0zk504jQtD6UZpQL9RQo+a7hVeRASDUNiLpBXxn+9cefsdZRPJTA13kRGkqUonEtWh/Her6veBHcI3NeSJX2n61ORf1Q18bKBTanU2DJ8lSUOAhhFdkWkDicDei4nBukWZRIr4P0JZwXQXWPkg4nzlujVKgRD69FO3vhZc2bOj+t3Wd1PtjfWuhfQhn9A5FfrloHvbMmRHQ2F1qzinLHknlm/n+dht/u3n/15fvwy3NwaDorZ3NPw3KPsquLG3pjWl0ltiH8s4Akizb2xOHc+8ZN8rwyXrOf3ptmxs5y+ppW6y5eSOMqg1WS8VoqCVZ07dtKGsDaJlvjLZfLzCULFw2y0mQfmr3dHZA8ly5RQDRwiPBC8t5e3hA2oANwRtecLowfL88urq4vsrqi8D8h9N0w3d+WZA1aEBot1caGxdBzE//dHY2r1DWiZOpv0/4C3t253d0hfHJQOXZtXQvbna6nznmKqnYh+eXqtAuFQvC2i74CgdT2CJ29jajZA8h8E7NpC4TVd/0nDTnZ9Iw+w2o1fd98Io3k+CjcaxpT+6E94qz0zJZSqVA/yaoakQFtu5QoMbTt7JG//KnDnjZur7Xfo92drYim8NJVsL2rnnk8+Rue+vXH0g1lbPs9t9Fqf/S6t979QNvwWYt4st58tGkTKWB90VNZzd9tw2qDBk1iVobb8TnYnkf/wDec/L8BMIhEg0YL$1095$';
+</script>
 </head>
-<body>
-    <span id="source" fid="26"  style="display:none">H4sIAAAAAAAEAI2RzWrDMBCE7wa/w55KAkFq6S1pe0lSKPTnkLR3xVonKrZkJLkmlL5717IdxykFG4PN7szOtxLnsDTF0ar9wcMkmQJ7XW/h0ZRaCq+MBqElKbS3ald6Yx1MDt4Xbs65NF6jT09SZuyewxV0fUceibeSkWoa5mxUphKaufGlVIbG2oL186qqYq5RuCBgiWGfxTSOOIeVcg0CSqBAtOAPCC9PWyADaocMNoih+Py0XL9u1iyXkKoMQelQLqz5xMSDNcZDaizkxtZN+s0b/jjSIkdXiAQJsYZn7wXthjaOvuMI6OGEcufKPBf2+NCXVpgqjY6WBKKXqh4nMkA6tmPIqgHMLuR7A2WYys5G8uHMotzRWkArl+RoIN6CfSW8aDQt0T9UXXnZ4QSMJngBKgVNpesZgSnXkVUqy2CHrUrOwBC2rZRDUnt2kcf/BrbYSvs+dxFHo0Cb9eBLZCWOj2rJP2rXIKntXx7dpGY7XdGs84fUae8+O9v66Q/xvjcvhpqAQP2vFqWr/4yhGmDAPNzKZBzPzXiO9kPvL2wVMEP2Aw==$88$</span>
-  </body>
 </html>

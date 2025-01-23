@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"RenderLightCollection.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Lights/RenderLightCollection.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Lights/RenderLightCollection.cs","projectName":"Stride.Rendering","line":"43","statement":"4","debt":"15min","cov":"N/A","issues":[{"line":"18","ruleId":"ND1311","debt":"5min","severity":"2","expl":"The <i>constructor of RenderLightCollection</i> shouldn\'t use the <i>class FastList&lt;T&gt;</i> marked as <i>obsolete</i>. Removing this usage will facilitate smoother transitions to newer versions."},{"line":"26","ruleId":"ND1311","debt":"5min","severity":"2","expl":"The <i>constructor of RenderLightCollection</i> shouldn\'t use the <i>class FastList&lt;T&gt;</i> marked as <i>obsolete</i>. Removing this usage will facilitate smoother transitions to newer versions."},{"line":"40","ruleId":"ND1805","debt":"1min  0s","severity":"1","expl":"The <i>field Tags</i> is used outside its parent type by the <i>no element</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose read-write accesses can be better controlled at debug-time."},{"line":"40","ruleId":"ND2000","debt":"3min  0s","severity":"1","expl":"The <i>instance field Tags</i> name does not adhere to usual .NET field naming conventions. It does not start with a lowercase letter, an underscore character followed by a lowercase letter or an <i>m_</i> expression followed by an uppercase letter."},{"line":"13","ruleId":"CS0618","debt":"1min  0s","severity":"1","expl":"\'FastList<RenderLight>\' is obsolete: \'.NET Lists can be faster in the latest .NET versions.\'"}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>RenderLightCollection.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1WbU8bRxD+jsR/GFltAAnubEiiyHaQEJAIiaCo5lvVVOu7sb1h7/a6s2fHRfz3PrvnN8CJaD9U/VDLiH2Zt+eZ2Rnft0ba8I0quNVt/cJlzu5ajyf+3BrDmde2TDJpHbYcG+X1lD8rP4FkkqSrr3jcZEeqVGYuWp7vbe0ylpTLsS45HXinc04aX7ocp+tV9CzpD8JQQ7Gm9sswLrqp+lf9V85+xX7B11NTEDBwgZvXJ1iHQLjg0ocD7HMehmXnTaFLbDM7xe4mPcNai9Qsre6v90sLnXeB9drwVR6kLjonnU4MALvsj7W1hTHhKULwc5wcY8vfKoPl7YSpr08zW4p3deatIzuirfj6qT4lmdja5OWep1qY/ELbKBH6oMRfa/GvjO/dvhr7XlQolLvjnJQEQRuSw57DTQIvhZ2CFJjRAntqzDTTxtBIZdrowA1JYS28OPJOlaJDHELeUskzHAKRhJOk9XC44uX47f+8bOPldfsJL+/ab7bx0gEvRG15zE3nGTcjzSanWzWWCCiGCkS29oKaJ+2FKuVQ3OTnFdNwvqSltMQmln2D94waUw2HNGRSJXGZqUpq9BTYhJIuqkZHBayUs1faNPrnQAqPDpzeBdq0DwqV01PVUErInmOwF9KIW5CuCA+1YufnNJtYpMyxyo9mAAvvGZqBsFCGOBDNkL2HddSCdyHryJpHAMN6fOR1wT8k+bjdbm8j+eSFJGvUnyozpidsl+gvlFsEWVoAylEKHPJfS60MJTeXtwsNCAZOEPwU5MWioCu/VoV551FefgJOjEX1ZAp0mIj5MGSiDjUvmYWDbKIcWAQZIxAB4Tyk9bleIByaiL/4PYYLUA6chsw90oT1qnqk+ojNzskmm+eD9tvY9CKbzvyNkt1bPsL+xhM+3QtFu3x7XdqLtAWpVepHUAMcWA+1G4pRfMPu6onttR5+e/jy809fwl+aohqruQvmaT87aGQ/WHDY1K0q81CvGAvDGtUotD/xvpJumubWl+xHK9HEunFKr2h5L3GUnOQJpA6inQGaAfJKA1/n2sKsq5K1vdlslkgjIVEgyWzytTrY3UGQF1qaEJCHmN+I79PVLUGBS+GEBtz0seur88ubwWVS5BR+CCy5WMw5cuhDyCkeXygQXWJZNPHv7uzu1BKKbzEFESD3tpwl614qT+8v40juBVuh5KVSeAtPp2rSjOXdnfvdHcInBcK+1AV67Px0fXQGcEgf+nhfAC5DS3i/+YumlZ5GJIqk4kzj/eTPJT86W1eflNxBOtlwlz72V9VDMEnNBNg6NqhLW4uy0V8g+Q6a5fFVic6vjP6TQ0dD76dVvwDK2G63Il1HETDHIJMnDtPnHheYttrZP1jLbcT+EBL3nwMSzzGbVBH76PsWRg1GK5rGaWi7y13ST6PQSynQGHVL3Q06wqdLQ7S4/S23/4Csj4wGhTqV8D9wk9XGhDdToCxfCn+qTM0N3E3tftpcfAfyqvrpvNGK63sas+8hZeiV+E0dAuu9GE0YaRioXmUTzl9ehZ8X4zs0U4UW4aKhXiMH3/iGhvwXcdSFkr4M$1170$';
+</script>
 </head>
-<body>
-    <span id="source" fid="207"  style="display:none">H4sIAAAAAAAEAM1UTYvbQAy9G/wfRA4lucwcekuyCyXNLoHsUpr8gYktO7O1Z8xIbkiX/vdq7Hx1NwuhpxrjD+lJek+SrTXMfLMPttwyDLMRqOf5Gh5863LD1jswLheE42A3LftAMNwyNzTWOvfskIsTVPlQavgERz9JTI6fcyWoUZdnZSubSc4Vt7n1kjY06pxvt9sp6hHUAVTm1UszShOt4aulngLmIAUxAG8RnhZrkAB0hApWiJ1xuZjNn1dzVedQ2ArBus7cBP+CGUPwnqHwAWofolMe655/mqRJS9aVQjBSV0IQJ1dscqkqySVB9NY/d6V1MSpNnKmRGpPh0fcdI3MBq2XsN6XJa5qAHFoUTqmtaxP292fTFxFHDL4Qp4jLAhZ3gz5Jl2Cg7zslBqjBzBZWmvMO+Rh82zwZ+iFodVFO/12vaTfSScgqQwQXNc5SYQwPhngplKYXgEP8QckHao7mhbNsTWV/IQlrhzsZALFx0iNRGcd0XemZRdTckVRvCur3FQ+aruYZjs64C+6/4+D+OyGdvTHB1BCX6m6QGdkry/vB/VpKHd/UVHegW1tgHZ9iL9oRjzFsDOHwivcfmvWITCB7SvEee5O1VRW/mVrW8lb5P03VYi/3Mnqqe8cHkk/bD7M+qnt+hRJ5IiNjDM5UkdjkZjVrU8rMmU22xfz2LfwWfIOB9/FnauQXEbpEkx4nteX8A9dc4i2NBQ==$532$</span>
-  </body>
 </html>

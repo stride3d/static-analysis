@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"Stride.GameStudio.NuGetResolverEntryPoint.cs","relativePath":"../../../../static-analysis/static-analysis/sources/editor/Stride.GameStudio/obj/Release/net8.0-windows/Stride.GameStudio.NuGetResolverEntryPoint.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/editor/Stride.GameStudio/obj/Release/net8.0-windows/Stride.GameStudio.NuGetResolverEntryPoint.cs","projectName":"Stride.GameStudio","line":"22","statement":"3","debt":"40min","cov":"N/A","issues":[{"line":"8","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class NuGetResolverModuleInitializer</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"8","ruleId":"ND1206","debt":"2min  0s","severity":"0","expl":"The <i>class NuGetResolverModuleInitializer</i> doesn\'t contain any instance field. Since it solely performs processing without managing any state, should it be refactored into a <i>static class</i>?"},{"line":"8","ruleId":"ND1207","debt":"2min  0s","severity":"1","expl":"The <i>class NuGetResolverModuleInitializer</i> is not instantiated in the context of the analyzed code. Should it be declared as a <i>static class</i> or is it a potential candidate for removal?"},{"line":"6","ruleId":"ND1305","debt":"5min","severity":"0","expl":"The <i>namespace Stride.Core.Assets</i> contains only the <i>class NuGetResolverModuleInitializer</i>. To prevent an excessive number of <i>using</i> clauses in client code, refrain from segregating classes into numerous small namespaces."},{"line":"8","ruleId":"ND1700","debt":"15min","severity":"1","expl":"The <i>class NuGetResolverModuleInitializer</i> is not used within the context of analyzed code and may be a candidate for removal."},{"line":"11","ruleId":"ND1701","debt":"13min","severity":"1","expl":"The <i>method __Initialize__()</i> is not invoked within the context of analyzed code and may be a candidate for removal."},{"line":"11","ruleId":"ND2007","debt":"3min  0s","severity":"1","expl":"The <i>method __Initialize__()\'s name</i> should begin with an uppercase letter."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>Stride.GameStudio.NuGetResolverEntryPoint.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAM1W72/bNhD9HiD/w83YUBtIJNlum8L9MQRtFxTYsiIOsA9FG9DS2WZDkR5J2XHT/O97pOw4jl0v3YBhgoOIvOPx3rt3pK4bQ6n4VJTc6DX63sqCkxOM+r4qpElOqxP2Z+yMmrJ9q72dvzdS+yR3jYOGZSW8nPJ74cdYnSTp7c95WPJDoYWaO+k2x6ayObuUC+mNTTc2Ts3gc3rGioXjVLN/lmSHM6kLM3ObzruzFAPMV36Z5ZteKv5P6U2s+cy5/1YF4KGkDqZOB+8hUS5Ze0x0MS54EF4fZ6XUGOZmitFpeox36VzFrtH7cL2M8CzUrFL8rghOb9qdrBsTwCj/cxUsxCLqZiE7x0hZ+jmm2xjy1USFtYZyJZyjAsYpOxpaU5IfM72Qr2rLGubfTBG21dJLoeQXti9S+YqELkh6ko608TSpBkrmak5T6eRAcULvPOVC04CpFPaSCxIuxHcsFBchQtK4OdgB7uk2cJ0I7j62bIXt/DtRFIadfoRUjfYCsYWek9Sok86ZhpJVkVBfhgGwIhAD4oTt0NjSEYoPmTmpRzSTfmwqD6xajMJECBTLfUAOFhXJAhmWhyKHKkEIRGRIRFKigOuqhLR+3k3N0cOpaf9zahaVrdmAxceUo04CW3zlyQzjMDbeF5hzA/VT/y7egrGhrcu/FSsZG7aCt6CJ8Ry2UkE6hSywJ4FqkFaaqVBrtDy9R0s3e7KNlid1a+1Ui0a/uolAkRcN/Br1SY6dY1+nuFCHI6NR/+/slITODaSCBDQwauKrKJopk67KAdvAIsJVQUf1bkpUDm0JsnMlw6rA60GQjg0aje3qeGR5BCqhtZhJXABBIShbUzlypVCKbrG5nf12lGXb2Gtv0vfvFQVwRWyYTTWtKSkeMaWYBxmJ7YpYw9Rub4BqbwXVfQCoktHQBV1crEBcXDRb650xNZf/DZROtr3puw9s+m+geeSiPiKoxSk1YBxfEVLQajXBYZfjmiTF3rNFkh9vPv3046fwFxVL/bnDnfZ8f+/uEB2kFO5FabRLTlgjs/y+yxkPFy73LeegEHP7e7sac3/ven+P8DxEfrXnYkF4Pmy4NA/bWXhaH1deaCi2qCMtDq2pkZskrtzvxA9PmtLvenVfQCAQTqg4h48ICj1bDtR8fZEcUvOH5vHCBu58/ORYTjRb9PIlehydjfDJ6dtz+uWPXj1RVDaQWEZklIRbZj12eL5+pb8Jftf8GkcIYq4cWq3bfUMtepSPOb8kMQrHY7jxo/8tNmqiUeAFVIsK13WM1frVCHyBHISjfyaRP3rDXUooLl4WM8bUbCzzcei32VjAi2mGq6i1icqyr6yOmrk7HbdZJr8UR9KH8ySamo31r7+jBKcgbfuMo8bjpJNkSbvRer7a46Z+xT/8Qkv8BR90XmSQCw==$1057$';
+</script>
 </head>
-<body>
-    <span id="source" fid="5"  style="display:none">H4sIAAAAAAAEAIVSUUvcQBB+P7j/ML2nBHQ9S6Gi+CCih9Ba8IQ+FDnWzZwZ3OyG3YnptfrfO5vkzKkPHQLZ/eabb2Z2ponkHmC5iYzVyXTS7FzVubcWDZN3US3QYSDznnKD64Hy3nOLv1mw6cTpCmOtDcKSAxUosgHVWYzIcTr5O52AmLE6RrhuFsg3GL19wvDdF43FK0dM2tIfDD1zCEj26wMl2z+cJ8vvRhY5xuC0hciaycCTpwJWqzFqtcrykb6jn+zgAH44u4Eaw9qHCrikCHICdBw2IFVjdW83b4NoDdmn7GzwydvxRWJvgSyH01NwjbVJXl1f3MLlz+MeKJqQHrHqOgNl2Ie32smen+E/4rvuc22taI6EPH/Nm2ZxDKZE8wj6QZOLDKbnv/YGmfMsLOlqmHA/x25a37wuMOwBMbQk9d8jxEeqaywkHloUqC3JlCDP1pZaWAitdpx/7CogN8F1O7MLd2m2xW+XQy2FXHeubOaQj9R8vyVX+DZ+VfPZHsyGIheyfUtuCvIJ/KI+q7k6nOUnY46X/ig/+f4BcKSzPg8D$89$</span>
-  </body>
 </html>

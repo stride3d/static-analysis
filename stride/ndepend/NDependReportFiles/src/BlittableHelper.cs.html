@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"BlittableHelper.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Engine/Updater/BlittableHelper.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Engine/Updater/BlittableHelper.cs","projectName":"Stride.Engine","line":"54","statement":"12","debt":"5min","cov":"N/A","issues":[{"line":"19","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>method IsBlittable(…)</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."},{"line":"16","ruleId":"ND1901","debt":"2min  0s","severity":"2","expl":"The <i>static field blittableTypesCache</i> should be declared as <i>readonly</i> because changing it can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"16","ruleId":"ND2001","debt":"3min  0s","severity":"1","expl":"The <i>static field blittableTypesCache</i> name does not adhere to usual .NET field naming conventions. It does not start with an uppercase letter, an underscore followed by an uppercase letter or a <i>s_</i> expression followed by an uppercase letter."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>BlittableHelper.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEALVW/27bNhD+P0DegTO2wQZSKUnXbU2zDJmTtga2JKi97o+iHWjqbLGVSI2k4hpFgD3NHmxPsu8o/2hspUsHjEgQkbzj3X333V0+dCa6oAtZUueo81OhQ5Djgp5TUZFLlO/sdRwVMuhrupIhh0ySpKsfH3CjHkgji7nXfntva6fIp2Sm2lA6DE5nlJw3u1+rTAZyaatROfa2qMPS6NlRKv9Ha5Wzb0mFBQq3FHFb8J+jzqNv8M02qSQTcHBwiIOMxvz9qNQGO2WvsblIT/Gtva/Jd45efVi+cPCY4awLGmQsdXbw/f530Tp26o/1Y/t4TIiH++yap2tyOsz5GFt6XxX4HOUkjvVJSSG3mRj4VVTdv//8q3ec6hOhvchIFdJRJqRn6aoeF1rFy3EdhKNSauOFNlIBNq+hLsY0tyYTOngoeSrHxVxkNYlg41mF50wQYV6xqDbTTRvaAGQkhK0kom+NB5RuIcXyIYdjC7+3VfbELNcqF6V8R77xQoVaFmLpokagc+GVhQOMhVY6JJ2bvTXG325g/Hj/oA3jw4jxJsSHWxA3JBMTTUUmxkuYRwDA96XKKcLpc1vzNW3C4Uhm1hTzBnRSsvYkVC6ZWlPEJ5Q0ooAQA+xqE3SJe2smtdfWCIlU5NowgspmyALBnQaDRAwMW7gcM3MfXDqNxMDulbNTJ0tEN20AjQhDzShqovDRGTiJXJCoHE3Isccqt5plrBO5LTJ2sLSZnmgOWETi+09CfbjfDvXDVqgP/hvUBjUqMgt2GBuEzHJykZ21Z5okF+ejxQMQ5BAA5jWQAZoekIW1Kqy5IGY65IBZ1BWagZLITkEBfNyLh4w8uOYYlaKwM6A0nreJC4AmYwy/Ry8RmGO+Iof/oglEX9+8+erLN/ybpiiZau70NA+iq3pNPE8tHJFhSQgUFRoUKtg6L7p5CJU/StPMBkNhshJNrJum4muxvPexqT3MEkj14jtD8AjoiGGoM23xrKuS9Xuz2SzxjYSPAomyyduqt7sDJ8+0b1xAWBGkSKVfBiMBBTKeEjGkhl8/D/rnF8PzpMwEDxp0mwXtYscVziIVTLmSUdYGn2Xj/+4OagAJHM49Ou6T29ukD1ShH9P6jAxIpTZFXtBkIbJ10xRaMuDOY6shuWu47SG2u8P88pVEISzGwGJw7O582N0RWCniP/Z1WUo3P1kfvUR7s7UXeRwrPsa04nBsmD756IF08wUxujy7PBK/0bKZeFATnRDU9pb7ZdNs4Qlozf0FvcOWFUMam0ZD5GXLBrzcL637sXl/2WPFosbQpLwXG7OwEV2Eyaty+hqxL5XOdEQTXh9zUe6JsbXFSVulih+EodkdCt1eBHppZBX6FbmYfTSqI25LHB4Y1kwM0OZ0EdzVMraPHI2TbeknW7k1E9l4TEFvrfJRmLwKq96JbksovdtyG2q8ormV5pNtgeDm24ctDy3Q6OcEXxQbb5fRk1ZPk5GbP6PwUhY1dUPE22LMryR7vfbneDkKtTO3orjbv8gdHkV3u/cF20dhBnZvgKru9pKBj66NbufhHpjwWpfSD2IiC9+GM6+b9mOCxmfbRKwX1jzYqGIe2XH0oK0rro5KGy5IDPWsuMMIr2f951EiOWXF7ilKA8VlXdLHPwkBIDUzOmaut7cSZ7iSq2iilzx1RLF87gNTcPVnoNRyhOhUfm/m3idDN220AswvaIqJgjGim2Fg6H2Iba2l2raJ/4ohew2znyrCFobfEf7iE3/ww1P5H+oKuq0jDQ==$1318$';
+</script>
 </head>
-<body>
-    <span id="source" fid="10"  style="display:none">H4sIAAAAAAAEAJVVTW/bMAy9B8h/4C6DDXTyYbd27dClXwG2tmiy7jDs4MhMrE6WDIluFgz976OUryZxhlQIkER+JN97IuUsg56tZ05NSoJEpiBuL4dwZRtT5KSsgdwUjDDk1Kgh6zwkJVHtj7OssGSQxiuosG6SwXtYPvccU+DHQjAqjXkGSivJOQfUFMpyWleLdb7pdCr8HOEjQEgrnuq028kyuFB+TgEL4ILogEqEb/0hcAAajwIGiHHza793eTu4FFUBY6URlInbtbNPKAmctQRj66CyLjzkn9Wcf7fTeGUmMJh5wupk86/oWa05noFeXKNBp+Q25AHHC8jOk8aQqlD0DaGz9QDdM9P2DOt2TF6hr3OJ7EtwTHyv2VB03c7fbgd4Zaz/k2+qKnezs/XWY+6UbTyUqGvkgwmaRloR5SNWTbMavXiVINvOAMO7i7tj+IHgS9voAvxUkSyBLHhbIZWBf4HMpFKGbc8JpK3qYGnQAowuIfceq5GeBXtZkLfu8zy/CkpNrsETuytBaobClyW/m0h6Dl3IDKt26pm1L4MuVHSTWX8asp4jGFmrz9Yqw6bv5ZKP9xQMTvcEJGk0ellkJf0eXTx9I/GYS2OQxx3G7aJ8aJvzhbj7pbZXRBsmIZc8QxXo+5W6JBSPR5CuQ17JDEtb+RuSFinpJm4rLKxYbhV5sgsgN9vdbEm0cKNXInORoXg7Ro1bmYqhm10jPea6wYSi37ahNbM0bU8XlkNqnNlQsZ9f7B1CT/vpvQv1eTAp0OvzVCep6PtIbbh5Dgd4EtZ6lE5hnGvf5nNYL+3byBFvrslab635sDXFfDLG8KWVa+6ZMB21MmEgS75T9Z4iYV33biJCnIfA5JxHg4fLOtFzyGn6fM2G1o8nlx6t4MEucR9LpOLKIcbxOcQmcs0bXGrZYnWyPLhzDzmhl7a2YpsfcMJvFH6NqPnLwOAfitday7TtNv7PYNkvLvu/IWzp8D3yFz/5iz//ABde3zySBw==$745$</span>
-  </body>
 </html>

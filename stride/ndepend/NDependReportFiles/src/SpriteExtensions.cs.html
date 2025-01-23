@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"SpriteExtensions.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Graphics/SpriteExtensions.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Graphics/SpriteExtensions.cs","projectName":"Stride.Graphics","line":"74","statement":"7","debt":"1h  2min","cov":"N/A","issues":[{"line":"47","ruleId":"ND1004","debt":"1h  0min","severity":"1","expl":"The <i>extension method Draw(…)</i> has 8 parameters. This leads to confusion at each call site and negatively impacts overall maintainability."},{"line":"49","ruleId":"CA1507","debt":"1min  0s","severity":"2","expl":"Use nameof in place of string literal \'spriteBatch\'"},{"line":"49","ruleId":"CA1510","debt":"1min  0s","severity":"2","expl":"Use \'ArgumentNullException.ThrowIfNull\' instead of explicitly throwing a new exception instance"}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>SpriteExtensions.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1Y727bNhD/HiDvcDC2JQY8Kf+GbqkTII29IUDrDHW2fRhWlJZOFjuJ1EgqjlcE2NPswfYkO5KSJTlu2q4rhg4xEkQ8Hu9+d7z7nZXXvYRnOGE59o5700Jxg+Mbg0JzKXQQ6d6gpzBjhl/j98ykpBQE4epHG9qJvmSCZUvN9d21LFWEOkQx5wLDqVE8xuA7xYqURzrc7I/NtMxKU/sbHYfs4zgqlHyFkamD756h/YxM0cajI3q2DjFHYayA1jHO7ON+CnCQc0GSSF6TYBKe0TPXukTdO/75dW3kyB5SZYYXsdUa7e/tHTkItIp+6xrc8wY1XiPBXlopLfGmyOjxKkUY8lOsY4EcTSpjGCm22P3rjz/7w5CfQso0fA0FUxSbQaUDuEq5hgxZrMFIiKRISnecGUAWpRCxLANNWQImYhA4d3eeLYHnBYuMBklorE7OuDD0y2Y8I3RB73bQRPlNO8rzs/2v9h7VUaqsFSVFSHHqbpQHTZQ/aARB2GUCpFlkLEKgZ013JOZAfi0W2NHuXp8wE6U79+PY3/vHOHbO1Ly0Vz8ps2x8E2FhKHHBVark4iKxwh0CqQ3l1mK0J3nEDaXOWBULmFFCF7RTnXXqTETYu/3l9sXnn72wv2EI57JYKj5PDexGfQgm4yv4VpYiZu6QvZdzKSgFs9JIpWE3NabQx2EYSyPQJCvVQKp5CF9Ava9daR/GAWn1nZ0p3R3VAExNGXNJZlURNPYWi0WgvYZ2CkEkg1dFf3uLQI649hAwBnKIisJEeHZxRdcSUU1iAFNEJ3x6cT6eTMdBHoNlGXuVVlz1HSgpDSRSQS6V3aTH3OPf3qLipLxNl5TW/PH21krgm5TwYvCM+AHtgUg7DVsvurCVstbK21uvt7eAPiHBH+oyz5lanjaiM/B1BAoLhZpuWtONaSoH1JDYFtIWOrPNklFjWZzuVq2MV5Ch5SLs+ijKGaUGPGdBRCY0rDOS16xwvgFrLbatbgF60D4xq+XMNoO74wU3KSxSK4xkRmm2Qk197lppP1jzFW52NnQk4prxpOd99E4tCfnnYej2337INWn7ZIW01FRHxEixDcqsdoN3MFxI4itKnrdar6wxippMr5l8B4tKGtZYrFfWIisKamgp3s9eTP2ePmVLVN6iW0NmBR8C0yuOk4S6SHdyik72foAVNZH6VZ+6CZGUInIx56U2MEM3F+iGZmgWiN7aUFN/RwqTk+obg7vb4AnS7O2Fa+Zt0b1sq41FvNt/6exqW4gVI1xTx8ZVmGR6Q+2Ep8OwxroWQsOsHlbN2Cu2rkqkduOamno6xhugoAXx0DXLeExVtzL1rj4uS3OZPGdijm/y1grCeaOJsdlPlyiuJa/GurE343NYGRtAK6VtBwP4kQpAqoNVPwwgySQzTTWfwF4ta+rTS6ftwoJOmZFCZzeYSIH9BnuLuuyn6mIHvwOvgXVuSSn4KXXhVKiDS0GLGuqgBXDQhdN/3Pi7tez/r/DmAyfetehmhzfnxwjZIoAb8P0HBOvGWU2BbrQlLHJfjh44+4GzP2HOduToG67Z9tW+idCTj8/oPIE2k8PJictK37/luBecjS9Ku52C6D9uk3XXbnBFb7UlvQrUpruK9qOQFMQdGy0P7ZFTG2xPnWrnORW+XVYZbiZOtX9OYbihU6W8k7mV1iW9Ioi7s+rDh1P1pnQ4goVUWVwNq07b0V57aAwqTXodUfzGtbCL7dMfaS6uZy4sb7gTaMVGHzTOHnj3f8O7h6N7mPdwtIF7bQJ9dUGr0rzcsfCRL5S3fde9h32sqTu2O0R0YdlGsKyzNeW/Y3ejYqu77LPGONUf+rH/WfobGRI9SuQV$1383$';
+</script>
 </head>
-<body>
-    <span id="source" fid="130"  style="display:none">H4sIAAAAAAAEAO1X32vbSBB+N/h/GPJQbDBS73JPFzvQxr4j0CRQh+tr19LI3lbaFburyL5y//vN/pAl2W6bkh5HS0wg1uzom29GM99YcQxXstwpvt4YGCVjiG4X9/CHrETKDJcCmEjJQxjFV5WRSsNoY0ypf4/jVBqBJtu7RlKtY3gBzbmme1I8TyPyGjucJc95QphLU6VcEqwqoxavrutIew/tHKJERh/K8XAQxzDn2lPAFCggKjAbhJvre6AbUGiMYInojG+urxa3y0VUpJDxHIELZy6V/ICJASWlgUwqKKSyh/S18PyHg0pzsYblThssLoaDvcFlEhFfjG4YgdkbEu08BCtQlyzBxutPxcoNnQ4Hn4YDoE9M9Ke6Kgqmdpet6RXoUnGDoLBUqFEYDQw0Ko4aMmVhLXVGfyZn2lIuLBlrEDxQhk6IuB+jrFZUGtDGcoWEIDQsXcTF1lDF6HbtPQPPz3BtzHPFakvQk/aF2V+umEk27hnX3Gyg3lhjInMqszXqhNGDkBn8Eh3Eik8Hm5aMKgC2uLMzH+Ps8p6eov8+jd351296bXl17wxMK019ZCSkNimzP40eAVxKzW3tPWpzZcEoa4I+gHwEopKGtYjNlUVkZZnvQIpvw0uxNJs3bIfKI7pryK3hKTS94yLLaIp0r6bobN9GWNEQqY+aYDj1diUSl3NRaQMrah2W5/SEVmhqRI821TTficJsdrZsn230GtdcnMUH8Lbp3nfdFiIdjd87XG0bMSjCA01sGtIk6BO9E19O44brQQq4Taiylran9Uqtq4LmeNHYQ4s0YdxQ00ynuAVKWpAOPbCcp9R1e6jHxrirzF32lok1fi5aJwkXrcrz03H6QvEgeepmfWTsk/E1DGAT6JS0G2ACf1EDSPXrfh4mkOWSmbabZ/CysbX96a3LbmNBr83IoXca3UqB45Z7R7rsJ0yxo9+j19K6sqIUvdu4dALr6E7QRUN10iE46dMZX7Tx/rHq/11081kTjxHd7vBwfo0QFhE8we9/EFi3zhoJdKstY4n7cfSs2c+a/QNrthNHP3Dtse/2U4Ke/feKzjPoKjnMZq4qY2oGJWsQWENT3luy7ws76jXE+KIr1n3c6B63pqJXgQa672g/CslBHGF0InRXTgPY3Trh5C01vr0MFW43Tji/ojTc0gkl71Vu73VHrwjieFc9fTmFN6XzOdRS5WlYVr2xo7Pu0pgET3odUXzrRtjl9uOvNJfXjUvLA/cSDWr0pHX2rLs/je6ez7+gvOfzE9prC+i7Czqd5u1OhX/zjfK137pfUB8LdYTdE6JrqzaC5b2jJf8b+wdBrY7V50Bxwj/6+xeUvPgNVhI=$1004$</span>
-  </body>
 </html>

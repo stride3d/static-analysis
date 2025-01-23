@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"VoxelViewContext.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Voxels/Voxels/GraphicsCompositor/VoxelViewContext.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Voxels/Voxels/GraphicsCompositor/VoxelViewContext.cs","projectName":"Stride.Voxels","line":"30","statement":"8","debt":"23min","cov":"N/A","issues":[{"line":"9","ruleId":"ND1313","debt":"14min","severity":"2","expl":"The <i>structure VoxelViewContext</i> should override the <i>Equals()</i> and <i>GetHashCode()</i> methods. Additionally, consider implementing the <i>==</i> and <i>!=</i> operators if you anticipate users comparing or sorting instances or using them as keys in hash tables. Alternatively transform it into a <i>record struct</i>."},{"line":"11","ruleId":"ND1805","debt":"1min  40s","severity":"1","expl":"The <i>field IsVoxelView</i> is used outside its parent type by the <i>2 methods ApplySamplingParameters(…) and ApplyViewParameters(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose read-write accesses can be better controlled at debug-time."},{"line":"9","ruleId":"ND1903","debt":"5min","severity":"2","expl":"The <i>structure VoxelViewContext</i> should be declared as <i>readonly</i> because its instances are values, not objects. Mutable values are unexpected by the users. Making it <i>readonly</i> ensures predictable behavior, thread safety and efficient copying."},{"line":"11","ruleId":"ND2000","debt":"3min  0s","severity":"1","expl":"The <i>instance field IsVoxelView</i> name does not adhere to usual .NET field naming conventions. It does not start with a lowercase letter, an underscore character followed by a lowercase letter or an <i>m_</i> expression followed by an uppercase letter."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>VoxelViewContext.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAL1W0W7bNhR9D5B/uDO2wQFcyWlaoE2bYlmadgHaoFiCvgzrQFHXFleKVEnKiVYE2Nfsw/YlO6TkxHaMdg/DBAcSycvLw3POJfN5NFOaz0XNo8PRe3vN+r3iqxNrAl+HTPrRZORYi6AW/E6ECkFZlt/+fMCIfCCM0J1X/n7btk6yz9nMleH8IjhVcpaW8fnweu1EUynpT2zdWK+Cdfl2HKLwVrdhiePlYS7+XwCNs7+zDANZa7kwqrEAug+m+I4wuGYT0PEE7ZKL+PnwoFYGTWkXaJ3nx/hW3rfsR4e/fF5meBo5bzWflTHo5f7B/kFaHC356S7Z/qM+mecFOxW6mB9Nvm40Pi8rpufqhQ+ulaF1TJtbep6rF+Qr2+qSLDLEzVDoZ51+aoX2470UI0wZ+15z+En46sSWPAzUHCpb+oyOy1IFZcG57iYkrfHI5UjVjU4kKDNfZj46Ws35Td+yDTsB2j2pGXW2xTBEVA04pNYz+iWkES7msY68dSmlMqDZQN3Y2fphlZqEp4/cIZmhCogpiEJzhKkDO5OsrDsKThg/s64mFRAaLIkIybG0rqSet4guG91MbqXZ39/Q5sn08VZtIA3Ro6lf12f/nj4zxeD/zN+qkwhRPu4burQhUgmEnrB/UEmha5iKbsnnw6UKdNw0ursQ4BxEvBMOJsV2/fjvP//aS3yngLjExmDaJB1TD2VwRMGYQ2ykaHyL8uek162iIspNJQehdD//ZKl6LT4mcUKc0Di1wOReZUeOZ0JC6DgKlQShoqB96Oiqsp4xLsoHVyALq0sI66GtBA6gKTgAcTRXcFZr4BEBAIp2/iComtdU2iygp9OtBfT4P6sf4CtZaihUxn0lG4nSGt2lqIKlgJ5JxjvTIpoWQqP4J2RsIFvEwwU+fdsmxw6DKa41gIVR5B+0T3WB2FW21xZl4wEbvgEoJfuMBVdioaybIEUMJi9mDPajPXg2Q81Fi0nbdEj6ReM/nE6n2zg9SMb/uu+XNND2AjAwKJUW8CMzoqwYJKBEW4+DibLz08thIgLj/mGLRTxoYMKMzsLdVKziAl2pUMFt2l6xkwJK6OSmSfR4a+Baj6JnkhUqQ0abzWAxBCe278+LVsZMbKP+ref6Gix7H2tibSayN83aVJD6682H7779EP/yHGXTdE7Nq0Bjuddv7JUFpL7Aoi7Rbk4VbTofx1UIjT/M89IGw2F2G5pZN8/pe1qO+3Q5HZQZovryv2DA+dECxRw7eO7R/OGqwmli5i3UyHDEvtjdAaSXyvcLYhOJnOS3t2eXpJWEqzhDrv6qeHN2cnp+cZrVJcX/IuKJG7uHe5KchQI4YqmO7CoTT9se7e5Of15fdB735LP1ZnYSC1z2ar5mAxfJzZBLVCD6dneiU3wj4KThPv6ZI+bo3/5m3t35vLtDeJq2wAaGk/1eOfcxQ+hKeGGtXrXns3sRm5nGqUP9kXb6Tnj/BoTi+I6n2STeNLRA8BlQXu/dJVtZOT4rK9IRzXAb87P1CJDJQlY0XgiXskf2+1Wy/rW3PmFjhfjguh3H2CwiyhIkOjraiu8LWe7jBcWbcJdPAdQft4zdrHetNG++zngSabHs/besLrZoOiyGF36xRv8BsEYYOiAL$1218$';
+</script>
 </head>
-<body>
-    <span id="source" fid="26"  style="display:none">H4sIAAAAAAAEAI1RwU7jMBC9R8o/zAmlEnIOe6MUIUp3VQkQ2lbc3WSSmE08kccp7a749504FNpS7TKyZHvm+c2b5zSFKbVbZ8rKQ5KNQD3MlvCdOptrb8iCtrkgrHdm1XlyDEnlfcsXaZqTt+iLd6giV6ZwBrs6y5scv+VKUKPAs0Bt4YbQ+xIdXLJcr1+qbYu27IxllVFzFUdpCreGh4aYg9AL2FcI9/Ml1CZDy6iEC0Pybj6dPSxmqsmhMDWCsSHdOnrGzIMj8lCQg4ZcX5RjM6iNo46NLWGxZY/N+PCqplTX8l6ArH6gRWeyY8gSN15ycWR1g9zqDGERRlY/sdcsUPVEG6w5jv7EEUi03UoGABmuE22h+GTwpfdXyAbMG3QPviKqYc7v8PEnxDFTEhLmd5j0UTPfiaHQygH5XFzwsBbwXFRuRh9ke5372OsIEyh0zTg+RIiZqLMKkrV2gb13f+iihm10+OCoQx+mgKTHql6RCpJgMjmp7x8sn/WKxcdyd7ES1b9O1F4PU3vX1/87Hj5pvct+1dX1iT99ayabrL/+nXi+oAM=$87$</span>
-  </body>
 </html>

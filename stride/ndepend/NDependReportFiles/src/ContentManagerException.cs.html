@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"ContentManagerException.cs","relativePath":"../../../../static-analysis/static-analysis/sources/core/Stride.Core.Serialization/Serialization/Contents/ContentManagerException.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/core/Stride.Core.Serialization/Serialization/Contents/ContentManagerException.cs","projectName":"Stride.Core.Serialization","line":"23","statement":"2","debt":"6min","cov":"N/A","issues":[{"line":"11","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class ContentManagerException</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"11","ruleId":"ND1803","debt":"3min  0s","severity":"0","expl":"The <i>class ContentManagerException</i> is only used by the <i>class ContentManager</i> and seems to be an implementation detail of it. Consider declaring this type as <i>private</i> and <i>nested</i> into its parent type. Doing so <b>improves encapsulation</b> by constraining this type\'s accessibility to the smallest possible scope."},{"line":"13","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>constructor of ContentManagerException</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."},{"line":"17","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>constructor of ContentManagerException</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."},{"line":"11","ruleId":"ND1810","debt":"2min  0s","severity":"1","expl":"The exception class ContentManagerException should be declared as public."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>ContentManagerException.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1W22ojRxB9F+gfCpGLDcqMZUE2KIpgsR0wZE1AfgtZ6OkpWb3bMz3p6pFWa/zvOT2jqy15kzwkLxkk1JfqqnNO1VTrsTczlu9Uwb1R78qVgcvwTpXqgf3NJ81VMK5MtPT6Pc9WBbPgX1WYwzZJ0u1HAnb0dzhmV2Lk5dzVXrOk2nlOp8GbnJMrjJMpe6Os+aximPRwtgYj6auoVCbO1mGD6nqUqv8STuXdB9ZhredJ37C0powml0OMI0Au4DQuYJ5zFoffFyZaarfA5C59i7ERqVl6o98eNw4Gg5ib2vJtHq2uB5cXwwYIZvqPnbMLOCMaXkSUwgugCat4HFP+VNl41pG2SoRybC5YaOZdQWHONDaTducE93FqJqTKnEwgI1S6QFWdWaPtihZGTGY5odtAWpWUMRXKf+SclETHwspyHj0kvaf+aVo/HKc1bGg9Z3WxY3X/V/EDuCsBuBZgy1avEd/yFeZCKLjICtxMUdkmj02SoWNQxpKbQZckuhBUg8cyfHpTPiAEgoZVxWstKuiOSti6x1LJElp5yJQIZIJQpTxiNAcTunbRkzgaZxPE9y5mjkutKqmtatllk0hIA0DwypQHob8VUhpvA7JkLNSLbCJ1KZS1CE6VkyaDJNoh4EGShi+S9OZv1N6RLDUQax2cj7J9IV2tkNtKakuu2czqQJ4LcBXItuEHDhmvXFOnYC3CRYaE5zXTS2VhGnV6FgM5YI8+0tTryZQWHObu2JE+LedGz/EGfESWGhQ61Mo+S0GjNEVpjEbpHEj+5n/J/23JX7SiwcUxyS+PtqLBoeK8UZRe7Ugkc1fbPPaVfTlavYHu96f3X3/1Pn7TFD6qlTcP80Bn+pySu5t7+tnVZd52odhIYhRvkCLnhc7mIVQyStPchZLDbGuaOP+Q0je02Zfm+hrmCazOGz9TiIWCoWmoc+Pg1lfJzt9yuUyktZDGINEu+VCddzsAeW2khQAmCIgMxi7z7vaecIBLQSubMjeLv9xe3dxNb5Iip/jnBOXULK/vVvIO98sM5VrgXsUmhkWLv9vpdmqJNTFdoW0WP8aFEnexVEoznbyOk83l3u08djuEJwXisdQFrqrVZLf0lqTOmlLFqzJG9yftefZTb5u3XjoBVu+W5fYK2Vkd5hqmyV6w9DDapoS/UCYj2o7bc2v88WmL5dTRs5gOKAVxBBvncJUp4bPNfOdnz+VTFPQf+e/vgIJbuWe4Fyk+hzD6p40PYa1/8IkvxZ/ov6k71go=$941$';
+</script>
 </head>
-<body>
-    <span id="source" fid="30"  style="display:none">H4sIAAAAAAAEAJ1RzWrDMAy+B/IOoofRQrEPu+2nMLoOCusu6Qs4idK6JLaxHLps7N0nJ12bHnqZCMSRvj8rUsLSus7r3T7AtJiB+Fht4c22plRBWwPKlIwwweu8DdYTTPchOHqQsrTBYKjOUGH9TsId/M2JOSXel4JRs14n07UuWDMLbakty3onLnrH41HQgKAeIAorDm6WJlLCq6YhApbAhugh7BE26y0wAQ2hgAyxb76vl6uPbCWaEipdI2jTt523BywCeGsDVNZDY30c8rEZ8qdJmrSkzQ6yjgI2j7FhVIPkVIGcOt5HcGoUGXqtav01EON+0ARKk+80AS7JiZ+obRrlu8Wl9QLU5qFzCLbiOectPFbPk9VngS4qTeSCs3p7NJB3feoR6uSyUUbt0DNUjMzktZtmqDeqhqJWRHBNPdvBA5zPA++UP5Zrc17tLeo0/g7eFC+HeDBjqVwRTv++LzojyZ+40H/pzy9B+W5mBBw5xbqOMb8Nvo51evHzCxW0oZgRAw==$121$</span>
-  </body>
 </html>

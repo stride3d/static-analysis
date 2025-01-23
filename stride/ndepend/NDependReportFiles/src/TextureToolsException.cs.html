@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"TextureToolsException.cs","relativePath":"../../../../static-analysis/static-analysis/sources/tools/Stride.TextureConverter/Frontend/Exceptions/TextureToolsException.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/tools/Stride.TextureConverter/Frontend/Exceptions/TextureToolsException.cs","projectName":"Stride.TextureConverter","line":"20","statement":"4","debt":"11min","cov":"N/A","issues":[{"line":"15","ruleId":"ND1311","debt":"5min","severity":"2","expl":"The <i>constructor of TextureToolsException</i> shouldn\'t use the <i>constructor of ApplicationException</i> marked as <i>obsolete</i>. Removing this usage will facilitate smoother transitions to newer versions."},{"line":"10","ruleId":"ND2210","debt":"5min","severity":"1","expl":"The <i>class TextureToolsException</i> should not derive from <i>System.ApplicationException</i> but from <i>System.Exception</i> instead."},{"line":"17","ruleId":"SYSLIB0051","debt":"1min  0s","severity":"1","expl":"\'ApplicationException.ApplicationException(SerializationInfo, StreamingContext)\' is obsolete: \'This API supports obsolete formatter-based serialization. It should not be called or extended by application code.\'"}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>TextureToolsException.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAMVUbW8aORD+jsR/GKG7I0jUC0mjk7iqUkrSCimNqsKXqmol4x3ArdfeerwQivLfO97lPSRX3ZdDIDzjmWdeH68aE23wTmbY6DVGeB8KjyPnDN3cK8yDdlYoarQbHo0Meo4fZJixpRDJ9kuBb9QLaaVZkqbHsiu8QkpChE2GwesUxTpU39k5+oA+eeudDWjTZBuYkmfykWNypgibfK57ifx/Esm9+4YqrDv4BCjbGW2jwXmHzzExzNAGVrxkOcVxPHa7mbYsKjdn6S654rMmKpAavc+rDUL3Mo6jMDhIo9V196LbLfNgSf3YoV1WYIScgg7LGJtFvM9NnPQM4ZV+rbi44AsVnAc3gZNlvkr0a6CZK0xqmwEKQggnva/y3Gglo8+hcyb9d0xBUnRycXAYMN4I+IiZm2s7ZUhNjC2nCAttDEyk0kbHPgFlznFED8FLS7qcCAQHFhes5OooakTjob3rUeewR+fnpeY3etR93CMjif61NWBdgJRR5ggT77LoOVwSj1k82ZdxEY5tDw009xdlelja3/ulDT8NbwdvOp3L7Qp4s7dQXB5Ah54ssXkqt5MJnw3ZXRr9s1QP7MS1gZcdJYeY9iNj7kOrCTzEzYB70BzFoV59GAAVee582F3CxPlMBqbGi7EkXg7ahxcwCPt9HSMoaQyb8aZxIGYnn8dLkLtMQTkmXrPx8OXh659/fI2/JIG+y5deT2cBzlQLxN3NCN66wqaVi7QpxNy95lE4T3A2CyGnXpKkLlgMk62pcH6awF+wuaeS5xepYKtWiTPkdWVCcFOKVDuG9bnY4S0WC0GVBZUGQjnxLW/Va5zktaYqBS6KA8ZN59V7PxgBO6AlFDDEinW3g/7N3fBGZCnEd5s3pFSvHyHwzJTYWsicj5dVl2P+9VpBkWfVnv1zKIq+4+6qklniHVqehTo2udX2x7EukoJ19Zrl149yqRCeeADrtVW9BvzJizEXBc+QCnonX5LKfY2yh3QS46zFKHGx+LB6+E2fOASujSuJz9AWYSv/R6A2HHObB8MtPg7Q3qgP4ngXeDC8GKdDraE/FjboDMUBScUjypYb0d6hx8/zCEcMZ5JVTD/EWBdSom9NYAXrQviPv5GRvwBDt7+Mbgg=$845$';
+</script>
 </head>
-<body>
-    <span id="source" fid="44"  style="display:none">H4sIAAAAAAAEAJ1TwW7bMAy9G/A/8DTEQCAfdmtPQ5oNAboe5vyAIjOJClvUJHppF/TfR8uO0wRBUUwwIIl6fOQj6bKEBfnXYHd7hpkpQD0t1/CdOldrtuRAu1oQjoPddEwhwmzP7ONdWdbEDnk7QRWFXQlf4PQexafGr7USVJF4KttYI5wVd7UloQ1enfkOh4OKAyImgDKknn2RZ2UJDzYOKWANEhAD8B7h52oN4oAuooIKMRkfV4vlU7VUbQ1b2yBYl8w+0DMahkDEsKUALYX+UY7tkH+eddG6HVSvkbG9v7yqBTWN+Aswqh/oMFhzDXm07ve1bY0vLLY8c7rF6LVBkd8XJr10AaW4fzAwhjw75hnI8t1GRIFpdIwwotZETVy+GPSpK3fwzXsBpcQn8+A+srxjuskxK4RloyPK4fj2SZ++CaJNlES9w4lhuv8n0fxUrbNC66TE1wHmJ/NFnEAsjZHBuB1qpP7VObYtqko6pxv7d+j5xW0lw5AmYn5m79fHDBxQtyKm/0skATDDXlxyjEIS+wSBI4xCZJPvH3vqbzCOAw==$91$</span>
-  </body>
 </html>

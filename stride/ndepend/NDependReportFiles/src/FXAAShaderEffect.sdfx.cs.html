@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"FXAAShaderEffect.sdfx.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Images/AntiAliasing/FXAAShaderEffect.sdfx.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Images/AntiAliasing/FXAAShaderEffect.sdfx.cs","projectName":"Stride.Rendering","line":"39","statement":"4","debt":"22min","cov":"N/A","issues":[{"line":"21","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class ShaderMixins+FXAAShaderEffect</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"21","ruleId":"ND1306","debt":"6min","severity":"1","expl":"The <i>nested class ShaderMixins+FXAAShaderEffect</i> is declared as <i>internal</i> and is accessed outside its parent type by the <i>class ModuleInitializer</i>. Typically, types are nested to encapsulate private implementation details. Consider making it <i>private</i> or non-nested."},{"line":"31","ruleId":"ND1701","debt":"13min","severity":"1","expl":"The <i>method __Initialize__()</i> is not invoked within the context of analyzed code and may be a candidate for removal."},{"line":"31","ruleId":"ND2007","debt":"3min  0s","severity":"1","expl":"The <i>method __Initialize__()\'s name</i> should begin with an uppercase letter."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>FXAAShaderEffect.sdfx.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAMVWbU/jRhD+jsR/mItaNajgBFLdqUCRcpAiVII4wlWtTnfRxp6QLetdd3cd8CH++82snTcnR/lWK5H3ZWZ25plnZv3UGEuFVyLFxmHj97+63cFEJGh74zHGPnLJ+DGKXWO3YVEJL6d4LfyEJKOoNf85TzvxntBCFU669bnJbYyuhfpOamwNvJUJRjeo6Ryp71qL0UUq7kiwq73sKikcr73gkxg5o3I/8+nssCX+P2cya/6hlQrJul0SUHQe7XR+pTF7hSlqTwu/0DzBEQ8PDlKpaRqbKc2uWl0aS+dydI3DT08zCwf7nI9c4UXCUmf7B+1OcIBm8b8La20yBtBps3cOp+SHL2iZtfExU6xrIFbCOWAnp+hgbE0KfoJwLE/KnTLavnyU2v1cD/+4JU9A6ASkB+lAGw9ZPlIyVgVMpZMjhRFceIiFhhFCKuw9JiAcm3coFCZsIWo8734/uE777abg3pZIbY7rtoxAo/N03msDkYwDCdu5j1J7tMScRZwOREz0cSRicu8oxxS7g4yUtAdfZAijYhXBvkk4HC29FEp+RRtihtsik7FQqtgNamTYIlQeewOoY5G5nIoOIaPk8FummQqsIUobTc56IZWL4NRo9sQSwPfENc4GnV5pBd+NpeTovdL8Ct6dOt7v2vub8N7vvALwFP3EJDAcLqIdDps7M3SZH1JPDZPgQfoJ0ZORig3B/OjBjCGU6VfOmSFkGfFUFEwdwRxKZMIwjCkai6mZCvViKAft9rtNoXRCXbxQFi9H8xMFQkUegnITk6uEHKRmEkIinyHPMrSxcAgKPRGInPz8/OXHH77wv9WCY5F7s3eHGi2Fk5xsb9HimQnwYELJI2SoFKktQ0HdyqEav2GZIHfLewGdB+Lo3Aizruw5FdEhMJ2oQSvnpZSxUWnCzPWYKrMzdoHYxV5TgXgiZmUv+lO6XKiBzxNpomsR31NbhGjq5GOwxkmyuOfEFEM2ifImlsGnsjsGqePWWtDbWzn3VBgURMr0aD4tTz01Futr825a3zi3IpvI2NXXSyjWltl21KdLA1O+HBb773PqBhZ+q9uNyo0jdppz7zIR45pXUXljbG89bW8BPbPuAeUdxE2CabShH5XyldqK6qpOvW0BHMLFkqH3uVQ0XthZMslP2ZxhamQyIwU2l/QH4XKElMe7yx6eViValerOqtnaKfwEE1E3SfoitqYZviyG5ze93tWwOxhefuzT1TazFp2jvxZWpE2Wqi7Wc4uou+4yT8UfWOzsHL3yjA8fu5cXt38Ph9c3vUHv9j9O+UDMpvL/3gkz1YBBs4Jl6SupUVd6ZoYsL3xa6/6fVwXqJAm5qbecutUNgC8lq09d9I7azg11JSot21z7riNUND6s0am5BsLzYloN6UU/7mTfAKwLnWM6Cg==$1054$';
+</script>
 </head>
-<body>
-    <span id="source" fid="336"  style="display:none">H4sIAAAAAAAEAI1T72/aMBD9jsT/cONTkGj4PrpJKWMIjUyU0KnVNEXX5ABriY1sh0Kn/u87J/wIYdNmIcU+33t3fvfo9+EWC6tuViRJo6X0Y7vV78MnBVJZoFRYsGthYCkygr0qtKFs+c7llHkLd5eolOAFDZxI4HkPkdWC49EaU9IQip2QMHSZ4ypLab+iUCcccLVjjR5sMkLDMWksZtmBz/8mTIFZZItUKH+GyU9cEfhbI3YlG8oUNN0Y3BI3ToDGqESUPfkmXe6qmrf9q0e3W4URcgXR3ljKB6djVXWoNDVjc5L8Mg40L8YaN2uRmGa8kuIq7Lj9ELnbHG0ddlcslyzdhyavX10MXNMSczIbTOiqK3+SszSm3frVbgEvIS1piRmwnFwGNqit4GOSsUaHMZVTMlX+AXYBvcR8fgyCCjfifhIL8B4mNaK7QmS8P/PUKN3aFM8ZN7JVIj2agrwaPmIr8MNyt+/VOxwqbmhn2Xjlt3tJ26jiVknhB2kaYqKV13Gdx+P5aPQ1DqJ4+hAGnd6RzR+TnaHG3HNZ1ctYeiIZmGmR4xfad7uD/6xx/xBMJ4unOJ7NR9Fo8Y8q9+xsYfd/q3CElhp4B1k65yl0mqA355B64Huo0iKjiRRujOKV9I/LhKZJytnE8RkQx163yfoHwWvDClGyDzUbcyX4r6W9TtM3rIqklys7eVcivJ2Phy1/+Pcb6DWqO8YE$531$</span>
-  </body>
 </html>

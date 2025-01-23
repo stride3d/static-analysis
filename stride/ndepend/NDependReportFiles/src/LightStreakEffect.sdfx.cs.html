@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"LightStreakEffect.sdfx.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Images/LightStreak/LightStreakEffect.sdfx.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Images/LightStreak/LightStreakEffect.sdfx.cs","projectName":"Stride.Rendering","line":"37","statement":"2","debt":"22min","cov":"N/A","issues":[{"line":"21","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class ShaderMixins+LightStreakEffect</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"21","ruleId":"ND1306","debt":"6min","severity":"1","expl":"The <i>nested class ShaderMixins+LightStreakEffect</i> is declared as <i>internal</i> and is accessed outside its parent type by the <i>class ModuleInitializer</i>. Typically, types are nested to encapsulate private implementation details. Consider making it <i>private</i> or non-nested."},{"line":"29","ruleId":"ND1701","debt":"13min","severity":"1","expl":"The <i>method __Initialize__()</i> is not invoked within the context of analyzed code and may be a candidate for removal."},{"line":"29","ruleId":"ND2007","debt":"3min  0s","severity":"1","expl":"The <i>method __Initialize__()\'s name</i> should begin with an uppercase letter."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>LightStreakEffect.sdfx.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAMVWbU/bSBD+jsR/mIvu1KAGOyRS0QGH1MIJoZYKNei+VC3a2JNkj/Wub3dt4iL+e2fWzpuTQ3yrlSj7MjP7zDPPjvPUmUiFn0WGnZPOJzmd+ZG3KB7+nkww8ZFLJ/MocZ1ex6ISXpZ4K/yMTKMoXn6cp53kUGihKifd9twUNkEXo55KjTEdIFOMvqBO0Uo9jVej60xMyXANR/wSJjF2RhV+genyJBa/Dkxuzb+00lDZjksGis6jneExjRkVZqg9LQxonuI4DAeZ1DRNTEmzz/F7GkvnCnSdk69PiwiDI65HofA6ZavLo0F/GADQLPlvFa1PwQCGfUbnsCQcvqJl9sZ5rtjXQKKEc8AgS3QwsSYDP0M4k+f1zmgmaPNGzqV2b7fyP4vlOQidgvQgHWjjIS/GSiaqglI6OVYYwbWHRGgYI2TCPmAKwnF8h0JhyhGiznPv/7Mb9t/tyu5dTdXuxO7qFDQ6T+e9OhPJTJC1XYKU2qMl7awSdSASEpAjE1N4R1Wm5B3k5KQ9+CpHGFebHN6YlPPR0kuh5A+0IWm4q3KZCKWqXnCjwBahgewNoE5E7gq6dgg5lYd/ZZaroBsStdEE1gupXAQXRjMSSww/kNq4HHR64xWwG0vV0Yd1+E3C/2wRftw/2kX40fAVjGfoZyaF+/tVtvf33YMFuywQqUvDKniUfkYCZaYSQzTPPZgJhIv6g4tmiFlmPBMVa0ewiFKZMg0TysZiZkqhXkxl0O8f70plGG7GCxfj5WzeUCJ0zUNSbmYKlRJAaichJcIMRZ6jTYRDUOhJQATy2/P3P37/zt84hjNReHM4RY2W0knP9/do8dIEejCl4hEzdBmpM0NF/cqhmvzGNsHujvcCO4+k0WUQVl3ddRqlQ5A6SYNWrmorY6M6hFn6sVQWZ/SA1MWo6YZ4EmYTL/pHukKokS9SaaJbkTxQY4SodHIeonGRLB46UWKoJkneJDJgqvtjsDqLt5Le3yscq3VUkSiz0+W0PvXCWGyvLftpe+PKinwmE9der6nYWubY0Q29NjDj18Nq/0NB3cDCX+24Ub1xyqC59i4XCW6hiup3xv7e0/4e0LPoHlC/hbhJsIx2NKTavnHbcN302epbACdwvRbpQyEVjVeB1mLyU7dnKI1MF6rA7pr/KLwfIeNxbx3iRXNHm7t6sBm2dQo/jWEUvLtNwPX/GHXwTm9peYX+VliRddeMPmLlqFyF9gevMHxPtTGWK1a7HJxu4nrm+q0vfN3qzd82DdolDMS1G0I76g421pi8oR43pabwhXoGCd92t/94ESkaH7er3d2VUWtIP/ThTvMTl76h090J$996$';
+</script>
 </head>
-<body>
-    <span id="source" fid="351"  style="display:none">H4sIAAAAAAAEAI1STYvbMBC9B/Ifpjk5kLXvzbbQTUsIbWCpSy9LCbP22BErS0Yf2aSl/70j25v1xx4qDJZGb948vZkkgVv0Tt+UpMigo/zjfJYk8FmD0g4oFw7cUVgohCS4aG8syeJdwDS4H+Eu0znBM1q4ksDjBVJnBMfTI+ZkYC/OQsEmILctSpu4pdDXPOBqLzVWUEtCyzFlHUrZ8cU/hfUoU+dzoeN7zJ6wJIhPVpwbNlQ5GLqxeCIWToDW6kw0mmKbF+e25m0yefR85q1QJaQX66haX49t1Y02NI59J8Uv48D4YmuwPorMjuOtFZNw4I73yGordP20O18UbN2HMW/cXqyDaIUV2RozmqiKdxVbY+ezP/MZ8BLKkVEoge3kMlCjcYKPmWSPujY1XbItvksbpA5zvony6Lgs4dMXFpQ5gPew6zHdeSF5/0rU4wyr9o+SlZy0yF+mgqJefsqzwC+rwn7Vl7jRrOjsePKa/3JIO6oSVgeMm+yoI1z0HtCSL1ZX5JbcPRqsoh7oK10st8srt/wP4CfujTahY23Kcj3U9Tf0rx942OvcS9opEUwWv8n8GgLGLWyMOxxeEw6HaDlmfcONnpN7VDwlhsemFDz4JlpMusqmKHqedjt660WjLf/4+wfYBQ4UZgQ=$18$</span>
-  </body>
 </html>

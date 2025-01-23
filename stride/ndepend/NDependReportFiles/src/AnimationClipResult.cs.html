@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"AnimationClipResult.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Engine/Animations/AnimationClipResult.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Engine/Animations/AnimationClipResult.cs","projectName":"Stride.Engine","line":"40","statement":"4","debt":"36min","cov":"N/A","issues":[{"line":"19","ruleId":"ND1905","debt":"15min","severity":"2","expl":"The <i>field DataSize</i> is assigned outside its parent type by the <i>3 methods CreateEvaluator(…), Compute(…) and AllocateIntermediateResult()</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose accesses can be better controlled at debug-time."},{"line":"32","ruleId":"ND1905","debt":"15min","severity":"2","expl":"The <i>field Data</i> is assigned outside its parent type by the <i>3 methods CreateEvaluator(…), Compute(…) and AllocateIntermediateResult()</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose accesses can be better controlled at debug-time."},{"line":"37","ruleId":"ND1905","debt":"5min","severity":"2","expl":"The <i>field Objects</i> is assigned outside its parent type by the <i>method Compute(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose accesses can be better controlled at debug-time."},{"line":"11","ruleId":"CA1825","debt":"1min  0s","severity":"2","expl":"Avoid unnecessary zero-length array allocations.  Use Array.Empty<byte>() instead."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>AnimationClipResult.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1W3U5bRxC+R+IdRlZbgQR7MDRtAxTJNU6ElJKqJlcRkfbsGdub7tk93dm1e4KQ+jR9sD5JZ8/aJkDTulVyUxUZeX9mZ76Zb35805tog5eyxt5xb2B1LYN2dmh08yNSNEEo6u31PBo+n+MPMsxYTohi/aHAN2pfWmla0vR476JXSAXaqbZYjIPXFYpR3q0NUvFB27IkZ2JY2T4/LuSnN9p49xZVWMbl3nu+NenruPflAa+TaazRhnTA+wrLtDz6qtaWt8rNeXdZDHitiSJS7/j1zUpD/2kKbjR4USWp8/7Tgyeddd6pn++09Z9kbYRz9Dq0fHTIW/ylMby8miGc6rOJRlPBuQxyrN/haaHPQBNIIj21WIGLgdgL0IGgkZ4RQ2gbhLKFkBUcQY1h5iqCoUf2ajSXJsrg/M7vv/62uwdDVzdMRLcDaSsYGOMUC17YgL7GSvM6R3FnN9kXMICMimYu8leJ/A7QKtmwFEtXya6uG9OFsKMCKgxSm/x+yCwxaA+1/EnbKYNPDxqv5/y4c9F58DiRimGmW8keA7PXoA8tLGaO2KTiXCAkUGycIZQYGC8oZ4N3xjAIGdhqGaf7Qdcoerd7a4aODj8JQ/+z83HY+XozdjYn52WZ6p7+BT+ZnXs0/Eei3O+/H+XhoP/N4TrK3rxXAxxlgAP6YKQHc6criNZiAiN9C+/Qu33DbTrMQHovW5A5a1N7FgCvGPognYtR3YT2tGwDnu3sgrYUUFYM8/r2zeefvUn/RcGhalqvp7MAO2oXxOXoCp65aKsc1FQUw+SwLiOHimBnFkJDx0VRuWAxTNaiwvlpAV/A6p66AXBUCZbKxTXWRnPwYBxipR2r9Y2407dYLARlCeoEhHLibbO7vcUgzzVlCJhikYhNGfT9xRXwA7SEAsaI3eGLi+HocjwSdQVpTLPb3fFyOoF3LsCESa+dT5e8zONMbG9tb0VK2TJuOVK1GCaSVQ7rc7RMjjpZi+Tx9qph59GfpLeWBx81UuHq8m5obm/dbG8B/zWxZMCgDBcJ/MkkzVJL4e5BTlnI05pTVlbOmhYSqa+voWM4NUf4Fiwu8vHBdYdnpYLD9yyGyN5Gwj3ObbTgupKFhTYmZTbFpnGegyvuPVsZz9JsLi/ogfoCTinWNefm2f3jKxekAeLJCm6SspTd8FElLATBdZY5qZhTJunuSjxQXjzWvoyj5payGt6bgnqO3I6Yf0rfKTPkigZQM8l1ZrimSXndZOb/Hkx3niYLPvT/n2t/qGbp6AvO/9N1vnzH1c81IIZZ4xksFwQ3MMVwknw7gdsNAzJOFFBHz2OwbD0EWRpc8pNanoQp/67lskpNb2Oulhm7TNZ14m5K21+iXOZl12Wss/sfD3Uu8DzhElz24OW6CJIcR5k/qZf+Acu9nWEXDA==$1057$';
+</script>
 </head>
-<body>
-    <span id="source" fid="154"  style="display:none">H4sIAAAAAAAEAK1UUWvbMBB+D+Q/3NNoYJMHe1u6wpampdC1MGdPow+KfUlUZEnoTjFZ2X/fWXZSmsKWwYIhQvfdd9/dd3ZRwMyHXTTrDcNZNQF1N1/AlU+u1my8A+1qQTiOZpnYR4KzDXOgj0VRe3bIqwNU+bgu4A3s4yQ5NX6olaAmmac01lTCWXKqjRfaGNQzX9u2inoEZYCqvHoMk/GoKODSUC8Ba5CCGIE3CF9vFiAJ6AgVlIj58vZmNr8r56qpYWUsgnH5OkT/iBVD9J5h5SM0PnZBOTa9/vFoPEpk3BrKHTE2auatlRSJkbpGh9FU0wMkd6e+B2ke47TLdbpBCrrCffCzMz01jUdP4xHIL6SlCIbKaiI4xGfWhG9IyXKPGsA5IZqtVABiQVYQUdfe2R0sd4w/HmDeBN5datbwCRy2/fX7h6xnTyHju0qcpNtE+BbaDTrwyzyM1lgLS2FPIfgow1Uv0vbFe7SU6w90RF/AOaWm0XF38fJ64VlbIPNTKFagpZa4mKpOCwH7XFmWSjwVk55D6oi8eM0+zNE4hq77UkqcKuoamUD8p+6/2wy9twGqjXYOLdRIVTShd/7vYvL9VtuEx/3/O/sxzdDorez/+WFfvljs3gE16xkvYDgQPMEaedr1NoVfJw6k7CygbM9rsVKdWS8tDv6AlgfWZitLxKbB070aNnZY1sPinmrbH1UOe5m/Ms67d/9Pdf+C32f+Tq50cH94CTqcTFme30bn8eVIBQ==$556$</span>
-  </body>
 </html>

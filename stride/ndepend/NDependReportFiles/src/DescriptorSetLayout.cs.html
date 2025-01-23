@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"DescriptorSetLayout.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Graphics/DescriptorSetLayout.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Graphics/DescriptorSetLayout.cs","projectName":"Stride.Graphics","line":"31","statement":"4","debt":"6min","cov":"N/A","issues":[{"line":"21","ruleId":"ND1802","debt":"0min  30s","severity":"1","expl":"In the context of analyzed code, the <i>field Entries</i> can be declared as <i>private</i>. Doing so <b>improves encapsulation</b> by constraining this field\'s accessibility to the smallest possible scope."},{"line":"20","ruleId":"ND2000","debt":"3min  0s","severity":"1","expl":"The <i>instance field ElementCount</i> name does not adhere to usual .NET field naming conventions. It does not start with a lowercase letter, an underscore character followed by a lowercase letter or an <i>m_</i> expression followed by an uppercase letter."},{"line":"21","ruleId":"ND2000","debt":"3min  0s","severity":"1","expl":"The <i>instance field Entries</i> name does not adhere to usual .NET field naming conventions. It does not start with a lowercase letter, an underscore character followed by a lowercase letter or an <i>m_</i> expression followed by an uppercase letter."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>DescriptorSetLayout.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAN1VX2/iRhB/j5TvMOLaHJFSG0JVVQmHlMM0tZojCNO+nO7Qsh7Cnta7vt01HM3lu3fWxgEScm95KTLy7vyf34xn7htzIXHIMmxcNCK03IjcaZOgu2FrXbiA28ZZw6BkTixxxNyC5IIgfHysIw7/hSkm11bY53ddGI42RHUnFIaJMyLF4NqwfCG4DV90yWZWy8LVLqOLkL2ar9zoL8jdBoUnasSXZI0YnTadvU/MUDki/Er3FGf++FsmFN24XtJlGF7RWVhboG1cfLyvDZx7A6aQGKdeKmr/3jov3dONf90aa5ExgE7L+7a4RCPcmsheG7/lko6xArdA4Fo5/OZAz6EE4V9MiZbiWcntit5coExhoCgltN1Q9IAzBTOEFLlkhsSZ9XK5EUvKy0sEEGmh7sBq6M56IiNwlmgBFWe5LXwfaNUNZz2Yrb1/6wwTyiu4hbBQOnxrgXEqhBUzISl2cLoMyGZMSrQOcu15kihc5xg0Hs62GLX2MTpvtVqHMOqUGP0AokmFgKAImeIIGyhkWby+LpQr8VBUdEg1Zai0A5Yu0KCPt7AFkxAMB5ONJgn6LCnlJRkgEGwAsduqkhvjYCXcAhhIvULDmUWQ6ByaM6oPFCpFQxmTA75ghnFiwFxLL5x6OJ/rgTZek/LIpmW4lJzxwGq1r0nW83xPdR/V9uuiutNg/2dAPz18/vmnz/4fhtDX+dqIu4WDJj+tEvuD2iotvxAykJKEx2VW0MSx0Fw4l9uLMEy1U+jmj6KBNnchnEDNt+X86aQBSZ2WdhL6iggmSFyRCk1mTR5s7a1Wq8BWErYUCLgOvuSnx0cUZCRsFQKlVcJVfogf4gmQAiqLASSIJfEm7g+GySDIUvA7AUQ1YzbDEYymmswJvszjLRQdsyr+46PC+kpuBucYvR8iXD5hJAvm60Xk4yPfJTZn1EFPxu3x0f3xEdDPB9+J2m2gNvTlqakhdG2RZcyse1tShHNqdOsLTgn7eZg+DnuQ1aiHiR9Q9BSWwKCOpGGkOU090upaAoEbnL/bX4KNsBfsOA73PefFjFCEnPpUUG/TRLUWDmwZuIA6vTFWS+o99VVlZJPujr1qrR00NMRVszYV4ZJKSIn619kh8feFkL7ks+p9uvW049T/DLrCKFC4OmSmWbuo7VxutR98Md+IOSSTcRwNptfjq9GfcT+ZXo3iaRSPB/1JWcTv3w9K3I4Gw+sbz20eYv/z981fV0M4OXmmPLydRoOkP45Hk9vxtH87igfJTn6C9qKhjUiZsVQrufaUveF/+SPhl7EM/Khbf/xUj7yymR/rV23Rgxi+QtV204F3tXzwQpalRhX0rnBFCSb6yhi2bj6p7Rv6lsW8ItGVHj/8/gNwxOTWNQo=$1031$';
+</script>
 </head>
-<body>
-    <span id="source" fid="39"  style="display:none">H4sIAAAAAAAEALVTXYvaQBR9F/wPl10QhTJh2bd1d8FNUhtqVZK0L6XImNzoLMlMmJko0u1/703SqLt1+9YQGD33nHO/Mo4DrioPWmy2FobJCNjcj+GjqmTKrVASuEyJIa0W68oqbWC4tbY0d46TKivRZkcqU3rjwAC6uCFNircpI9ao8YlELhLyjGyVCkW2umQnv/1+z0zLMA2BJYo9l6N+z3HAE6YtAVOghKjBbhG+BDGQAKVBBhFiA84C159HPitSyESOIGQDl1o9Y2JBK2UhUxoKpesg/Sza+vu9ygi5ofLqwlmIdR4Cxm8C0ZZTwBDc70leoCl5gl1wqnm5FYnp9372e0BPXfytd3MDO9JQmg514N5URcH14fEEeZgJiQY4tWUsqAxSNIkWJY0ecn5QlWUQb4UBeitDw7AKeJ6rhFsk1b2hISQas4cr7yiM0F45j+wssfM6c1mtaYpQcm0FzyHJuTHwSj9rUsMddO2FaFSlE3ziBluTP+2e+RlLc00uGs1xP+ysPNzRCqnR+vhwif5Uibxe+bo9R6dMZ0nrR6OttASJ+0s2wy5F5zM+qX/Vy7wWGURxGHj+ahpOlp8CN1pNlsHKC0LfjZslvrxcZCyW/nw6q6PDS+FvX2efJ3MYDP4Szxcrz4/cMFjGi3DlLpaBH531J6RFLWknGnmqZH6oEfBzLFBal66eHf+L/P4smU9X+vD9B9SnwPZjPu5Pi139PV2a4X/Y2nk78NDx2TtdNoq26HNyi7BYTbTmh+Gb3V7TXRZZC9Ffen8Ds0CvLfkE$585$</span>
-  </body>
 </html>

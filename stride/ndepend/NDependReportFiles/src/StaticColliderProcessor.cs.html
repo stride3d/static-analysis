@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"StaticColliderProcessor.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Navigation/Processors/StaticColliderProcessor.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Navigation/Processors/StaticColliderProcessor.cs","projectName":"Stride.Navigation","line":"41","statement":"4","debt":"21min","cov":"N/A","issues":[{"line":"9","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class StaticColliderProcessor</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"11","ruleId":"ND1300","debt":"14min","severity":"2","expl":"The <i>delegate StaticColliderProcessor+CollectionChangedEventHandler</i> should be replaced with <i>Action&lt;StaticColliderComponent,StaticColliderData&gt;</i>. Generic delegates clarify code and reduce delegate type maintenance."},{"line":"11","ruleId":"ND1306","debt":"6min","severity":"1","expl":"The <i>nested delegate StaticColliderProcessor+CollectionChangedEventHandler</i> is declared as <i>public</i> and is accessed outside its parent type by the <i>class DynamicNavigationMeshSystem</i>. Typically, types are nested to encapsulate private implementation details. Consider making it <i>private</i> or non-nested."},{"line":"11","ruleId":"ND1801","debt":"0min  30s","severity":"1","expl":"In the context of analyzed code, the <i>delegate StaticColliderProcessor+CollectionChangedEventHandler</i> can be declared as <i>internal</i>. Doing so <b>improves encapsulation</b> by constraining this type\'s accessibility to the smallest possible scope."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>StaticColliderProcessor.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAL1VYW/bNhD9HiD/4WBsWYKlkp0UxZakHoLY2wysWTAH+zKsAEWebbYUqZKUUy/If9+dZFu247jbmlWwIYki391773i8b420wWuRY+usNYwiannljNEK/Y13EkNwPpGhddzyaOjrFG9EnNDcJEmXv1CteyGsMLOgw+N3V3qCStGOtcV0GD3hJ9diqsc00dl0GSqkO3MQWXCmjIscemep+HLBC+/eoYxLrTZwaIahAPTpZYeeOQ3M0UYeoHeFGT+edHLNU6Wb0tt1eknPOoQSQ+vsj/sFwvesd2lwoHhSr3PSPq0SoDf5oQFrExbAaZuzCzhFr+OMhjk8fiwMr3UgjQgBiA55F2DkXQ5xgnChu/WXJzhfpLoLwirQEXQA6yIUZWa0NDOY6qAzgwkMIkhhIUPIhX+PCkRg4IDCoGKEpPVwvGTV6WzQOm23t9HqvKw1WqF00lC6rZNXaJCEx6fy/5ZHyC5y5moi7BhVf0pu/EyUDNbswsSVRnH2HgsjJOV/p+OE0S+rhQcmnq/DX7m8cJZwjtfHeyKKg3E8rzjDT2gpcQmLHAOb4PVoBtIprFT1qEqJyxkQZwWLqG1EK6zETwn3aptwrx7p1nmkm8UQiegzyKe5qpjY0ve6QJrKCSAkw9EEV8ZAAaiaAhS0xMaacjZbr8bezIpcy2ZbvcEwGc4o57zW9nZWaCmMmR1XABTCI8xJRQdopShCaZhaQSXPd50XptqKFSAlHYU2IYErZzknT7q/13bMlc4k6lUVC+ep8O2LGn63Jd+1O/9tiw5spYB0ZP3HCG4EVev6i/hwtRwv9HkGx+Z7dcM1rjlPIWt9e46lCA4usi4J5x13jUZVQr9Isy77RhmH6KlkeUGckNtsyDcL03WmDZFlU5hByMk00hEKF6ruAUG6guv8z4e3X3/1lv9pSp4UM6/HkwiH8giS6/4t/OhKq2rruKrINWq9WRmpYcPhJMYinKWpctFiHC2nJs6PUziAxfdQtetTldCsowpnSOkRBZKzVNoRrC+SBu/u7i4J9YxQTUikS94VR/t7lGRPhzoF0pACUgUxwzeDW6AFaAN1xiFiNfjL4Kp/PewnuQI+aEHXbs/PEvCO+uqIyix3nj/SY17nv7+3v1cGlnZ+0vSr8+t8Y/RmQoecDOc8nXYOhoL6GDw6nJLmkNvfu9/fA7oWvsPOcwDOoG8jGdmcDE+1RHjcE7t1qHlEvuoe0fSfqdPs6Y7SPXwiHhXgjshAdSCOKl02QiNj7w4JC6RLpVCdfxbEb5jTHlJrmaRURBfaTrgdKCch7a6E8C4SKvdMahfs4zZ21RFD+i3V4NHD2inarnzbVGWLcEdN2BWL+PIYS2+psd5ti34PDdjrVR8eVrR6+AzGmXMGBuGS6k1qoqk47O+CMvjXHLcWh1gD/qQMsmH7emNtsgz5TNSrDfGrrWkuwakQadc/D3m1k/Ja6f+QDOzUvcfDFcTFxvr/yM63zJdkOw/5D/nOb/TjY+tv7ow2d0QN$1128$';
+</script>
 </head>
-<body>
-    <span id="source" fid="27"  style="display:none">H4sIAAAAAAAEAL1TTW/bMAy9B8h/4GlIgEE+7Na0HYrU2wJsWbEUuysSE6uzSUOSExRF//toO3E+kGUb2k0I4IAi3+N7pJIExlw+erfMIgzMENQ0vYcPXJHV0TGBJisZFL2bV5F9gEEWYxkuksRyJIyLLlWxXybwBrb3QWosvrNKsoYNzszlzgjmLFbWscD6Uu3w1uu1Cm1GaBKUYfVQDvu9JIFbF9oW0IIQooeYIXyZ3IMUIAVUMENsgp8n43Q6S1VhYeFyBEdNuPT8gCaCZ46wYA8F+/pS/hZt//1ev1cFR0tpsG5dpbR0hKOj6F32GJwJozqddIGh1Aa3l1O9cssW7s6zwRDEs37vqd8DOY4ietI5mFyHIDWSacac51Lqu3y4gJSii49d5PIwc8xFyYQU3x5B3Oqor1uqDWN9ymouJoHFHKU1hBW7eqZ5LnZIo+NM0xJtuhLATzKmHP3gF3xgzjGD7IEeNr4cUWONfZ4Stkg31qIdvQjiGxa8akB2MIks0aWjDL2Llg0k13sUnqOgympJma/neErdRyT04l/nRh0dtJMCbD7Hrpwwbrij3RtRfTzGyhMQrk+xP8EO7Gp/Ds97Xj2/QPGcOYdJuJF9M05k2pr2u5YO/lrjyeXQB8C/tcHs1F4d1aqO8pWkNw/iK7UyO3BZRHn1ryPenpV8sPrv1YRW/AMHe4jbh/XvxG6ezP9Uu6H8Q72bj/x+AoWco9izBg==$538$</span>
-  </body>
 </html>

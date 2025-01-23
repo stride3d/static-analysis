@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"EventKeyBase.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Engine/Engine/Events/EventKeyBase.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Engine/Engine/Events/EventKeyBase.cs","projectName":"Stride.Engine","line":"54","statement":"11","debt":"3min  0s","cov":"N/A","issues":[{"line":"13","ruleId":"CA1063","debt":"1min  0s","severity":"2","expl":"Provide an overridable implementation of Dispose(bool) on \'EventKeyBase\' or mark the type as sealed. A call to Dispose(false) should only clean up native resources. A call to Dispose(true) should clean up both managed and native resources."},{"line":"32","ruleId":"CA1063","debt":"1min  0s","severity":"2","expl":"Modify \'EventKeyBase.Finalize\' so that it calls Dispose(false) and then returns"},{"line":"37","ruleId":"CA1063","debt":"1min  0s","severity":"2","expl":"Modify \'EventKeyBase.Dispose\' so that it calls Dispose(true), then calls GC.SuppressFinalize on the current object instance (\'this\' or \'Me\' in Visual Basic), and then returns"}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>EventKeyBase.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEALVVbW8iNxD+Hin/YbRKyyLlvJdLXyTyIl0IF6EmaVRQv1Q9yewO4IuxV7YXShH97R17X2DLkU+9FWjX9viZZ54ZjzfRVEh85guMetFgicr9gus7bpGlNjqPDEruxBJfuJuTAWNJ87OOVtJ3XHG5tsIejnVhUrQJqplQmIycERmyQTmqX96hTQ798onVsnC13/tewr+tw9zoL5i6SojWXlqV/tWLfvyBvr1bXNB+mri4oIkMJ/77ciEUwHsPluolTTwnH+lbWFugjXp/bGqUi0svbCFxmNGo//Hi/U+XgQGNjNwBXuwALS7RCLem2Q80xL9ySZ8vRi+JJnAFmtaJMp9IBLHIZSBI8mhamsK9sLm2GE+0ll2guc6+AB3QBhbcvIKbI7h1TogWLHKJGYOPkHIpwekGZcqlxS7YuS5kRmhyDalEIlHkoEK1gMEqGV/b70yx297snGg3JxaKzzCjiLJDqGh73mh4+fP/pOGTzsR03RaEVUw7YDVpwh0IF6Kw7RjOvWCqWnnos1GR50TXfhJUkuJv9Ep7SdPCGEIHPfElBkJRCakUIe64ubBB/s4TeSOqvwtbcAnEQqSE73UIPgy6wijbkuDDt5SgjuENDao6OOT45/bzd2ef/T9JoK/ztRGzuYM47QJ7Hozhky5UVhan39zXio7bpHDaWIjnzuW2lySZdgrdtDFl2swS+B7qdRuO6GXGyKokMRJSpIQ5ckUmNMGanO3wVqsVs6WFDQYs1exL3j09IZIUUkmBao8cogl5exqOgTagIj1ghBgmH4f9wfNowBYZ+M7pk+anq/4BRmsHU3+gtPGL9Lko+Z+eFFaoGYzWlvrHVXvIxnODPKMJNub21bJ77vhU6tXOrmxJFJWvTz5T2lL3s7R+eqKoa9mcU0m1Ghcru93pyeb0BOhJKNJrWyzorK9vd1N98uzQAgeFK6irAApLYtCxnRjNs5RbB+OyOWBAZXuYySHotTfNueEL8OxuonF0OyadKJm8hKG+5IULaLDWBayEnXuHFlV2nTT7K9C8mFAuqF9wa2G/VK/Ht9CDYVmVvgGW9lXM/hHKoaFyBi9x6FePejajJJevq7csC6lJ/OBvmMFN47lPhUm27BlXcfdNBF9ZNYS/XkLGavPciCWJf2DdiH6Pk2L29pa72vZO6vTVyzFpzbR2N/z2JYwrrynhzrRZU5zRAyo0nPpITQnrAPxq2B11d7h7cvunzYB2+NI6IBqrQsrzsFbXe1j6NfcnxsIG/GEYpXPMqM+ZWv7WJNstb7utUP0z2CONexnYt6mK4QYepJ5wWQ7ZA7ryKz4ro4V3sKkF2kbdqyMBh4QR2FnUhOvV62wa99sOxJuqorbdaA9ou0//n1aGjktdt+PuMaDq5Cy1yHbGR+G+co/F/po6Ct9U1N4R9D1dUTuMQwy/YYp0lZv6tDpuZtS0j1IoL5L/1BB7FOp1rONyM7srplNC9CvHAzfaEQlqYyH2YUW0yUs8Du3oOJGqFEJK43aGj+a/JPtC3TkO4G1y1Yt+/nr8F2o70TB9Cw==$1153$';
+</script>
 </head>
-<body>
-    <span id="source" fid="130"  style="display:none">H4sIAAAAAAAEAH1U227iMBB9R+IfRqjaBqnrPOxbS/vApQhtt7ta8gMmGYLbYEe2A8oi9tt37FxItqIRUoLnzPGZM2OHIcxUXmqR7iwE8RjY6yKCZ1XIhFuhJHCZEEJaLTaFVdpAsLM2N/dhmCgr0W5bKFM6DeELNHFDOQl+Sxihxp5nLTIRE+faFolQRKtzduE7Ho/MVAjjASxW7C0fDwdhCHNhKgmYAG2IGuwO4ccqAkpAaZDBGtEvvqxmi9f1gu0T2IoMQUi/nGv1hrEFrZSFrdKwV9oF6XNf6R8OCiNkCuvSWNw/9P+yaKeRJ7TAIm7eDZtzy7eZOl5wvl5GVSGbC55KZayIDcWHA8n3aHIeY4NayFRIeh1QWjMcnIYDoCekSiem2O+5Lp8uSzPa2aIBDhKP4HO+YwmFITOsgo1WPIm5sRCBLXME9Kyswxl+JJ04aM4134NT9ziKRk8R+UTN5BWN2nrjPBuUqoCjMDu3oUGZTMI2vybNiw31AuKMG9OKnHKDk+gJ7mFFLcyV4ZsMK3xds3uEtKglz8BZrGRWwotKU2py9Xr4DFlkisz3+60SeGx3ntFgEpa94jEYf8rgJquheCUrfMcaeK7Fgcz/gG5Nn+OmSD9PmTbYaabid2fHprfSy271dS0M6l1j4k2VLqnO0RIlap6N7hpJ2BTgoj57NL7wdux2T18BZbjR+iA0kEWW3flYM+8+9DN3J8bACdxhWMc7TIqM+lXb31tkl/B53CvVPYuOaOx0oIuph+ERlpna8Kz6y5Zoq6/gpqoWvsKpMeg8Gj9cKdg3jMhuRm25zr3bU7v9+RaCUz1R5/GoQ3Tuyv/b69B1q6vBx94U9ojqk3NQIrmAr9ItZ2xd5LlGY54FDYr4g4HdCXOVvp2ozhF0d7qk6zDwNfzGGMUBdXNaLdcpXdpXJWi0hZb/zRB7EfI9UkGVzKbFdkuMLnK9cK0siaBrzNe+qoW2fQkifx1dF1KPgm9p0O/w1f5XYn/R7Rx48r64+kW/fx3bqQobBw==$760$</span>
-  </body>
 </html>

@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"ParameterCollectionLayout.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride/Rendering/ParameterCollectionLayout.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride/Rendering/ParameterCollectionLayout.cs","projectName":"Stride","line":"15","statement":"1","debt":"33min","cov":"N/A","issues":[{"line":"10","ruleId":"ND1805","debt":"3min  40s","severity":"1","expl":"The <i>field LayoutParameterKeyInfos</i> is used outside its parent type by the <i>8 methods ProcessResources(…), ProcessConstantBuffer(…), GetValueAccessorHelper(…), UpdateLayout(…), GetObjectParameterHelper(…), Compile(), Compile(…) and ProcessLogicalGroup(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose read-write accesses can be better controlled at debug-time."},{"line":"11","ruleId":"ND1905","debt":"15min","severity":"2","expl":"The <i>field ResourceCount</i> is assigned outside its parent type by the <i>3 methods ProcessResources(…), Compile(…) and ProcessLogicalGroup(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose accesses can be better controlled at debug-time."},{"line":"12","ruleId":"ND1905","debt":"15min","severity":"2","expl":"The <i>field BufferSize</i> is assigned outside its parent type by the <i>3 methods ProcessConstantBuffer(…), Compile(…) and ProcessLogicalGroup(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose accesses can be better controlled at debug-time."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>ParameterCollectionLayout.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAOVV724TORD/HinvMIoOlErtbkuvEldKpZIWqK6UivT4gkDy2pPE4LWNx24uV1XiaXgwnoTxbpIWaNWTgA+IaJPYnn+/mfl557w30gaPRY297d6JCLyIGAbOGJRRO3skZi7FQlJvtRfQiKjP8ETECWsXRbl8KLJErgkrzIw0fbt3KUikEu1YWyyHMWiF5Qu0CoO24/KWyKIiZ1JcRN7fLsXPDumDe8un88q01nxs2BfvN7Z4nSNijTbmA94rrPJyc7PWlrfSnfHuuNzjtSZKSL3tV+dLD+u5osngocpa+xv317easLyT7694Y2cAf65nTIRnjD3O5vHwX294eTpB2NG7I41GQZvCMre/cXZoR452Sr0LmiARKmAF4mxARwIvAicAceYRqhnE1td9YOuJUwQnwXER6QXOy9n/9OHjyurieOAsF8HGR2k0wjCXPcH4UpiEezKruPAUjV8K//GKi9aivNR/XuVaL1F/YTFwtWeK9q8sswCEVQsYR26spTBPgku+EeZ0C9iDtiY0cYn/KmQbQCuFp8RM5kpwqrr2pmmiyAwAhVFo09rn7LhOAWrxjhnD9coGPugzNm4q6gIEHAkZecFSQSCAicPg4wymE0fIcqHWptw1jt4UBAkk42A0FUZOFqSzMWQOKhCRAVRpvBZ1jUXvYvWSLhtf0eWv6+mysdWS7wpV7t1AlUVPBy7ZuCCIINJj+79IsnkbSX7Fdn1Xj+798B61F2uo/8Mf0aBrr+vv0aXXF2/u/PEmf8uSMfhZ0ONJhL5cgeL44BQe8yVQLdpcg0H2pKvEGAj6kxg9bZelctFiHC1VCxfGJdyFhZyaKbGpCtZqaznURjMqGMaktGO3wReX/qbTaUGtBjUKhXTFW7/S7TDIfU0tBM4m5aHVtPXZ4SmwAVrCAoaIzeHR4eDgeHhQ1AryNAeeGPl4PsIgOBdhxNWsXchCXtYt/m6n20mU29AOuIIB5p/FQKQHWcPyW5m8kLjQWg7Rbue82wH++FQxKpCG6Qk3TtZWd25yxeyxoHjE6bL7JOPO19Nr96apBg/B4vRW8/76yoNvYmq+L1+8Aa9XubyAc/lFt8NPJtJn9bwcFzsJ$825$';
+</script>
 </head>
-<body>
-    <span id="source" fid="30"  style="display:none">H4sIAAAAAAAEAIWR3UrDQBBG7wN5h7mS5mYjeGfVC2sLxVqk6QtsdyftlmQ37M4SqvjuTpL+iBUMIYSZc779QvIcJq45eLPdEYxUBmI5XcPMRaslGWdBWs2EJW82kZwPMNoRNeE+z7Uji1SeUeH8NocbOO0DOxrvtGAq63MKUxnFmQVFbRzH+kZc8tq2FWEgQg8I5cS+ydIkz+HFhKECauAD0QPtEN7ma2ABbUABBWI/XMwn02UxFbWG0lQIxvbjxrs9KgLvHEHpPNTOd0t+rYf+aZImMRi75YJddcEFu0dVscdAGHeElTWGRio8USvs+rCWJp9pAnw1ccOtQFUyBHiXng1CfwlayIOLNLBH5Yc2k4EW/LkcHxU9nP1XPMy57RMM+u95gEew2P6rj26z8dWZxhKsMLjoFU74j9LfyHMsS/SF+cDj/itN+P4GR41ZNkUC$173$</span>
-  </body>
 </html>

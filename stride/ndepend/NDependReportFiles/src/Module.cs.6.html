@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"Module.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Rendering/Module.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Rendering/Module.cs","projectName":"Stride.Rendering","line":"18","statement":"1","debt":"33min","cov":"N/A","issues":[{"line":"9","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class Module</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"9","ruleId":"ND1206","debt":"2min  0s","severity":"0","expl":"The <i>class Module</i> doesn\'t contain any instance field. Since it solely performs processing without managing any state, should it be refactored into a <i>static class</i>?"},{"line":"9","ruleId":"ND1207","debt":"2min  0s","severity":"1","expl":"The <i>class Module</i> is not instantiated in the context of the analyzed code. Should it be declared as a <i>static class</i> or is it a potential candidate for removal?"},{"line":"9","ruleId":"ND1700","debt":"15min","severity":"1","expl":"The <i>class Module</i> is not used within the context of analyzed code and may be a candidate for removal."},{"line":"12","ruleId":"ND1701","debt":"13min","severity":"1","expl":"The <i>method Initialize()</i> is not invoked within the context of analyzed code and may be a candidate for removal."},{"line":"12","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>method Initialize()</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>Module.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAL1VbW8bNwz+biD/gTD2YgPenR1ja5cWHQonGwyswVDnW9EC8h1ta7mTbpLO7TXIf99DnR3bsZsVw7CDg0giRfIhH1J33YUu+FqV3L3ovrF5XXCS+e6g67hQQa/5DxVWECVJ+vDzAZLsB2VU0Xjtj/e2dhn7lM1SG05nwemck7dscnbaLNN9N2rubVGHrZvLi1T9p/YrZ//kLGwAPlaFQgETkIyeYy2OuGQT5AD7nOeyHI9LbbDN7Bq76/Q11tr7mn334t3d1sLPkjT4neaidDk6H46jf+yyv3bGhrBFNB5KcJ7XCCM0G3f8qSrkrqWsUN6TxLhmTwtnSworppf6VStpEb5M9StSJicdSHsyNlBVzwudFQ2ttddzJIGmgTJlaM5UKnfLOSkvdjyrgnOxkHTvB0+A+OkUiPMI4jGG4Q7DzReizS178z1CsiYo2FCmIW2Qd5MxLTQXeUIzLRtgAjMYUCp2C+tKT6glyu5RN/qow8rWAZiMWsqBGIrlG5CHpIhJAWjHC5UF6wBcm2BJRfCRUG2WJaxfnk7Bs69PweifU7CpVIs6aIQsocX6Slb4UyC7iNtI+M8QZxakpdk+rpxh2LXlPImJrBNX0FZU2cDiqhAq5DqHT0JKkZzSrlXxJPxnw+Ep+KMf2574V9hrj8ClhMe4DzBHcpeqEcDqdOwH7B2dHwU/Ohn8+CuCLxkUy2lqtGROf+Ze/7B+a3v7P8F4fpqCXxglx234BJR9HkGznR9ROEd7ITp0KVhkVBZbDyMFKBobhw6Y5z2Xc/RoXjOhu+SsgjkTKDSVqEpvPvKBPmSH/MThQxNrPGay22iJPhLqaRPz8ZUBfVzpbIWE3rJvo8hCDW5vQ9QF8kA+swhA8qAzHZDf9/cfvv3mg/ylKbxWjdPLVaBe1qfk+uqGfrW1QVm0NbFeiAuPBZJgnafeKoTKX6RpboPhsHhQTaxbpvQdbeU+PjDjPIFW/6wDT5fat3aAv5ZnJ1LlzfSGEBgbL43NHA9/n06urmdXSZmTPMrbqbB5wshZ0E44U2KcQShDsQ3irFPHqThrPN4vPG+LAhcgefEgaR++CW6eOju8ctYxeC59pTCGH7+YZ527sw7h25aE9pu8FW005HvXnu+Y597vhC3ZaDO51lYfUnSnuGdQvtcb1r3lpSS3SdoFu56Qzi56rdN+8huHG5xMkapeP9leGzwYmNiytGaCXlxap9lHleD7L3b+7tsl/uEn5PkbOZZ0LjEJ$933$';
+</script>
 </head>
-<body>
-    <span id="source" fid="10"  style="display:none">H4sIAAAAAAAEAG1QzUrEQAy+F/oOOUkLMj1405PUVQruHnb3Jh5mO2l3ZDopM6lQxXc3bd1dBUNgwveTZFIUUFI/BtseGbI6B7VZ7eGRBm80W/KgvRGF52APA1OIkB2Z+3hbFIbYIzdnqaLQFnAFJz6Kx+CNUaLK06Qo4MHGpQ8aEBcG4CPCutqDszX6iAp2iDP4XJWrzW6lOgONdQjWz3Af6A1rhkDE0FCAjsJEStktS6TJEK1vYTdGxk5tsXFiEObuzMx7qVKc/2F/LWnidYex1zWeRFucVhdXmnymCUhYzxi8dlA7HSOsyQwOF+pHMcXLglfestXOfmB4vZD9cJAbQGT5RQ3vZA1chFl+Ef5qOMV9jNgd3LjFdjruqJYCQ8Zjj9Rky9BcPSHvBankVFmuTrbrc4OSuo58qRlbChbjLOGY313mfS2lPJLfiLSq7zkC$173$</span>
-  </body>
 </html>

@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"DepthAwareDirectionalBlurUtil.sdsl.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Images/DepthOfField/DepthAwareDirectionalBlurUtil.sdsl.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Rendering/Rendering/Images/DepthOfField/DepthAwareDirectionalBlurUtil.sdsl.cs","projectName":"Stride.Rendering","line":"27","statement":"4","debt":"40min","cov":"N/A","issues":[{"line":"21","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field Direction</i> is typed with the <i>class ValueParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"22","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field Radius</i> is typed with the <i>class ValueParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"23","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field TapWeights</i> is typed with the <i>class ValueParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."},{"line":"24","ruleId":"ND1902","debt":"10min","severity":"1","expl":"The <i>static field CoCReference</i> is typed with the <i>class ValueParameterKey&lt;T&gt;</i> that is mutable: its states can be modified at runtime. This can lead to runtime confusion and hinder code testability. In <i>Object-Oriented Programming</i>, <i>instance fields</i> are the preferred choice for holding modifiable states."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>DepthAwareDirectionalBlurUtil.sdsl.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAO1WbUsbQRD+Hsh/mIZWWtA7tUKpSQNqqEjxBbX2Q6mwuZ3LTbvZve7uRYP43zt7Gy+S0GItQj8YLrA7r8/Mc3uzN52cFB6JMXa2OwMsfbFzJSwOyGLmyWihdlVlP3tSiZNOJZnrrHYsKuFpgifCF+yWJGnzOM+abE2w49SRW96bymboUtQj0pieeUsSk1PUEi3pUTpfHYzFiA1rTMf5R0Il04cCFENnVOXvAA62U/GfICut+c7qWcMXk7CB4uSs2XzH6wARx6g9C7Z4L3FYL9fHpHmbmQnvjtIdXpNzFbrO9tebJsJGYKpSeCCD1WDj/fpmDYB32c95tI1ZNIcTxuCnQcRbvC4VL88LhB71Y7MgD7VCU2EvpT6QAz8tUcIV+QJ8tM+UcA4uhKqYA8vFerSfcLqifPd8ZeS7tacvhA/u48qLocJtIO+grtlBJjQMEcZGEieVwJa20p7GmMB5QdFAoZDgzZ0GMqPzyjEwEFpCQaGrLJQIHJJzkOL6EjjQAeLxMBCxdmyJG8wZTqwZMVJuxiigWw02pNlNZxgLdzVqpriusrSYo7XsmRWGgo2xUBglOcAMd6hqVlDSuV2dU7P5VNScCkmVe+blkby8fSpezkX5BWlU+GduHsvN1lNxs2f2TgMsZNDP7PwNO99uL1+9vAz/NIWeqLxZG6FGy2rZb7dYODCgjQeU5DkFFxluGzDlUetQ5S+CTW0XGxDquhIOmiAwnEKckXBWiFD7IV2TZspYsh+tjE1iCNP4cdubHKtQclMdy0LlSs3iJRfkKqHOfCXJJCci+8EzHZKJo+s6Wmi3xTUnJrE3TL7JqMbE0zy/jjl76VLR7Rbzxf06mzqe3d1mG7PuGYuLsmb6Lyr2rSgLytyiPLZiSRxiJ4d848FxeLvn+t0qZ17hw2LcJCq6AbTmN9qVgklfRJXE6067ddNuAf/Kaqj47MyOUCmsJ6EgHo8/3oL4tLgYYhZpOZrl199oNV0+Z70LDmfsZn9+++CC7lu45Aivar/G9vWb7iMy5coI35+N0t8niWb/lGI+FZ40zf0P3IMT3bZb/ISz/Qt3eoNkIww=$806$';
+</script>
 </head>
-<body>
-    <span id="source" fid="419"  style="display:none">H4sIAAAAAAAEALVRwWobMRC9L+w/TG8tNFro1a6hsSGUkhLs1D1PVrPeobK0aKTYS+m/d9abLsGmUBIqdNGbN++9GVUVzDGncLUjTxET2UVZVBWsAviQgCwnSC0LNOwI+pCjkGveDJwT736o1cESHFBgEoGHHjYpsuKbFi1FuOUje1gOzJuRFaIZJcLUB+r2x+M9dI5QFPOS0LknPbNlyeg2KVsO5g7rH7gjMI/Cx5MaeguRrgQfSYMToEio+ZTJiG2Oo+e8uhi6LLKw38Gml0T72fQcXZch0jm2Jq+TKXBeuInYtVzLOT6u4gIetM0tato9pudt17lpdHUfz3XNWJgNoT3uSTqs6SKV+bzX1UhZ/CwL0NPlB8c16DLVBDqMidFB7XRDsKIutZ8OGGnFkerEwaO7djl+S+y+UC+jxJPSpVoktMG7HrboMt1h1FSJonbOtyoX4ocFTMo60HOGmK90OPVN3LfvZi9walzAtIA1Ws7yd5OR9iqLe+y+E+/a9H9tlmG5Jv1o8vq9/2r0qyz0/gYRMKm+2AM=$102$</span>
-  </body>
 </html>

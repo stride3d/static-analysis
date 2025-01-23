@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"ExpressionNodeCouple.cs","relativePath":"../../../../static-analysis/static-analysis/sources/engine/Stride.Shaders.Parser/Analysis/ExpressionNodeCouple.cs","absolutePath":"D:/a/static-analysis/static-analysis/sources/engine/Stride.Shaders.Parser/Analysis/ExpressionNodeCouple.cs","projectName":"Stride.Shaders.Parser","line":"24","statement":"4","debt":"18min","cov":"N/A","issues":[{"line":"10","ruleId":"ND1203","debt":"0min  30s","severity":"1","expl":"No class derives from the <i>class ExpressionNodeCouple</i> and it is not publicly visible. It can be marked as <i>sealed</i>."},{"line":"15","ruleId":"ND1701","debt":"10min","severity":"1","expl":"The <i>constructor of ExpressionNodeCouple</i> is not invoked within the context of analyzed code and may be a candidate for removal."},{"line":"13","ruleId":"ND1805","debt":"2min  0s","severity":"1","expl":"The <i>field Node</i> is used outside its parent type by the <i>3 methods UpdateMain0(), RenameAllVariables(…) and Serialize(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose read-write accesses can be better controlled at debug-time."},{"line":"17","ruleId":"ND1807","debt":"0min  30s","severity":"0","expl":"The <i>constructor of ExpressionNodeCouple</i> is declared as <i>public</i> but remains inaccessible beyond its assembly due to its parent type being declared as <i>internal</i>. Consider declaring this method as <i>internal</i>, which makes its actual accessibility scope explicit."},{"line":"12","ruleId":"ND1905","debt":"5min","severity":"2","expl":"The <i>field Expression</i> is assigned outside its parent type by the <i>method RenameAllVariables(…)</i>. A field should be an encapsulated <i>implementation detail</i>. Consider making it <i>private</i> or refactor it as a property whose accesses can be better controlled at debug-time."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>ExpressionNodeCouple.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAM1W4WobRxD+b/A7DKItEsh3sl3j1E4CxnbA0JhQuf0TEljdjaRN9navO3uSFWPo0/TB+iT99u5kybZUEgqlh3Tau52Z/b6Zb3Z11xlrw9eq4M5J5/K29Cyinb12OZ+7qjScZNLpdzwbFfSM36kwhWGSpA8fCZjJ9pRVZiFanj+7ymcsKduJtpwOg9c5J8OpytlL8k55YZ+eLa23Q1AjcaYKSwgXJ6n6z9YuvfvEWWjTtDEMrAzWwPTBjxhHJFywDXgRn3MexeH+i0JbPGZuhqfr9AxjLVKxdE7e3y0j7A9iyivDV3m0utg/GBzWKPCU/b6KNkAwosNBhCg8Y6/DIrrjkW9LE30dZUaJEJCifEJj7woKU6aX+nUzs4n1y1S/JmVz0oG0kHWBympkdGYWNNOiR0gMXQXKlKURU6H8Z85JSYwqrAznMULSue+vOB094XQ82N/EaX/QZGgzn5sWubMSfJUF58mNt1NosWs7cxHgXIcpMhbpI0Lg2xC9a7V8wXQG55p1oRaRlor8cp2jkjTGSp4LN1PmMa3DJ7ReDI420TqoS/UPlWqZjTWbnCKNJYFKAM1VQaA51EOoVB66orAomUaLZTEPqeAwdbnQr2VE/FZpO+j2+vQLW8j2zJjflNcKlZPuX3/82auJDgFEGf2F61d1zeiMGgwydRV+Yh4ssc1UKRU2AYDBarpAiqO80W/OQl1BadP4n6M2gOqRxc/aTqKE4FBCfnCuSdWpHKu6epiFbBShw0r2YUHzqRPGvMr35sgSVs/QwQLptmIbcQiIHgvonTFRdwEARtVkL+iCH1fn+Fl1jr+hkQb/Rng5o7/8Q1s0/VNPjqoQtYQCCaTZ8IstBWoLVzcdMgLKxQjtlldMwT0vPMfcPllDQ9Mean5SiMYq2kP+0upkg0sfydfZNBYO6a5RZKFShpYQtUFeSDKUimJedKbD43wfPMn3T5u74ehZjx9s6YRVhpd5RWb0xH5VT7RMt3TA/0ju367xD/cfv//uY/ymKTCUC68n00DdrEfJ9eUNvXGVzRu0sdHPYyQN4Tkv1J2GUMpJmuYuWA7jB9PE+UlKP9ByXuqD7jBPYNVuGJAAUNEwVLl2COvLZBVvPp8n0lhIbZBkLvlU9nZ3APJCSwMBbLAg6MUqvb26ITiwFZwoQ+b65c9X55fXw8ukyCn+O6F2z25PYfIOe3rckAvn4ySGRYN/d2d3p5JYhvaMBkA+3fDu4fA+k3AavaJCpFQZ08bTPVn+SdjdudvdIVzvL1RQdVpR2Q/Nu2Uz0faTtTFsY8Sr2RfWbNeGp8/MYqD6VoPeGmO1XrdHJ3Xbd21lTJ/ivUd391/rvoaLH4b9BofFrbcKs0YqXmuer9Z8Tx9b1YFe1aHWZu6bIX7wiSL/G/JLi5ynCg==$1051$';
+</script>
 </head>
-<body>
-    <span id="source" fid="45"  style="display:none">H4sIAAAAAAAEAI2QUWvCMBDH3wv9Dvc0LEj6sDfFB9EOhE0G9W3sITanRmoScilOxO++azq1YxvsKNfj7nf//JM8h5l1J6+3uwCDKgOxLFbwZBujZNDWgDSKCRO8XjfBeoLBLgRHozxXNhgMmxsqrN/m8ADXOfGOwkclmMqiTqlrXbFmGRqlLct6J+56x+NRUEdQBERlxd5laZLnMNfUWUAFfCB6CDuEl8UKeAENoYASMTafF7NiWRbioGCjawRtYtt5u8cqgLc2wMZ6OFjfDrk8dP7TJE0a0mbLBlvrgg3i+JeeKHeSLZCYUhi3W0YekJys8EpdgVfpCb2YGlmfSFOanNMEON7mMsj4rLIK711Pm4CeQahqSQTFh/NIxMaWVuHMNq7GDvzSaMM1a75/j+2V4x9YKxRTNP2nxv28QQYjfjxNA9PU9RDanMH58t/1ni+8lcPOh+GU3WV6l2qjtznp7Y6/U1FoEqV6k0tX8o+/T6AFEgbhAg==$136$</span>
-  </body>
 </html>
