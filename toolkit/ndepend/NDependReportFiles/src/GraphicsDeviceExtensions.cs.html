@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <html>
-  <head>
-    <link rel="stylesheet" href="src.css"/>
-	 <script src="src.js"></script>
-    <script src="CommonIssuesData.js"></script>
-    <script>
-var issues='{"fileName":"GraphicsDeviceExtensions.cs","relativePath":"../../../../static-analysis/static-analysis/src/Stride.CommunityToolkit/Graphics/GraphicsDeviceExtensions.cs","absolutePath":"D:/a/static-analysis/static-analysis/src/Stride.CommunityToolkit/Graphics/GraphicsDeviceExtensions.cs","projectName":"Stride.CommunityToolkit","line":"29","statement":"3","debt":"15min","cov":"N/A","issues":[{"line":"3","ruleId":"ND1305","debt":"5min","severity":"0","expl":"The <i>namespace Stride.CommunityToolkit.Graphics</i> contains only the <i>class GraphicsDeviceExtensions</i>. To prevent an excessive number of <i>using</i> clauses in client code, refrain from segregating classes into numerous small namespaces."},{"line":"8","ruleId":"ND2013","debt":"10min","severity":"1","expl":"The <i>class GraphicsDeviceExtensions\'s name</i> starts with the parent namespace name <i>Graphics</i>. This results in redundant naming without any improvement in readability."}]}';
- </script>
+<head>
+<link rel="stylesheet" href="src.css"/>
+<script src="src.js"></script>
+<script src="CommonIssuesData.js"></script>
+<script src="compress.js"></script>
+<title>GraphicsDeviceExtensions.cs</title>
+<link href="../CS.png" rel="shortcut icon">
+<script>var compressedContent='H4sIAAAAAAAEAL1UbWsbORD+bvB/GJY72oJvN04o9FLH0F5Kr19KuAbao7Qga8e2Llppq5Hs+EL++420u/Y6zks/nUlA0s7LM888MzfZXGn8KCrMTrP3TtRLJekcV0riu2uPhpQ1lEvKRplDLbxa4YXwSzbO82L7R56/yN+EEXpDig7vThafvFMl5n/YqgpG+c2ltfpK+aJLWjyeXczI6uC77Oenhfg/0tbO/oPStwQ9EIzttDLR4Ph3PkcYWKHx/HDC9xJn8Th+WSnDV2lXfPtYvOGzIgpI2enXmy5CdHBB44cyGp2PT45eJhh8kz92wdpYhCt0DIRfjviK17Xm4+USYaKmhkFTLSTCA7jzrvZJoaYgrfFCGQJr9AZ8E0NqQQQPcRT9cri0UDsGYjwIA3gtkYh1AiZUM3Rg5zFQIGUWTR4tAiGBMnxU0UvaEkfgcO44P8ydrYBw4XDB7TQLSBiSg7cxKDobCKgSWsO2Rsqz29GWxVf7LB4fjU/uY3F8dEDj+IDGxyl4RglDqowb7zzBWvll4q8WLpa360M8xZB93pm/pSKunoL2iRWHZTClaDwjATGgDZHdDaiKJblK8mpsRSlmSjN4JuDb7fdff/ke/xPdXd+7dK+Hg+Hg51WRzIuigAmFqhJuM22uFwyAHYlb3bIAFTLCkmBuXaMcQgTJHT27s1SyYgrcReIytJpvuPVVxf62RsfNZj4hrRkso9WideU3U3KDzCJvARU7RHWYaSWhmX14vFnDwc1wAPy7U1X39BcyJawFSkXI4FL/1sqUds2Y/8Uo5ifrExTnoGfywfjj+IG8C9IHh3kPRXEIY8LCEVVSy1nWkZBNL59KHNlf81Ojvj5sYv3oEmbIVDYllvmkSGn6efljcIZ6T2/uLcQhDzwxN1FkD1AVdY13nfMv0X0ldOBXyz5UW8O64WbvID+LI1T65WgHQ5jyLu8p3N8/F26JarH0e6wflsrVcx+u+k9pMhttQ92pXsRNydsura612MRsQsall5KWqmrV1ollJuQVzMJ8jm7U9ucesH15NcB3OHjQd31dxCXCnRY1j5BMUwNxgQRjmgnpF9mvaH9SIn/wHv3nlOsTZ3/uY7n7strO4IsmRjs/8adSv7lPcLa1yi8aXaDL33LVb1PR+edo9Xrfs2nJk65/JrO0iTrvpnNgcJ1qeN5opQ34ok1zOxykXfgfUUrRSuAI$897$';
+</script>
 </head>
-<body>
-    <span id="source" fid="38"  style="display:none">H4sIAAAAAAAEAI1UwW7bMAy9G/A/ELmsBQob2LVJgHYbut2KNUC3oyLTsRBbMkTJWTb030fJdmOnHTKfEprke498tCeld/DkrCowe7CirZSk2zRJEy0apFZIHN9+Mk3jtXLHjTH1Xrl5ep7nsCTfNMIe1/3fR2s6LiTAXw41KaOhQVeZgqA0FlyFXIEI0mK5WozdPmOnJC7yNTgDpJq2VuURJINzvWnRCsedCCzWwmERsnZDKcd0gZYVZQOh/MSo9dtaSSDH9RJkLYhgjvllpElp8idNgJ8zVWPoO/JIsGNpQYT0loEdHJQuzIE5/0Yw5WV9gkDoaco37T6GF+Ssl85bzCYs8rc0lq2wooGwqdViHMJivbkEHKZ/4FAVOU5pU2V8XcAWeZS9xCJb5hFmissvvdU0Cd29K8Ria5F4NsFk/xhVBmd8Q3H2I5R3ovYcNVxDrdHsG172ifIH4h+Fq25ONIQuzuce2/38v3YVql3lZlN/K5XV8x7209CmUjR4G9rR9YKhdIdaRcHiGNCElEi9awrVDG4bzbIVcg9bX5Zob4b9vEN2aq+e+ImH0pO97tgWwJsWLZ+QjFcDTNN6rfsLmYqcKppfSpgfPKB7jlhPjH7lgty5rV5v8LrvMdxPeFTcN+8JVq9Z2WPvC7TZPau+j6Kz55B1O6/sV3Kx9GtMi1+isbrfHGg8RA1XvVeGhtcDzEuavPwFVvwffQQF$531$</span>
-  </body>
 </html>
