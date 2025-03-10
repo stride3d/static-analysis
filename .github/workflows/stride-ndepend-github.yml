@@ -63,7 +63,7 @@ jobs:
       #  run: dotnet build ${{ env.PROJECT_PATH_CORE }} --no-restore
 
       - name: NDepend
-        uses: ndepend/ndepend-action@v1
+        uses: ndepend/ndepend-action@v2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           license: ${{ secrets.NDependLicense }}
