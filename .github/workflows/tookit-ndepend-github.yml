@@ -20,16 +20,16 @@ permissions:
 
 jobs:
   build-docs:
-    runs-on: windows-2022
+    runs-on: windows-latest
 
     steps:
       - name: Dotnet Setup
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@v5
         with:
-          dotnet-version: 8.x
+          dotnet-version: 10.x
 
       - name: Checkout Stride Community Toolkit
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: stride3d/stride-community-toolkit
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -58,7 +58,7 @@ jobs:
           Copy-Item -Path ..\..\_temp\NDependOut\NDependReportFiles -Destination "$site\" -Recurse -Force
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: _site
 
