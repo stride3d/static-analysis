@@ -11,19 +11,19 @@ on:
 
 jobs:
   publish-docs:
-    runs-on: windows-2022
+    runs-on: windows-latest
 
     steps:
       - name: Dotnet Setup
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@v5
         with:
-          dotnet-version: 8.x
+          dotnet-version: 10.x
 
       - name: Add msbuild to PATH
         uses: microsoft/setup-msbuild@v2
 
       - name: Checkout Stride (note the LFS)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: stride3d/stride
           token: ${{ secrets.GITHUB_TOKEN }}
