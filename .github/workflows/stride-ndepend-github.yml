@@ -10,16 +10,14 @@ on:
 
 # Only allow one deployment at a time, cancel previous in-progress runs on new pushes
 concurrency:
-  group: pages
+  group: pages-stride
   cancel-in-progress: true
 
 permissions:
-  contents: read      # to checkout
-  pages: write        # to deploy pages
-  id-token: write     # to authenticate deployment
+  contents: write     # to push to gh-pages branch
 
 jobs:
-  build-docs:
+  build-and-deploy:
     runs-on: windows-latest
 
     steps:
@@ -36,17 +34,23 @@ jobs:
         with:
           repository: stride3d/stride
           token: ${{ secrets.GITHUB_TOKEN }}
-      #   path: stride
           lfs: true
+          path: source
 
-      #- name: Restore Stride dependencies
-      #  run: dotnet restore ${{ env.PROJECT_PATH_CORE }}
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v5
+        with:
+          ref: gh-pages
+          path: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create .sarif Folder
+        working-directory: source
         run: |
           mkdir build\.sarif
 
       - name: Create Directory.Build.props
+        working-directory: source
         shell: powershell
         run: |
           Add-Content -Path Directory.Build.props -Value '<Project>'
@@ -55,55 +59,31 @@ jobs:
           Add-Content -Path Directory.Build.props -Value '  </PropertyGroup>'
           Add-Content -Path Directory.Build.props -Value '</Project>'
 
-      - name: List folder content in the working directory
-        shell: powershell
-        run: Get-ChildItem
-
-      - name: List folder content in the build directory
-        shell: powershell
-        run: Get-ChildItem -Path build
-
-      - name: Display Directory.Build.props content
-        shell: powershell
-        run: Get-Content -Path Directory.Build.props
-
       - name: Build Stride.sln
+        working-directory: source
         run: msbuild build/Stride.build -t:Build
-      #  run: dotnet build ${{ env.PROJECT_PATH_CORE }} --no-restore
 
       - name: NDepend
         uses: ndepend/ndepend-action@v2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           license: ${{ secrets.NDependLicense }}
-          solution: ${{ env.PROJECT_PATH_CORE }}
+          solution: source/${{ env.PROJECT_PATH_CORE }}
           baseline: recent
 
-      - name: Prepare Pages artifact (place files under toolkit/ndepend)
+      - name: Copy NDepend results to gh-pages
         shell: pwsh
         run: |
-          $site = "_site/stride/ndepend"
-          New-Item -ItemType Directory -Force -Path $site | Out-Null
-          Copy-Item -Path ..\..\_temp\NDependOut\NDependReport.html -Destination "$site\NDependReport.html" -Force
-          Copy-Item -Path ..\..\_temp\NDependOut\NDependReportFiles -Destination "$site\" -Recurse -Force
+          $dest = "gh-pages/stride/ndepend"
+          New-Item -ItemType Directory -Force -Path $dest | Out-Null
+          Copy-Item -Path ..\..\_temp\NDependOut\NDependReport.html -Destination "$dest\NDependReport.html" -Force
+          Copy-Item -Path ..\..\_temp\NDependOut\NDependReportFiles -Destination "$dest\" -Recurse -Force
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-
-  deploy:
-    name: Deploy to GitHub Pages
-    needs: build-docs
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write      # required for Pages deployment
-      id-token: write   # required for OIDC
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Commit and push to gh-pages
+        working-directory: gh-pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff --staged --quiet || git commit -m "Update Stride NDepend report"
+          git push
