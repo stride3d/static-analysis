@@ -4,13 +4,22 @@ name: Build Stride NDepend Analysis for GitHub Pages
 
 env:
   PROJECT_PATH_CORE: build/Stride.sln
-  DEPLOY_DIR: ..\..\_temp\GitHubPages
 
 on:
   workflow_dispatch:
 
+# Only allow one deployment at a time, cancel previous in-progress runs on new pushes
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+permissions:
+  contents: read      # to checkout
+  pages: write        # to deploy pages
+  id-token: write     # to authenticate deployment
+
 jobs:
-  publish-docs:
+  build-docs:
     runs-on: windows-latest
 
     steps:
@@ -70,17 +79,31 @@ jobs:
           solution: ${{ env.PROJECT_PATH_CORE }}
           baseline: recent
 
-      - name: Prepare deployment files for GitHub Pages
-        shell: powershell
+      - name: Prepare Pages artifact (place files under toolkit/ndepend)
+        shell: pwsh
         run: |
-          New-Item -ItemType Directory -Force -Path ${{ env.DEPLOY_DIR }}
-          Copy-Item -Path ..\..\_temp\NDependOut\NDependReport.html -Destination ${{ env.DEPLOY_DIR }}\
-          Copy-Item -Path ..\..\_temp\NDependOut\NDependReportFiles -Destination ${{ env.DEPLOY_DIR }}\ -Recurse
+          $site = "_site/stride/ndepend"
+          New-Item -ItemType Directory -Force -Path $site | Out-Null
+          Copy-Item -Path ..\..\_temp\NDependOut\NDependReport.html -Destination "$site\NDependReport.html" -Force
+          Copy-Item -Path ..\..\_temp\NDependOut\NDependReportFiles -Destination "$site\" -Recurse -Force
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4.0.0
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ${{ env.DEPLOY_DIR }}
-          destination_dir: stride/ndepend
-          publish_branch: gh-pages
+          path: _site
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build-docs
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write      # required for Pages deployment
+      id-token: write   # required for OIDC
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
