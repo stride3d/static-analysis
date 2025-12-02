@@ -61,8 +61,17 @@ jobs:
 
       - name: Build Stride.sln
         working-directory: source
+        # run: dotnet build "build/Stride.sln"
         # run: msbuild build/Stride.build -t:Build
-        run: dotnet build "build/Stride.sln"
+        run: |
+          msbuild build\Stride.sln `
+            -restore -m:1 -nr:false `
+            -v:m -p:WarningLevel=0 `
+            -p:Configuration=Release `
+            -p:StridePlatforms=Windows `
+            -p:StrideGraphicsApiDependentBuildAll=true `
+            -p:StrideSkipUnitTests=true `
+            -p:StrideSkipAutoPack=true
 
       - name: NDepend
         uses: ndepend/ndepend-action@v2
