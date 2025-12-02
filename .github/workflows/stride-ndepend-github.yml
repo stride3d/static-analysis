@@ -62,7 +62,7 @@ jobs:
       - name: Build Stride.sln
         working-directory: source
         # run: msbuild build/Stride.build -t:Build
-        run: dotnet build "build/Stride.build"
+        run: dotnet build "build/Stride.sln"
 
       - name: NDepend
         uses: ndepend/ndepend-action@v2
