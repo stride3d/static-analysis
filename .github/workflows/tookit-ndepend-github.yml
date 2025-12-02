@@ -10,16 +10,14 @@ on:
 
 # Only allow one deployment at a time, cancel previous in-progress runs on new pushes
 concurrency:
-  group: pages
+  group: pages-toolkit
   cancel-in-progress: true
 
 permissions:
-  contents: read      # to checkout
-  pages: write        # to deploy pages
-  id-token: write     # to authenticate deployment  
+  contents: write     # to push to gh-pages branch
 
 jobs:
-  build-docs:
+  build-and-deploy:
     runs-on: windows-latest
 
     steps:
@@ -34,11 +32,21 @@ jobs:
           repository: stride3d/stride-community-toolkit
           token: ${{ secrets.GITHUB_TOKEN }}
           lfs: true
+          path: source
+
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v5
+        with:
+          ref: gh-pages
+          path: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Restore Stride dependencies
+        working-directory: source
         run: dotnet restore ${{ env.PROJECT_PATH_CORE }} --runtime win-x64
 
       - name: Build Stride.CommunityToolkit.sln
+        working-directory: source
         run: dotnet build ${{ env.PROJECT_PATH_CORE }} --no-restore
 
       - name: NDepend
@@ -46,34 +54,22 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           license: ${{ secrets.NDependLicense }}
-          customconfig: Stride.CommunityToolkit.ndproj
+          customconfig: source/Stride.CommunityToolkit.ndproj
           baseline: recent
 
-      - name: Prepare Pages artifact (place files under toolkit/ndepend)
+      - name: Copy NDepend results to gh-pages
         shell: pwsh
         run: |
-          $site = "_site/toolkit/ndepend"
-          New-Item -ItemType Directory -Force -Path $site | Out-Null
-          Copy-Item -Path ..\..\_temp\NDependOut\NDependReport.html -Destination "$site\NDependReport.html" -Force
-          Copy-Item -Path ..\..\_temp\NDependOut\NDependReportFiles -Destination "$site\" -Recurse -Force
+          $dest = "gh-pages/toolkit/ndepend"
+          New-Item -ItemType Directory -Force -Path $dest | Out-Null
+          Copy-Item -Path ..\..\_temp\NDependOut\NDependReport.html -Destination "$dest\NDependReport.html" -Force
+          Copy-Item -Path ..\..\_temp\NDependOut\NDependReportFiles -Destination "$dest\" -Recurse -Force
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: _site
-
-  deploy:
-    name: Deploy to GitHub Pages
-    needs: build-docs
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write      # required for Pages deployment
-      id-token: write   # required for OIDC
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Commit and push to gh-pages
+        working-directory: gh-pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff --staged --quiet || git commit -m "Update Toolkit NDepend report"
+          git push
