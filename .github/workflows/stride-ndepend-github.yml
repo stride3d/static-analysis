@@ -59,12 +59,12 @@ jobs:
           Add-Content -Path Directory.Build.props -Value '  </PropertyGroup>'
           Add-Content -Path Directory.Build.props -Value '</Project>'
 
-      - name: Build Stride.sln
+      - name: Build Stride.slnx
         working-directory: source
         # run: dotnet build "build/Stride.sln"
         # run: msbuild build/Stride.build -t:Build
         run: |
-          msbuild build\Stride.sln `
+          msbuild build\Stride.slnx `
             -restore -m:1 -nr:false `
             -v:m -p:WarningLevel=0 `
             -p:Configuration=Release `
