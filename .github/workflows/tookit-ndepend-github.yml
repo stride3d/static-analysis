@@ -3,7 +3,7 @@
 name: Build Toolkit NDepend Analysis for GitHub Pages
 
 env:
-  PROJECT_PATH_CORE: Stride.CommunityToolkit.sln
+  PROJECT_PATH_CORE: Stride.CommunityToolkit.slnx
 
 on:
   workflow_dispatch:
