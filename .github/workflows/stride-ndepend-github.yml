@@ -3,7 +3,7 @@
 name: Build Stride NDepend Analysis for GitHub Pages
 
 env:
-  PROJECT_PATH_CORE: build/Stride.sln
+  PROJECT_PATH_CORE: build/Stride.slnx
 
 on:
   workflow_dispatch:
